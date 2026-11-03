@@ -1,0 +1,341 @@
+#!/usr/bin/env python3
+"""
+tools/compile_translation.py - Torchlight Translation Compilation Tool
+
+Compiles the translation catalog (translation_catalog.json) into the official game assets:
+1. Generates translations/translation.dat encoded strictly in UTF-16LE with BOM (0xFF 0xFE),
+   using native Runic Games DAT format:
+   [TRANSLATION]
+   <STRING>ORIGINAL:<original_english>
+   <STRING>TRANSLATION:<portuguese_translation>
+   [/TRANSLATION]
+2. Generates localized .layout XML files under media/UI/ by extracting base templates
+   from Pak.zip and substituting translated text in Property Name="Text" tags,
+   preserving each layout's native encoding (UTF-16LE or UTF-8).
+
+Part of Milestone 1 (M1) of the Torchlight pt-BR translation project.
+"""
+
+import argparse
+import html
+import json
+import os
+import re
+import sys
+import zipfile
+from pathlib import Path
+
+
+def load_catalog(catalog_path: str) -> dict:
+    """
+    Loads and validates the translation catalog JSON file.
+    """
+    if not os.path.exists(catalog_path):
+        raise FileNotFoundError(f"Translation catalog not found at: {catalog_path}")
+
+    with open(catalog_path, "r", encoding="utf-8") as f:
+        catalog = json.load(f)
+
+    if "categories" not in catalog:
+        raise ValueError(f"Invalid catalog schema: missing 'categories' key in {catalog_path}")
+
+    return catalog
+
+
+def escape_xml_attr(val: str) -> str:
+    """
+    Idempotent XML attribute escaping using standard XML 1.0 predefined entities.
+    Unescapes first to eliminate any pre-existing entities, preventing double-escaping.
+    """
+    norm = html.unescape(val)
+    return (
+        norm.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+            .replace("'", "&apos;")
+    )
+
+
+def build_translation_map(catalog: dict, fallback_to_original: bool = True) -> dict[str, str]:
+    """
+    Constructs a dictionary mapping original_english_string -> translated_string.
+    If fallback_to_original is True, untranslated entries (empty string) will use original.
+    Supports dual-key matching (both literal unescaped and escaped forms) for layout properties.
+    """
+    mapping: dict[str, str] = {}
+    for cat_name, entries in catalog["categories"].items():
+        for entry in entries:
+            orig = entry.get("original", "").strip()
+            if not orig:
+                continue
+            trans = entry.get("translation", "").strip()
+            if not trans and fallback_to_original:
+                trans = orig
+            mapping[orig] = trans
+            # Map unescaped alias for XML entity resilience
+            unesc = html.unescape(orig)
+            if unesc != orig:
+                mapping[unesc] = trans
+    return mapping
+
+
+def generate_translation_dat(
+    catalog: dict,
+    output_dat_path: str,
+    fallback_to_original: bool = True,
+    verbose: bool = True
+) -> int:
+    """
+    Compiles translation blocks into translations/translation.dat.
+    File format requirements:
+    - Encoded strictly in UTF-16LE with BOM (b'\\xff\\xfe').
+    - Block structure:
+      [TRANSLATION]
+      <STRING>ORIGINAL:<original>
+      <STRING>TRANSLATION:<translated>
+      [/TRANSLATION]
+    - Windows CRLF line endings (\\r\\n).
+    Returns total number of translation blocks written.
+    """
+    os.makedirs(os.path.dirname(os.path.abspath(output_dat_path)), exist_ok=True)
+
+    blocks: list[str] = []
+    seen_originals: set[str] = set()
+    total_entries = 0
+    translated_entries = 0
+
+    # Iterate categories deterministically
+    for cat_name in sorted(catalog["categories"].keys()):
+        entries = catalog["categories"][cat_name]
+        for entry in entries:
+            orig = entry.get("original", "").strip()
+            if not orig:
+                continue
+
+            # Multiline newline escaping: convert raw \r\n, \r, \n to literal \n
+            orig = orig.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+
+            trans = entry.get("translation", "").strip()
+            if trans:
+                translated_entries += 1
+                trans = trans.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+            elif fallback_to_original:
+                trans = orig
+            else:
+                continue
+
+            # Duplicate original key protection
+            if orig in seen_originals:
+                if verbose:
+                    print(f"[Warning] Skipping duplicate original key in catalog: '{orig}'")
+                continue
+            seen_originals.add(orig)
+
+            block = (
+                "[TRANSLATION]\r\n"
+                f"<STRING>ORIGINAL:{orig}\r\n"
+                f"<STRING>TRANSLATION:{trans}\r\n"
+                "[/TRANSLATION]"
+            )
+            blocks.append(block)
+            total_entries += 1
+
+    content_str = "\r\n".join(blocks) + "\r\n"
+    # UTF-16LE with BOM: prepend b'\xff\xfe'
+    encoded_bytes = b"\xff\xfe" + content_str.encode("utf-16le")
+
+    with open(output_dat_path, "wb") as f:
+        f.write(encoded_bytes)
+
+    if verbose:
+        print(f"[Compiler] Wrote {total_entries} blocks to {output_dat_path}")
+        print(f"           - Non-empty translations: {translated_entries}")
+        print(f"           - Fallback to original:   {total_entries - translated_entries}")
+        print(f"           - Output file size:       {len(encoded_bytes):,} bytes")
+
+    return total_entries
+
+
+def compile_layout_files(
+    catalog: dict,
+    pak_path: str,
+    output_layout_dir: str,
+    fallback_to_original: bool = True,
+    verbose: bool = True
+) -> int:
+    """
+    Extracts base .layout XML files from Pak.zip, substitutes translated text
+    for Property Name="Text", and writes localized copies into output_layout_dir.
+    Preserves each layout's native encoding (UTF-16LE with BOM or UTF-8).
+    Returns total number of layout files compiled.
+    """
+    if not os.path.exists(pak_path):
+        raise FileNotFoundError(f"Pak.zip not found at: {pak_path}")
+
+    os.makedirs(output_layout_dir, exist_ok=True)
+    translation_map = build_translation_map(catalog, fallback_to_original=fallback_to_original)
+
+    compiled_count = 0
+    text_replacements_total = 0
+
+    with zipfile.ZipFile(pak_path, "r") as z:
+        for name in z.namelist():
+            lower = name.lower().replace("\\", "/")
+            if not lower.endswith(".layout"):
+                continue
+
+            filename = os.path.basename(name)
+            raw_data = z.read(name)
+
+            # Detect encoding
+            is_utf16le = raw_data.startswith(b"\xff\xfe")
+            if is_utf16le:
+                xml_text = raw_data[2:].decode("utf-16le", errors="ignore")
+            else:
+                xml_text = raw_data.decode("utf-8", errors="ignore")
+
+            # Replace Property Name="Text" Value="..."
+            replacements_in_file = 0
+
+            def replace_text_property(match: re.Match) -> str:
+                nonlocal replacements_in_file
+                orig_val = match.group(1)
+                clean_val = orig_val.strip()
+                unescaped_val = html.unescape(clean_val)
+
+                new_val = None
+                if clean_val in translation_map:
+                    new_val = translation_map[clean_val]
+                elif unescaped_val in translation_map:
+                    new_val = translation_map[unescaped_val]
+
+                if new_val is not None:
+                    if new_val != clean_val and new_val != unescaped_val:
+                        replacements_in_file += 1
+                        escaped_val = escape_xml_attr(new_val)
+                        return f'<Property Name="Text" Value="{escaped_val}"'
+                return match.group(0)
+
+            new_xml = re.sub(
+                r'<Property\s+Name="Text"\s+Value="([^"]*)"',
+                replace_text_property,
+                xml_text,
+                flags=re.IGNORECASE
+            )
+
+            out_file_path = os.path.join(output_layout_dir, filename)
+            if is_utf16le:
+                out_bytes = b"\xff\xfe" + new_xml.encode("utf-16le")
+            else:
+                out_bytes = new_xml.encode("utf-8")
+
+            with open(out_file_path, "wb") as f_out:
+                f_out.write(out_bytes)
+
+            compiled_count += 1
+            text_replacements_total += replacements_in_file
+
+    if verbose:
+        print(f"[Compiler] Processed {compiled_count} .layout files into {output_layout_dir}")
+        print(f"           - Total text properties substituted: {text_replacements_total}")
+
+    return compiled_count
+
+
+def main() -> int:
+    default_catalog = r"translation_ptbr\translation_catalog.json"
+    default_pak = r"C:\Program Files (x86)\Steam\steamapps\common\Torchlight\Pak.zip"
+    default_output_dat = r"translation_ptbr\translations\translation.dat"
+    default_output_layout = r"translation_ptbr\media\UI"
+
+    parser = argparse.ArgumentParser(description="Torchlight Translation Compilation Tool")
+    parser.add_argument(
+        "--catalog",
+        default=default_catalog,
+        help=f"Path to translation_catalog.json (default: {default_catalog})"
+    )
+    parser.add_argument(
+        "--pak-path",
+        default=default_pak,
+        help=f"Path to Pak.zip for base layout extraction (default: {default_pak})"
+    )
+    parser.add_argument(
+        "--output-dat",
+        default=default_output_dat,
+        help=f"Path to output translation.dat (default: {default_output_dat})"
+    )
+    parser.add_argument(
+        "--output-layout-dir",
+        default=default_output_layout,
+        help=f"Path to output media/UI/ layout directory (default: {default_output_layout})"
+    )
+    parser.add_argument(
+        "--no-fallback",
+        action="store_true",
+        help="Do not fallback to original text for untranslated strings"
+    )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Suppress verbose output"
+    )
+
+    args = parser.parse_args()
+    verbose = not args.quiet
+    fallback = not args.no_fallback
+
+    catalog_path = os.path.abspath(args.catalog)
+    pak_path = os.path.abspath(args.pak_path)
+    output_dat = os.path.abspath(args.output_dat)
+    output_layout = os.path.abspath(args.output_layout_dir)
+
+    if verbose:
+        print("=" * 70)
+        print(" Torchlight pt-BR Translation Compilation Tool")
+        print(f" Catalog:    {catalog_path}")
+        print(f" Output DAT: {output_dat}")
+        print(f" Output UI:  {output_layout}")
+        print("=" * 70)
+
+    try:
+        catalog = load_catalog(catalog_path)
+    except Exception as e:
+        print(f"[Error] Failed to load catalog: {e}", file=sys.stderr)
+        return 1
+
+    try:
+        blocks_written = generate_translation_dat(
+            catalog,
+            output_dat,
+            fallback_to_original=fallback,
+            verbose=verbose
+        )
+    except Exception as e:
+        print(f"[Error] Failed to compile translation.dat: {e}", file=sys.stderr)
+        return 1
+
+    try:
+        layouts_compiled = compile_layout_files(
+            catalog,
+            pak_path,
+            output_layout,
+            fallback_to_original=fallback,
+            verbose=verbose
+        )
+    except Exception as e:
+        print(f"[Error] Failed to compile layout files: {e}", file=sys.stderr)
+        return 1
+
+    if verbose:
+        print("-" * 50)
+        print(f"[Success] Compilation complete:")
+        print(f"  - translation.dat: {blocks_written} blocks")
+        print(f"  - Localized UI:    {layouts_compiled} .layout files")
+        print("=" * 70)
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

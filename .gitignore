@@ -1,0 +1,22 @@
+# Torchlight pt-BR .gitignore
+# Exclude distribution binaries and compiled payloads
+dist/
+*.exe
+*.zip
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Agent metadata and working state
+.agents/teamwork/*/
+!.agents/teamwork/ORIGINAL_REQUEST.md
+
+# OS specific files
+Thumbs.db
+[Ee]xthumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.DS_Store
