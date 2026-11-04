@@ -86,7 +86,7 @@ Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exe
 $readmeContent = @"
 ================================================================================
  TRADUÇÃO TORCHLIGHT (pt-BR) - PORTUGUÊS DO BRASIL
- Versão: 1.1.0 (Steam Build 17685 / v1.15)
+ Versão: 1.2.0 - Edição Definitiva (Steam Build 17685 / v1.15)
  Criador: Palestino7
  GitHub: https://github.com/palestino7/Torchlight-ptBR
 ================================================================================
@@ -97,7 +97,7 @@ INSTRUÇÕES RÁPIDAS DE INSTALAÇÃO:
 2. Execute o instalador 'Torchlight_Traducao_ptBR_Setup.exe'.
 3. O instalador detectará automaticamente a pasta do jogo na Steam:
    C:\Program Files (x86)\Steam\steamapps\common\Torchlight
-4. Conclua a instalação e inicie o jogo normalmente.
+4. Conclua a instalação e inicie o jogo normalmente pela Steam!
 
 SEGURANÇA ANTIVÍRUS:
 - Compilação nativa com Delphi PE / Inno Setup 6.7.3.
@@ -116,7 +116,7 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 [System.IO.File]::WriteAllText($readmePath, $readmeContent, [System.Text.Encoding]::UTF8)
 
 # 5. Create Distribution Zip Package
-$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.1.0.zip"
+$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.2.0.zip"
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }

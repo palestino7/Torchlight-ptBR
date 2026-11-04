@@ -194,6 +194,9 @@ class TranslationVerifier:
             if not line:
                 continue
 
+            if line.upper() in ("[TRANSLATIONS]", "[/TRANSLATIONS]"):
+                continue
+
             if line == open_tag:
                 if in_block:
                     self.errors.append(

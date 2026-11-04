@@ -153,7 +153,7 @@ def generate_translation_dat(
                 blocks.append(block)
                 total_entries += 1
 
-    content_str = "\r\n".join(blocks) + "\r\n"
+    content_str = "[TRANSLATIONS]\r\n" + "\r\n".join(blocks) + "\r\n[/TRANSLATIONS]\r\n"
     # UTF-16LE with BOM: prepend b'\xff\xfe'
     encoded_bytes = b"\xff\xfe" + content_str.encode("utf-16le")
 

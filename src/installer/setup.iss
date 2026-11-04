@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.1.0"
+#define MyAppVersion "1.2.0"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -34,10 +34,10 @@ WizardImageFile=wizard_large.bmp
 WizardSmallImageFile=wizard_small.bmp
 SetupIconFile=torchlight_ptbr.ico
 UninstallDisplayIcon={app}\Torchlight.exe
-VersionInfoVersion=1.1.0.0
+VersionInfoVersion=1.2.0.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription=Instalador da Tradução de Torchlight para Português do Brasil
-VersionInfoProductVersion=1.1.0.0
+VersionInfoProductVersion=1.2.0.0
 VersionInfoCopyright={#MyAppCopyright}
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -51,14 +51,14 @@ Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortugue
 brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Palestino7
 
 [Files]
-; Translation files copied to game directory
-Source: "..\..\translation_ptbr\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; 1. Deploy translation and UI layouts to game directory {app}
+Source: "..\..\translation_ptbr\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\translation_ptbr\media\*"; DestDir: "{app}\media"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "steam_appid.txt"; DestDir: "{app}"; Flags: ignoreversion
 
-[Icons]
-Name: "{userdesktop}\Torchlight (pt-BR)"; Filename: "{app}\Torchlight.exe"; WorkingDir: "{app}"; Tasks: desktopicon; Check: FileExists(ExpandConstant('{app}\Torchlight.exe'))
-
-[Tasks]
-Name: "desktopicon"; Description: "Criar atalho na Área de Trabalho"; GroupDescription: "Atalhos adicionais:"; Flags: unchecked
+; 2. Deploy translation as an engine mod to %APPDATA%\runic games\torchlight\mods\Traducao_ptBR
+Source: "..\..\translation_ptbr\translations\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\translation_ptbr\media\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Code]
 // ==============================================================================
@@ -169,19 +169,22 @@ begin
 end;
 
 // ==============================================================================
-// Safety Backup Routine before Installing
+// Safety Backup & Setup Routine
 // ==============================================================================
 
 procedure PerformSafetyBackup();
 var
-  AppDir, BackupDir, TransFile, BackupTrans: String;
+  AppDir, BackupDir, TransFile, BackupTrans, AdmFile, AppDataAdm: String;
+  CfgFile, BackupCfg: String;
 begin
   AppDir := ExpandConstant('{app}');
   BackupDir := AddBackslash(AppDir) + 'backup_ptbr';
   TransFile := AddBackslash(AppDir) + 'translations\translation.dat';
   BackupTrans := AddBackslash(BackupDir) + 'translation.dat';
+  CfgFile := AddBackslash(AppDir) + 'resources.cfg';
+  BackupCfg := AddBackslash(BackupDir) + 'resources.cfg';
 
-  // If translation.dat already exists, back it up
+  // 1. Back up existing translation.dat if present
   if FileExists(TransFile) then
   begin
     if not DirExists(BackupDir) then
@@ -189,6 +192,101 @@ begin
     if not FileExists(BackupTrans) then
       FileCopy(TransFile, BackupTrans, False);
   end;
+
+  // 2. Back up resources.cfg if present
+  if FileExists(CfgFile) then
+  begin
+    if not DirExists(BackupDir) then
+      CreateDir(BackupDir);
+    if not FileExists(BackupCfg) then
+      FileCopy(CfgFile, BackupCfg, False);
+  end;
+
+  // 3. Delete any stale or truncated TRANSLATION.DAT.adm cache files
+  AdmFile := AddBackslash(AppDir) + 'translations\TRANSLATION.DAT.adm';
+  if FileExists(AdmFile) then
+    DeleteFile(AdmFile);
+
+  AdmFile := AddBackslash(AppDir) + 'translations\translation.dat.adm';
+  if FileExists(AdmFile) then
+    DeleteFile(AdmFile);
+
+  AppDataAdm := ExpandConstant('{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations\TRANSLATION.DAT.adm');
+  if FileExists(AppDataAdm) then
+    DeleteFile(AppDataAdm);
+end;
+
+// ==============================================================================
+// Post-Install Engine & Mod Registration
+// ==============================================================================
+
+procedure ConfigureEngineAndMods();
+var
+  AppDir, CfgFile: String;
+  Lines: TArrayOfString;
+  NewLines: TArrayOfString;
+  I: Integer;
+  HasMedia, HasTranslations: Boolean;
+  ModDir, ModsDatPath, ModsContent: String;
+begin
+  AppDir := ExpandConstant('{app}');
+  CfgFile := AddBackslash(AppDir) + 'resources.cfg';
+
+  // 1. Update resources.cfg to ensure FileSystem=media/ and FileSystem=translations/ are active
+  if FileExists(CfgFile) then
+  begin
+    if LoadStringsFromFile(CfgFile, Lines) then
+    begin
+      HasMedia := False;
+      HasTranslations := False;
+      for I := 0 to GetArrayLength(Lines) - 1 do
+      begin
+        if Pos('media/', Lowercase(Lines[I])) > 0 then
+          HasMedia := True;
+        if Pos('translations/', Lowercase(Lines[I])) > 0 then
+          HasTranslations := True;
+      end;
+
+      if (not HasMedia) or (not HasTranslations) then
+      begin
+        SetArrayLength(NewLines, GetArrayLength(Lines) + 2);
+        NewLines[0] := 'FileSystem=media/';
+        NewLines[1] := 'FileSystem=translations/';
+        for I := 0 to GetArrayLength(Lines) - 1 do
+          NewLines[I + 2] := Lines[I];
+        SaveStringsToFile(CfgFile, NewLines, False);
+      end;
+    end;
+  end;
+
+  // 2. Configure %APPDATA%\runic games\torchlight\mods\mods.dat
+  ModDir := ExpandConstant('{userappdata}\runic games\torchlight\mods\Traducao_ptBR');
+  StringChangeEx(ModDir, '\', '/', True);
+  ModsDatPath := ExpandConstant('{userappdata}\runic games\torchlight\mods\mods.dat');
+
+  if not DirExists(ExpandConstant('{userappdata}\runic games\torchlight\mods')) then
+    CreateDir(ExpandConstant('{userappdata}\runic games\torchlight\mods'));
+
+  ModsContent := '[MODS]' + #13#10 +
+                 '<BOOL>CHECKFORNEW:true' + #13#10 +
+                 '[MOD]' + #13#10 +
+                 '<STRING>DIRECTORY:' + ModDir + '/' + #13#10 +
+                 '<INTEGER>PRIORITY:1' + #13#10 +
+                 '<BOOL>COMPRESSED:false' + #13#10 +
+                 '[/MOD]' + #13#10 +
+                 '[/MODS]' + #13#10;
+
+  SetArrayLength(NewLines, 9);
+  NewLines[0] := '[MODS]';
+  NewLines[1] := '<BOOL>CHECKFORNEW:true';
+  NewLines[2] := '[MOD]';
+  NewLines[3] := '<STRING>DIRECTORY:' + ModDir + '/';
+  NewLines[4] := '<INTEGER>PRIORITY:1';
+  NewLines[5] := '<BOOL>COMPRESSED:false';
+  NewLines[6] := '[/MOD]';
+  NewLines[7] := '[/MODS]';
+  NewLines[8] := '';
+  SaveStringsToFile(ModsDatPath, NewLines, False);
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
@@ -196,6 +294,10 @@ begin
   if CurStep = ssInstall then
   begin
     PerformSafetyBackup();
+  end
+  else if CurStep = ssPostInstall then
+  begin
+    ConfigureEngineAndMods();
   end;
 end;
 
@@ -205,7 +307,8 @@ end;
 
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var
-  AppDir, BackupDir, TransDir, TransFile, BackupTrans: String;
+  AppDir, BackupDir, TransDir, TransFile, BackupTrans, AdmFile: String;
+  CfgFile, BackupCfg, AppIdFile, ModDir: String;
 begin
   if CurUninstallStep = usPostUninstall then
   begin
@@ -214,21 +317,43 @@ begin
     TransDir := AddBackslash(AppDir) + 'translations';
     TransFile := AddBackslash(TransDir) + 'translation.dat';
     BackupTrans := AddBackslash(BackupDir) + 'translation.dat';
+    CfgFile := AddBackslash(AppDir) + 'resources.cfg';
+    BackupCfg := AddBackslash(BackupDir) + 'resources.cfg';
+    AppIdFile := AddBackslash(AppDir) + 'steam_appid.txt';
 
-    // 1. If backup exists, restore it cleanly
+    // 1. Restore or clean translation.dat
     if FileExists(BackupTrans) then
     begin
       FileCopy(BackupTrans, TransFile, False);
       DeleteFile(BackupTrans);
-      RemoveDir(BackupDir);
     end
     else
     begin
-      // 2. No prior translation existed: delete installed translation.dat
       if FileExists(TransFile) then
         DeleteFile(TransFile);
-      if DirExists(TransDir) then
-        RemoveDir(TransDir);
     end;
+
+    // 2. Restore resources.cfg
+    if FileExists(BackupCfg) then
+    begin
+      FileCopy(BackupCfg, CfgFile, False);
+      DeleteFile(BackupCfg);
+    end;
+
+    // 3. Remove steam_appid.txt and any .adm files
+    if FileExists(AppIdFile) then
+      DeleteFile(AppIdFile);
+
+    AdmFile := AddBackslash(TransDir) + 'TRANSLATION.DAT.adm';
+    if FileExists(AdmFile) then
+      DeleteFile(AdmFile);
+
+    if DirExists(BackupDir) then
+      RemoveDir(BackupDir);
+
+    // 4. Remove mod directory from %APPDATA%
+    ModDir := ExpandConstant('{userappdata}\runic games\torchlight\mods\Traducao_ptBR');
+    if DirExists(ModDir) then
+      DelTree(ModDir, True, True, True);
   end;
 end;
