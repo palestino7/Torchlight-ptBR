@@ -54,6 +54,8 @@ brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Palestino7
 Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations\TRANSLATION.DAT.adm"
 Type: files; Name: "{userappdata}\runic games\torchlight\translations\TRANSLATION.DAT.adm"
 Type: files; Name: "{app}\translations\TRANSLATION.DAT.adm"
+Type: files; Name: "{app}\media\masterresourceunits.dat.ADM"
+Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media\masterresourceunits.dat.ADM"
 
 [Files]
 ; 1. Deploy translation and UI layouts to game directory {app}
@@ -65,9 +67,6 @@ Source: "patch_torchlight.exe"; DestDir: "{tmp}"; Flags: ignoreversion deleteaft
 ; 2. Deploy translation as an engine mod to %APPDATA%\runic games\torchlight\mods\Traducao_ptBR
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media"; Flags: ignoreversion recursesubdirs createallsubdirs
-
-; 3. Update master units binary in AppData root
-Source: "..\..\translation_ptbr\media\masterresourceunits.dat.ADM"; DestDir: "{userappdata}\runic games\torchlight"; Flags: ignoreversion
 
 [Run]
 Filename: "{tmp}\patch_torchlight.exe"; Parameters: """{app}\Torchlight.exe"""; Flags: runhidden; StatusMsg: "Aplicando localização nas opções gráficas..."
