@@ -79,6 +79,13 @@ def build_translation_map(catalog: dict, fallback_to_original: bool = True) -> d
             if unesc != orig:
                 mapping[unesc] = trans
                 mapping[unesc.strip()] = trans.strip()
+            # Map newline variants (\r\n vs \n vs literal \n)
+            norm_n = orig.replace("\r\n", "\n")
+            mapping[norm_n] = trans
+            mapping[norm_n.strip()] = trans.strip()
+            norm_slash_n = orig.replace("\r\n", "\\n").replace("\n", "\\n")
+            mapping[norm_slash_n] = trans
+            mapping[norm_slash_n.strip()] = trans.strip()
     return mapping
 
 
@@ -207,32 +214,60 @@ def compile_layout_files(
             else:
                 xml_text = raw_data.decode("utf-8", errors="ignore")
 
-            # Replace Property Name="Text" Value="..."
+            # Replace Property Name="Text"|"Tooltip" Value="..." and multiline <Property Name="Text"|"Tooltip">...</Property>
             replacements_in_file = 0
 
-            def replace_text_property(match: re.Match) -> str:
+            def replace_attr_property(match: re.Match) -> str:
                 nonlocal replacements_in_file
-                orig_val = match.group(1)
+                pname = match.group(1)
+                orig_val = match.group(2)
                 clean_val = orig_val.strip()
                 unescaped_val = html.unescape(clean_val)
 
                 new_val = None
-                if clean_val in translation_map:
-                    new_val = translation_map[clean_val]
-                elif unescaped_val in translation_map:
-                    new_val = translation_map[unescaped_val]
+                for cand in [clean_val, unescaped_val, clean_val.replace("\r\n", "\n"), clean_val.replace("\\n", "\n")]:
+                    if cand in translation_map:
+                        new_val = translation_map[cand]
+                        break
 
                 if new_val is not None:
                     if new_val != clean_val and new_val != unescaped_val:
                         replacements_in_file += 1
                         escaped_val = escape_xml_attr(new_val)
-                        return f'<Property Name="Text" Value="{escaped_val}"'
+                        return f'<Property Name="{pname}" Value="{escaped_val}"'
+                return match.group(0)
+
+            def replace_tag_property(match: re.Match) -> str:
+                nonlocal replacements_in_file
+                pname = match.group(1)
+                orig_val = match.group(2)
+                clean_val = orig_val.strip()
+                unescaped_val = html.unescape(clean_val)
+
+                new_val = None
+                for cand in [clean_val, unescaped_val, clean_val.replace("\r\n", "\n"), clean_val.replace("\\n", "\n")]:
+                    if cand in translation_map:
+                        new_val = translation_map[cand]
+                        break
+
+                if new_val is not None:
+                    if new_val != clean_val and new_val != unescaped_val:
+                        replacements_in_file += 1
+                        escaped_val = escape_xml_attr(new_val)
+                        return f'<Property Name="{pname}">{escaped_val}</Property>'
                 return match.group(0)
 
             new_xml = re.sub(
-                r'<Property\s+Name="Text"\s+Value="([^"]*)"',
-                replace_text_property,
+                r'<Property\s+Name="(Text|Tooltip)"\s+Value="([^"]*)"',
+                replace_attr_property,
                 xml_text,
+                flags=re.IGNORECASE
+            )
+
+            new_xml = re.sub(
+                r'<Property\s+Name="(Text|Tooltip)"\s*>([^<]*)</Property\s*>',
+                replace_tag_property,
+                new_xml,
                 flags=re.IGNORECASE
             )
 

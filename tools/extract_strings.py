@@ -105,12 +105,17 @@ def extract_adm_strings(data: bytes) -> list[tuple[int, str]]:
 def extract_layout_strings(layout_text: str) -> list[str]:
     """
     Extracts translatable text properties from a CEGUI .layout XML file.
-    Matches properties like: <Property Name="Text" Value="..." />
+    Matches properties like:
+    - <Property Name="Text" Value="..." />
+    - <Property Name="Tooltip" Value="..." />
+    - <Property Name="Text">...</Property>
+    - <Property Name="Tooltip">...</Property>
     Unescapes XML entities so extracted text matches runtime CStringTranslate lookups.
     """
-    matches = re.findall(r'<Property\s+Name="Text"\s+Value="([^"]*)"', layout_text, re.IGNORECASE)
+    matches_attr = re.findall(r'<Property\s+Name="(?:Text|Tooltip)"\s+Value="([^"]*)"', layout_text, re.IGNORECASE)
+    matches_tag = re.findall(r'<Property\s+Name="(?:Text|Tooltip)"\s*>([^<]*)</Property\s*>', layout_text, re.IGNORECASE)
     results = []
-    for m in matches:
+    for m in matches_attr + matches_tag:
         clean = html.unescape(m.strip())
         if clean and len(clean) > 1 and not re.match(r"^[+-]?[0-9\.]+$", clean):
             results.append(clean)

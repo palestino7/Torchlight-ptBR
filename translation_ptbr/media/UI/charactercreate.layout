@@ -111,7 +111,7 @@
 		<Property Name="SelectedImage" Value="set:Logo image:destroyericonselected" />
 		<Property Name="HoverImage" Value="set:Logo image:destroyericonlit" />
 		<Property Name="UnselectedImage" Value="set:Logo image:destroyericon" />
-		<Property Name="Tooltip" Value="Select Destroyer" />
+		<Property Name="Tooltip" Value="Selecionar Destruidor" />
 		<Property Name="onClick" Value="guiSelect1"/>
    	 </Window>
 
@@ -122,7 +122,7 @@
 		<Property Name="HoverImage" Value="set:Logo image:vanquishericonlit" />
 		<Property Name="UnselectedImage" Value="set:Logo image:vanquishericon" />
             <Property Name="ID" Value="1" />
-		<Property Name="Tooltip" Value="Select Vanquisher" />
+		<Property Name="Tooltip" Value="Selecionar Conquistadora" />
 		<Property Name="onClick" Value="guiSelect1"/>
    	 </Window>
 
@@ -133,7 +133,7 @@
 		<Property Name="HoverImage" Value="set:Logo image:alchemisticonlit" />
 		<Property Name="UnselectedImage" Value="set:Logo image:alchemisticon" />
             <Property Name="ID" Value="2" />
-		<Property Name="Tooltip" Value="Select Alchemist" />
+		<Property Name="Tooltip" Value="Selecionar Alquimista" />
 		<Property Name="onClick" Value="guiSelect1"/>
    	 </Window>
 

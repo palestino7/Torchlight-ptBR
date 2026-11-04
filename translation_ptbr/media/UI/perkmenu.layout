@@ -16,7 +16,7 @@
 		<Property Name="NormalImage" Value="set:GuiLook image:CloseTriangleRight" />
 		<Property Name="HoverImage" Value="set:GuiLook image:CloseTriangleRightOver" />
 		<Property Name="PushedImage" Value="set:GuiLook image:CloseTriangleRightOver" />
-		<Property Name="Tooltip" Value="Close" />
+		<Property Name="Tooltip" Value="Fechar" />
    	 </Window>
   	<Window Type="GuiLook/StaticText" Name="Title">
             <Property Name="UnifiedPosition" Value="{{0,84},{0,64}}" />
@@ -44,7 +44,7 @@
             <Property Name="UnifiedSize" Value="{{0,145},{0,18}}" />
 		<Property Name="Text" Value="Pontos Restantes:0"/>
 		<Property Name="HorzTextFormatting" Value="CentreAligned"/>
-		<Property Name="Tooltip" Value="Perk Points remaining to be spent" />
+		<Property Name="Tooltip" Value="Pontos de Vantagem restantes a gastar" />
         </Window>    
 
     </Window>

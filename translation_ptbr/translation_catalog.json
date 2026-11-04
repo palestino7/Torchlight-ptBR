@@ -19,21 +19,152 @@
   "categories": {
     "UI": [
       {
+        "id": "UI_0074",
+        "original": "(v1.13) Torchlight (C) 2009 Runic Games Inc.",
+        "translation": "(v1.13) Torchlight (C) 2009 Runic Games Inc. - Tradução pt-BR por Palestino7",
+        "context": "media/UI/mainmenuframe.layout"
+      },
+      {
+        "id": "UI_0061",
+        "original": "+5 Speed Boost",
+        "translation": "+5 de Impulso de Velocidade",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
         "id": "UI_0001",
         "original": "0%",
         "translation": "0%",
         "context": "media/UI/skilltooltip.layout"
       },
       {
-        "id": "UI_0002",
-        "original": "OK",
-        "translation": "OK",
+        "id": "UI_0053",
+        "original": "22-34 damage",
+        "translation": "22-34 de dano",
+        "context": "media/UI/tooltip.layout"
+      },
+      {
+        "id": "UI_0028",
+        "original": "Abandon",
+        "translation": "Abandonar",
+        "context": "media/UI/questmenu.layout"
+      },
+      {
+        "original": "Accept",
+        "translation": "Aceitar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Action-RPG veterans should start here",
+        "translation": "Veteranos de RPG de Ação devem começar aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0022",
+        "original": "Active",
+        "translation": "Ativa",
+        "context": "media/UI/mainmenuframe.layout"
+      },
+      {
+        "original": "Alternate Skill : (TAB) to switch",
+        "translation": "Habilidade Alternativa: (TAB) para alternar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Damage pet's Armor currently absorbs.",
+        "translation": "Quantidade de dano que a Armadura do mascote absorve atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Damage your Armor currently absorbs.",
+        "translation": "Quantidade de dano que sua Armadura absorve atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Electrical Damage absorbed",
+        "translation": "Quantidade de Dano Elétrico absorvida",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Fire Damage absorbed",
+        "translation": "Quantidade de Dano de Fogo absorvida",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Ice Damage absorbed",
+        "translation": "Quantidade de Dano de Gelo absorvida",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Amount of Poison Damage absorbed",
+        "translation": "Quantidade de Dano de Veneno absorvida",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0054",
+        "original": "Antialiasing",
+        "translation": "Anti-serrilhado",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0015",
+        "original": "Apply",
+        "translation": "Aplicar",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0071",
+        "original": "Arundel's Dreadaxe",
+        "translation": "Machado do Terror de Arundel",
+        "context": "media/UI/tooltip.layout"
+      },
+      {
+        "original": "Assign remaining Skill Points",
+        "translation": "Distribuir Pontos de Habilidade restantes",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Assign remaining Stat Points",
+        "translation": "Distribuir Pontos de Atributo restantes",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0009",
+        "original": "Back",
+        "translation": "Voltar",
         "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0003",
-        "original": "Up",
-        "translation": "Cima",
+        "id": "UI_0016",
+        "original": "Bobby",
+        "translation": "Bobby",
+        "context": "media/UI/characterload.layout"
+      },
+      {
+        "id": "UI_0023",
+        "original": "Cancel",
+        "translation": "Cancelar",
         "context": "media/UI/characterload.layout"
       },
       {
@@ -43,178 +174,31 @@
         "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0005",
-        "original": "Dog",
-        "translation": "Cachorro",
+        "id": "UI_0062",
+        "original": "Character Name",
+        "translation": "Nome do Personagem",
         "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0006",
-        "original": "GP:",
-        "translation": "GP:",
-        "context": "media/UI/questmenu.layout"
+        "original": "Choose",
+        "translation": "Escolher",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0007",
-        "original": "Pet",
-        "translation": "Mascote",
-        "context": "media/UI/charactercreate.layout"
+        "original": "Close",
+        "translation": "Fechar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0008",
-        "original": "XP:",
-        "translation": "XP:",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0009",
-        "original": "Back",
-        "translation": "Voltar",
-        "context": "media/UI/charactercreate.layout"
-      },
-      {
-        "id": "UI_0010",
-        "original": "Down",
-        "translation": "Baixo",
-        "context": "media/UI/characterload.layout"
-      },
-      {
-        "id": "UI_0011",
-        "original": "Easy",
-        "translation": "Fácil",
-        "context": "media/UI/difficulty.layout"
-      },
-      {
-        "id": "UI_0012",
-        "original": "Hard",
-        "translation": "Difícil",
-        "context": "media/UI/difficulty.layout"
-      },
-      {
-        "id": "UI_0013",
-        "original": "Mute",
-        "translation": "Mudo",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0014",
-        "original": "Play",
-        "translation": "Jogar",
-        "context": "media/UI/characterload.layout"
-      },
-      {
-        "id": "UI_0015",
-        "original": "Apply",
-        "translation": "Aplicar",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0016",
-        "original": "Bobby",
-        "translation": "Bobby",
-        "context": "media/UI/characterload.layout"
-      },
-      {
-        "id": "UI_0017",
-        "original": "Fame:",
-        "translation": "Fama:",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0018",
-        "original": "Perks",
-        "translation": "Vantagens",
-        "context": "media/UI/perkmenu.layout"
-      },
-      {
-        "id": "UI_0019",
-        "original": "Price",
-        "translation": "Preço",
-        "context": "media/UI/skilltooltip.layout"
-      },
-      {
-        "id": "UI_0020",
-        "original": "Skill",
-        "translation": "Habilidade",
-        "context": "media/UI/skilltooltip.layout"
-      },
-      {
-        "id": "UI_0021",
-        "original": "VSync",
-        "translation": "VSync",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0022",
-        "original": "Active",
-        "translation": "Ativa",
-        "context": "media/UI/mainmenuframe.layout"
-      },
-      {
-        "id": "UI_0023",
-        "original": "Cancel",
-        "translation": "Cancelar",
-        "context": "media/UI/characterload.layout"
-      },
-      {
-        "id": "UI_0024",
-        "original": "Delete",
-        "translation": "Excluir",
-        "context": "media/UI/characterload.layout"
-      },
-      {
-        "id": "UI_0025",
-        "original": "Normal",
-        "translation": "Normal",
-        "context": "media/UI/difficulty.layout"
-      },
-      {
-        "id": "UI_0026",
-        "original": "Quests",
-        "translation": "Missões",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0027",
-        "original": "Spells",
-        "translation": "Feitiços",
-        "context": "media/UI/skillmenu.layout"
-      },
-      {
-        "id": "UI_0028",
-        "original": "Abandon",
-        "translation": "Abandonar",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0029",
-        "original": "Journal",
-        "translation": "Diário",
-        "context": "media/UI/journalmenu.layout"
-      },
-      {
-        "id": "UI_0030",
-        "original": "Passive",
-        "translation": "Passiva",
-        "context": "media/UI/skillmenu.layout"
-      },
-      {
-        "id": "UI_0031",
-        "original": "Rewards",
-        "translation": "Recompensas",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0032",
-        "original": "Shadows",
-        "translation": "Sombras",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0033",
-        "original": "credits",
-        "translation": "Créditos",
-        "context": "media/UI/mainmenuframe.layout"
+        "original": "Console",
+        "translation": "Console",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0034",
@@ -229,118 +213,64 @@
         "context": "media/UI/skilltooltip.layout"
       },
       {
-        "id": "UI_0036",
-        "original": "Hardcore",
-        "translation": "Hardcore",
-        "context": "media/UI/difficulty.layout"
-      },
-      {
-        "id": "UI_0037",
-        "original": "Pet Name",
-        "translation": "Nome do Mascote",
-        "context": "media/UI/charactercreate.layout"
-      },
-      {
-        "id": "UI_0038",
-        "original": "Rank 0/5",
-        "translation": "Grau 0/5",
-        "context": "media/UI/skilltooltip.layout"
-      },
-      {
-        "id": "UI_0039",
-        "original": "Settings",
-        "translation": "Configurações",
+        "id": "UI_0033",
+        "original": "credits",
+        "translation": "Créditos",
         "context": "media/UI/mainmenuframe.layout"
       },
       {
-        "id": "UI_0040",
-        "original": "Destroyer",
-        "translation": "Destruidor",
-        "context": "media/UI/charactercreate.layout"
+        "original": "Current Experience / Next Level",
+        "translation": "Experiência Atual / Próximo Nível",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0041",
-        "original": "Mana Cost",
-        "translation": "Custo de Mana",
-        "context": "media/UI/skilltooltip.layout"
+        "original": "Current Fame / Next Tier",
+        "translation": "Fama Atual / Próximo Grau",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0042",
-        "original": "Quit Game",
-        "translation": "Sair do Jogo",
-        "context": "media/UI/mainmenuframe.layout"
-      },
-      {
-        "id": "UI_0043",
-        "original": "Rimlights",
-        "translation": "Luz de Borda",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0044",
-        "original": "Show Tips",
-        "translation": "Mostrar Dicas",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0045",
-        "original": "Very Hard",
-        "translation": "Muito Difícil",
-        "context": "media/UI/difficulty.layout"
-      },
-      {
-        "id": "UI_0046",
-        "original": "Fullscreen",
-        "translation": "Tela Cheia",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0047",
-        "original": "Next Level",
-        "translation": "Próximo Nível",
-        "context": "media/UI/skilltooltip.layout"
-      },
-      {
-        "id": "UI_0048",
-        "original": "Resolution",
-        "translation": "Resolução",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0049",
-        "original": "Show Blood",
-        "translation": "Mostrar Sangue",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0050",
-        "original": "Skill Type",
-        "translation": "Tipo de Habilidade",
-        "context": "media/UI/skilltooltip.layout"
-      },
-      {
-        "id": "UI_0051",
-        "original": "Description",
-        "translation": "Descrição",
-        "context": "media/UI/questmenu.layout"
-      },
-      {
-        "id": "UI_0052",
-        "original": "HW Skinning",
-        "translation": "Skinning por HW",
-        "context": "media/UI/settingsmenu.layout"
-      },
-      {
-        "id": "UI_0053",
-        "original": "22-34 damage",
-        "translation": "22-34 de dano",
+        "id": "UI_0069",
+        "original": "damage per second",
+        "translation": "dano por segundo",
         "context": "media/UI/tooltip.layout"
       },
       {
-        "id": "UI_0054",
-        "original": "Antialiasing",
-        "translation": "Anti-serrilhado",
-        "context": "media/UI/settingsmenu.layout"
+        "original": "Death is permanent!",
+        "translation": "A morte é permanente!",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Decline",
+        "translation": "Recusar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Defense",
+        "translation": "Defesa",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Defense increases the Damage\nyour Armor absorbs by\na direct percentage.",
+        "translation": "A Defesa aumenta o dano que\nsua Armadura absorve por\numa porcentagem direta.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0024",
+        "original": "Delete",
+        "translation": "Excluir",
+        "context": "media/UI/characterload.layout"
       },
       {
         "id": "UI_0055",
@@ -349,22 +279,132 @@
         "context": "media/UI/mainmenuframe.layout"
       },
       {
-        "id": "UI_0056",
-        "original": "Music Volume",
-        "translation": "Volume da Música",
-        "context": "media/UI/settingsmenu.layout"
+        "id": "UI_0051",
+        "original": "Description",
+        "translation": "Descrição",
+        "context": "media/UI/questmenu.layout"
       },
       {
-        "id": "UI_0057",
-        "original": "Netbook Mode",
-        "translation": "Modo Netbook",
-        "context": "media/UI/settingsmenu.layout"
+        "id": "UI_0040",
+        "original": "Destroyer",
+        "translation": "Destruidor",
+        "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0058",
-        "original": "Sound Volume",
-        "translation": "Volume do Som",
-        "context": "media/UI/settingsmenu.layout"
+        "original": "Dexterity",
+        "translation": "Destreza",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Dexterity increases Ranged Damage\nby a direct percentage.",
+        "translation": "A Destreza aumenta o Dano à Distância\npor uma porcentagem direta.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0005",
+        "original": "Dog",
+        "translation": "Cachorro",
+        "context": "media/UI/charactercreate.layout"
+      },
+      {
+        "id": "UI_0010",
+        "original": "Down",
+        "translation": "Baixo",
+        "context": "media/UI/characterload.layout"
+      },
+      {
+        "original": "Drop items here to feed to pet.",
+        "translation": "Solte itens aqui para alimentar o mascote.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0011",
+        "original": "Easy",
+        "translation": "Fácil",
+        "context": "media/UI/difficulty.layout"
+      },
+      {
+        "original": "Elemental Damage pet currently inflicts.",
+        "translation": "Dano Elemental que o mascote causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable blood",
+        "translation": "Ativar/Desativar sangue",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable floating damage messages",
+        "translation": "Ativar/Desativar mensagens flutuantes de dano",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable Full-Scene Antialiasing\n|cFFFFBA00(requires restart)|u",
+        "translation": "Ativar/Desativar Anti-serrilhado de Cena Inteira\n|cFFFFBA00(requer reiniciar)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable Fullscreen mode",
+        "translation": "Ativar/Desativar modo Tela Cheia",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable Hardware Skinning\n|cFFFFBA00(requires restart)|u",
+        "translation": "Ativar/Desativar Skinning por Hardware\n|cFFFFBA00(requer reiniciar)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable ingame help",
+        "translation": "Ativar/Desativar ajuda no jogo",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable Netbook mode",
+        "translation": "Ativar/Desativar modo Netbook",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable the behind-walls effect",
+        "translation": "Ativar/Desativar efeito atrás de paredes",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable the rimlight effect\n|cFFFFBA00(requires restart)|u",
+        "translation": "Ativar/Desativar efeito de luz de borda\n|cFFFFBA00(requer reiniciar)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Enable/Disable Vertical Sync\n|cFFFFBA00(requires restart)|u",
+        "translation": "Ativar/Desativar Sincronização Vertical (VSync)\n|cFFFFBA00(requer reiniciar)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0059",
@@ -373,22 +413,193 @@
         "context": "media/UI/tooltip.layout"
       },
       {
-        "id": "UI_0060",
-        "original": "New Character",
-        "translation": "Novo Personagem",
-        "context": "media/UI/mainmenuframe.layout"
+        "original": "Equipment",
+        "translation": "Equipamento",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0061",
-        "original": "+5 Speed Boost",
-        "translation": "+5 de Impulso de Velocidade",
-        "context": "media/UI/skilltooltip.layout"
+        "original": "Exit to Title",
+        "translation": "Sair para o Menu",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0062",
-        "original": "Character Name",
-        "translation": "Nome do Personagem",
-        "context": "media/UI/charactercreate.layout"
+        "original": "Experience Level",
+        "translation": "Nível de Experiência",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Fame Tier",
+        "translation": "Grau de Fama",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0017",
+        "original": "Fame:",
+        "translation": "Fama:",
+        "context": "media/UI/questmenu.layout"
+      },
+      {
+        "original": "Fame:0",
+        "translation": "Fama: 0",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Fish",
+        "translation": "Peixes",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Fleeing!",
+        "translation": "Fugindo!",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "For players looking for casual fun",
+        "translation": "Para jogadores em busca de diversão casual",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "For players new to Action-RPGS",
+        "translation": "Para novatos em RPGs de Ação",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0046",
+        "original": "Fullscreen",
+        "translation": "Tela Cheia",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0076",
+        "original": "Game Mods do not match those enabled when this character was last saved. Continue at your own risk!",
+        "translation": "Os mods do jogo não correspondem aos ativos quando este personagem foi salvo pela última vez. Continue por sua conta e risco!",
+        "context": "media/UI/characterload.layout"
+      },
+      {
+        "id": "UI_0006",
+        "original": "GP:",
+        "translation": "PO:",
+        "context": "media/UI/questmenu.layout",
+        "status": "translated"
+      },
+      {
+        "original": "GP:0",
+        "translation": "PO: 0",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0012",
+        "original": "Hard",
+        "translation": "Difícil",
+        "context": "media/UI/difficulty.layout"
+      },
+      {
+        "id": "UI_0036",
+        "original": "Hardcore",
+        "translation": "Hardcore",
+        "context": "media/UI/difficulty.layout"
+      },
+      {
+        "original": "High",
+        "translation": "Alto",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Hold |cFFffba00[SHIFT]|u while clicking an item to\ninstantly move it to the |cFFffba00opposite pane|u\n(or |cFFffba00buy and sell|u in Merchant interface)",
+        "translation": "Segure |cFFffba00[SHIFT]|u ao clicar em um item para\nmovê-lo instantaneamente ao |cFFffba00painel oposto|u\n(ou |cFFffba00comprar e vender|u no Comerciante)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "HP:100",
+        "translation": "PV: 100",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0052",
+        "original": "HW Skinning",
+        "translation": "Skinning por HW",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Increase Defense, which increases Armor absorbtion",
+        "translation": "Aumenta a Defesa, o que eleva a absorção da Armadura",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Increase Dexterity, which increases Ranged damage",
+        "translation": "Aumenta a Destreza, o que eleva o dano à Distância",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Increase Magic, which increases Magic damage",
+        "translation": "Aumenta a Magia, o que eleva o dano Mágico",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Increase Strength, which increases Melee damage",
+        "translation": "Aumenta a Força, o que eleva o dano Corpo a Corpo",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0029",
+        "original": "Journal",
+        "translation": "Diário",
+        "context": "media/UI/journalmenu.layout"
+      },
+      {
+        "original": "Left Mouse Button : Attack",
+        "translation": "Botão Esquerdo do Mouse: Atacar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Left-Click to Assign Skill",
+        "translation": "Clique com o Botão Esquerdo para Atribuir Habilidade",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Lighting Only",
+        "translation": "Apenas Iluminação",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0063",
@@ -397,10 +608,150 @@
         "context": "media/UI/characterload.layout"
       },
       {
-        "id": "UI_0064",
-        "original": "Performs Skill",
-        "translation": "Executa Habilidade",
+        "original": "Low",
+        "translation": "Baixo",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Magic",
+        "translation": "Magia",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Magic increases Weapon Elemental\nDamage by a direct percentage.",
+        "translation": "A Magia aumenta o Dano Elemental\nda Arma por uma porcentagem direta.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0041",
+        "original": "Mana Cost",
+        "translation": "Custo de Mana",
         "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "original": "Masochists only!",
+        "translation": "Apenas para masoquistas!",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Maximum Health Pool",
+        "translation": "Vida Máxima",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Maximum Mana Pool",
+        "translation": "Mana Máxima",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Medium",
+        "translation": "Médio",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Melee Damage pet currently inflicts.",
+        "translation": "Dano Corpo a Corpo que o mascote causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Melee Damage you currently inflict.",
+        "translation": "Dano Corpo a Corpo que você causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Misc",
+        "translation": "Diversos",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0056",
+        "original": "Music Volume",
+        "translation": "Volume da Música",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0013",
+        "original": "Mute",
+        "translation": "Mudo",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Mute all sounds",
+        "translation": "Silenciar todos os sons",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Mute music",
+        "translation": "Silenciar música",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Name",
+        "translation": "Nome",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0057",
+        "original": "Netbook Mode",
+        "translation": "Modo Netbook",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0060",
+        "original": "New Character",
+        "translation": "Novo Personagem",
+        "context": "media/UI/mainmenuframe.layout"
+      },
+      {
+        "id": "UI_0047",
+        "original": "Next Level",
+        "translation": "Próximo Nível",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "id": "UI_0025",
+        "original": "Normal",
+        "translation": "Normal",
+        "context": "media/UI/difficulty.layout"
+      },
+      {
+        "original": "Off",
+        "translation": "Desligado",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0002",
+        "original": "OK",
+        "translation": "OK",
+        "context": "media/UI/charactercreate.layout"
       },
       {
         "id": "UI_0065",
@@ -409,10 +760,303 @@
         "context": "media/UI/settingsmenu.layout"
       },
       {
-        "id": "UI_0066",
-        "original": "Show Event Info",
-        "translation": "Exibir Informações do Evento",
+        "id": "UI_0030",
+        "original": "Passive",
+        "translation": "Passiva",
+        "context": "media/UI/skillmenu.layout"
+      },
+      {
+        "original": "Pause Mode|cFF5e88ff(Enter)|u",
+        "translation": "Modo de Pausa|cFF5e88ff(Enter)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0064",
+        "original": "Performs Skill",
+        "translation": "Executa Habilidade",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "original": "Perk Points remaining to be spent",
+        "translation": "Pontos de Vantagem restantes a gastar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0018",
+        "original": "Perks",
+        "translation": "Vantagens",
+        "context": "media/UI/perkmenu.layout"
+      },
+      {
+        "id": "UI_0007",
+        "original": "Pet",
+        "translation": "Mascote",
+        "context": "media/UI/charactercreate.layout"
+      },
+      {
+        "original": "Pet Inventory",
+        "translation": "Inventário do Mascote",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0037",
+        "original": "Pet Name",
+        "translation": "Nome do Mascote",
+        "context": "media/UI/charactercreate.layout"
+      },
+      {
+        "original": "Pet's Experience Level",
+        "translation": "Nível de Experiência do Mascote",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place amulet here",
+        "translation": "Coloque o amuleto aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place belt here",
+        "translation": "Coloque o cinto aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place boots here",
+        "translation": "Coloque as botas aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place chest armor here",
+        "translation": "Coloque a armadura peitoral aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place gloves here",
+        "translation": "Coloque as luvas aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place helmet here",
+        "translation": "Coloque o elmo aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place ring here\n(left hand)",
+        "translation": "Coloque o anel aqui\n(mão esquerda)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place ring here\n(right hand)",
+        "translation": "Coloque o anel aqui\n(mão direita)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place shoulder armor here",
+        "translation": "Coloque as ombreiras aqui",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place weapon here (Right Hand)",
+        "translation": "Coloque a arma aqui (Mão Direita)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Place weapon or shield here (Left Hand)",
+        "translation": "Coloque a arma ou escudo aqui (Mão Esquerda)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0014",
+        "original": "Play",
+        "translation": "Jogar",
+        "context": "media/UI/characterload.layout"
+      },
+      {
+        "id": "UI_0072",
+        "original": "Points Remaining:0",
+        "translation": "Pontos Restantes:0",
+        "context": "media/UI/perkmenu.layout"
+      },
+      {
+        "id": "UI_0019",
+        "original": "Price",
+        "translation": "Preço",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "id": "UI_0026",
+        "original": "Quests",
+        "translation": "Missões",
+        "context": "media/UI/questmenu.layout"
+      },
+      {
+        "id": "UI_0042",
+        "original": "Quit Game",
+        "translation": "Sair do Jogo",
+        "context": "media/UI/mainmenuframe.layout"
+      },
+      {
+        "original": "Ranged Damage pet currently inflicts.",
+        "translation": "Dano à Distância que o mascote causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Ranged Damage you currently inflict.",
+        "translation": "Dano à Distância que você causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0038",
+        "original": "Rank 0/5",
+        "translation": "Grau 0/5",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "original": "Reclaim point",
+        "translation": "Recuperar ponto",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0073",
+        "original": "Render Behind Walls",
+        "translation": "Renderizar Atrás de Paredes",
         "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0070",
+        "original": "requires level 21",
+        "translation": "Requer nível 21",
+        "context": "media/UI/tooltip.layout"
+      },
+      {
+        "original": "Resistances",
+        "translation": "Resistências",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0048",
+        "original": "Resolution",
+        "translation": "Resolução",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Resume(Enter)",
+        "translation": "Continuar(Enter)",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Resurrect at the beginning of the level for a gold and fame penalty.",
+        "translation": "Ressuscitar no início do nível com penalidade de ouro e fama.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Resurrect here for a gold, experience, and fame penalty.",
+        "translation": "Ressuscitar aqui com penalidade de ouro, experiência e fama.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Resurrect in town for no penalty.",
+        "translation": "Ressuscitar na cidade sem penalidade.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Return To Game",
+        "translation": "Voltar ao Jogo",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0031",
+        "original": "Rewards",
+        "translation": "Recompensas",
+        "context": "media/UI/questmenu.layout"
+      },
+      {
+        "original": "Right Mouse Button : Skill",
+        "translation": "Botão Direito do Mouse: Habilidade",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0043",
+        "original": "Rimlights",
+        "translation": "Luz de Borda",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Rotate Left",
+        "translation": "Girar para a Esquerda",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Rotate Right",
+        "translation": "Girar para a Direita",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Select Alchemist",
+        "translation": "Selecionar Alquimista",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Select Destroyer",
+        "translation": "Selecionar Destruidor",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0067",
@@ -427,40 +1071,142 @@
         "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0069",
-        "original": "damage per second",
-        "translation": "dano por segundo",
-        "context": "media/UI/tooltip.layout"
+        "original": "Select Vanquisher",
+        "translation": "Selecionar Conquistadora",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0070",
-        "original": "requires level 21",
-        "translation": "Requer nível 21",
-        "context": "media/UI/tooltip.layout"
+        "original": "Send pet to town to\nsell their inventory contents.",
+        "translation": "Enviar o mascote à cidade para\nvender os itens do inventário.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0071",
-        "original": "Arundel's Dreadaxe",
-        "translation": "Machado do Terror de Arundel",
-        "context": "media/UI/tooltip.layout"
+        "original": "Set pet to Aggressive Stance",
+        "translation": "Definir mascote em Postura Agressiva",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0072",
-        "original": "Points Remaining:0",
-        "translation": "Pontos Restantes:0",
-        "context": "media/UI/perkmenu.layout"
+        "original": "Set pet to Defensive Stance",
+        "translation": "Definir mascote em Postura Defensiva",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
-        "id": "UI_0073",
-        "original": "Render Behind Walls",
-        "translation": "Renderizar Atrás de Paredes",
+        "original": "Set pet to Passive Stance",
+        "translation": "Definir mascote em Postura Passiva",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0039",
+        "original": "Settings",
+        "translation": "Configurações",
+        "context": "media/UI/mainmenuframe.layout"
+      },
+      {
+        "id": "UI_0032",
+        "original": "Shadows",
+        "translation": "Sombras",
         "context": "media/UI/settingsmenu.layout"
       },
       {
-        "id": "UI_0074",
-        "original": "(v1.13) Torchlight (C) 2009 Runic Games Inc.",
-        "translation": "(v1.13) Torchlight (C) 2009 Runic Games Inc. - Tradução pt-BR por Palestino7",
-        "context": "media/UI/mainmenuframe.layout"
+        "id": "UI_0049",
+        "original": "Show Blood",
+        "translation": "Mostrar Sangue",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0066",
+        "original": "Show Event Info",
+        "translation": "Exibir Informações do Evento",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0044",
+        "original": "Show Tips",
+        "translation": "Mostrar Dicas",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "id": "UI_0020",
+        "original": "Skill",
+        "translation": "Habilidade",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "original": "Skill Points remaining to be spent",
+        "translation": "Pontos de Habilidade restantes a gastar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0050",
+        "original": "Skill Type",
+        "translation": "Tipo de Habilidade",
+        "context": "media/UI/skilltooltip.layout"
+      },
+      {
+        "id": "UI_0058",
+        "original": "Sound Volume",
+        "translation": "Volume do Som",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Spell Slot",
+        "translation": "Espaço de Feitiço",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0027",
+        "original": "Spells",
+        "translation": "Feitiços",
+        "context": "media/UI/skillmenu.layout"
+      },
+      {
+        "original": "Stat Points remaining to be spent",
+        "translation": "Pontos de Atributo restantes a gastar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Strength",
+        "translation": "Força",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Strength increases Melee Damage\nby a direct percentage.",
+        "translation": "A Força aumenta o Dano Corpo a Corpo\npor uma porcentagem direta.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Submit",
+        "translation": "Enviar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Switch active weapon set |cFF5e88ff(Press W)|u",
+        "translation": "Alternar conjunto de armas ativo |cFF5e88ff(Pressione W)|u",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0075",
@@ -469,10 +1215,168 @@
         "context": "media/UI/charactercreate.layout"
       },
       {
-        "id": "UI_0076",
-        "original": "Game Mods do not match those enabled when this character was last saved. Continue at your own risk!",
-        "translation": "Os mods do jogo não correspondem aos ativos quando este personagem foi salvo pela última vez. Continue por sua conta e risco!",
+        "original": "Transmute",
+        "translation": "Transmutar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Travel",
+        "translation": "Viajar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0003",
+        "original": "Up",
+        "translation": "Cima",
         "context": "media/UI/characterload.layout"
+      },
+      {
+        "id": "UI_0045",
+        "original": "Very Hard",
+        "translation": "Muito Difícil",
+        "context": "media/UI/difficulty.layout"
+      },
+      {
+        "original": "Very High",
+        "translation": "Muito Alto",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "View Armor",
+        "translation": "Ver Armaduras",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "View Misc",
+        "translation": "Ver Diversos",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "View Skills",
+        "translation": "Ver Habilidades",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "View Weapons",
+        "translation": "Ver Armas",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0021",
+        "original": "VSync",
+        "translation": "VSync",
+        "context": "media/UI/settingsmenu.layout"
+      },
+      {
+        "original": "Waypoint 1",
+        "translation": "Marco de Teleporte 1",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "Weapon Elemental Damage you currently inflict.",
+        "translation": "Dano Elemental de Arma que você causa atualmente.",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "id": "UI_0008",
+        "original": "XP:",
+        "translation": "XP:",
+        "context": "media/UI/questmenu.layout"
+      },
+      {
+        "original": "XP:0",
+        "translation": "XP: 0",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "XP:0-0",
+        "translation": "XP: 0-0",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(A)|uutomap - use [ and ] to zoom in and out",
+        "translation": "|cFF5e88ff(A)|uAutomapa - use [ e ] para aproximar/afastar",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(ALT)|uToggle Item Names",
+        "translation": "|cFF5e88ff(ALT)|uAlternar Nomes dos Itens",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(C)|uharacter Sheet",
+        "translation": "|cFF5e88ff(C)|uFicha do Personagem",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(ESC)|uOptions",
+        "translation": "|cFF5e88ff(ESC)|uOpções",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(I)|unventory",
+        "translation": "|cFF5e88ff(I)|unventário",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(J)|uournal",
+        "translation": "|cFF5e88ff(J)|uDiário",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(P)|uet Sheet",
+        "translation": "|cFF5e88ff(P)|uFicha do Mascote",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(Q)|uuests",
+        "translation": "|cFF5e88ff(Q)|uMissões",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
+      },
+      {
+        "original": "|cFF5e88ff(S)|ukills",
+        "translation": "|cFF5e88ff(S)|uHabilidades",
+        "category": "UI",
+        "source_file": "media/UI/*.layout",
+        "status": "translated"
       }
     ],
     "Quests": [
@@ -68083,8 +68987,9 @@
       {
         "id": "Globals_0040",
         "original": "Off",
-        "translation": "Off",
-        "context": "media/masterresourceunits.dat.ADM"
+        "translation": "Desligado",
+        "context": "media/masterresourceunits.dat.ADM",
+        "status": "translated"
       },
       {
         "id": "Globals_0041",
@@ -71701,8 +72606,9 @@
       {
         "id": "Globals_0643",
         "original": "Transmute",
-        "translation": "Transmute",
-        "context": "media/massfile.dat.ADM"
+        "translation": "Transmutar",
+        "context": "media/massfile.dat.ADM",
+        "status": "translated"
       },
       {
         "id": "Globals_0644",

@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.2.0"
+#define MyAppVersion "1.3.0"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -34,10 +34,10 @@ WizardImageFile=wizard_large.bmp
 WizardSmallImageFile=wizard_small.bmp
 SetupIconFile=torchlight_ptbr.ico
 UninstallDisplayIcon={app}\Torchlight.exe
-VersionInfoVersion=1.2.0.0
+VersionInfoVersion=1.3.0.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription=Instalador da Tradução de Torchlight para Português do Brasil
-VersionInfoProductVersion=1.2.0.0
+VersionInfoProductVersion=1.3.0.0
 VersionInfoCopyright={#MyAppCopyright}
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -55,10 +55,14 @@ brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Palestino7
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{app}\media"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "steam_appid.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "patch_torchlight.exe"; DestDir: "{tmp}"; Flags: ignoreversion deleteafterinstall
 
 ; 2. Deploy translation as an engine mod to %APPDATA%\runic games\torchlight\mods\Traducao_ptBR
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+[Run]
+Filename: "{tmp}\patch_torchlight.exe"; Parameters: """{app}\Torchlight.exe"""; Flags: runhidden; StatusMsg: "Aplicando localização nas opções gráficas..."
 
 [Code]
 // ==============================================================================
@@ -344,6 +348,13 @@ begin
     if FileExists(AppIdFile) then
       DeleteFile(AppIdFile);
 
+    // 4. Restore original Torchlight.exe if patched backup exists
+    if FileExists(AddBackslash(AppDir) + 'Torchlight.exe.orig') then
+    begin
+      FileCopy(AddBackslash(AppDir) + 'Torchlight.exe.orig', AddBackslash(AppDir) + 'Torchlight.exe', False);
+      DeleteFile(AddBackslash(AppDir) + 'Torchlight.exe.orig');
+    end;
+
     AdmFile := AddBackslash(TransDir) + 'TRANSLATION.DAT.adm';
     if FileExists(AdmFile) then
       DeleteFile(AdmFile);
@@ -351,7 +362,7 @@ begin
     if DirExists(BackupDir) then
       RemoveDir(BackupDir);
 
-    // 4. Remove mod directory from %APPDATA%
+    // 5. Remove mod directory from %APPDATA%
     ModDir := ExpandConstant('{userappdata}\runic games\torchlight\mods\Traducao_ptBR');
     if DirExists(ModDir) then
       DelTree(ModDir, True, True, True);

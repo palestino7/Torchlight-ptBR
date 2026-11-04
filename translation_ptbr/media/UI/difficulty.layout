@@ -83,34 +83,34 @@
             <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />
             <Property Name="Text" Value="Fácil"/>
 		<Property Name="onClick" Value="guiSelect1"/>
-		<Property Name="Tooltip" Value="View Skills" />
-		<Property Name="Tooltip" Value="For players looking for casual fun" />
+		<Property Name="Tooltip" Value="Ver Habilidades" />
+		<Property Name="Tooltip" Value="Para jogadores em busca de diversão casual" />
     </Window>
     <Window Type="GuiLook/StandardButton" Name="Normal">
             <Property Name="UnifiedPosition" Value="{{0,26},{0,80}}" />
             <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />
             <Property Name="Text" Value="Normal"/>
 		<Property Name="onClick" Value="guiSelect2"/>
-		<Property Name="Tooltip" Value="For players new to Action-RPGS" />
+		<Property Name="Tooltip" Value="Para novatos em RPGs de Ação" />
     </Window>
     <Window Type="GuiLook/StandardButton" Name="Hard">
             <Property Name="UnifiedPosition" Value="{{0,26},{0,120}}" />
             <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />
             <Property Name="Text" Value="Difícil"/>
 		<Property Name="onClick" Value="guiSelect3"/>
-		<Property Name="Tooltip" Value="Action-RPG veterans should start here" />
+		<Property Name="Tooltip" Value="Veteranos de RPG de Ação devem começar aqui" />
     </Window>
     <Window Type="GuiLook/StandardButton" Name="VeryHard">
             <Property Name="UnifiedPosition" Value="{{0,26},{0,160}}" />
             <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />
             <Property Name="Text" Value="Muito Difícil"/>
 		<Property Name="onClick" Value="guiSelect4"/>
-		<Property Name="Tooltip" Value="Masochists only!" />
+		<Property Name="Tooltip" Value="Apenas para masoquistas!" />
     </Window>
         <Window Type="GuiLook/Checkbox" Name="Hardcore" >
             <Property Name="Text" Value="Hardcore" />
             <Property Name="UnifiedPosition" Value="{{0,26},{0,230}}" />
-		<Property Name="Tooltip" Value="Death is permanent!" />
+		<Property Name="Tooltip" Value="A morte é permanente!" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
         </Window>
     </Window>

@@ -16,7 +16,7 @@
 		<Property Name="NormalImage" Value="set:GuiLook image:CloseTriangleRight" />
 		<Property Name="HoverImage" Value="set:GuiLook image:CloseTriangleRightOver" />
 		<Property Name="PushedImage" Value="set:GuiLook image:CloseTriangleRightOver" />
-		<Property Name="Tooltip" Value="Close" />
+		<Property Name="Tooltip" Value="Fechar" />
    	 </Window>
 
    	<Window Type="GuiLook/ImageButton" Name="Quest1">
@@ -160,7 +160,7 @@
 		<Property Name="MousePassThroughEnabled" Value="True" />
 		<Property Name="HorzTextFormatting" Value="LeftAligned"/>
 		<Property Name="VertFormatting" Value="TopAligned"/>
-		<Property Name="Text" Value="GP:"/>
+		<Property Name="Text" Value="PO:"/>
    		 </Window>
 	    <Window Type="GuiLook/StaticText" Name="GoldReward">
             <Property Name="UnifiedPosition" Value="{{0,50},{0,25}}" />

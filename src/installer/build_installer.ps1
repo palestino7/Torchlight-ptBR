@@ -86,7 +86,7 @@ Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exe
 $readmeContent = @"
 ================================================================================
  TRADUÇÃO TORCHLIGHT (pt-BR) - PORTUGUÊS DO BRASIL
- Versão: 1.2.0 - Edição Definitiva (Steam Build 17685 / v1.15)
+ Versão: 1.3.0 - Edição Definitiva (Steam Build 17685 / v1.15)
  Criador: Palestino7
  GitHub: https://github.com/palestino7/Torchlight-ptBR
 ================================================================================
@@ -116,7 +116,7 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 [System.IO.File]::WriteAllText($readmePath, $readmeContent, [System.Text.Encoding]::UTF8)
 
 # 5. Create Distribution Zip Package
-$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.2.0.zip"
+$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.3.0.zip"
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }

@@ -34,42 +34,42 @@
             <Property Name="Text" Value="Tela Cheia" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-300},{.5,-270}}" />
-		<Property Name="Tooltip" Value="Enable/Disable Fullscreen mode" />
+		<Property Name="Tooltip" Value="Ativar/Desativar modo Tela Cheia" />
         </Window>
         <Window Type="GuiLook/Checkbox" Name="Antialiasing" >
             <Property Name="Text" Value="Anti-serrilhado" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-100},{.5,-270}}" />
-		<Property Name="Tooltip">Enable/Disable Full-Scene Antialiasing
-|cFFFFBA00(requires restart)|u</Property >
+		<Property Name="Tooltip">Ativar/Desativar Anti-serrilhado de Cena Inteira
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="RenderBehind" >
             <Property Name="Text" Value="Renderizar Atrás de Paredes" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-270}}" />
-		<Property Name="Tooltip" Value="Enable/Disable the behind-walls effect" />
+		<Property Name="Tooltip" Value="Ativar/Desativar efeito atrás de paredes" />
         </Window>
 
         <Window Type="GuiLook/Checkbox" Name="Rimlights" >
             <Property Name="Text" Value="Luz de Borda" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-300},{.5,-220}}" />
-		<Property Name="Tooltip">Enable/Disable the rimlight effect
-|cFFFFBA00(requires restart)|u</Property >
+		<Property Name="Tooltip">Ativar/Desativar efeito de luz de borda
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="HardwareSkinning" >
             <Property Name="Text" Value="Skinning por HW" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-100},{.5,-220}}" />
-		<Property Name="Tooltip">Enable/Disable Hardware Skinning
-|cFFFFBA00(requires restart)|u</Property >
+		<Property Name="Tooltip">Ativar/Desativar Skinning por Hardware
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="VSync" >
             <Property Name="Text" Value="VSync" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-220}}" />
-		<Property Name="Tooltip">Enable/Disable Vertical Sync
-|cFFFFBA00(requires restart)|u</Property >
+		<Property Name="Tooltip">Ativar/Desativar Sincronização Vertical (VSync)
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
 
         <Window Type="GuiLook/Combobox" Name="ResolutionDropdown" >
@@ -116,7 +116,7 @@
             <Property Name="Text" Value="Mudo" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-50},{.5,-57}}" />
-		<Property Name="Tooltip" Value="Mute music" />
+		<Property Name="Tooltip" Value="Silenciar música" />
         </Window>
 
         <Window Type="GuiLook/Slider" Name="SoundVolume" >
@@ -132,34 +132,34 @@
             <Property Name="Text" Value="Mudo" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-50},{.5,43}}" />
-		<Property Name="Tooltip" Value="Mute all sounds" />
+		<Property Name="Tooltip" Value="Silenciar todos os sons" />
         </Window>
 
     	<Window Type="GuiLook/Checkbox" Name="ShowTips" >
             <Property Name="Text" Value="Mostrar Dicas" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-5}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
-		<Property Name="Tooltip" Value="Enable/Disable ingame help" />
+		<Property Name="Tooltip" Value="Ativar/Desativar ajuda no jogo" />
         </Window>
 
 	<Window Type="GuiLook/Checkbox" Name="ShowFloatyNumbers" >
             <Property Name="Text" Value="Exibir Informações do Evento" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,40}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
-		<Property Name="Tooltip" Value="Enable/Disable floating damage messages" />
+		<Property Name="Tooltip" Value="Ativar/Desativar mensagens flutuantes de dano" />
         </Window>
 
 	<Window Type="GuiLook/Checkbox" Name="ShowBlood" >
             <Property Name="Text" Value="Mostrar Sangue" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,85}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
-		<Property Name="Tooltip" Value="Enable/Disable blood" />
+		<Property Name="Tooltip" Value="Ativar/Desativar sangue" />
         </Window>
 	<Window Type="GuiLook/Checkbox" Name="NetbookMode" >
             <Property Name="Text" Value="Modo Netbook" />
             <Property Name="UnifiedPosition" Value="{{.5,-300},{.5,85}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
-		<Property Name="Tooltip" Value="Enable/Disable Netbook mode" />
+		<Property Name="Tooltip" Value="Ativar/Desativar modo Netbook" />
         </Window>
 
     </Window>
