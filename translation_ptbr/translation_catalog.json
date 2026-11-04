@@ -43419,7 +43419,7 @@
       {
         "id": "Skills_0671",
         "original": "NEEDLES DAMAGE",
-        "translation": "NEEDLES DANO",
+        "translation": "DANO DAS AGULHAS",
         "context": "media/Affixes/Skills/NEEDLES.DAT.adm"
       },
       {
@@ -44283,7 +44283,7 @@
       {
         "id": "Skills_0815",
         "original": "ARROWHAIL DAMAGE",
-        "translation": "ARROWHAIL DANO",
+        "translation": "DANO DA CHUVA DE FLECHAS",
         "context": "media/Affixes/Skills/ARROWHAIL.DAT.adm"
       },
       {
@@ -44301,7 +44301,7 @@
       {
         "id": "Skills_0818",
         "original": "BLASTWAVE DAMAGE",
-        "translation": "BLASTWAVE DANO",
+        "translation": "DANO DA ONDA DE CHOQUE",
         "context": "media/Affixes/Skills/BLASTWAVE.DAT.adm"
       },
       {
@@ -44367,7 +44367,7 @@
       {
         "id": "Skills_0829",
         "original": "FLAMEWAVE DAMAGE",
-        "translation": "FLAMEWAVE DANO",
+        "translation": "DANO DA ONDA DE CHAMAS",
         "context": "media/Affixes/Skills/FLAMEWAVE.DAT.adm"
       },
       {
@@ -44463,7 +44463,7 @@
       {
         "id": "Skills_0845",
         "original": "PROC CHARGEDBOLT",
-        "translation": "EFEITO CHARGEDBOLT",
+        "translation": "EFEITO DE RAIO CARREGADO",
         "context": "media/skills/procs/CHARGEDBOLT.DAT.adm"
       },
       {
@@ -45243,7 +45243,7 @@
       {
         "id": "Skills_0975",
         "original": "PERCENT PET DAMAGE",
-        "translation": "PERCENTUAL PET DANO",
+        "translation": "PERCENTUAL DE DANO DO MASCOTE",
         "context": "media/Affixes/Skills/PET_MASTERY.DAT.adm"
       },
       {
@@ -45255,7 +45255,7 @@
       {
         "id": "Skills_0977",
         "original": "PHALANX PERCENT HP",
-        "translation": "PHALANX PERCENTUAL HP",
+        "translation": "PERCENTUAL DE VIDA DA FALANGE",
         "context": "media/Affixes/Skills/PHALANX.DAT.adm"
       },
       {
@@ -45507,7 +45507,7 @@
       {
         "id": "Skills_1019",
         "original": "DUAL WIELDING BONUS",
-        "translation": "DUAL WIELDING BÔNUS",
+        "translation": "BÔNUS DE EMPUNHADURA DUPLA",
         "context": "media/Affixes/Skills/SKILL_DUALWIELD_MASTERY.DAT.adm"
       },
       {
@@ -45669,7 +45669,7 @@
       {
         "id": "Skills_1046",
         "original": "SPECTRALBASH DAMAGE",
-        "translation": "SPECTRALBASH DANO",
+        "translation": "DANO DO GOLPE ESPECTRAL",
         "context": "media/Affixes/Skills/SPECTRALBASH.DAT.adm"
       },
       {
@@ -45681,25 +45681,25 @@
       {
         "id": "Skills_1048",
         "original": "Shrapnel Trap Spawn",
-        "translation": "Shrapnel Armadilha Spawn",
+        "translation": "Geração da Armadilha de Estilhaços",
         "context": "media/skills/vanquisher/shrapneltrap/SHRAPNELTRAP.DAT.adm"
       },
       {
         "id": "Skills_1049",
         "original": "THUNDERPUNCH DAMAGE",
-        "translation": "THUNDERPUNCH DANO",
+        "translation": "DANO DO SOCO TROVÃO",
         "context": "media/Affixes/Skills/THUNDERPUNCH.DAT.adm"
       },
       {
         "id": "Skills_1050",
         "original": "WARRIORQUAKE DAMAGE",
-        "translation": "WARRIORQUAKE DANO",
+        "translation": "DANO DO TERREMOTO DO GUERREIRO",
         "context": "media/Affixes/Skills/WARRIORQUAKE.DAT.adm"
       },
       {
         "id": "Skills_1051",
         "original": "WARRIORSTOMP DAMAGE",
-        "translation": "WARRIORSTOMP DANO",
+        "translation": "DANO DO PISÃO DO GUERREIRO",
         "context": "media/Affixes/Skills/WARRIORSTOMP.DAT.adm"
       },
       {
@@ -45849,13 +45849,13 @@
       {
         "id": "Skills_1076",
         "original": "CRUSHINGBURST DAMAGE",
-        "translation": "CRUSHINGBURST DANO",
+        "translation": "DANO DA EXPLOSÃO ESMAGADORA",
         "context": "media/Affixes/Skills/CRUSHINGBURST.DAT.adm"
       },
       {
         "id": "Skills_1077",
         "original": "EMBERFIREBALL DAMAGE",
-        "translation": "EMBERFIREBALL DANO",
+        "translation": "DANO DA BOLA DE FOGO DE ÂMBAR",
         "context": "media/Affixes/Skills/EMBERFIREBALL.DAT.adm"
       },
       {
@@ -45933,19 +45933,19 @@
       {
         "id": "Skills_1090",
         "original": "PERCENT RANGEDDAMAGE",
-        "translation": "PERCENTUAL RANGEDDANO",
+        "translation": "PERCENTUAL DE DANO À DISTÂNCIA",
         "context": "media/Affixes/Skills/GAUNTLETENCHANT.DAT.adm"
       },
       {
         "id": "Skills_1091",
         "original": "PETRAGE DAMAGE BONUS",
-        "translation": "PETRAGE DANO BÔNUS",
+        "translation": "BÔNUS DE DANO DA FÚRIA DO MASCOTE",
         "context": "media/skills/alchemist/petenrage/PETENRAGE.DAT.adm"
       },
       {
         "id": "Skills_1092",
         "original": "SUMMONIMP PERCENT HP",
-        "translation": "SUMMONIMP PERCENTUAL HP",
+        "translation": "PERCENTUAL DE VIDA DO DIABRETE",
         "context": "media/Affixes/Skills/SUMMONIMP.DAT.adm"
       },
       {
@@ -46119,13 +46119,13 @@
       {
         "id": "Skills_1121",
         "original": "EMBERICEPOTION DAMAGE",
-        "translation": "EMBERICEPOTION DANO",
+        "translation": "DANO DA POÇÃO DE GELO DE ÂMBAR",
         "context": "media/Affixes/Skills/EXPLODEPOTION.DAT.adm"
       },
       {
         "id": "Skills_1122",
         "original": "EMBERLIGHTNING DAMAGE",
-        "translation": "EMBERLIGHTNING DANO",
+        "translation": "DANO DOS RELÂMPAGOS DE ÂMBAR",
         "context": "media/Affixes/Skills/EMBERLIGHTNING.DAT.adm"
       },
       {
@@ -46323,13 +46323,13 @@
       {
         "id": "Skills_1155",
         "original": "DWARFRAGE DAMAGE BONUS",
-        "translation": "DWARFRAGE DANO BÔNUS",
+        "translation": "BÔNUS DE DANO DA FÚRIA ANÃ",
         "context": "media/skills/monsters/corrupteddwarf/ENRAGE.DAT.adm"
       },
       {
         "id": "Skills_1156",
         "original": "EMBERFIREPOTION DAMAGE",
-        "translation": "EMBERFIREPOTION DANO",
+        "translation": "DANO DA POÇÃO DE FOGO DE ÂMBAR",
         "context": "media/Affixes/Skills/EMBERFIREPOTION.DAT.adm"
       },
       {
@@ -46659,7 +46659,7 @@
       {
         "id": "Skills_1211",
         "original": "PERCENT DAMAGE REFLECTED",
-        "translation": "PERCENTUAL DANO REFLECTED",
+        "translation": "PERCENTUAL DE DANO REFLETIDO",
         "context": "media/Affixes/Skills/SPELL_RETRIBUTION.DAT.adm"
       },
       {
@@ -46863,7 +46863,7 @@
       {
         "id": "Skills_1245",
         "original": "PERCENT LIFE STOLEN MASTER",
-        "translation": "PERCENTUAL LIFE STOLEN MASTER",
+        "translation": "MAESTRIA PERCENTUAL DE ROUBO DE VIDA",
         "context": "media/Affixes/Skills/SUMMON_SPELL_ZOMBIES.DAT.adm"
       },
       {
@@ -47043,7 +47043,7 @@
       {
         "id": "Skills_1275",
         "original": "DWARFRAGE PERCENT ATTACK SPEED",
-        "translation": "DWARFRAGE PERCENTUAL ATAQUE VELOCIDADE",
+        "translation": "VELOCIDADE DE ATAQUE DA FÚRIA ANÃ",
         "context": "media/skills/monsters/corrupteddwarf/ENRAGE.DAT.adm"
       },
       {
@@ -47199,37 +47199,37 @@
       {
         "id": "Skills_1301",
         "original": "EMBERSENTRY PERCENT DAMAGE BONUS",
-        "translation": "EMBERSENTRY PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA SENTINELA DE ÂMBAR",
         "context": "media/Affixes/Skills/EMBERSENTRY.DAT.adm"
       },
       {
         "id": "Skills_1302",
         "original": "PERCENT RANGED ITEM DAMAGE BONUS",
-        "translation": "PERCENTUAL RANGED ITEM DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DE ITEM À DISTÂNCIA",
         "context": "media/Affixes/Skills/SKILL_RANGED_MASTERY.DAT.adm"
       },
       {
         "id": "Skills_1303",
         "original": "SHADOWARMOR PERCENT DAMAGE BONUS",
-        "translation": "SHADOWARMOR PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA ARMADURA DAS SOMBRAS",
         "context": "media/Affixes/Skills/SHADOWARMORBOW10.DAT.adm"
       },
       {
         "id": "Skills_1304",
         "original": "PERCENT MARTIAL ITEM DAMAGE BONUS",
-        "translation": "PERCENTUAL MARTIAL ITEM DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DE ITEM MARCIAL",
         "context": "media/Affixes/Skills/SKILL_MARTIAL_MASTERY.DAT.adm"
       },
       {
         "id": "Skills_1305",
         "original": "SHRAPNELTRAP PERCENT DAMAGE BONUS",
-        "translation": "SHRAPNELARMADILHA PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA ARMADILHA DE ESTILHAÇOS",
         "context": "media/Affixes/Skills/SHRAPNELTRAPTRAP.DAT.adm"
       },
       {
         "id": "Skills_1306",
         "original": "WHIRLINGGUST PERCENT DAMAGE BONUS",
-        "translation": "WHIRLINGGUST PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA RAJADA GIRATÓRIA",
         "context": "media/Affixes/Skills/VANQUISHERSEEK.DAT.adm"
       },
       {
