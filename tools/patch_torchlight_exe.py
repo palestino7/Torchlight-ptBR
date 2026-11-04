@@ -129,108 +129,114 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
         struct.pack_into("<I", data, raw_offset + 1, new_va)
         patched_count += 1
 
-    # 3. Embed Alchemist and Vanquisher descriptions in .rdata slack
+    # 3. Localized character class names and descriptions in .data slack space (0x7e6a10, VA 0xbe8010)
+    data_slack_raw = 0x7e6a10
+    data_slack_va = 0xbe8010
+
+    s_destruidor = b"Destruidor\x00"
+    s_alquimista = b"Alquimista\x00"
+    s_conquistadora = b"Conquistadora\x00"
+    s_desc_d = "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos.\x00".encode("windows-1252")
     s_desc_a = "O Alquimista canaliza o poder do \xc2mbar para atacar de longe e invocar lacaios.\x00".encode("windows-1252")
     s_desc_v = "A Conquistadora \xe9 uma atiradora perita e usa armadilhas para debilitar seus inimigos.\x00".encode("windows-1252")
 
-    desc_a_raw = 0x7e6954
-    desc_a_va = 0xbe7754
-    data[desc_a_raw : desc_a_raw + len(s_desc_a)] = s_desc_a
+    strings_data = [
+        ("s_dest", s_destruidor),
+        ("s_alch", s_alquimista),
+        ("s_vanq", s_conquistadora),
+        ("s_desc_d", s_desc_d),
+        ("s_desc_a", s_desc_a),
+        ("s_desc_v", s_desc_v),
+    ]
 
-    desc_v_raw = desc_a_raw + len(s_desc_a)
-    desc_v_va = desc_a_va + len(s_desc_a)
-    data[desc_v_raw : desc_v_raw + len(s_desc_v)] = s_desc_v
-    assert desc_v_raw + len(s_desc_v) <= 0x7e6a00, "Overflow in .rdata slack space"
+    vas_data = {}
+    cur_r = data_slack_raw
+    cur_v = data_slack_va
+    for sname, sbytes in strings_data:
+        vas_data[sname] = cur_v
+        data[cur_r : cur_r + len(sbytes)] = sbytes
+        cur_r += len(sbytes)
+        cur_v += len(sbytes)
+    assert cur_r <= 0x7e6ee0, "Overflow in .data slack space"
 
-    # 4. Embed Destroyer description in .text slack
-    desc_d_raw = 0x65b170
-    desc_d_va = 0xa5bd70
-    s_desc_d = "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos.\x00".encode("windows-1252")
-    data[desc_d_raw : desc_d_raw + len(s_desc_d)] = s_desc_d
-    assert desc_d_raw + len(s_desc_d) <= 0x65b200, "Overflow in .text slack space"
+    # 4. Clean hook functions in .text slack space at 0x65b0aa (VA 0xa5bcaa)
+    # Hook 1: Intercepts c_str() call for class name and substitutes translated pointer
+    # Hook 2: Intercepts c_str() call for class description and substitutes translated pointer
+    hook_raw = 0x65b0aa
+    hook_va = 0xa5bcaa
 
-    # 5. Assemble Hook code in .text slack at 0x65b0c0 (VA 0xa5bcc0)
-    hook_raw = 0x65b0c0
-    hook_va = 0xa5bcc0
+    hook_bytes = bytearray([
+        # 0x00: hook_class_name
+        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, # call dword ptr [0xa5c390]
+        0x80, 0x38, 0x44,                   # cmp byte ptr [eax], 'D'
+        0x74, 0x0b,                         # je .Lname_dest (+11 -> 0x16)
+        0x80, 0x38, 0x41,                   # cmp byte ptr [eax], 'A'
+        0x74, 0x0c,                         # je .Lname_alch (+12 -> 0x1c)
+        0x80, 0x38, 0x56,                   # cmp byte ptr [eax], 'V'
+        0x74, 0x0d,                         # je .Lname_vanq (+13 -> 0x22)
+        0xc3,                               # ret (0x15)
+        # 0x16: .Lname_dest
+        0xb8,
+    ])
+    hook_bytes += struct.pack("<I", vas_data["s_dest"])
+    hook_bytes += bytearray([0xc3]) # ret (0x1b)
 
-    code = bytearray()
-    # Function 1: hook_class_name
-    code += b"\xff\x74\x24\x08" # push dword ptr [esp + 8] (arg2)
-    code += b"\xff\x74\x24\x08" # push dword ptr [esp + 8] (arg1)
-    rel_cbd50 = 0x5cbd50 - (hook_va + len(code) + 5)
-    code += b"\xe8" + struct.pack("<i", rel_cbd50) # call 0x5cbd50
-    code += b"\x83\xc4\x08"     # add esp, 8
+    # 0x1c: .Lname_alch
+    hook_bytes += bytearray([0xb8])
+    hook_bytes += struct.pack("<I", vas_data["s_alch"])
+    hook_bytes += bytearray([0xc3]) # ret (0x21)
 
-    # Destroyer
-    code += b"\x80\x38\x44"     # cmp byte ptr [eax], 'D'
-    code += b"\x75\x1d"         # jne check_alch (+29)
-    code += b"\xc7\x00\x44\x65\x73\x74"             # mov dword ptr [eax], 'Dest'
-    code += b"\xc7\x40\x04\x72\x75\x69\x64"         # mov dword ptr [eax+4], 'ruid'
-    code += b"\x66\xc7\x40\x08\x72\x00"             # mov word ptr [eax+8], 'or\0'
-    code += b"\xc7\x40\x10\x0a\x00\x00\x00"         # mov dword ptr [eax+16], 10
-    code += b"\xc3"             # ret
+    # 0x22: .Lname_vanq
+    hook_bytes += bytearray([0xb8])
+    hook_bytes += struct.pack("<I", vas_data["s_vanq"])
+    hook_bytes += bytearray([0xc3]) # ret (0x27)
 
-    # Alchemist
-    code += b"\x80\x38\x41"     # cmp byte ptr [eax], 'A'
-    code += b"\x75\x1d"         # jne check_vanq (+29)
-    code += b"\xc7\x00\x41\x6c\x71\x75"             # mov dword ptr [eax], 'Alqu'
-    code += b"\xc7\x40\x04\x69\x6d\x69\x73"         # mov dword ptr [eax+4], 'imis'
-    code += b"\x66\xc7\x40\x08\x61\x00"             # mov word ptr [eax+8], 'ta\0'
-    code += b"\xc7\x40\x10\x0a\x00\x00\x00"         # mov dword ptr [eax+16], 10
-    code += b"\xc3"             # ret
+    assert len(hook_bytes) == 0x28
 
-    # Vanquisher
-    code += b"\x80\x38\x56"     # cmp byte ptr [eax], 'V'
-    code += b"\x75\x25"         # jne done (+37)
-    code += b"\xc7\x00\x43\x6f\x6e\x71"             # mov dword ptr [eax], 'Conq'
-    code += b"\xc7\x40\x04\x75\x69\x73\x74"         # mov dword ptr [eax+4], 'uist'
-    code += b"\xc7\x40\x08\x61\x64\x6f\x72"         # mov dword ptr [eax+8], 'ador'
-    code += b"\x66\xc7\x40\x0c\x61\x00"             # mov word ptr [eax+12], 'a\0'
-    code += b"\xc7\x40\x10\x0d\x00\x00\x00"         # mov dword ptr [eax+16], 13
-    code += b"\xc3"             # ret
+    # 0x28: hook_class_desc
+    hook_bytes += bytearray([
+        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, # call dword ptr [0xa5c390] (0x28)
+        0x80, 0x38, 0x54,                   # cmp byte ptr [eax], 'T' (0x2e)
+        0x75, 0x12,                         # jne .Ldesc_done (+18 -> 0x45)
+        0x80, 0x78, 0x04, 0x44,             # cmp byte ptr [eax+4], 'D' (0x33)
+        0x74, 0x0d,                         # je .Ldesc_dest (+13 -> 0x46)
+        0x80, 0x78, 0x04, 0x41,             # cmp byte ptr [eax+4], 'A' (0x39)
+        0x74, 0x0d,                         # je .Ldesc_alch (+13 -> 0x4c)
+        0x80, 0x78, 0x04, 0x56,             # cmp byte ptr [eax+4], 'V' (0x3f)
+        0x74, 0x0d,                         # je .Ldesc_vanq (+13 -> 0x52)
+        # 0x45: .Ldesc_done
+        0xc3,                               # ret
+        # 0x46: .Ldesc_dest
+        0xb8,
+    ])
+    hook_bytes += struct.pack("<I", vas_data["s_desc_d"])
+    hook_bytes += bytearray([0xc3]) # ret (0x4b)
 
-    # done
-    code += b"\xc3"
+    # 0x4c: .Ldesc_alch
+    hook_bytes += bytearray([0xb8])
+    hook_bytes += struct.pack("<I", vas_data["s_desc_a"])
+    hook_bytes += bytearray([0xc3]) # ret (0x51)
 
-    fn1_size = len(code)
-    fn2_va = hook_va + fn1_size
-    assert fn2_va == 0xa5bd38
+    # 0x52: .Ldesc_vanq
+    hook_bytes += bytearray([0xb8])
+    hook_bytes += struct.pack("<I", vas_data["s_desc_v"])
+    hook_bytes += bytearray([0xc3]) # ret (0x57)
 
-    # Function 2: hook_class_desc
-    code += b"\xff\x15\x90\xc3\xa5\x00" # call dword ptr [0xa5c390]
-    code += b"\x80\x38\x54"             # cmp byte ptr [eax], 'T'
-    code += b"\x75\x2a"                 # jne done_desc (+42)
-    code += b"\x80\x78\x04\x44"         # cmp byte ptr [eax+4], 'D'
-    code += b"\x75\x08"                 # jne check_alch_d (+8)
-    code += b"\xb8" + struct.pack("<I", desc_d_va) # mov eax, desc_d_va
-    code += b"\xc3"                     # ret
+    assert len(hook_bytes) == 0x58
+    assert hook_raw + len(hook_bytes) <= 0x65b200, "Overflow in .text slack space"
+    data[hook_raw : hook_raw + len(hook_bytes)] = hook_bytes
 
-    code += b"\x80\x78\x04\x41"         # cmp byte ptr [eax+4], 'A'
-    code += b"\x75\x08"                 # jne check_vanq_d (+8)
-    code += b"\xb8" + struct.pack("<I", desc_a_va) # mov eax, desc_a_va
-    code += b"\xc3"                     # ret
+    # 5. Patch call sites in CharacterCreate::update
+    # Site 2 at 0x5b6dbe (raw 0x1b61be): call hook_class_name; push eax; nop
+    site2_raw = 0x1b61be
+    site2_va = 0x5b6dbe
+    rel2 = hook_va - (site2_va + 5)
+    data[site2_raw : site2_raw + 7] = b"\xe8" + struct.pack("<i", rel2) + b"\x50\x90"
 
-    code += b"\x80\x78\x04\x56"         # cmp byte ptr [eax+4], 'V'
-    code += b"\x75\x08"                 # jne done_desc (+8)
-    code += b"\xb8" + struct.pack("<I", desc_v_va) # mov eax, desc_v_va
-    code += b"\xc3"                     # ret
-
-    code += b"\xc3"                     # ret
-
-    assert hook_raw + len(code) <= desc_d_raw, "Hook code collides with desc_d"
-    data[hook_raw : hook_raw + len(code)] = code
-
-    # 6. Patch call sites in CharacterCreate::update
-    site1_raw = 0x1b6155
-    rel1 = hook_va - (0x5b6d55 + 5)
-    data[site1_raw : site1_raw + 5] = b"\xe8" + struct.pack("<i", rel1)
-
-    site2_raw = 0x1b61a9
-    rel2 = hook_va - (0x5b6da9 + 5)
-    data[site2_raw : site2_raw + 5] = b"\xe8" + struct.pack("<i", rel2)
-
+    # Site 3 at 0x5b6e42 (raw 0x1b6242): call hook_class_desc; push eax; nop
     site3_raw = 0x1b6242
-    rel3 = fn2_va - (0x5b6e42 + 5)
+    site3_va = 0x5b6e42
+    rel3 = (hook_va + 0x28) - (site3_va + 5)
     data[site3_raw : site3_raw + 7] = b"\xe8" + struct.pack("<i", rel3) + b"\x50\x90"
 
     with open(exe_path, "wb") as f:

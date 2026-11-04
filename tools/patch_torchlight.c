@@ -200,48 +200,75 @@ int main(int argc, char* argv[]) {
     memcpy(buf + 0x7e693f, s_muito_alto, sizeof(s_muito_alto));
     memcpy(buf + 0x7e694a, s_dica, sizeof(s_dica));
 
-    // Character Creation screen localized descriptions:
-    // Alchemist description at VA 0xbe7754 (raw 0x7e6954 in .rdata slack)
-    const char s_desc_a[] = "O Alquimista canaliza o poder do \xc2mbar para atacar de longe e invocar lacaios.";
-    memcpy(buf + 0x7e6954, s_desc_a, sizeof(s_desc_a));
-
-    // Vanquisher description at VA 0xbe77a3 (raw 0x7e69a3 in .rdata slack)
-    const char s_desc_v[] = "A Conquistadora \xe9 uma atiradora perita e usa armadilhas para debilitar seus inimigos.";
-    memcpy(buf + 0x7e69a3, s_desc_v, sizeof(s_desc_v));
-
-    // Destroyer description at VA 0xa5bd70 (raw 0x65b170 in .text slack)
+    // Character Creation screen localized names and descriptions in .data slack space (0x7e6a10, VA 0xbe8010)
+    const char s_dest[] = "Destruidor";
+    const char s_alch[] = "Alquimista";
+    const char s_vanq[] = "Conquistadora";
     const char s_desc_d[] = "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos.";
-    memcpy(buf + 0x65b170, s_desc_d, sizeof(s_desc_d));
+    const char s_desc_a[] = "O Alquimista canaliza o poder do \xc2mbar para atacar de longe e invocar lacaios.";
+    const char s_desc_v[] = "A Conquistadora \xe9 uma atiradora perita e usa armadilhas para debilitar seus inimigos.";
 
-    // Assembly hooks in .text slack at 0x65b0c0 (VA 0xa5bcc0)
-    // Hook 1: Localizes class name strings ("Destruidor", "Alquimista", "Conquistadora")
-    // Hook 2: Intercepts class description calls and returns pointers to localized descriptions
-    static const unsigned char hook_code[168] = {
-        0xff, 0x74, 0x24, 0x08, 0xff, 0x74, 0x24, 0x08, 0xe8, 0x83, 0x00, 0xb7, 0xff, 0x83, 0xc4, 0x08,
-        0x80, 0x38, 0x44, 0x75, 0x1d, 0xc7, 0x00, 0x44, 0x65, 0x73, 0x74, 0xc7, 0x40, 0x04, 0x72, 0x75,
-        0x69, 0x64, 0x66, 0xc7, 0x40, 0x08, 0x72, 0x00, 0xc7, 0x40, 0x10, 0x0a, 0x00, 0x00, 0x00, 0xc3,
-        0x80, 0x38, 0x41, 0x75, 0x1d, 0xc7, 0x00, 0x41, 0x6c, 0x71, 0x75, 0xc7, 0x40, 0x04, 0x69, 0x6d,
-        0x69, 0x73, 0x66, 0xc7, 0x40, 0x08, 0x61, 0x00, 0xc7, 0x40, 0x10, 0x0a, 0x00, 0x00, 0x00, 0xc3,
-        0x80, 0x38, 0x56, 0x75, 0x25, 0xc7, 0x00, 0x43, 0x6f, 0x6e, 0x71, 0xc7, 0x40, 0x04, 0x75, 0x69,
-        0x73, 0x74, 0xc7, 0x40, 0x08, 0x61, 0x64, 0x6f, 0x72, 0x66, 0xc7, 0x40, 0x0c, 0x61, 0x00, 0xc7,
-        0x40, 0x10, 0x0d, 0x00, 0x00, 0x00, 0xc3, 0xc3,
-        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, 0x80, 0x38, 0x54, 0x75, 0x2a, 0x80, 0x78, 0x04, 0x44, 0x75,
-        0x08, 0xb8, 0x70, 0xbd, 0xa5, 0x00, 0xc3, 0x80, 0x78, 0x04, 0x41, 0x75, 0x08, 0xb8, 0x54, 0x77,
-        0xbe, 0x00, 0xc3, 0x80, 0x78, 0x04, 0x56, 0x75, 0x08, 0xb8, 0xa3, 0x77, 0xbe, 0x00, 0xc3, 0xc3
+    memcpy(buf + 0x7e6a10, s_dest, sizeof(s_dest));
+    memcpy(buf + 0x7e6a1b, s_alch, sizeof(s_alch));
+    memcpy(buf + 0x7e6a26, s_vanq, sizeof(s_vanq));
+    memcpy(buf + 0x7e6a34, s_desc_d, sizeof(s_desc_d));
+    memcpy(buf + 0x7e6aa9, s_desc_a, sizeof(s_desc_a));
+    memcpy(buf + 0x7e6af8, s_desc_v, sizeof(s_desc_v));
+
+    // High-performance hooks in .text slack space at 0x65b0aa (VA 0xa5bcaa)
+    // Hook 1: Intercepts c_str() call for class name and substitutes translated pointer
+    // Hook 2: Intercepts c_str() call for class description and substitutes translated pointer
+    static const unsigned char hook_code[88] = {
+        // 0x00: hook_class_name (VA 0xa5bcaa)
+        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, // call dword ptr [0xa5c390]
+        0x80, 0x38, 0x44,                   // cmp byte ptr [eax], 'D'
+        0x74, 0x0b,                         // je .Lname_dest (+11 -> 0x16)
+        0x80, 0x38, 0x41,                   // cmp byte ptr [eax], 'A'
+        0x74, 0x0c,                         // je .Lname_alch (+12 -> 0x1c)
+        0x80, 0x38, 0x56,                   // cmp byte ptr [eax], 'V'
+        0x74, 0x0d,                         // je .Lname_vanq (+13 -> 0x22)
+        0xc3,                               // ret (0x15)
+        // 0x16: .Lname_dest
+        0xb8, 0x10, 0x80, 0xbe, 0x00,       // mov eax, 0xbe8010
+        0xc3,                               // ret
+        // 0x1c: .Lname_alch
+        0xb8, 0x1b, 0x80, 0xbe, 0x00,       // mov eax, 0xbe801b
+        0xc3,                               // ret
+        // 0x22: .Lname_vanq
+        0xb8, 0x26, 0x80, 0xbe, 0x00,       // mov eax, 0xbe8026
+        0xc3,                               // ret
+
+        // 0x28: hook_class_desc (VA 0xa5bcd2)
+        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, // call dword ptr [0xa5c390]
+        0x80, 0x38, 0x54,                   // cmp byte ptr [eax], 'T'
+        0x75, 0x12,                         // jne .Ldesc_done (+18 -> 0x45)
+        0x80, 0x78, 0x04, 0x44,             // cmp byte ptr [eax+4], 'D'
+        0x74, 0x0d,                         // je .Ldesc_dest (+13 -> 0x46)
+        0x80, 0x78, 0x04, 0x41,             // cmp byte ptr [eax+4], 'A'
+        0x74, 0x0d,                         // je .Ldesc_alch (+13 -> 0x4c)
+        0x80, 0x78, 0x04, 0x56,             // cmp byte ptr [eax+4], 'V'
+        0x74, 0x0d,                         // je .Ldesc_vanq (+13 -> 0x52)
+        // 0x45: .Ldesc_done
+        0xc3,                               // ret
+        // 0x46: .Ldesc_dest
+        0xb8, 0x34, 0x80, 0xbe, 0x00,       // mov eax, 0xbe8034
+        0xc3,                               // ret
+        // 0x4c: .Ldesc_alch
+        0xb8, 0xa9, 0x80, 0xbe, 0x00,       // mov eax, 0xbe80a9
+        0xc3,                               // ret
+        // 0x52: .Ldesc_vanq
+        0xb8, 0xf8, 0x80, 0xbe, 0x00,       // mov eax, 0xbe80f8
+        0xc3                                // ret
     };
-    memcpy(buf + 0x65b0c0, hook_code, sizeof(hook_code));
+    memcpy(buf + 0x65b0aa, hook_code, sizeof(hook_code));
 
     // Patch call sites in CharacterCreate::update (0x5b6d10)
-    // Site 1: 0x5b6d55 (file raw 0x1b6155) -> call 0xa5bcc0 (hook_class_name)
-    const unsigned char site1_bytes[5] = { 0xe8, 0x66, 0x4f, 0x4a, 0x00 };
-    memcpy(buf + 0x1b6155, site1_bytes, sizeof(site1_bytes));
+    // Site 2: 0x5b6dbe (file raw 0x1b61be) -> call 0xa5bcaa (hook_class_name); push eax; nop
+    const unsigned char site2_bytes[7] = { 0xe8, 0xe7, 0x4e, 0x4a, 0x00, 0x50, 0x90 };
+    memcpy(buf + 0x1b61be, site2_bytes, sizeof(site2_bytes));
 
-    // Site 2: 0x5b6da9 (file raw 0x1b61a9) -> call 0xa5bcc0 (hook_class_name)
-    const unsigned char site2_bytes[5] = { 0xe8, 0x12, 0x4f, 0x4a, 0x00 };
-    memcpy(buf + 0x1b61a9, site2_bytes, sizeof(site2_bytes));
-
-    // Site 3: 0x5b6e42 (file raw 0x1b6242) -> call 0xa5bd38 (hook_class_desc); push eax; nop
-    const unsigned char site3_bytes[7] = { 0xe8, 0xf1, 0x4e, 0x4a, 0x00, 0x50, 0x90 };
+    // Site 3: 0x5b6e42 (file raw 0x1b6242) -> call 0xa5bcd2 (hook_class_desc); push eax; nop
+    const unsigned char site3_bytes[7] = { 0xe8, 0x8b, 0x4e, 0x4a, 0x00, 0x50, 0x90 };
     memcpy(buf + 0x1b6242, site3_bytes, sizeof(site3_bytes));
 
     PatchEntry patches[] = {
