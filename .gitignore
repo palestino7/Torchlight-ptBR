@@ -16,7 +16,8 @@ tools/untranslated_dump.json
 # Agent metadata and working state
 .agents/
 
-# OS specific files
+# Local source images staging folder
+imagens/
 Thumbs.db
 [Ee]xthumbs.db
 ehthumbs.db
