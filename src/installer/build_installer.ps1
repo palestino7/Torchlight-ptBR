@@ -2,7 +2,7 @@
 # build_installer.ps1 - Automated Build & Packaging Pipeline for Torchlight pt-BR
 # Creates:
 # 1. dist/Torchlight_Traducao_ptBR_Setup.exe (Inno Setup 6 Native Delphi PE)
-# 2. dist/Torchlight_Traducao_ptBR_v1.0.0.zip (Distribution archive)
+# 2. dist/Torchlight_Traducao_ptBR_v${appVersion}.zip (Distribution archive)
 # 3. dist/SHA256SUMS.txt (Cryptographic hashes)
 # ==============================================================================
 
@@ -86,7 +86,7 @@ Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exe
 $readmeContent = @"
 ================================================================================
  TRADUÇÃO TORCHLIGHT (pt-BR) - PORTUGUÊS DO BRASIL
- Versão: 1.3.0 - Edição Definitiva (Steam Build 17685 / v1.15)
+ Versão: $appVersion - Edição Definitiva (Steam Build 17685 / v1.15)
  Criador: Palestino7
  GitHub: https://github.com/palestino7/Torchlight-ptBR
 ================================================================================
