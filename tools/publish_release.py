@@ -11,45 +11,30 @@ def get_token():
 def create_release():
     token = get_token()
     repo = "palestino7/Torchlight-ptBR"
-    tag = "v1.3.2"
+    tag = "v1.3.3"
     
-    release_body = """# Tradução Completa para Torchlight (pt-BR) - v1.3.2
+    release_body = """# Tradução Completa para Torchlight (pt-BR) - v1.3.3
 Criado por **Palestino7**
 
 ### 📦 Arquivos para Download:
 - **`Torchlight_Traducao_ptBR_Setup.exe`**: Instalador executável automático oficial (instalação em 1 clique).
-- **`Torchlight_Traducao_ptBR_v1.3.2.zip`**: Pacote ZIP com instalador e instruções offline.
+- **`Torchlight_Traducao_ptBR_v1.3.3.zip`**: Pacote ZIP com instalador e instruções offline.
 - **`SHA256SUMS.txt`**: Assinaturas criptográficas SHA-256 oficiais.
 
 ---
 
-### 🌟 Novidades da Versão 1.3.2:
+### 🌟 Novidades da Versão 1.3.3:
 
-1. **Suporte Completo a Acentuação na Fonte Cartunesca Original (`Torchlight Regular.ttf`)**:
-   - Correção definitiva para itens que exibiam espaços em branco nos acentos (ex: *"Po  o de Mana"* agora renderiza perfeitamente como **"Poção de Mana"**).
-   - A fonte original cartunesca foi preservada em 100% do seu traço artístico, fundindo os contornos nativos de cedilhas, tis, circunflexos e agudos desenhados pelos artistas originais da Runic Games.
-
-2. **Localização Completa das Classes de Personagens (`media/units/players/`)**:
-   - Menu de criação de personagens agora exibe **Destruidor**, **Alquimista** e **Vencedora**.
-   - Descrições completas traduzidas no menu de criação de personagem.
-   - Nomes de abas de árvores de habilidades traduzidos na íntegra.
-
-3. **Correção de Viewboxes e Margens da Interface CEGUI**:
-   - Caixa do campo de texto *"Nome do Personagem"* ampliada de 140px para 260px (eliminando o corte *"Nome do Personager"*).
-   - Janela modal de Dicas (*"Dica"*) ampliada para 450px com margens internas de 25px para evitar cortes visuais contra a moldura ornamental.
-
-4. **Eliminação de Deriva de Formatação e Pipes (`|`)**:
-   - Remoção de tags de cor (`|c...|u`) no texto traduzido de diálogos e missões que causavam dessincronização de bytes UTF-8 no motor CEGUI 0.6 (eliminando corrupções como `|orchlight|` e `|cbar Reluzente`).
-   - Espaçamento corrigido nas estatísticas de recompensa de missões (**"PO: "**, **"XP: "**, **"Fama: "**).
-
-5. **Localização Nativa dos Menus de Opções (`Torchlight.exe`)**:
-   - Itens dos menus suspensos de Sombras e Partículas totalmente em português (*"Desligado"*, *"Apenas Iluminação"*, *"Baixo"*, *"Médio"*, *"Alto"*, *"Muito Alto"*) com codificação compatível Latin-1 sem caracteres estranhos (`Ã§`).
-   - Título da janela de dicas agora exibe **"Dica"** em vez de *"Tip"*.
-
----
-### 🛡️ Segurança Antivírus:
-- Compilado nativamente com Inno Setup 6 (Delphi PE) sem empacotadores UPX.
-- Zero falsos-positivos.
+1. **Localização do Cache Mestre de Unidades (`masterresourceunits.dat.ADM`)**:
+   - Correção definitiva das classes de personagens e descrições no menu de criação de personagem (**Destruidor**, **Alquimista**, **Vencedora**). O Torchlight lê o arquivo pré-compilado mestre em vez dos arquivos individuais de unidades.
+2. **Sincronização Completa com a Pasta de Mods do AppData**:
+   - Atualização automática dos layouts corrigidos, fonte cartunesca com acentos e catálogo traduzido na pasta `%APPDATA%\\runic games\\torchlight\\mods\\Traducao_ptBR`.
+3. **Limpeza Automática de Caches Binários Obsoletos**:
+   - O instalador remove caches antigos (`TRANSLATION.DAT.adm`) para garantir que o jogo carregue sempre o arquivo de tradução mais recente e limpo.
+4. **Fonte Cartunesca Original com Acentuação Completa**:
+   - `Torchlight Regular.ttf` totalmente corrigida com suporte a `ç`, `ã`, `õ`, `á`, `é`, `í`, `ó`, etc., sem qualquer perda do estilo visual original.
+5. **Correção de Viewbox e Deriva de Tags de Cor**:
+   - "Nome do Personagem" sem cortes e eliminação de caracteres soltos (`|orchlight|`, `|cbar`).
 """
 
     # Check if release already exists
@@ -99,7 +84,7 @@ Criado por **Palestino7**
     # Upload files
     files_to_upload = [
         ("Torchlight_Traducao_ptBR_Setup.exe", "dist/Torchlight_Traducao_ptBR_Setup.exe", "application/x-msdownload"),
-        ("Torchlight_Traducao_ptBR_v1.3.2.zip", "dist/Torchlight_Traducao_ptBR_v1.3.2.zip", "application/zip"),
+        ("Torchlight_Traducao_ptBR_v1.3.3.zip", "dist/Torchlight_Traducao_ptBR_v1.3.3.zip", "application/zip"),
         ("SHA256SUMS.txt", "dist/SHA256SUMS.txt", "text/plain"),
     ]
 
