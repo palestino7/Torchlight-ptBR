@@ -8,20 +8,22 @@ Patches Torchlight.exe to localize hardcoded strings:
 - Particles: "Low", "Medium", "High"
   -> "Baixo", "Médio", "Alto"
 - TipMenu Title: "Tip" -> "Dica" (UTF-16LE)
-- Character Creation screen:
+- Character Creation screen (CharacterCreate::update @ 0x5b6d10):
   - Class Titles: "Destroyer", "Alchemist", "Vanquisher"
     -> "Destruidor", "Alquimista", "Conquistadora"
-  - Class Descriptions:
-    -> "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos."
-    -> "O Alquimista canaliza o poder do Âmbar para atacar de longe e invocar lacaios."
-    -> "A Conquistadora é uma atiradora perita e usa armadilhas para debilitar seus inimigos."
+  - Class Descriptions -> Portuguese (Windows-1252)
 
-Works by:
-1. Writing UI option strings into .rdata slack space at file offset 0x7e6912 (VA 0xbe7712).
-2. Writing character class descriptions into .rdata and .text slack spaces.
-3. Injecting high-performance assembly hooks in .text slack space at 0x65b0c0 (VA 0xa5bcc0).
-4. Updating 32-bit pointer opcodes and hooking CharacterCreate::update call sites.
-5. Automatically backing up the original binary to Torchlight.exe.orig.
+IMPORTANT (ASLR): Torchlight.exe is linked with DYNAMIC_BASE, so the loader
+rebases the image at every launch. The original `push imm32` operands patched
+below are covered by the relocation table, but injected code placed in slack
+space is NOT. Therefore every injected hook is POSITION INDEPENDENT: it gets
+EIP via `call $+5 / pop edx` and reaches the c_str() IAT slot and the strings
+through offsets relative to itself (the image is rebased as a whole, so such
+offsets never change). Earlier revisions used absolute addresses and crashed
+with an access violation the moment the character creation screen opened.
+
+The internal unit names ("Destroyer", ...) are never touched, so GetUnit()
+keeps working and saves stay compatible.
 """
 
 import argparse
@@ -39,7 +41,7 @@ STRINGS_TO_EMBED = [
     ("Medio", b"M\xe9dio\x00"),                                   # len 6
     ("Alto", b"Alto\x00"),                                        # len 5
     ("Muito Alto", b"Muito Alto\x00"),                            # len 11
-    ("Dica", "Dica\x00".encode("utf-16le")),                     # len 10
+    ("Dica", "Dica\x00".encode("utf-16le")),                     # len 10 (UTF-16LE for TipMenu title)
 ]
 
 EMBEDDED_VAS = {}
@@ -89,6 +91,174 @@ PATCH_TABLE = [
     (0x62740d, 0xa89a70, EMBEDDED_VAS["Alto"]),
 ]
 
+# ---------------------------------------------------------------------------
+# Character Creation localization
+#
+# Three engine/loader facts this patch has to respect (each one crashed an
+# earlier revision):
+#   1. ASLR: the image is rebased on every launch. Injected code lives in slack
+#      space WITHOUT relocation entries, so it must be position independent
+#      (no absolute addresses at all).
+#   2. The loader adds the rebase delta to EVERY 4-byte word listed in the
+#      relocation table. Patched bytes must never overlap one of those words
+#      (e.g. the operand of `call dword ptr [c_str]` at 0x5b6dc0..0x5b6dc3, or the
+#      operand of the last thunk at 0xa5bca7..0xa5bcaa). So the original
+#      `call [c_str]` is left untouched and the hook is entered only AFTER it,
+#      working on the `const char*` already returned in EAX.
+#   3. The true end of .text code is 0xa5bcab (not 0xa5bcaa).
+#
+# Hook flow (CharacterCreate::update, thiscall string -> CEGUI::String):
+#       call [c_str]            ; original, untouched          -> EAX = const char*
+#       call hook               ; replaces `push eax; lea ecx,[esp+N]`
+#       call [CEGUI::String::String(const char*)]   ; original, untouched
+#   hook:  pop edx              ; edx = return address (PIC anchor)
+#          ...map EAX to the translated string using `lea eax,[edx+disp]`...
+#          push eax / lea ecx,[esp+N]   ; the instructions the call replaced
+#          jmp edx              ; resume exactly where the original code continues
+# ---------------------------------------------------------------------------
+HOOK_RAW = 0x65b0b0          # .text slack (file offset) - zero padding in the original
+HOOK_VA = 0xa5bcb0           # same location as preferred VA (image base 0x400000)
+HOOK_LIMIT_RAW = 0x65b200    # end of .text raw data
+DESC_HOOK_OFF = 0x50         # second hook starts here (first one is < 0x50 bytes)
+STR_OFF = 0xA0               # strings start here
+
+# .rdata slack for the two long descriptions that do not fit in the .text slack
+RDATA_DESC_RAW = 0x7e6954
+RDATA_DESC_VA = 0xbe7754
+RDATA_LIMIT_RAW = 0x7e6a00
+
+# Replaced instruction sequences inside CharacterCreate::update:
+#   (file offset, VA, original bytes, tail re-executed by the hook, padding nops)
+SITE_NAME = (0x1b61c4, 0x5b6dc4, bytes.fromhex("508d4c2468"),
+             bytes.fromhex("508d4c2468"))                  # push eax; lea ecx,[esp+0x68]
+SITE_DESC = (0x1b6248, 0x5b6e48, bytes.fromhex("508d8c2400010000"),
+             bytes.fromhex("508d8c2400010000"))            # push eax; lea ecx,[esp+0x100]
+
+# Older (broken) revisions modified other places. Everything is restored/cleared
+# so that an executable patched by an old version is healed by re-running.
+ORIG_CSTR_CALL = bytes.fromhex("ff1590c3a50050")  # call dword ptr [0xa5c390]; push eax
+STRING_CTOR_CALL = bytes.fromhex("ff1544c0a500")  # call dword ptr [0xa5c044] (CEGUI::String ctor) - anchor
+LEGACY_RESTORE = [
+    (0x1b6155, bytes.fromhex("e8f64f0100")),   # 0x5b6d55 call 0x5cbd50
+    (0x1b61a9, bytes.fromhex("e8a24f0100")),   # 0x5b6da9 call 0x5cbd50
+    (0x1b61be, ORIG_CSTR_CALL),                # 0x5b6dbe call [c_str]; push eax
+    (0x1b6242, ORIG_CSTR_CALL),                # 0x5b6e42 call [c_str]; push eax
+]
+LEGACY_ZERO = [
+    (0x65b0aa, 0x65b200),      # old hooks/strings in .text slack (0x65b0aa restores a thunk byte = 0)
+    (0x7e6954, 0x7e6a00),      # old descriptions in .rdata slack
+    (0x7e6a10, 0x7e6b60),      # old strings written into .data (zero in the original)
+]
+
+CLASS_NAMES = [b"Destruidor\x00", b"Alquimista\x00", b"Conquistadora\x00"]
+DESC_D = "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos.\x00".encode("windows-1252")
+DESC_A = "O Alquimista canaliza o poder do \xc2mbar para atacar de longe e invocar lacaios.\x00".encode("windows-1252")
+DESC_V = "A Conquistadora \xe9 uma atiradora perita e usa armadilhas para debilitar seus inimigos.\x00".encode("windows-1252")
+
+
+def _build_hook(ret_va, prologue, entries, tail):
+    """Assemble one position independent hook.
+
+    ret_va:   VA the hook returns to (= call site + 5). Used as PIC anchor: after
+              `pop edx`, EDX == ret_va at run time (whatever the load address).
+    prologue: None or (0, char). If it does not match, EAX is passed through.
+    entries:  list of (char_offset, char, target_va) mapping EAX -> target string
+    tail:     original instructions re-executed by the hook (push eax; lea ...)
+    """
+    c = bytearray()
+    c += b"\x5a"                                    # pop edx            ; edx = return address
+    jumps = []                                      # (position of rel8, kind, index)
+    if prologue:
+        _off, ch = prologue
+        c += b"\x80\x38" + bytes([ch])              # cmp byte ptr [eax], ch
+        jumps.append((len(c) + 1, "done", None))
+        c += b"\x75\x00"                            # jne done
+    for i, (off, ch, _tgt) in enumerate(entries):
+        if off == 0:
+            c += b"\x80\x38" + bytes([ch])          # cmp byte ptr [eax], ch
+        else:
+            c += b"\x80\x78" + bytes([off, ch])     # cmp byte ptr [eax+off], ch
+        jumps.append((len(c) + 1, "entry", i))
+        c += b"\x74\x00"                            # je entry_i
+    done_off = len(c)
+    c += tail                                       # done: push eax; lea ecx,[esp+N]
+    c += b"\xff\xe2"                                # jmp edx
+
+    entry_off = []
+    for _off, _ch, tgt in entries:
+        entry_off.append(len(c))
+        c += b"\x8d\x82" + struct.pack("<i", tgt - ret_va)   # lea eax, [edx + (tgt - ret_va)]
+        rel = done_off - (len(c) + 2)
+        assert -128 <= rel < 0
+        c += b"\xeb" + struct.pack("<b", rel)                # jmp done
+
+    for pos, kind, idx in jumps:
+        target = done_off if kind == "done" else entry_off[idx]
+        rel = target - (pos + 1)
+        assert 0 <= rel < 0x80, rel
+        c[pos] = rel
+    return bytes(c)
+
+
+def build_class_patch():
+    """Return the list of (file_offset, bytes) writes of the class patch."""
+    name_hook_va = HOOK_VA
+    desc_hook_va = HOOK_VA + DESC_HOOK_OFF
+    str_raw = HOOK_RAW + STR_OFF
+    str_va = HOOK_VA + STR_OFF
+
+    va_names, off = [], 0
+    for n in CLASS_NAMES:
+        va_names.append(str_va + off)
+        off += len(n)
+    va_desc_d = str_va + off
+    blob = b"".join(CLASS_NAMES) + DESC_D
+    assert str_raw + len(blob) <= HOOK_LIMIT_RAW, "Overflow in .text slack space"
+    assert RDATA_DESC_RAW + len(DESC_A) + len(DESC_V) <= RDATA_LIMIT_RAW, "Overflow in .rdata slack space"
+    va_desc_a = RDATA_DESC_VA
+    va_desc_v = RDATA_DESC_VA + len(DESC_A)
+
+    name_raw, name_va, name_orig, name_tail = SITE_NAME
+    desc_raw, desc_va, desc_orig, desc_tail = SITE_DESC
+    name_code = _build_hook(name_va + 5, None, [
+        (0, ord("D"), va_names[0]), (0, ord("A"), va_names[1]), (0, ord("V"), va_names[2]),
+    ], name_tail)
+    desc_code = _build_hook(desc_va + 5, (0, ord("T")), [
+        (4, ord("D"), va_desc_d), (4, ord("A"), va_desc_a), (4, ord("V"), va_desc_v),
+    ], desc_tail)
+    assert len(name_code) <= DESC_HOOK_OFF, len(name_code)
+    assert DESC_HOOK_OFF + len(desc_code) <= STR_OFF, len(desc_code)
+
+    writes = [
+        (HOOK_RAW, name_code),
+        (HOOK_RAW + DESC_HOOK_OFF, desc_code),
+        (str_raw, blob),
+        (RDATA_DESC_RAW, DESC_A + DESC_V),
+    ]
+    for (raw, va, orig, _tail), hook_va in ((SITE_NAME, name_hook_va), (SITE_DESC, desc_hook_va)):
+        patch = b"\xe8" + struct.pack("<i", hook_va - (va + 5))
+        patch += b"\x90" * (len(orig) - len(patch))      # pad (nops) to the replaced length
+        writes.append((raw, patch))
+    return writes
+
+
+def apply_class_patch(data: bytearray) -> bool:
+    """Apply (or re-apply) the character creation patch on `data` in place."""
+    # Anchor check: right after each replaced sequence the original code calls
+    # CEGUI::String::String(const char*) - bytes no revision ever touched.
+    for raw, _va, orig, _tail in (SITE_NAME, SITE_DESC):
+        a = raw + len(orig)
+        if bytes(data[a:a + len(STRING_CTOR_CALL)]) != STRING_CTOR_CALL:
+            print(f"[Warning] Unexpected code near {hex(raw)}: character creation patch skipped")
+            return False
+    for raw, original in LEGACY_RESTORE:
+        data[raw:raw + len(original)] = original
+    for a, b in LEGACY_ZERO:
+        data[a:b] = b"\x00" * (b - a)
+    for raw, blob in build_class_patch():
+        data[raw:raw + len(blob)] = blob
+    return True
+
 
 def patch_executable(exe_path: str, backup: bool = True) -> bool:
     if not os.path.exists(exe_path):
@@ -114,7 +284,7 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
         data[curr_offset : curr_offset + len(sbytes)] = sbytes
         curr_offset += len(sbytes)
 
-    # 2. Patch push opcodes
+    # 2. Patch push opcodes (relocated by the loader, so ASLR-safe)
     patched_count = 0
     for raw_offset, orig_va, new_va in PATCH_TABLE:
         opcode = data[raw_offset]
@@ -129,121 +299,14 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
         struct.pack_into("<I", data, raw_offset + 1, new_va)
         patched_count += 1
 
-    # 3. Localized character class names and descriptions in .data slack space (0x7e6a10, VA 0xbe8010)
-    data_slack_raw = 0x7e6a10
-    data_slack_va = 0xbe8010
-
-    s_destruidor = b"Destruidor\x00"
-    s_alquimista = b"Alquimista\x00"
-    s_conquistadora = b"Conquistadora\x00"
-    s_desc_d = "O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos.\x00".encode("windows-1252")
-    s_desc_a = "O Alquimista canaliza o poder do \xc2mbar para atacar de longe e invocar lacaios.\x00".encode("windows-1252")
-    s_desc_v = "A Conquistadora \xe9 uma atiradora perita e usa armadilhas para debilitar seus inimigos.\x00".encode("windows-1252")
-
-    strings_data = [
-        ("s_dest", s_destruidor),
-        ("s_alch", s_alquimista),
-        ("s_vanq", s_conquistadora),
-        ("s_desc_d", s_desc_d),
-        ("s_desc_a", s_desc_a),
-        ("s_desc_v", s_desc_v),
-    ]
-
-    vas_data = {}
-    cur_r = data_slack_raw
-    cur_v = data_slack_va
-    for sname, sbytes in strings_data:
-        vas_data[sname] = cur_v
-        data[cur_r : cur_r + len(sbytes)] = sbytes
-        cur_r += len(sbytes)
-        cur_v += len(sbytes)
-    assert cur_r <= 0x7e6ee0, "Overflow in .data slack space"
-
-    # 4. Clean hook functions in .text slack space at 0x65b0aa (VA 0xa5bcaa)
-    # Hook 1: Intercepts c_str() call for class name and substitutes translated pointer
-    # Hook 2: Intercepts c_str() call for class description and substitutes translated pointer
-    hook_raw = 0x65b0aa
-    hook_va = 0xa5bcaa
-
-    hook_bytes = bytearray([
-        # 0x00: hook_class_name
-        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, # call dword ptr [0xa5c390]
-        0x80, 0x38, 0x44,                   # cmp byte ptr [eax], 'D'
-        0x74, 0x0b,                         # je .Lname_dest (+11 -> 0x16)
-        0x80, 0x38, 0x41,                   # cmp byte ptr [eax], 'A'
-        0x74, 0x0c,                         # je .Lname_alch (+12 -> 0x1c)
-        0x80, 0x38, 0x56,                   # cmp byte ptr [eax], 'V'
-        0x74, 0x0d,                         # je .Lname_vanq (+13 -> 0x22)
-        0xc3,                               # ret (0x15)
-        # 0x16: .Lname_dest
-        0xb8,
-    ])
-    hook_bytes += struct.pack("<I", vas_data["s_dest"])
-    hook_bytes += bytearray([0xc3]) # ret (0x1b)
-
-    # 0x1c: .Lname_alch
-    hook_bytes += bytearray([0xb8])
-    hook_bytes += struct.pack("<I", vas_data["s_alch"])
-    hook_bytes += bytearray([0xc3]) # ret (0x21)
-
-    # 0x22: .Lname_vanq
-    hook_bytes += bytearray([0xb8])
-    hook_bytes += struct.pack("<I", vas_data["s_vanq"])
-    hook_bytes += bytearray([0xc3]) # ret (0x27)
-
-    assert len(hook_bytes) == 0x28
-
-    # 0x28: hook_class_desc
-    hook_bytes += bytearray([
-        0xff, 0x15, 0x90, 0xc3, 0xa5, 0x00, # call dword ptr [0xa5c390] (0x28)
-        0x80, 0x38, 0x54,                   # cmp byte ptr [eax], 'T' (0x2e)
-        0x75, 0x12,                         # jne .Ldesc_done (+18 -> 0x45)
-        0x80, 0x78, 0x04, 0x44,             # cmp byte ptr [eax+4], 'D' (0x33)
-        0x74, 0x0d,                         # je .Ldesc_dest (+13 -> 0x46)
-        0x80, 0x78, 0x04, 0x41,             # cmp byte ptr [eax+4], 'A' (0x39)
-        0x74, 0x0d,                         # je .Ldesc_alch (+13 -> 0x4c)
-        0x80, 0x78, 0x04, 0x56,             # cmp byte ptr [eax+4], 'V' (0x3f)
-        0x74, 0x0d,                         # je .Ldesc_vanq (+13 -> 0x52)
-        # 0x45: .Ldesc_done
-        0xc3,                               # ret
-        # 0x46: .Ldesc_dest
-        0xb8,
-    ])
-    hook_bytes += struct.pack("<I", vas_data["s_desc_d"])
-    hook_bytes += bytearray([0xc3]) # ret (0x4b)
-
-    # 0x4c: .Ldesc_alch
-    hook_bytes += bytearray([0xb8])
-    hook_bytes += struct.pack("<I", vas_data["s_desc_a"])
-    hook_bytes += bytearray([0xc3]) # ret (0x51)
-
-    # 0x52: .Ldesc_vanq
-    hook_bytes += bytearray([0xb8])
-    hook_bytes += struct.pack("<I", vas_data["s_desc_v"])
-    hook_bytes += bytearray([0xc3]) # ret (0x57)
-
-    assert len(hook_bytes) == 0x58
-    assert hook_raw + len(hook_bytes) <= 0x65b200, "Overflow in .text slack space"
-    data[hook_raw : hook_raw + len(hook_bytes)] = hook_bytes
-
-    # 5. Patch call sites in CharacterCreate::update
-    # Site 2 at 0x5b6dbe (raw 0x1b61be): call hook_class_name; push eax; nop
-    site2_raw = 0x1b61be
-    site2_va = 0x5b6dbe
-    rel2 = hook_va - (site2_va + 5)
-    data[site2_raw : site2_raw + 7] = b"\xe8" + struct.pack("<i", rel2) + b"\x50\x90"
-
-    # Site 3 at 0x5b6e42 (raw 0x1b6242): call hook_class_desc; push eax; nop
-    site3_raw = 0x1b6242
-    site3_va = 0x5b6e42
-    rel3 = (hook_va + 0x28) - (site3_va + 5)
-    data[site3_raw : site3_raw + 7] = b"\xe8" + struct.pack("<i", rel3) + b"\x50\x90"
+    # 3. Character Creation class names / descriptions (position independent hooks)
+    class_ok = apply_class_patch(data)
 
     with open(exe_path, "wb") as f:
         f.write(data)
 
     print(f"[Success] Patched {patched_count}/{len(PATCH_TABLE)} option instructions in {exe_path}")
-    print("          - Injected CharacterCreate class titles & descriptions localizer")
+    print(f"          - Character creation localizer: {'applied' if class_ok else 'SKIPPED'}")
     print(f"          - Embedded strings written to {hex(SLACK_RAW_START)}")
     return True
 
@@ -258,14 +321,51 @@ def revert_executable(exe_path: str) -> bool:
     return True
 
 
+def emit_c_header(path: str) -> None:
+    """Generate tools/patch_class_data.h consumed by patch_torchlight.c."""
+    def arr(blob):
+        return ", ".join(f"0x{b:02x}" for b in blob)
+
+    def table(name, entries, prefix):
+        out = []
+        rows = []
+        for i, (raw, blob) in enumerate(entries):
+            out.append(f"static const unsigned char {prefix}_{i}[] = {{ {arr(blob)} }};")
+            rows.append(f"    {{ 0x{raw:x}, {len(blob)}, {prefix}_{i} }},")
+        out.append(f"static const ClassWrite {name}[] = {{")
+        out += rows
+        out.append("};")
+        return out
+
+    lines = [
+        "/* AUTO-GENERATED by tools/patch_torchlight_exe.py --emit-c. DO NOT EDIT. */",
+        "typedef struct { unsigned int raw; unsigned int len; const unsigned char* bytes; } ClassWrite;",
+    ]
+    lines += table("class_writes", build_class_patch(), "class_blob")
+    lines += table("class_restore", LEGACY_RESTORE, "restore_blob")
+    lines.append("static const unsigned int class_anchor_raw[] = { 0x%x, 0x%x };" % (
+        SITE_NAME[0] + len(SITE_NAME[2]), SITE_DESC[0] + len(SITE_DESC[2])))
+    lines.append("static const unsigned char class_anchor_bytes[%d] = { %s };" % (len(STRING_CTOR_CALL), arr(STRING_CTOR_CALL)))
+    lines.append("static const unsigned int class_zero[][2] = {")
+    for a, b in LEGACY_ZERO:
+        lines.append("    { 0x%x, 0x%x }," % (a, b))
+    lines.append("};")
+    with open(path, "w", newline="\n") as f:
+        f.write("\n".join(lines) + "\n")
+    print(f"[Emit] Wrote {path}")
+
+
 def main():
     default_exe = r"C:\Program Files (x86)\Steam\steamapps\common\Torchlight\Torchlight.exe"
     parser = argparse.ArgumentParser(description="Patch Torchlight.exe to localize options dropdowns and UI strings")
     parser.add_argument("--exe", default=default_exe, help=f"Path to Torchlight.exe (default: {default_exe})")
     parser.add_argument("--revert", action="store_true", help="Revert to Torchlight.exe.orig")
+    parser.add_argument("--emit-c", metavar="HEADER", help="Write the C header used by tools/patch_torchlight.c and exit")
     args = parser.parse_args()
 
-    if args.revert:
+    if args.emit_c:
+        emit_c_header(args.emit_c)
+    elif args.revert:
         revert_executable(args.exe)
     else:
         patch_executable(args.exe)
