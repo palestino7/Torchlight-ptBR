@@ -3083,7 +3083,7 @@
       {
         "id": "Quests_0435",
         "original": "Brink, no! What has happened!\\n\\nAlas, my friend...",
-        "translation": "Brink, não! O que aconteceu?\n\nAi de mim, meu amigo...",
+        "translation": "Brink, não! O que aconteceu?\\n\\nAi de mim, meu amigo...",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT5.DAT.adm"
       },
       {
@@ -34621,7 +34621,7 @@
       {
         "id": "Items_5030",
         "original": "Epic Double Damage Axe!",
-        "translation": "Machado de Dano Duplo! Épico",
+        "translation": "Machado de Dano Duplo Épico!",
         "context": "media/units/items/itemstier2/axes/EPICAXE_UNIQUE_11B.DAT.adm"
       },
       {
@@ -47859,7 +47859,7 @@
       {
         "id": "Skills_1411",
         "original": "\\nPhase to a new location, dealing damage as you enter and exit nether space.\\n",
-        "translation": "\nTeletransporta-se para um novo local através do éter, causando dano ao entrar e sair do espaço sombrio.\n",
+        "translation": "\\nTeletransporta-se para um novo local através do éter, causando dano ao entrar e sair do espaço sombrio.\\n",
         "context": "media/skills/alchemist/emberphase/EMBERPHASE.DAT.adm"
       },
       {

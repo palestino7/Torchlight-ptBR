@@ -64,8 +64,8 @@ Se desejar conferir a autenticidade dos arquivos da [Release Oficial](https://gi
 
 | Arquivo de Distribuição | Tamanho | Hash SHA-256 Oficial |
 | :--- | :--- | :--- |
-| `Torchlight_Traducao_ptBR_Setup.exe` | 2.5 MB | `1cae1a07519f2451e458f0b282c4997de93fdc1a6d3bb45e1e9eb5e52b1c73d8` |
-| `Torchlight_Traducao_ptBR_v1.1.0.zip` | 2.0 MB | `7c6c8038f6c1ca3c4e417d56c0ee6af81d1736279d7cd07629cb30de4e0dfb0b` |
+| `Torchlight_Traducao_ptBR_Setup.exe` | 2.5 MB | `3333fd02430a7f578f06b455047982efb53f329957b9089c9fef11a783cefc37` |
+| `Torchlight_Traducao_ptBR_v1.1.0.zip` | 2.0 MB | `d513c5f495872909c30b78a0737e20df17bc3fe94f38e54f8c3929b383e673a7` |
 
 ---
 
