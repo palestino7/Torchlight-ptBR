@@ -1595,7 +1595,7 @@
       {
         "id": "Quests_0187",
         "original": "FRIENDLYGREET",
-        "translation": "SAUDAÇÃO DE FRIENDLY",
+        "translation": "SAUDAÇÃO AMIGÁVEL",
         "context": "media/Quests/Hatch/QUEST1.DAT.adm"
       },
       {
@@ -10735,7 +10735,7 @@
       {
         "id": "Items_1049",
         "original": "Hand of Fate",
-        "translation": "Mão de Fate",
+        "translation": "Mão do Destino",
         "context": "media/units/items/wands/WAND_UNIQUE_12C.DAT.adm"
       },
       {
@@ -13165,7 +13165,7 @@
       {
         "id": "Items_1454",
         "original": "Spire of Anom",
-        "translation": "Spire de Anom",
+        "translation": "Pináculo de Anom",
         "context": "media/units/items/wands/WAND_UNIQUE_13B.DAT.adm"
       },
       {
@@ -13369,7 +13369,7 @@
       {
         "id": "Items_1488",
         "original": "Wall of Edges",
-        "translation": "Wall de Edges",
+        "translation": "Muralha de Gumes",
         "context": "media/units/items/shields/SHIELD_UNIQUE_13B.DAT.adm"
       },
       {
@@ -14785,7 +14785,7 @@
       {
         "id": "Items_1724",
         "original": "Overseer's Eye",
-        "translation": "Olho de Overseer",
+        "translation": "Olho do Feitor",
         "context": "media/units/items/potions/POTION_LICHKING.DAT.adm"
       },
       {
@@ -15205,7 +15205,7 @@
       {
         "id": "Items_1794",
         "original": "Wall of Blades",
-        "translation": "Wall de Blades",
+        "translation": "Muralha de Lâminas",
         "context": "media/units/items/shields/SHIELD_UNIQUE_13B.DAT.adm"
       },
       {
@@ -17107,7 +17107,7 @@
       {
         "id": "Items_2111",
         "original": "Horseman's Maul",
-        "translation": "Malho de Horseman",
+        "translation": "Malho do Cavaleiro",
         "context": "media/units/items/polearms/POLEARM_MAGIC_10B.DAT.adm"
       },
       {
@@ -17143,7 +17143,7 @@
       {
         "id": "Items_2117",
         "original": "Juggernaut Mace",
-        "translation": "Maça Juggernaut",
+        "translation": "Maça Devastadora",
         "context": "media/units/items/maces/JUGGERNAUT_MACE.DAT.adm"
       },
       {
@@ -18715,7 +18715,7 @@
       {
         "id": "Items_2379",
         "original": "Chain of Torment",
-        "translation": "Corrente de Torment",
+        "translation": "Corrente do Tormento",
         "context": "media/units/items/quest_items/RQ_CHAINOFTORMENT.DAT.adm"
       },
       {
@@ -18727,7 +18727,7 @@
       {
         "id": "Items_2381",
         "original": "Chunk of Adamant",
-        "translation": "Chunk de Adamant",
+        "translation": "Fragmento de Adamantino",
         "context": "media/units/items/quest_items/RQ_CHUNKOFADAMANT.DAT.adm"
       },
       {
@@ -20377,7 +20377,7 @@
       {
         "id": "Items_2656",
         "original": "epicHand of Fate",
-        "translation": "Mão de Fate Épico",
+        "translation": "Mão do Destino Épica",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_12C.DAT.adm"
       },
       {
@@ -21751,7 +21751,7 @@
       {
         "id": "Items_2885",
         "original": "Epic Hand of Fate",
-        "translation": "Mão de Fate Épico",
+        "translation": "Mão do Destino Épica",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_12C.DAT.adm"
       },
       {
@@ -22333,7 +22333,7 @@
       {
         "id": "Items_2982",
         "original": "Glyph of Movement",
-        "translation": "Glyph de Movement",
+        "translation": "Glifo do Movimento",
         "context": "media/units/items/quest_items/glyphs/GLYPH3.DAT.adm"
       },
       {
@@ -22453,7 +22453,7 @@
       {
         "id": "Items_3002",
         "original": "Leash of Cerebrus",
-        "translation": "Leash de Cerebrus",
+        "translation": "Coleira de Cérbero",
         "context": "media/units/items/maces/MACE_UNIQUE_14B.DAT.adm"
       },
       {
@@ -23641,7 +23641,7 @@
       {
         "id": "Items_3200",
         "original": "epicSpire of Anom",
-        "translation": "Spire de Anom Épico",
+        "translation": "Pináculo de Anom Épico",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_13B.DAT.adm"
       },
       {
@@ -25213,7 +25213,7 @@
       {
         "id": "Items_3462",
         "original": "Epic Spire of Anom",
-        "translation": "Spire de Anom Épico",
+        "translation": "Pináculo de Anom Épico",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_13B.DAT.adm"
       },
       {
@@ -25333,7 +25333,7 @@
       {
         "id": "Items_3482",
         "original": "Epic Wall of Edges",
-        "translation": "Wall de Edges Épico",
+        "translation": "Muralha de Gumes Épica",
         "context": "media/units/items/itemstier2/shields/EPICSHIELD_UNIQUE_13B.DAT.adm"
       },
       {
@@ -25375,7 +25375,7 @@
       {
         "id": "Items_3489",
         "original": "Fragments of Amber",
-        "translation": "Fragments de Amber",
+        "translation": "Fragmentos de Âmbar",
         "context": "media/units/items/axes/AXE_UNIQUE_12B.DAT.adm"
       },
       {
@@ -25681,7 +25681,7 @@
       {
         "id": "Items_3540",
         "original": "Prospector's Cache",
-        "translation": "Esconderijo de Prospector",
+        "translation": "Esconderijo do Garimpeiro",
         "context": "media/units/items/quest_items/RQ_PROSPECTORSCACHE.DAT.adm"
       },
       {
@@ -25825,7 +25825,7 @@
       {
         "id": "Items_3564",
         "original": "Sunburst's Delight",
-        "translation": "Deleite de Sunburst",
+        "translation": "Deleite da Explosão Solar",
         "context": "media/units/items/maces/MACE_UNIQUE_15B.DAT.adm"
       },
       {
@@ -26551,7 +26551,7 @@
       {
         "id": "Items_3685",
         "original": "epicWall of Blades",
-        "translation": "Wall de Blades Épico",
+        "translation": "Muralha de Lâminas Épica",
         "context": "media/units/items/itemstier2/shields/EPICSHIELD_UNIQUE_13B.DAT.adm"
       },
       {
@@ -27475,7 +27475,7 @@
       {
         "id": "Items_3839",
         "original": "Cage of Night Fears",
-        "translation": "Jaula de Night Fears",
+        "translation": "Jaula dos Medos Noturnos",
         "context": "media/units/items/wands/WAND_UNIQUE_14C.DAT.adm"
       },
       {
@@ -28171,7 +28171,7 @@
       {
         "id": "Items_3955",
         "original": "Gambler's Pepperbox",
-        "translation": "Pistola Pimenteiro de Gambler",
+        "translation": "Pistola Pimenteiro do Apostador",
         "context": "media/units/items/pistols/PISTOL_UNIQUE_14B.DAT.adm"
       },
       {
@@ -28207,7 +28207,7 @@
       {
         "id": "Items_3961",
         "original": "Grandpa's Quickload",
-        "translation": "Recarga Rápida de Grandpa",
+        "translation": "Recarga Rápida do Vovô",
         "context": "media/units/items/rifles/RIFLE_UNIQUE_11A.DAT.adm"
       },
       {
@@ -28327,7 +28327,7 @@
       {
         "id": "Items_3981",
         "original": "Magister's Delerium",
-        "translation": "Delírio de Magister",
+        "translation": "Delírio do Magíster",
         "context": "media/units/items/polearms/POLEARM_UNIQUE_14C.DAT.adm"
       },
       {
@@ -28933,7 +28933,7 @@
       {
         "id": "Items_4082",
         "original": "epicJuggernaut Mace",
-        "translation": "Maça Juggernaut Épica",
+        "translation": "Maça Devastadora Épica",
         "context": "media/units/items/itemstier2/maces/EPICJUGGERNAUT_MACE.DAT.adm"
       },
       {
@@ -29857,7 +29857,7 @@
       {
         "id": "Items_4236",
         "original": "Epic Horseman's Maul",
-        "translation": "Malho de Horseman Épico",
+        "translation": "Malho do Cavaleiro Épico",
         "context": "media/units/items/itemstier2/polearms/EPICPOLEARM_MAGIC_10B.DAT.adm"
       },
       {
@@ -29881,7 +29881,7 @@
       {
         "id": "Items_4240",
         "original": "Epic Juggernaut Mace",
-        "translation": "Maça Juggernaut Épica",
+        "translation": "Maça Devastadora Épica",
         "context": "media/units/items/itemstier2/maces/EPICJUGGERNAUT_MACE.DAT.adm"
       },
       {
@@ -30163,7 +30163,7 @@
       {
         "id": "Items_4287",
         "original": "Great Steppe's Reach",
-        "translation": "Alcance de Great Steppe",
+        "translation": "Alcance da Grande Estepe",
         "context": "media/units/items/bows/BOW_UNIQUE_14C.DAT.adm"
       },
       {
@@ -30313,7 +30313,7 @@
       {
         "id": "Items_4312",
         "original": "PERCENT MAGICAL DROP",
-        "translation": "PERCENTUAL DE MAGICAL DROP",
+        "translation": "PERCENTUAL DE CHANCE DE ITENS MÁGICOS",
         "context": "media/units/items/fish/FISH_GOLDFIND.DAT.adm"
       },
       {
@@ -32029,7 +32029,7 @@
       {
         "id": "Items_4598",
         "original": "Manacle of Domination",
-        "translation": "Manacle de Domination",
+        "translation": "Grilhão da Dominação",
         "context": "media/units/items/quest_items/RQ_MANACLEOFDOMINATION.DAT.adm"
       },
       {
@@ -32107,7 +32107,7 @@
       {
         "id": "Items_4611",
         "original": "Stark Fist of Removal",
-        "translation": "Stark Fist de Removal",
+        "translation": "Punho Severo da Remoção",
         "context": "media/units/items/pistols/PISTOL_UNIQUE_16A.DAT.adm"
       },
       {
@@ -32137,7 +32137,7 @@
       {
         "id": "Items_4616",
         "original": "Token of Safe Passage",
-        "translation": "Ficha de Safe Passage",
+        "translation": "Símbolo de Passagem Segura",
         "context": "media/units/items/quest_items/RQ_TOKENOFSAFEPASSAGE.DAT.adm"
       },
       {
@@ -32479,7 +32479,7 @@
       {
         "id": "Items_4673",
         "original": "epicLeash of Cerebrus",
-        "translation": "Leash de Cerebrus Épico",
+        "translation": "Coleira de Cérbero Épica",
         "context": "media/units/items/itemstier2/maces/EPICMACE_UNIQUE_14B.DAT.adm"
       },
       {
@@ -33403,7 +33403,7 @@
       {
         "id": "Items_4827",
         "original": "Epic Leash of Cerebrus",
-        "translation": "Leash de Cerebrus Épico",
+        "translation": "Coleira de Cérbero Épica",
         "context": "media/units/items/itemstier2/maces/EPICMACE_UNIQUE_14B.DAT.adm"
       },
       {
@@ -33961,7 +33961,7 @@
       {
         "id": "Items_4920",
         "original": "epicFragments of Amber",
-        "translation": "Fragments de Amber Épico",
+        "translation": "Fragmentos de Âmbar Épicos",
         "context": "media/units/items/itemstier2/axes/EPICAXE_UNIQUE_12B.DAT.adm"
       },
       {
@@ -33973,7 +33973,7 @@
       {
         "id": "Items_4922",
         "original": "epicGuardian Francisca",
-        "translation": "Francisca do Guardião Épico",
+        "translation": "Francisca do Guardião Épica",
         "context": "media/units/items/itemstier2/axes/EPICAXE_MAGIC_9C.DAT.adm"
       },
       {
@@ -34099,7 +34099,7 @@
       {
         "id": "Items_4943",
         "original": "epicSunburst's Delight",
-        "translation": "Deleite de Sunburst Épico",
+        "translation": "Deleite da Explosão Solar Épico",
         "context": "media/units/items/itemstier2/maces/EPICMACE_UNIQUE_15B.DAT.adm"
       },
       {
@@ -34669,7 +34669,7 @@
       {
         "id": "Items_5038",
         "original": "Epic Fragments of Amber",
-        "translation": "Fragments de Amber Épico",
+        "translation": "Fragmentos de Âmbar Épicos",
         "context": "media/units/items/itemstier2/axes/EPICAXE_UNIQUE_12B.DAT.adm"
       },
       {
@@ -34693,7 +34693,7 @@
       {
         "id": "Items_5042",
         "original": "Epic Guardian Francisca",
-        "translation": "Francisca do Guardião Épico",
+        "translation": "Francisca do Guardião Épica",
         "context": "media/units/items/itemstier2/axes/EPICAXE_MAGIC_9C.DAT.adm"
       },
       {
@@ -35185,7 +35185,7 @@
       {
         "id": "Items_5124",
         "original": "epicCage of Night Fears",
-        "translation": "Jaula de Night Fears Épicos",
+        "translation": "Jaula dos Medos Noturnos Épica",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_14C.DAT.adm"
       },
       {
@@ -35209,7 +35209,7 @@
       {
         "id": "Items_5128",
         "original": "epicGambler's Pepperbox",
-        "translation": "Pistola Pimenteiro de Gambler Épica",
+        "translation": "Pistola Pimenteiro do Apostador Épica",
         "context": "media/units/items/itemstier2/pistols/EPICPISTOL_UNIQUE_14B.DAT.adm"
       },
       {
@@ -35227,7 +35227,7 @@
       {
         "id": "Items_5131",
         "original": "epicGrandpa's Quickload",
-        "translation": "Recarga Rápida de Grandpa Épica",
+        "translation": "Recarga Rápida do Vovô Épica",
         "context": "media/units/items/itemstier2/rifles/EPICRIFLE_UNIQUE_11A.DAT.adm"
       },
       {
@@ -35299,7 +35299,7 @@
       {
         "id": "Items_5143",
         "original": "epicMagister's Delerium",
-        "translation": "Delírio de Magister Épico",
+        "translation": "Delírio do Magíster Épico",
         "context": "media/units/items/itemstier2/polearms/EPICPOLEARM_UNIQUE_14C.DAT.adm"
       },
       {
@@ -35665,7 +35665,7 @@
       {
         "id": "Items_5204",
         "original": "Blessed Broach of Bremer",
-        "translation": "Blessed Broach de Bremer",
+        "translation": "Broche Abençoado de Bremer",
         "context": "media/units/items/amulets/NECKLACE_UNIQUE_08.DAT.adm"
       },
       {
@@ -35749,7 +35749,7 @@
       {
         "id": "Items_5218",
         "original": "Epic Gambler's Pepperbox",
-        "translation": "Pistola Pimenteiro de Gambler Épica",
+        "translation": "Pistola Pimenteiro do Apostador Épica",
         "context": "media/units/items/itemstier2/pistols/EPICPISTOL_UNIQUE_14B.DAT.adm"
       },
       {
@@ -35767,7 +35767,7 @@
       {
         "id": "Items_5221",
         "original": "Epic Grandpa's Quickload",
-        "translation": "Recarga Rápida de Grandpa Épica",
+        "translation": "Recarga Rápida do Vovô Épica",
         "context": "media/units/items/itemstier2/rifles/EPICRIFLE_UNIQUE_11A.DAT.adm"
       },
       {
@@ -35887,7 +35887,7 @@
       {
         "id": "Items_5241",
         "original": "Epic Magister's Delerium",
-        "translation": "Delírio de Magister Épico",
+        "translation": "Delírio do Magíster Épico",
         "context": "media/units/items/itemstier2/polearms/EPICPOLEARM_UNIQUE_14C.DAT.adm"
       },
       {
@@ -36253,7 +36253,7 @@
       {
         "id": "Items_5302",
         "original": "epicGreat Steppe's Reach",
-        "translation": "Alcance de Great Steppe Épico",
+        "translation": "Alcance da Grande Estepe Épico",
         "context": "media/units/items/itemstier2/bows/EPICBOW_UNIQUE_14C.DAT.adm"
       },
       {
@@ -36637,7 +36637,7 @@
       {
         "id": "Items_5366",
         "original": "Epic Great Steppe's Reach",
-        "translation": "Alcance de Great Steppe Épico",
+        "translation": "Alcance da Grande Estepe Épico",
         "context": "media/units/items/itemstier2/bows/EPICBOW_UNIQUE_14C.DAT.adm"
       },
       {
@@ -36853,7 +36853,7 @@
       {
         "id": "Items_5402",
         "original": "Phial of Distilled Aether",
-        "translation": "Frasco de Distilled Aether",
+        "translation": "Frasco de Éter Destilado",
         "context": "media/units/items/quest_items/RQ_PHIALOFDISTILLEDAETHER.DAT.adm"
       },
       {
@@ -37057,7 +37057,7 @@
       {
         "id": "Items_5436",
         "original": "epicStark Fist of Removal",
-        "translation": "Stark Fist de Removal Épica",
+        "translation": "Punho Severo da Remoção Épico",
         "context": "media/units/items/itemstier2/pistols/EPICPISTOL_UNIQUE_16A.DAT.adm"
       },
       {
@@ -38221,7 +38221,7 @@
       {
         "id": "Items_5630",
         "original": "epicBlessed Broach of Bremer",
-        "translation": "Blessed Broach de Bremer Épico",
+        "translation": "Broche Abençoado de Bremer Épico",
         "context": "media/units/items/itemstier2/amulets/EPICNECKLACE_UNIQUE_08.DAT.adm"
       },
       {
@@ -39909,7 +39909,7 @@
       {
         "id": "Skills_0086",
         "original": "feared",
-        "translation": "feared",
+        "translation": "amedrontado",
         "context": "media/Affixes/Skills/TERROR.DAT.adm"
       },
       {
@@ -39951,13 +39951,13 @@
       {
         "id": "Skills_0093",
         "original": "Barrage",
-        "translation": "Barrage",
+        "translation": "Barragem",
         "context": "media/skills/warrior/thunderpunch/THUNDERPUNCH.DAT.adm"
       },
       {
         "id": "Skills_0094",
         "original": "Berserk",
-        "translation": "Berserk",
+        "translation": "Frenesi",
         "context": "media/skills/warrior/Berserk/BERSERK.DAT.adm"
       },
       {
@@ -40443,7 +40443,7 @@
       {
         "id": "Skills_0175",
         "original": "Poisoned",
-        "translation": "Poisoned",
+        "translation": "Envenenado",
         "context": "media/Affixes/Skills/SPELL_POISONCLOUD.DAT.adm"
       },
       {
@@ -40533,7 +40533,7 @@
       {
         "id": "Skills_0190",
         "original": "Stampede",
-        "translation": "Stampede",
+        "translation": "Estouro",
         "context": "media/skills/warrior/forwardblast/FORWARDBLAST.DAT.adm"
       },
       {
@@ -40665,7 +40665,7 @@
       {
         "id": "Skills_0212",
         "original": "Devastate",
-        "translation": "Devastate",
+        "translation": "Devastar",
         "context": "media/skills/warrior/charge/CHARGE.DAT.adm"
       },
       {
@@ -40767,7 +40767,7 @@
       {
         "id": "Skills_0229",
         "original": "Hamstring",
-        "translation": "Hamstring",
+        "translation": "Mutilar",
         "context": "media/skills/vanquisher/hamstring/DASH.DAT.adm"
       },
       {
@@ -41001,7 +41001,7 @@
       {
         "id": "Skills_0268",
         "original": "Adventurer",
-        "translation": "Adventurer",
+        "translation": "Aventureiro",
         "context": "media/skills/shared/passives/ADVENTURER.DAT.adm"
       },
       {
@@ -41061,7 +41061,7 @@
       {
         "id": "Skills_0278",
         "original": "Corruption",
-        "translation": "Corruption",
+        "translation": "Corrupção",
         "context": "media/skills/monsters/corruption/CORRUPTION.DAT.adm"
       },
       {
@@ -43233,7 +43233,7 @@
       {
         "id": "Skills_0640",
         "original": "Crushing Burst",
-        "translation": "Crushing Explosão",
+        "translation": "Explosão Esmagadora",
         "context": "media/skills/warrior/burst/BURST.DAT.adm"
       },
       {
@@ -43245,19 +43245,19 @@
       {
         "id": "Skills_0642",
         "original": "Devouring Trap",
-        "translation": "Devouring Armadilha",
+        "translation": "Armadilha Devoradora",
         "context": "media/skills/vanquisher/armortrap/ARMORTRAP.DAT.adm"
       },
       {
         "id": "Skills_0643",
         "original": "Draining Touch",
-        "translation": "Draining Toque",
+        "translation": "Toque Drenante",
         "context": "media/skills/shared/lifesteal/LIFESTEAL.DAT.adm"
       },
       {
         "id": "Skills_0644",
         "original": "Dwarven Tracer",
-        "translation": "Anão Tracer",
+        "translation": "Rastreador Anão",
         "context": "media/skills/monsters/mechconstruct/TRACER.DAT.adm"
       },
       {
@@ -43281,7 +43281,7 @@
       {
         "id": "Skills_0648",
         "original": "EXPLOSION TRAP",
-        "translation": "EXPLOSION ARMADILHA",
+        "translation": "ARMADILHA EXPLOSIVA",
         "context": "media/skills/traps/EXPLOSION.DAT.adm"
       },
       {
@@ -43533,7 +43533,7 @@
       {
         "id": "Skills_0690",
         "original": "Spectral Decay",
-        "translation": "Espectral Decay",
+        "translation": "Deterioração Espectral",
         "context": "media/skills/warrior/armordebuff/ARMORDEBUFF.DAT.adm"
       },
       {
@@ -43683,7 +43683,7 @@
       {
         "id": "Skills_0715",
         "original": "Whirling Gust2",
-        "translation": "Whirling Rajada2",
+        "translation": "Rajada Giratória 2",
         "context": "media/skills/test/ATTACKSWOOSH.DAT.adm"
       },
       {
@@ -43809,7 +43809,7 @@
       {
         "id": "Skills_0736",
         "original": "Armor Expertise",
-        "translation": "Armadura Expertise",
+        "translation": "Especialização em Armadura",
         "context": "media/skills/shared/passives/ARMOR.DAT.adm"
       },
       {
@@ -43827,7 +43827,7 @@
       {
         "id": "Skills_0739",
         "original": "Crushing Burst2",
-        "translation": "Crushing Explosão2",
+        "translation": "Explosão Esmagadora 2",
         "context": "media/skills/test/SLAMDOWN.DAT.adm"
       },
       {
@@ -44025,7 +44025,7 @@
       {
         "id": "Skills_0772",
         "original": "Shadow Marksman",
-        "translation": "Sombra Marksman",
+        "translation": "Atirador das Sombras",
         "context": "media/skills/warrior/shadowarmor/SHADOWARMOR.DAT.adm"
       },
       {
@@ -45189,7 +45189,7 @@
       {
         "id": "Skills_0966",
         "original": "ELECTRICAL DEFENSE",
-        "translation": "ELECTRICAL DEFESA",
+        "translation": "DEFESA ELÉTRICA",
         "context": "media/Affixes/Skills/SPELL_RESISTALL.DAT.adm"
       },
       {
@@ -46131,7 +46131,7 @@
       {
         "id": "Skills_1123",
         "original": "EXPLOSION TRAP ALWAYS",
-        "translation": "EXPLOSION ARMADILHA ALWAYS",
+        "translation": "ARMADILHA EXPLOSIVA SEMPRE",
         "context": "media/skills/traps/EXPLOSION_ALWAYS.DAT.adm"
       },
       {
@@ -46359,7 +46359,7 @@
       {
         "id": "Skills_1161",
         "original": "Martial Weapons Master",
-        "translation": "Martial Armas Mestre",
+        "translation": "Mestre em Armas Marciais",
         "context": "media/skills/shared/passives/MARTIAL.DAT.adm"
       },
       {
@@ -46539,7 +46539,7 @@
       {
         "id": "Skills_1191",
         "original": "Magic Weapons Expertise",
-        "translation": "Mágica Armas Expertise",
+        "translation": "Especialização em Armas Mágicas",
         "context": "media/skills/shared/passives/MAGIC.DAT.adm"
       },
       {
@@ -46557,7 +46557,7 @@
       {
         "id": "Skills_1194",
         "original": "PHALANX SUMMON DURATION",
-        "translation": "PHALANX INVOCAÇÃO DURAÇÃO",
+        "translation": "DURAÇÃO DE INVOCAÇÃO DA FALANGE",
         "context": "media/Affixes/Skills/PHALANX.DAT.adm"
       },
       {
@@ -46641,7 +46641,7 @@
       {
         "id": "Skills_1208",
         "original": "Henchmen Missile Reflect",
-        "translation": "Henchmen Projétil Reflect",
+        "translation": "Reflexão de Projéteis dos Capangas",
         "context": "media/skills/monsters/FirstHenchmen/MISSILEREFLECT.DAT.adm"
       },
       {
@@ -46689,7 +46689,7 @@
       {
         "id": "Skills_1216",
         "original": "Ranged Weapons Expertise",
-        "translation": "À Distância Armas Expertise",
+        "translation": "Especialização em Armas de Longo Alcance",
         "context": "media/skills/shared/passives/RANGED.DAT.adm"
       },
       {
@@ -46791,7 +46791,7 @@
       {
         "id": "Skills_1233",
         "original": "Martial Weapons Expertise",
-        "translation": "Martial Armas Expertise",
+        "translation": "Especialização em Armas Marciais",
         "context": "media/skills/shared/passives/MARTIAL.DAT.adm"
       },
       {
@@ -51631,7 +51631,7 @@
       {
         "id": "Monsters_0096",
         "original": "Undead",
-        "translation": "Undead",
+        "translation": "Morto-vivo",
         "context": "media/units/monsters/SkeletonWarrior/SKELETONKNIGHT.DAT.adm"
       },
       {
@@ -51655,7 +51655,7 @@
       {
         "id": "Monsters_0100",
         "original": "sentry",
-        "translation": "sentry",
+        "translation": "sentinela",
         "context": "media/units/monsters/EmberSentry/EMBERSENTRY.DAT.adm"
       },
       {
@@ -51697,7 +51697,7 @@
       {
         "id": "Monsters_0107",
         "original": "Crawler",
-        "translation": "Crawler",
+        "translation": "Rastejador",
         "context": "media/units/monsters/Mech_Crawler/MECH_CRAWLER.DAT.adm"
       },
       {
@@ -51811,7 +51811,7 @@
       {
         "id": "Monsters_0126",
         "original": "Spectre",
-        "translation": "Spectre",
+        "translation": "Espectro",
         "context": "media/units/monsters/Ghost/GHOST.DAT.adm"
       },
       {
@@ -51835,7 +51835,7 @@
       {
         "id": "Monsters_0130",
         "original": "gambler",
-        "translation": "gambler",
+        "translation": "apostador",
         "context": "media/units/monsters/Merchant/MERCHANT_GAMBLER.DAT.adm"
       },
       {
@@ -51865,7 +51865,7 @@
       {
         "id": "Monsters_0135",
         "original": "Aloe Gel",
-        "translation": "Gel de Aloe",
+        "translation": "Gel de Babosa",
         "context": "media/units/monsters/Gel/PET_GEL_ALOE.DAT.adm"
       },
       {
@@ -51907,7 +51907,7 @@
       {
         "id": "Monsters_0142",
         "original": "Disciple",
-        "translation": "Disciple",
+        "translation": "Discípulo",
         "context": "media/units/monsters/Disciple/DISCIPLE.DAT.adm"
       },
       {
@@ -51925,7 +51925,7 @@
       {
         "id": "Monsters_0145",
         "original": "Enslaved",
-        "translation": "Enslaved",
+        "translation": "Escravizado",
         "context": "media/units/monsters/SkeletonWarrior/ENSLAVED.DAT.adm"
       },
       {
@@ -51979,7 +51979,7 @@
       {
         "id": "Monsters_0154",
         "original": "Mushroom",
-        "translation": "Mushroom",
+        "translation": "Cogumelo",
         "context": "media/units/monsters/Mushroom/POISON_MUSHROOM.DAT.adm"
       },
       {
@@ -52045,7 +52045,7 @@
       {
         "id": "Monsters_0165",
         "original": "academic",
-        "translation": "academic",
+        "translation": "acadêmico",
         "context": "media/units/monsters/NPC/ACADEMIC.DAT.adm"
       },
       {
@@ -52075,7 +52075,7 @@
       {
         "id": "Monsters_0170",
         "original": "henchman",
-        "translation": "henchman",
+        "translation": "capanga",
         "context": "media/units/monsters/QuestUnits/FirstHenchmen/FIRSTHENCHMEN.DAT.adm"
       },
       {
@@ -52249,7 +52249,7 @@
       {
         "id": "Monsters_0199",
         "original": "Imaginary",
-        "translation": "Imaginary",
+        "translation": "Imaginário",
         "context": "media/units/monsters/ImaginaryPet/IMAGINARYPET.DAT.adm"
       },
       {
@@ -52261,7 +52261,7 @@
       {
         "id": "Monsters_0201",
         "original": "Mercenary",
-        "translation": "Mercenary",
+        "translation": "Mercenário",
         "context": "media/units/monsters/NPC/RANDOM_NPC.DAT.adm"
       },
       {
@@ -52363,19 +52363,19 @@
       {
         "id": "Monsters_0218",
         "original": "invisible",
-        "translation": "invisible",
+        "translation": "invisível",
         "context": "media/units/monsters/cursedsword/CURSEDSWORD1.DAT.adm"
       },
       {
         "id": "Monsters_0219",
         "original": "mercenary",
-        "translation": "mercenary",
+        "translation": "mercenário",
         "context": "media/units/monsters/NPC/ACADEMIC.DAT.adm"
       },
       {
         "id": "Monsters_0220",
         "original": "tarantula",
-        "translation": "tarantula",
+        "translation": "tarântula",
         "context": "media/units/monsters/HairySpider/HAIRYSPIDER.DAT.adm"
       },
       {
@@ -52453,7 +52453,7 @@
       {
         "id": "Monsters_0233",
         "original": "Blacksmith",
-        "translation": "Blacksmith",
+        "translation": "Ferreiro",
         "context": "media/units/monsters/Merchant/MERCHANT_BLACKSMITH.DAT.adm"
       },
       {
@@ -52711,7 +52711,7 @@
       {
         "id": "Monsters_0276",
         "original": "blacksmith",
-        "translation": "blacksmith",
+        "translation": "ferreiro",
         "context": "media/units/monsters/Merchant/MERCHANT_BLACKSMITH.DAT.adm"
       },
       {
@@ -54631,7 +54631,7 @@
       {
         "id": "Monsters_0596",
         "original": "Troll Juggernaut",
-        "translation": "Juggernaut Troll",
+        "translation": "Troll Devastador",
         "context": "media/units/monsters/Troll/TROLLCHAMPION.DAT.adm"
       },
       {
@@ -59189,7 +59189,7 @@
       {
         "id": "Dungeons_0233",
         "original": "LogicTest",
-        "translation": "Teste Logic",
+        "translation": "Teste de Lógica",
         "context": "media/dungeons/TestDungeons/LOGICTEST.DAT.adm"
       },
       {
@@ -59771,7 +59771,7 @@
       {
         "id": "Dungeons_0330",
         "original": "SunkenBoss",
-        "translation": "Chefe Sunken",
+        "translation": "Chefe do Templo Submerso",
         "context": "media/layouts/SunkenTemple/BOSSROOM_RULES.DAT.adm"
       },
       {
@@ -68743,7 +68743,7 @@
       {
         "id": "Globals_0150",
         "original": "mins",
-        "translation": "mins",
+        "translation": "min",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -68779,7 +68779,7 @@
       {
         "id": "Globals_0156",
         "original": "secs",
-        "translation": "secs",
+        "translation": "s",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -68911,7 +68911,7 @@
       {
         "id": "Globals_0178",
         "original": "Cycle",
-        "translation": "Cycle",
+        "translation": "Ciclo",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -69067,7 +69067,7 @@
       {
         "id": "Globals_0204",
         "original": "Liked",
-        "translation": "Liked",
+        "translation": "Apreciado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -69133,7 +69133,7 @@
       {
         "id": "Globals_0215",
         "original": "Stomp",
-        "translation": "Stomp",
+        "translation": "Pisoteio",
         "context": "media/graphs/camerashakes/STOMP.DAT.adm"
       },
       {
@@ -69313,7 +69313,7 @@
       {
         "id": "Globals_0245",
         "original": "Arcane",
-        "translation": "Arcane",
+        "translation": "Arcano",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -69475,13 +69475,13 @@
       {
         "id": "Globals_0272",
         "original": "Fabled",
-        "translation": "Fabled",
+        "translation": "Fabuloso",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0273",
         "original": "Famous",
-        "translation": "Famous",
+        "translation": "Famoso",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -69583,7 +69583,7 @@
       {
         "id": "Globals_0290",
         "original": "Mythic",
-        "translation": "Mythic",
+        "translation": "Mítico",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -69745,7 +69745,7 @@
       {
         "id": "Globals_0317",
         "original": "Stasis",
-        "translation": "Stasis",
+        "translation": "Estase",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -69865,7 +69865,7 @@
       {
         "id": "Globals_0337",
         "original": "closed",
-        "translation": "closed",
+        "translation": "fechado",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -69907,7 +69907,7 @@
       {
         "id": "Globals_0344",
         "original": "opened",
-        "translation": "opened",
+        "translation": "aberto",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -69931,7 +69931,7 @@
       {
         "id": "Globals_0348",
         "original": "ranged",
-        "translation": "ranged",
+        "translation": "à distância",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70003,7 +70003,7 @@
       {
         "id": "Globals_0360",
         "original": "Arbiter",
-        "translation": "Arbiter",
+        "translation": "Árbitro",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70027,13 +70027,13 @@
       {
         "id": "Globals_0364",
         "original": "Blocked",
-        "translation": "Blocked",
+        "translation": "Bloqueado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0365",
         "original": "Closing",
-        "translation": "Closing",
+        "translation": "Fechando",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70069,7 +70069,7 @@
       {
         "id": "Globals_0371",
         "original": "Destroy",
-        "translation": "Destroy",
+        "translation": "Destruir",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70087,19 +70087,19 @@
       {
         "id": "Globals_0374",
         "original": "Eminent",
-        "translation": "Eminent",
+        "translation": "Eminente",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0375",
         "original": "Enchant",
-        "translation": "Enchant",
+        "translation": "Encantar",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0376",
         "original": "Exalted",
-        "translation": "Exalted",
+        "translation": "Exaltado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70135,13 +70135,13 @@
       {
         "id": "Globals_0382",
         "original": "Fishing",
-        "translation": "Fishing",
+        "translation": "Pesca",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0383",
         "original": "Fleeing",
-        "translation": "Fleeing",
+        "translation": "Em Fuga",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70183,7 +70183,7 @@
       {
         "id": "Globals_0390",
         "original": "Honored",
-        "translation": "Honored",
+        "translation": "Honrado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70261,7 +70261,7 @@
       {
         "id": "Globals_0403",
         "original": "Magical",
-        "translation": "Magical",
+        "translation": "Mágico",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70279,13 +70279,13 @@
       {
         "id": "Globals_0406",
         "original": "Opening",
-        "translation": "Opening",
+        "translation": "Abrindo",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
         "id": "Globals_0407",
         "original": "Options",
-        "translation": "Options",
+        "translation": "Opções",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70303,13 +70303,13 @@
       {
         "id": "Globals_0410",
         "original": "Percent",
-        "translation": "Percent",
+        "translation": "Percentual",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
         "id": "Globals_0411",
         "original": "Plunger",
-        "translation": "Plunger",
+        "translation": "Desentupidor",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70339,13 +70339,13 @@
       {
         "id": "Globals_0416",
         "original": "Recover",
-        "translation": "Recover",
+        "translation": "Recuperar",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0417",
         "original": "Retired",
-        "translation": "Retired",
+        "translation": "Aposentado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70387,7 +70387,7 @@
       {
         "id": "Globals_0424",
         "original": "Sockets",
-        "translation": "Sockets",
+        "translation": "Engastes",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70453,7 +70453,7 @@
       {
         "id": "Globals_0435",
         "original": "closing",
-        "translation": "closing",
+        "translation": "fechando",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70501,7 +70501,7 @@
       {
         "id": "Globals_0443",
         "original": "opening",
-        "translation": "opening",
+        "translation": "abrindo",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70513,7 +70513,7 @@
       {
         "id": "Globals_0445",
         "original": "reached",
-        "translation": "reached",
+        "translation": "alcançado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70813,7 +70813,7 @@
       {
         "id": "Globals_0495",
         "original": "Glorious",
-        "translation": "Glorious",
+        "translation": "Glorioso",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70849,7 +70849,7 @@
       {
         "id": "Globals_0501",
         "original": "Heirloom",
-        "translation": "Heirloom",
+        "translation": "Herança de Família",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70867,7 +70867,7 @@
       {
         "id": "Globals_0504",
         "original": "Immortal",
-        "translation": "Immortal",
+        "translation": "Imortal",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -70945,7 +70945,7 @@
       {
         "id": "Globals_0517",
         "original": "Marksman",
-        "translation": "Marksman",
+        "translation": "Atirador",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -71017,7 +71017,7 @@
       {
         "id": "Globals_0529",
         "original": "Purchase",
-        "translation": "Purchase",
+        "translation": "Comprar",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71035,13 +71035,13 @@
       {
         "id": "Globals_0532",
         "original": "Renowned",
-        "translation": "Renowned",
+        "translation": "Renomado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0533",
         "original": "Requires",
-        "translation": "Requires",
+        "translation": "Requer",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71053,7 +71053,7 @@
       {
         "id": "Globals_0535",
         "original": "Spectral",
-        "translation": "Spectral",
+        "translation": "Espectral",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -71149,7 +71149,7 @@
       {
         "id": "Globals_0551",
         "original": "equipped",
-        "translation": "equipped",
+        "translation": "equipado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71197,7 +71197,7 @@
       {
         "id": "Globals_0559",
         "original": "Acclaimed",
-        "translation": "Acclaimed",
+        "translation": "Aclamado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71215,13 +71215,13 @@
       {
         "id": "Globals_0562",
         "original": "Ancestors",
-        "translation": "Ancestors",
+        "translation": "Ancestrais",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0563",
         "original": "Ascendant",
-        "translation": "Ascendant",
+        "translation": "Ascendente",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71359,7 +71359,7 @@
       {
         "id": "Globals_0586",
         "original": "Enchanted",
-        "translation": "Enchanted",
+        "translation": "Encantado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71485,7 +71485,7 @@
       {
         "id": "Globals_0607",
         "original": "Legendary",
-        "translation": "Legendary",
+        "translation": "Lendário",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71521,7 +71521,7 @@
       {
         "id": "Globals_0613",
         "original": "Memorable",
-        "translation": "Memorable",
+        "translation": "Memorável",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71593,7 +71593,7 @@
       {
         "id": "Globals_0625",
         "original": "Prominent",
-        "translation": "Prominent",
+        "translation": "Proeminente",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71605,13 +71605,13 @@
       {
         "id": "Globals_0627",
         "original": "Respected",
-        "translation": "Respected",
+        "translation": "Respeitado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0628",
         "original": "Resurrect",
-        "translation": "Resurrect",
+        "translation": "Ressuscitar",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71695,7 +71695,7 @@
       {
         "id": "Globals_0642",
         "original": "Tolerated",
-        "translation": "Tolerated",
+        "translation": "Tolerado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71743,7 +71743,7 @@
       {
         "id": "Globals_0650",
         "original": "Viewpoint",
-        "translation": "Viewpoint",
+        "translation": "Ponto de Vista",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -71953,7 +71953,7 @@
       {
         "id": "Globals_0685",
         "original": "Celebrated",
-        "translation": "Celebrated",
+        "translation": "Celebrado",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71995,7 +71995,7 @@
       {
         "id": "Globals_0692",
         "original": "Difficulty",
-        "translation": "Difficulty",
+        "translation": "Dificuldade",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -72109,7 +72109,7 @@
       {
         "id": "Globals_0711",
         "original": "Incomplete",
-        "translation": "Incomplete",
+        "translation": "Incompleta",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -72277,13 +72277,13 @@
       {
         "id": "Globals_0739",
         "original": "Recognized",
-        "translation": "Recognized",
+        "translation": "Reconhecido",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_0740",
         "original": "Remarkable",
-        "translation": "Remarkable",
+        "translation": "Notável",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -74323,7 +74323,7 @@
       {
         "id": "Globals_1080",
         "original": "Distinguished",
-        "translation": "Distinguished",
+        "translation": "Distinto",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -80413,7 +80413,7 @@
       {
         "id": "Globals_2095",
         "original": "[VALUE]% Mana Stolen for [DURATION] seconds",
-        "translation": "[VALUE]% Mana Stolen por [DURATION] segundos",
+        "translation": "[VALUE]% de Mana Roubada por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -80449,7 +80449,7 @@
       {
         "id": "Globals_2101",
         "original": "-[VALUE]% Mana Stolen for [DURATION] seconds",
-        "translation": "-[VALUE]% Mana Stolen por [DURATION] segundos",
+        "translation": "-[VALUE]% de Mana Roubada por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -80725,7 +80725,7 @@
       {
         "id": "Globals_2147",
         "original": "[VALUE] Mana Stolen on Hit for [DURATION] seconds",
-        "translation": "[VALUE] Mana Stolen on Hit por [DURATION] segundos",
+        "translation": "[VALUE] de Mana Roubada ao Atingir por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
