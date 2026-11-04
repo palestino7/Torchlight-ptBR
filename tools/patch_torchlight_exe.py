@@ -20,14 +20,15 @@ import shutil
 import struct
 
 # New strings mapped to VA addresses in .rdata slack (base raw: 0x7e6912, VA: 0xbe7712)
+# Encoded in Windows-1252 / ISO-8859-1 (CEGUI String(const char*) zero-extends bytes to utf32)
 SLACK_RAW_START = 0x7e6912
 SLACK_VA_START = 0xbe7712
 
 STRINGS_TO_EMBED = [
     ("Desligado", b"Desligado\x00"),                              # len 10
-    ("Apenas Iluminação", "Apenas Iluminação\0".encode("utf-8")),  # len 20
+    ("Apenas Iluminação", b"Apenas Ilumina\xe7\xe3o\x00"),        # len 18
     ("Baixo", b"Baixo\x00"),                                      # len 6
-    ("Médio", "Médio\0".encode("utf-8")),                         # len 7
+    ("Médio", b"M\xe9dio\x00"),                                   # len 6
     ("Alto", b"Alto\x00"),                                        # len 5
     ("Muito Alto", b"Muito Alto\x00"),                            # len 11
 ]

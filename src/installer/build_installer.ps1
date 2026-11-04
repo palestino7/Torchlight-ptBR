@@ -116,7 +116,7 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 [System.IO.File]::WriteAllText($readmePath, $readmeContent, [System.Text.Encoding]::UTF8)
 
 # 5. Create Distribution Zip Package
-$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.3.0.zip"
+$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.3.1.zip"
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }
