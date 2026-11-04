@@ -83,7 +83,7 @@
   	<Window Type="GuiLook/StaticText" Name="Spells">
             <Property Name="UnifiedPosition" Value="{{0,84},{0,559}}" />
             <Property Name="UnifiedSize" Value="{{0,248},{0,18}}" />
-		<Property Name="Text" Value="Feitiços"/>
+		<Property Name="Text" Value="Feiticos"/>
 		<Property Name="HorzTextFormatting" Value="CentreAligned"/>
         </Window>    
 

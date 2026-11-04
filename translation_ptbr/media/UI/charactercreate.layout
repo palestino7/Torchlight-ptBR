@@ -79,7 +79,7 @@
          		   <Property Name="UnifiedPosition" Value="{{.5,-150},{1,-140}}" />
          		   <Property Name="UnifiedSize" Value="{{0,300},{0,64}}" />
 			<Property Name="Font" Value="SerifSmall" /> 
-			<Property Name="Text" Value="O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais" />
+			<Property Name="Text" Value="TheDestruidorexcelsatmeleecombatandchannelsthepowerofhisancestors" />
 			<Property Name="MousePassThroughEnabled" Value="True" />
 			<Property Name="AlwaysOnTop" Value="True" />
 	          <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />
@@ -166,7 +166,7 @@
 		<Property Name="onClick" Value="guiPet1"/>
     </Window>
         <Window Type="GuiLook/StaticText" Name="PetName" >
-            <Property Name="Text" Value="Nome do Mascote" />
+            <Property Name="Text" Value="Mascote Nome" />
             <Property Name="UnifiedPosition" Value="{{0,0},{0,140}}" />
             <Property Name="UnifiedSize" Value="{{0,140},{0,24}}" />
             <Property Name="HorzTextFormatting" Value="CentreAligned" />

@@ -9,10 +9,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
+tools/*.txt
+tools/_*.json
+tools/untranslated_dump.json
 
 # Agent metadata and working state
-.agents/teamwork/*/
-!.agents/teamwork/ORIGINAL_REQUEST.md
+.agents/
 
 # OS specific files
 Thumbs.db

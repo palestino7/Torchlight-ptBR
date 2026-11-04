@@ -239,6 +239,12 @@ class TranslationVerifier:
 
                         if current_trans != current_orig:
                             translated_count += 1
+                        else:
+                            words = current_orig.replace("\\n", " ").split()
+                            if len(words) > 1 and not current_orig.startswith("Bip") and current_orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                                self.errors.append(
+                                    f"Untranslated multi-word English phrase in translation.dat: '{current_orig}'"
+                                )
 
                     in_block = False
 
@@ -285,12 +291,19 @@ class TranslationVerifier:
         self.stats["dat_unique_originals"] = len(orig_strings)
         self.stats["dat_translated_count"] = translated_count
         self.stats["orig_strings_set"] = orig_strings
+        translated_ratio = translated_count / max(blocks_parsed, 1)
+        self.stats["dat_translated_ratio"] = translated_ratio
 
         self.log(f"  - BOM check:                  PASSED (UTF-16LE)")
         self.log(f"  - UTF-16LE decode:            PASSED")
         self.log(f"  - Total translation blocks:   {blocks_parsed:,}")
         self.log(f"  - Unique original strings:    {len(orig_strings):,}")
-        self.log(f"  - Translated strings count:   {translated_count:,}")
+        self.log(f"  - Translated strings count:   {translated_count:,} ({translated_ratio*100:.1f}%)")
+
+        if translated_ratio < 0.75:
+            self.errors.append(
+                f"Translated blocks ratio too low: {translated_count}/{blocks_parsed} ({translated_ratio*100:.1f}%) < 75.0% requirement"
+            )
 
         return len(self.errors) == 0
 
@@ -337,6 +350,12 @@ class TranslationVerifier:
                     for err in cat_tag_errors:
                         self.errors.append(
                             f"Catalog entry '{entry_id}' ('{orig}'): {err}"
+                        )
+                if trans == orig or not trans:
+                    words = orig.replace("\r\n", " ").replace("\n", " ").split()
+                    if len(words) > 1 and not orig.startswith("Bip") and orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                        self.errors.append(
+                            f"Catalog untranslated multi-word English phrase in category '{cat_name}' (id: {entry_id}): '{orig}'"
                         )
 
         if catalog_duplicates:

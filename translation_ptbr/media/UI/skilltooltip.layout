@@ -35,7 +35,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="SkillType" >
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Tipo de Habilidade" />
+            <Property Name="Text" Value="HabilidadeType" />
             <Property Name="TextColour" Value="FF64bcff" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />
@@ -46,7 +46,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Description" >
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Executa Habilidade" />
+            <Property Name="Text" Value="PerformsHabilidade" />
             <Property Name="TextColour" Value="FFd6d6d7" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />
@@ -160,7 +160,7 @@
         <Window Type="GuiLook/StaticText" Name="Next Level" >
 	<Property Name="MousePassThroughEnabled" Value="True" />
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Próximo Nível" />
+            <Property Name="Text" Value="NextNivel" />
             <Property Name="TextColour" Value="FF9df2ab" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />
@@ -169,7 +169,7 @@
         <Window Type="GuiLook/StaticText" Name="DescriptionNext" >
 	<Property Name="MousePassThroughEnabled" Value="True" />
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Executa Habilidade" />
+            <Property Name="Text" Value="PerformsHabilidade" />
             <Property Name="TextColour" Value="FFd6d6d7" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />
@@ -181,7 +181,7 @@
            <Window Type="GuiLook/StaticText" Name="ManaCostNext" >
 	<Property Name="MousePassThroughEnabled" Value="True" />
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Executa Habilidade" />
+            <Property Name="Text" Value="PerformsHabilidade" />
             <Property Name="TextColour" Value="FF64bcff" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />
@@ -191,7 +191,7 @@
            <Window Type="GuiLook/StaticText" Name="CooldownNext" >
 	<Property Name="MousePassThroughEnabled" Value="True" />
             <Property Name="Font" Value="Serif" />
-            <Property Name="Text" Value="Executa Habilidade" />
+            <Property Name="Text" Value="PerformsHabilidade" />
             <Property Name="TextColour" Value="FF64bcff" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />

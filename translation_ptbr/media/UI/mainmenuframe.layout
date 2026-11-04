@@ -96,7 +96,7 @@
 		  </Window>
 
 		<Window Type="GuiLook/StaticText" Name="CopyrightInfo" >
-	    		  <Property Name="Text" Value="(v1.13) Torchlight (C) 2009 Runic Games Inc."/>
+	    		  <Property Name="Text" Value="(v1.13) Torchlight (C) 2009 Runic Games Inc. - Tradução pt-BR por Palestino7"/>
          		   <Property Name="UnifiedPosition" Value="{{1,-460},{1,-20}}" />
          		   <Property Name="UnifiedSize" Value="{{0,400},{0,24}}" />
 			<Property Name="Font" Value="SerifSmall" /> 

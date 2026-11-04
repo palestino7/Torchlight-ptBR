@@ -89,8 +89,8 @@ Get-FileHash -Algorithm SHA256 .\Torchlight_Traducao_ptBR_Setup.exe
 
 | Arquivo de Distribuição | Tamanho (Bytes) | Hash SHA-256 Oficial |
 | :--- | :--- | :--- |
-| `Torchlight_Traducao_ptBR_Setup.exe` | 2.493.509 | `a6e499a13aed2529c07913c193f9357cdaa95d0e16db8d38cf01fc726c3771ed` |
-| `Torchlight_Traducao_ptBR_v1.0.0.zip` | 1.988.717 | `7a1c7a359c8e384dd38dc3794f7e63a052e999a2a6088fa8b2bec674653fd694` |
+| `Torchlight_Traducao_ptBR_Setup.exe` | 2.527.641 | `55fdcd4dbde38d3c16117166220e5a4ac9faa54a65c6e694dc640529cb209b6c` |
+| `Torchlight_Traducao_ptBR_v1.0.0.zip` | 2.022.858 | `b54e80bc46ecf4817b51b6367d65f9622102a49d0771c6c1315c9b6ba6d085c1` |
 
 ---
 

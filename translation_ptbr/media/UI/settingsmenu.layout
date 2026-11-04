@@ -44,7 +44,7 @@
 |cFFFFBA00(requires restart)|u</Property >
         </Window>
         <Window Type="GuiLook/Checkbox" Name="RenderBehind" >
-            <Property Name="Text" Value="Renderizar Atrás de Paredes" />
+            <Property Name="Text" Value="RenderBehindParedes" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-270}}" />
 		<Property Name="Tooltip" Value="Enable/Disable the behind-walls effect" />
@@ -136,7 +136,7 @@
         </Window>
 
     	<Window Type="GuiLook/Checkbox" Name="ShowTips" >
-            <Property Name="Text" Value="Exibir Dicas" />
+            <Property Name="Text" Value="Mostrar Dicas" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-5}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
 		<Property Name="Tooltip" Value="Enable/Disable ingame help" />
@@ -150,7 +150,7 @@
         </Window>
 
 	<Window Type="GuiLook/Checkbox" Name="ShowBlood" >
-            <Property Name="Text" Value="Exibir Sangue" />
+            <Property Name="Text" Value="ShowSangue" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,85}}" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
 		<Property Name="Tooltip" Value="Enable/Disable blood" />
