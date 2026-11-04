@@ -17,6 +17,7 @@ tools/untranslated_dump.json
 .agents/
 
 # Local development, test suites, and internal scratch files
+scratch/
 tests/
 conftest.py
 PROJECT.md

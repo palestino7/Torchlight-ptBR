@@ -9439,7 +9439,7 @@
       {
         "id": "Items_0833",
         "original": "MAGIC BOOTS",
-        "translation": "BOTAS MÁGICA",
+        "translation": "BOTAS MÁGICAS",
         "context": "media/units/items/boots/BASE_BOOTS_A_MAGIC.DAT.adm"
       },
       {
@@ -10549,7 +10549,7 @@
       {
         "id": "Items_1018",
         "original": "Epic Fanggun",
-        "translation": "Pistola de Presas Épico",
+        "translation": "Pistola de Presas Épica",
         "context": "media/units/items/itemstier2/pistols/EPICPISTOL_MAGIC_8B.DAT.adm"
       },
       {
@@ -10885,7 +10885,7 @@
       {
         "id": "Items_1074",
         "original": "MAGIC GLOVES",
-        "translation": "LUVAS MÁGICA",
+        "translation": "LUVAS MÁGICAS",
         "context": "media/units/items/gloves/BASE_GLOVES_A_MAGIC.DAT.adm"
       },
       {
@@ -10957,7 +10957,7 @@
       {
         "id": "Items_1086",
         "original": "NORMAL BOOTS",
-        "translation": "BOTAS NORMAL",
+        "translation": "BOTAS NORMAIS",
         "context": "media/units/items/boots/BASE_BOOTS.DAT.adm"
       },
       {
@@ -11443,7 +11443,7 @@
       {
         "id": "Items_1167",
         "original": "UNIQUE BOOTS",
-        "translation": "BOTAS ÚNICA",
+        "translation": "BOTAS ÚNICAS",
         "context": "media/units/items/boots/BASE_BOOTS_A_UNIQUE.DAT.adm"
       },
       {
@@ -11737,7 +11737,7 @@
       {
         "id": "Items_1216",
         "original": "epicForkwand",
-        "translation": "Varinha Furcada Épico",
+        "translation": "Varinha Furcada Épica",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_11A.DAT.adm"
       },
       {
@@ -11797,7 +11797,7 @@
       {
         "id": "Items_1226",
         "original": "epicWarsword",
-        "translation": "Espada de Guerra Épico",
+        "translation": "Espada de Guerra Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_NORMAL_4B.DAT.adm"
       },
       {
@@ -12379,7 +12379,7 @@
       {
         "id": "Items_1323",
         "original": "Epic Bladegun",
-        "translation": "Pistola de Lâminas Épico",
+        "translation": "Pistola de Lâminas Épica",
         "context": "media/units/items/itemstier2/pistols/EPICPISTOL_MAGIC_8A.DAT.adm"
       },
       {
@@ -12403,7 +12403,7 @@
       {
         "id": "Items_1327",
         "original": "Epic Forkwand",
-        "translation": "Varinha Furcada Épico",
+        "translation": "Varinha Furcada Épica",
         "context": "media/units/items/itemstier2/wands/EPICWAND_UNIQUE_11A.DAT.adm"
       },
       {
@@ -12475,7 +12475,7 @@
       {
         "id": "Items_1339",
         "original": "Epic Warsword",
-        "translation": "Espada de Guerra Épico",
+        "translation": "Espada de Guerra Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_NORMAL_4B.DAT.adm"
       },
       {
@@ -12883,7 +12883,7 @@
       {
         "id": "Items_1407",
         "original": "NORMAL GLOVES",
-        "translation": "LUVAS NORMAL",
+        "translation": "LUVAS NORMAIS",
         "context": "media/units/items/gloves/BASE_GLOVES.DAT.adm"
       },
       {
@@ -13057,7 +13057,7 @@
       {
         "id": "Items_1436",
         "original": "Rune of Storm",
-        "translation": "Rune de Storm",
+        "translation": "Runa da Tempestade",
         "context": "media/units/items/quest_items/RQ_RUNEOFSTORM.DAT.adm"
       },
       {
@@ -13303,7 +13303,7 @@
       {
         "id": "Items_1477",
         "original": "UNIQUE GLOVES",
-        "translation": "LUVAS ÚNICA",
+        "translation": "LUVAS ÚNICAS",
         "context": "media/units/items/gloves/BASE_GLOVES_A_UNIQUE.DAT.adm"
       },
       {
@@ -22363,7 +22363,7 @@
       {
         "id": "Items_2987",
         "original": "Grimoire of Death",
-        "translation": "Grimório de Death",
+        "translation": "Grimório da Morte",
         "context": "media/units/items/quest_items/RQ_GRIMOIREOFDEATH.DAT.adm"
       },
       {
@@ -22951,7 +22951,7 @@
       {
         "id": "Items_3085",
         "original": "Wand of Polymorph",
-        "translation": "Varinha de Polymorph",
+        "translation": "Varinha de Polimorfia",
         "context": "media/units/items/wands/WAND_POLYMORPH.DAT.adm"
       },
       {
@@ -23653,7 +23653,7 @@
       {
         "id": "Items_3202",
         "original": "epicSword of Adam",
-        "translation": "Espada de Adam Épico",
+        "translation": "Espada de Adam Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_UNIQUE_SWORDOFADAM.DAT.adm"
       },
       {
@@ -25225,7 +25225,7 @@
       {
         "id": "Items_3464",
         "original": "Epic Sword of Adam",
-        "translation": "Espada de Adam Épico",
+        "translation": "Espada de Adam Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_UNIQUE_SWORDOFADAM.DAT.adm"
       },
       {
@@ -30295,7 +30295,7 @@
       {
         "id": "Items_4309",
         "original": "PERCENT BLOCK CHANCE",
-        "translation": "PERCENTUAL DE BLOCK CHANCE",
+        "translation": "PERCENTUAL DE CHANCE DE BLOQUEIO",
         "context": "media/units/items/itemstier2/shields/EPICSKELETONSHIELD.DAT.adm"
       },
       {
@@ -30667,7 +30667,7 @@
       {
         "id": "Items_4371",
         "original": "epicFlayer Ironsword",
-        "translation": "Espada de Ferro do Esfolador Épico",
+        "translation": "Espada de Ferro do Esfolador Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_9A.DAT.adm"
       },
       {
@@ -30697,13 +30697,13 @@
       {
         "id": "Items_4376",
         "original": "epicGoblin Barbsword",
-        "translation": "Espada Farpada Goblin Épico",
+        "translation": "Espada Farpada Goblin Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_7B.DAT.adm"
       },
       {
         "id": "Items_4377",
         "original": "epicGoblin Hooksword",
-        "translation": "Espada Gancho Goblin Épico",
+        "translation": "Espada Gancho Goblin Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_7A.DAT.adm"
       },
       {
@@ -31591,7 +31591,7 @@
       {
         "id": "Items_4525",
         "original": "Epic Flayer Ironsword",
-        "translation": "Espada de Ferro do Esfolador Épico",
+        "translation": "Espada de Ferro do Esfolador Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_9A.DAT.adm"
       },
       {
@@ -31621,13 +31621,13 @@
       {
         "id": "Items_4530",
         "original": "Epic Goblin Barbsword",
-        "translation": "Espada Farpada Goblin Épico",
+        "translation": "Espada Farpada Goblin Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_7B.DAT.adm"
       },
       {
         "id": "Items_4531",
         "original": "Epic Goblin Hooksword",
-        "translation": "Espada Gancho Goblin Épico",
+        "translation": "Espada Gancho Goblin Épica",
         "context": "media/units/items/itemstier2/swords/EPICSWORD_MAGIC_7A.DAT.adm"
       },
       {
@@ -40635,7 +40635,7 @@
       {
         "id": "Skills_0207",
         "original": "Construct",
-        "translation": "Construct",
+        "translation": "Construto",
         "context": "media/skills/shared/polymorph/POLYMORPHCONSTRUCT.DAT.adm"
       },
       {
@@ -40863,13 +40863,13 @@
       {
         "id": "Skills_0245",
         "original": "RockTroll",
-        "translation": "RochaTroll",
+        "translation": "Troll da Rocha",
         "context": "media/skills/shared/polymorph/POLYMORPHTROLL.DAT.adm"
       },
       {
         "id": "Skills_0246",
         "original": "RootGolem",
-        "translation": "RootGolem",
+        "translation": "Golem de Raiz",
         "context": "media/skills/shared/polymorph/POLYMORPHROOTGOLEM.DAT.adm"
       },
       {
@@ -40917,7 +40917,7 @@
       {
         "id": "Skills_0254",
         "original": "Smalllich",
-        "translation": "Smalllich",
+        "translation": "Liche Menor",
         "context": "media/skills/shared/polymorph/POLYMORPHLICH.DAT.adm"
       },
       {
@@ -41517,7 +41517,7 @@
       {
         "id": "Skills_0354",
         "original": "HairySpider",
-        "translation": "HairySpider",
+        "translation": "Aranha Peluda",
         "context": "media/skills/shared/polymorph/POLYMORPHTARANTULA.DAT.adm"
       },
       {
@@ -43167,7 +43167,7 @@
       {
         "id": "Skills_0629",
         "original": "Alchemic Golem",
-        "translation": "Alquímico Golem",
+        "translation": "Golem Alquímico",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -43227,7 +43227,7 @@
       {
         "id": "Skills_0639",
         "original": "Construct Beam",
-        "translation": "Construct Raio",
+        "translation": "Raio do Construto",
         "context": "media/skills/alchemist/summongolem/BEAM.DAT.adm"
       },
       {
@@ -43455,7 +43455,7 @@
       {
         "id": "Skills_0677",
         "original": "Polymorph Lich",
-        "translation": "Polymorph Liche",
+        "translation": "Polimorfia de Liche",
         "context": "media/skills/shared/polymorph/POLYMORPH.DAT.adm"
       },
       {
@@ -44289,7 +44289,7 @@
       {
         "id": "Skills_0816",
         "original": "Alric Ember Bolt",
-        "translation": "Alric Âmbar Bolt",
+        "translation": "Raio de Âmbar de Alric",
         "context": "media/skills/monsters/Alric/EMBER_BALL.DAT.adm"
       },
       {
@@ -44355,7 +44355,7 @@
       {
         "id": "Skills_0827",
         "original": "Ember Strike AOE",
-        "translation": "Âmbar Strike AOE",
+        "translation": "Golpe de Âmbar (Área)",
         "context": "media/skills/alchemist/emberstrike/AOE.DAT.adm"
       },
       {
@@ -44379,7 +44379,7 @@
       {
         "id": "Skills_0831",
         "original": "Flame Potion AOE",
-        "translation": "Flame Poção AOE",
+        "translation": "Poção Flamejante (Área)",
         "context": "media/skills/alchemist/flamepotion/FLAMEPOTIONAOE.DAT.adm"
       },
       {
@@ -44601,7 +44601,7 @@
       {
         "id": "Skills_0868",
         "original": "TROLL JUGGERNAUT",
-        "translation": "JUGGERNAUT TROLL",
+        "translation": "TROLL DEVASTADOR",
         "context": "media/skills/monsters/goblinshaman/TROLL_ARMOR.DAT.adm"
       },
       {
@@ -44985,7 +44985,7 @@
       {
         "id": "Skills_0932",
         "original": "Polymorph Missile",
-        "translation": "Polymorph Projétil",
+        "translation": "Projétil de Polimorfia",
         "context": "media/skills/shared/polymorph/POLYMORPHMISSILE.DAT.adm"
       },
       {
@@ -45027,7 +45027,7 @@
       {
         "id": "Skills_0939",
         "original": "Summon Beam Golem",
-        "translation": "Summon Raio Golem",
+        "translation": "Invocar Golem de Raio",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
@@ -45165,7 +45165,7 @@
       {
         "id": "Skills_0962",
         "original": "ATTACK SPELL BONUS",
-        "translation": "ATAQUE SPELL BÔNUS",
+        "translation": "BÔNUS DE FEITIÇO DE ATAQUE",
         "context": "media/Affixes/Skills/SKILL_ATTACKMAGIC_MASTERY.DAT.adm"
       },
       {
@@ -45201,7 +45201,7 @@
       {
         "id": "Skills_0968",
         "original": "Explode Potion AOE",
-        "translation": "Explode Poção AOE",
+        "translation": "Poção Explosiva (Área)",
         "context": "media/skills/alchemist/explodepotion/EXPLODEPOTIONAOE.DAT.adm"
       },
       {
@@ -45267,7 +45267,7 @@
       {
         "id": "Skills_0979",
         "original": "Polymorph Skeleton",
-        "translation": "Polymorph Esqueleto",
+        "translation": "Polimorfia de Esqueleto",
         "context": "media/skills/shared/polymorph/POLYMORPH.DAT.adm"
       },
       {
@@ -45333,7 +45333,7 @@
       {
         "id": "Skills_0990",
         "original": "Shrapnel Trap Shot",
-        "translation": "Shrapnel Armadilha Shot",
+        "translation": "Disparo de Armadilha de Estilhaços",
         "context": "media/skills/vanquisher/shrapneltrap/SHRAPNEL.DAT.adm"
       },
       {
@@ -45477,13 +45477,13 @@
       {
         "id": "Skills_1014",
         "original": "Alchemic Beam Golem",
-        "translation": "Alquímico Raio Golem",
+        "translation": "Golem de Raio Alquímico",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1015",
         "original": "Alchemic Golem MkII",
-        "translation": "Alquímico Golem MkII",
+        "translation": "Golem Alquímico MkII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -45495,13 +45495,13 @@
       {
         "id": "Skills_1017",
         "original": "Charm Spell Mastery",
-        "translation": "Charm Spell Maestria",
+        "translation": "Maestria em Feitiços de Fascínio",
         "context": "media/skills/shared/passives/CHARMMAGIC.DAT.adm"
       },
       {
         "id": "Skills_1018",
         "original": "DEFENSE SPELL BONUS",
-        "translation": "DEFESA SPELL BÔNUS",
+        "translation": "BÔNUS DE FEITIÇO DE DEFESA",
         "context": "media/Affixes/Skills/SKILL_DEFENSEMAGIC_MASTERY.DAT.adm"
       },
       {
@@ -45831,7 +45831,7 @@
       {
         "id": "Skills_1073",
         "original": "Alchemic Golem MkIII",
-        "translation": "Alquímico Golem MkIII",
+        "translation": "Golem Alquímico MkIII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -45909,7 +45909,7 @@
       {
         "id": "Skills_1086",
         "original": "Lich Skeleton Summon",
-        "translation": "Liche Esqueleto Summon",
+        "translation": "Invocação de Esqueleto do Liche",
         "context": "media/skills/monsters/Lich/SKELETONSUMMON.DAT.adm"
       },
       {
@@ -46317,7 +46317,7 @@
       {
         "id": "Skills_1154",
         "original": "Alchemic Golem V3 MkII",
-        "translation": "Alquímico Golem V3 MkII",
+        "translation": "Golem Alquímico V3 MkII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -46491,19 +46491,19 @@
       {
         "id": "Skills_1183",
         "original": "Alchemic Golem V2 MkIII",
-        "translation": "Alquímico Golem V2 MkIII",
+        "translation": "Golem Alquímico V2 MkIII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1184",
         "original": "Alchemic Golem V3 MkIII",
-        "translation": "Alquímico Golem V3 MkIII",
+        "translation": "Golem Alquímico V3 MkIII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1185",
         "original": "Defensive Spell Mastery",
-        "translation": "Defensive Spell Maestria",
+        "translation": "Maestria em Feitiços Defensivos",
         "context": "media/skills/shared/passives/DEFENSEMAGIC.DAT.adm"
       },
       {
@@ -46545,7 +46545,7 @@
       {
         "id": "Skills_1192",
         "original": "Offensive Spell Mastery",
-        "translation": "Offensive Spell Maestria",
+        "translation": "Maestria em Feitiços Ofensivos",
         "context": "media/skills/shared/passives/ATTACKMAGIC.DAT.adm"
       },
       {
@@ -46695,13 +46695,13 @@
       {
         "id": "Skills_1217",
         "original": "Summon Alchemic Golem V2",
-        "translation": "Summon Alquímico Golem V2",
+        "translation": "Invocar Golem Alquímico V2",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1218",
         "original": "Summon Alchemic Golem V3",
-        "translation": "Summon Alquímico Golem V3",
+        "translation": "Invocar Golem Alquímico V3",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -46899,13 +46899,13 @@
       {
         "id": "Skills_1251",
         "original": "Stomp, pushes enemies back",
-        "translation": "Pisada, pushes enemies back",
+        "translation": "Pisada, empurra os inimigos para trás",
         "context": "media/skills/test/STOMP.DAT.adm"
       },
       {
         "id": "Skills_1252",
         "original": "Summon Alchemic Golem MkII",
-        "translation": "Summon Alquímico Golem MkII",
+        "translation": "Invocar Golem Alquímico MkII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -47007,19 +47007,19 @@
       {
         "id": "Skills_1269",
         "original": "Summon Alchemic Golem MkULTRA",
-        "translation": "Summon Alquímico Golem MkULTRA",
+        "translation": "Invocar Golem Alquímico MkULTRA",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1270",
         "original": "Summon Alchemic Golem V2 MkII",
-        "translation": "Summon Alquímico Golem V2 MkII",
+        "translation": "Invocar Golem Alquímico V2 MkII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1271",
         "original": "Summon Alchemic Golem V3 MkII",
-        "translation": "Summon Alquímico Golem V3 MkII",
+        "translation": "Invocar Golem Alquímico V3 MkII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -47049,31 +47049,31 @@
       {
         "id": "Skills_1276",
         "original": "FLAMETRAP PERCENT DAMAGE BONUS",
-        "translation": "FLAMEARMADILHA PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA ARMADILHA DE FOGO",
         "context": "media/Affixes/Skills/FLAMETRAP.DAT.adm"
       },
       {
         "id": "Skills_1277",
         "original": "SHOCKTRAP PERCENT DAMAGE BONUS",
-        "translation": "SHOCKARMADILHA PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA ARMADILHA DE CHOQUE",
         "context": "media/Affixes/Skills/SHOCKTRAP.DAT.adm"
       },
       {
         "id": "Skills_1278",
         "original": "SUMMONIMP PERCENT DAMAGE BONUS",
-        "translation": "SUMMONIMP PERCENTUAL DANO BÔNUS",
+        "translation": "BÔNUS PERCENTUAL DE DANO DA INVOCAÇÃO DE DIABRETE",
         "context": "media/Affixes/Skills/SUMMON_SPELL_ARCHERS.DAT.adm"
       },
       {
         "id": "Skills_1279",
         "original": "Summon Alchemic Golem V2 MkIII",
-        "translation": "Summon Alquímico Golem V2 MkIII",
+        "translation": "Invocar Golem Alquímico V2 MkIII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1280",
         "original": "Summon Alchemic Golem V3 MkIII",
-        "translation": "Summon Alquímico Golem V3 MkIII",
+        "translation": "Invocar Golem Alquímico V3 MkIII",
         "context": "media/skills/alchemist/summongolem/SUMMONGOLEM.DAT.adm"
       },
       {
@@ -47841,7 +47841,7 @@
       {
         "id": "Skills_1408",
         "original": "Mastery of Wands and Staves, and reduced requirements for Rings and Amulets",
-        "translation": "Maestria of Wands and Staves, and reduced requirements for Rings and Amulets",
+        "translation": "Maestria com Varinhas e Cajados, e requisitos reduzidos para Anéis e Amuletos",
         "context": "media/skills/shared/passives/MAGIC.DAT.adm"
       },
       {
@@ -47859,7 +47859,7 @@
       {
         "id": "Skills_1411",
         "original": "\\nPhase to a new location, dealing damage as you enter and exit nether space.\\n",
-        "translation": "\\nFase to a new location, dealing damage as you enter and exit nether space.\\n",
+        "translation": "\nTeletransporta-se para um novo local através do éter, causando dano ao entrar e sair do espaço sombrio.\n",
         "context": "media/skills/alchemist/emberphase/EMBERPHASE.DAT.adm"
       },
       {
@@ -80497,7 +80497,7 @@
       {
         "id": "Globals_2109",
         "original": "[VALUE]% Faster Attack for [DURATION] seconds",
-        "translation": "[VALUE]% Faster Attack por [DURATION] segundos",
+        "translation": "[VALUE]% de Ataque Mais Rápido por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -80971,7 +80971,7 @@
       {
         "id": "Globals_2188",
         "original": "+[VALUE] to Attack Spell levels for [DURATION] seconds",
-        "translation": "+[VALUE] to Attack Spell levels por [DURATION] segundos",
+        "translation": "+[VALUE] para Níveis de Feitiços de Ataque por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -81001,7 +81001,7 @@
       {
         "id": "Globals_2193",
         "original": "-[VALUE] to Attack Spell levels for [DURATION] seconds",
-        "translation": "-[VALUE] to Attack Spell levels por [DURATION] segundos",
+        "translation": "-[VALUE] para Níveis de Feitiços de Ataque por [DURATION] segundos",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
