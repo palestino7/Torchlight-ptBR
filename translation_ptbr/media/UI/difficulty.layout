@@ -103,7 +103,7 @@
     <Window Type="GuiLook/StandardButton" Name="VeryHard">
             <Property Name="UnifiedPosition" Value="{{0,26},{0,160}}" />
             <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />
-            <Property Name="Text" Value="VeryDificil"/>
+            <Property Name="Text" Value="Muito Difícil"/>
 		<Property Name="onClick" Value="guiSelect4"/>
 		<Property Name="Tooltip" Value="Masochists only!" />
     </Window>

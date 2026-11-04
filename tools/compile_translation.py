@@ -66,17 +66,19 @@ def build_translation_map(catalog: dict, fallback_to_original: bool = True) -> d
     mapping: dict[str, str] = {}
     for cat_name, entries in catalog["categories"].items():
         for entry in entries:
-            orig = entry.get("original", "").strip()
+            orig = entry.get("original", "")
             if not orig:
                 continue
-            trans = entry.get("translation", "").strip()
+            trans = entry.get("translation", "")
             if not trans and fallback_to_original:
                 trans = orig
             mapping[orig] = trans
+            mapping[orig.strip()] = trans.strip()
             # Map unescaped alias for XML entity resilience
             unesc = html.unescape(orig)
             if unesc != orig:
                 mapping[unesc] = trans
+                mapping[unesc.strip()] = trans.strip()
     return mapping
 
 
@@ -109,37 +111,47 @@ def generate_translation_dat(
     for cat_name in sorted(catalog["categories"].keys()):
         entries = catalog["categories"][cat_name]
         for entry in entries:
-            orig = entry.get("original", "").strip()
-            if not orig:
+            orig_raw = entry.get("original", "")
+            if not orig_raw:
                 continue
 
             # Multiline newline escaping: convert raw \r\n, \r, \n to literal \n
-            orig = orig.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+            orig = orig_raw.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
 
-            trans = entry.get("translation", "").strip()
-            if trans:
+            trans_raw = entry.get("translation", "")
+            if trans_raw:
                 translated_entries += 1
-                trans = trans.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+                trans = trans_raw.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
             elif fallback_to_original:
                 trans = orig
             else:
                 continue
 
-            # Duplicate original key protection
-            if orig in seen_originals:
-                if verbose:
-                    print(f"[Warning] Skipping duplicate original key in catalog: '{orig}'")
-                continue
-            seen_originals.add(orig)
+            # Emit exact string with whitespace preserved
+            if orig not in seen_originals:
+                seen_originals.add(orig)
+                block = (
+                    "[TRANSLATION]\r\n"
+                    f"<STRING>ORIGINAL:{orig}\r\n"
+                    f"<STRING>TRANSLATION:{trans}\r\n"
+                    "[/TRANSLATION]"
+                )
+                blocks.append(block)
+                total_entries += 1
 
-            block = (
-                "[TRANSLATION]\r\n"
-                f"<STRING>ORIGINAL:{orig}\r\n"
-                f"<STRING>TRANSLATION:{trans}\r\n"
-                "[/TRANSLATION]"
-            )
-            blocks.append(block)
-            total_entries += 1
+            # Also emit trimmed version if different, ensuring both padded and trimmed lookups resolve
+            orig_trimmed = orig_raw.strip().replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+            trans_trimmed = trans_raw.strip().replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n") if trans_raw else orig_trimmed
+            if orig_trimmed and orig_trimmed not in seen_originals:
+                seen_originals.add(orig_trimmed)
+                block = (
+                    "[TRANSLATION]\r\n"
+                    f"<STRING>ORIGINAL:{orig_trimmed}\r\n"
+                    f"<STRING>TRANSLATION:{trans_trimmed}\r\n"
+                    "[/TRANSLATION]"
+                )
+                blocks.append(block)
+                total_entries += 1
 
     content_str = "\r\n".join(blocks) + "\r\n"
     # UTF-16LE with BOM: prepend b'\xff\xfe'

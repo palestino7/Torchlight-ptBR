@@ -17,7 +17,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="ItemType" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="EnchantedMachado" />
+            <Property Name="Text" Value="Machado Encantado" />
             <Property Name="TextColour" Value="FF64bcff" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="VertFormatting" Value="TopAligned" />
@@ -58,7 +58,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Level Requirements" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="requiresnivel" />
+            <Property Name="Text" Value="Requer nível 21" />
             <Property Name="TextColour" Value="FFFF0000" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />
@@ -66,7 +66,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Strength Requirements" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="requiresnivel" />
+            <Property Name="Text" Value="Requer nível 21" />
             <Property Name="TextColour" Value="FFFF0000" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />
@@ -74,7 +74,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Dexterity Requirements" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="requiresnivel" />
+            <Property Name="Text" Value="Requer nível 21" />
             <Property Name="TextColour" Value="FFFF0000" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />
@@ -82,7 +82,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Magic Requirements" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="requiresnivel" />
+            <Property Name="Text" Value="Requer nível 21" />
             <Property Name="TextColour" Value="FFFF0000" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />
@@ -90,7 +90,7 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Defense Requirements" >
             <Property Name="Font" Value="SerifSmall" />
-            <Property Name="Text" Value="requiresnivel" />
+            <Property Name="Text" Value="Requer nível 21" />
             <Property Name="TextColour" Value="FFFF0000" />
             <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
             <Property Name="UnifiedAreaRect" Value="{{0,20},{0.05,172},{0.973136,0},{0.05,188}}" />

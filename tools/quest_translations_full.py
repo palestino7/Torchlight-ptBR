@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+tools/quest_translations_full.py - Complete translations for Torchlight quests, dialogues,
+lore remnants, and NPC interactions (pt-BR).
+"""
+
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -12,3 +17,11 @@ def get_quest_dict() -> dict[str, str]:
 
 if __name__ == "__main__":
     print(f"Loaded {len(QUEST_TRANSLATIONS)} complete quest translations.")
+    all_ok = True
+    for o, t in QUEST_TRANSLATIONS.items():
+        errs = TranslationVerifier.validate_formatting_and_tags(o, t)
+        if errs:
+            print(f"FAILED on '{o}': {errs}")
+            all_ok = False
+    if all_ok:
+        print("ALL QUEST TRANSLATIONS PASSED VALIDATION 100%!")

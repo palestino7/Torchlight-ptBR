@@ -8,11 +8,19 @@
 
 [CmdletBinding()]
 param(
-    [string]$OutputDir = "$PSScriptRoot\..\..\dist",
-    [string]$IssFile = "$PSScriptRoot\setup.iss"
+    [string]$OutputDir = "",
+    [string]$IssFile = ""
 )
 
 $ErrorActionPreference = "Stop"
+
+$currentDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $OutputDir) {
+    $OutputDir = Join-Path $currentDir "..\..\dist"
+}
+if (-not $IssFile) {
+    $IssFile = Join-Path $currentDir "setup.iss"
+}
 
 Write-Host "========================================================================" -ForegroundColor Cyan
 Write-Host " Torchlight pt-BR - Pipeline de Compilação do Instalador" -ForegroundColor Cyan
@@ -58,7 +66,8 @@ $compileArgs = @(
     "`"$IssFile`""
 )
 
-$proc = Start-Process -FilePath $isccPath -ArgumentList $compileArgs -NoNewWindow -Wait -PassThru
+$issWorkDir = Split-Path -Parent $IssFile
+$proc = Start-Process -FilePath $isccPath -ArgumentList $compileArgs -WorkingDirectory $issWorkDir -NoNewWindow -Wait -PassThru
 if ($proc.ExitCode -ne 0) {
     Write-Error "A compilação do Inno Setup falhou com código de saída $($proc.ExitCode)."
     exit $proc.ExitCode
@@ -113,14 +122,7 @@ if (Test-Path $zipPath) {
 }
 
 Write-Host "--> Empacotando arquivo zip de distribuição..." -ForegroundColor Yellow
-Add-Type -AssemblyName System.IO.Compression.FileSystem
-$zipArchive = [System.IO.Compression.ZipFile]::Open($zipPath, [System.IO.Compression.ZipArchiveMode]::Create)
-try {
-    [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zipArchive, $exePath, "Torchlight_Traducao_ptBR_Setup.exe", [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
-    [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zipArchive, $readmePath, "LEIAME.txt", [System.IO.Compression.CompressionLevel]::Optimal) | Out-Null
-} finally {
-    $zipArchive.Dispose()
-}
+Compress-Archive -Path $exePath, $readmePath -DestinationPath $zipPath -Force
 
 $zipSize = (Get-Item $zipPath).Length
 Write-Host "[OK] Pacote zip gerado com sucesso: $zipPath ($("{0:N0}" -f $zipSize) bytes)" -ForegroundColor Green

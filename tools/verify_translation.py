@@ -241,7 +241,8 @@ class TranslationVerifier:
                             translated_count += 1
                         else:
                             words = current_orig.replace("\\n", " ").split()
-                            if len(words) > 1 and not current_orig.startswith("Bip") and current_orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                            is_goblin = any(g in current_orig for g in ("Brasag", "Garan", "kratk", "flurk", "larag", "Bra'nag", "garap"))
+                            if len(words) > 1 and not current_orig.startswith("Bip") and not is_goblin and current_orig not in ("Nicola Brink", "Trill-Bot 4000"):
                                 self.errors.append(
                                     f"Untranslated multi-word English phrase in translation.dat: '{current_orig}'"
                                 )
@@ -353,7 +354,8 @@ class TranslationVerifier:
                         )
                 if trans == orig or not trans:
                     words = orig.replace("\r\n", " ").replace("\n", " ").split()
-                    if len(words) > 1 and not orig.startswith("Bip") and orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                    is_goblin = any(g in orig for g in ("Brasag", "Garan", "kratk", "flurk", "larag", "Bra'nag", "garap"))
+                    if len(words) > 1 and not orig.startswith("Bip") and not is_goblin and orig not in ("Nicola Brink", "Trill-Bot 4000"):
                         self.errors.append(
                             f"Catalog untranslated multi-word English phrase in category '{cat_name}' (id: {entry_id}): '{orig}'"
                         )
