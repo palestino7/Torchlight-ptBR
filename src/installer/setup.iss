@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.3.2"
+#define MyAppVersion "1.3.3"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -50,6 +50,11 @@ Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortugue
 [Messages]
 brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Palestino7
 
+[InstallDelete]
+Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations\TRANSLATION.DAT.adm"
+Type: files; Name: "{userappdata}\runic games\torchlight\translations\TRANSLATION.DAT.adm"
+Type: files; Name: "{app}\translations\TRANSLATION.DAT.adm"
+
 [Files]
 ; 1. Deploy translation and UI layouts to game directory {app}
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -60,6 +65,9 @@ Source: "patch_torchlight.exe"; DestDir: "{tmp}"; Flags: ignoreversion deleteaft
 ; 2. Deploy translation as an engine mod to %APPDATA%\runic games\torchlight\mods\Traducao_ptBR
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+; 3. Update master units binary in AppData root
+Source: "..\..\translation_ptbr\media\masterresourceunits.dat.ADM"; DestDir: "{userappdata}\runic games\torchlight"; Flags: ignoreversion
 
 [Run]
 Filename: "{tmp}\patch_torchlight.exe"; Parameters: """{app}\Torchlight.exe"""; Flags: runhidden; StatusMsg: "Aplicando localização nas opções gráficas..."
