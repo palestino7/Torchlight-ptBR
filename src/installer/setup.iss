@@ -55,7 +55,13 @@ Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\tran
 Type: files; Name: "{userappdata}\runic games\torchlight\translations\TRANSLATION.DAT.adm"
 Type: files; Name: "{app}\translations\TRANSLATION.DAT.adm"
 Type: files; Name: "{app}\media\masterresourceunits.dat.ADM"
+Type: files; Name: "{userappdata}\runic games\torchlight\masterresourceunits.dat"
+Type: files; Name: "{userappdata}\runic games\torchlight\masterresourceunits.dat.ADM"
+Type: files; Name: "{userappdata}\runic games\torchlight\massfile.dat"
+Type: files; Name: "{userappdata}\runic games\torchlight\massfile.dat.ADM"
 Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media\masterresourceunits.dat.ADM"
+Type: filesandordirs; Name: "{app}\media\units"
+Type: filesandordirs; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media\units"
 
 [Files]
 ; 1. Deploy translation and UI layouts to game directory {app}

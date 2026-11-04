@@ -33,11 +33,28 @@ def sync_mod():
     shutil.copy2("translation_ptbr/translations/translation.dat", os.path.join(dest_trans, "translation.dat"))
     print(f"[Sync] Copied translation.dat to {dest_trans}")
 
-    # 3. Remove obsolete TRANSLATION.DAT.adm so the game regenerates/reads translation.dat
-    adm_path = os.path.join(dest_trans, "TRANSLATION.DAT.adm")
-    if os.path.exists(adm_path):
-        os.remove(adm_path)
-        print(f"[Sync] Removed stale binary cache: {adm_path}")
+    # 3. Remove obsolete caches so the game regenerates/reads cleanly from translation.dat and Pak.zip
+    appdata_root = os.path.expandvars(r"%APPDATA%\runic games\torchlight")
+    stale_caches = [
+        os.path.join(dest_trans, "TRANSLATION.DAT.adm"),
+        os.path.join(appdata_root, "masterresourceunits.dat"),
+        os.path.join(appdata_root, "masterresourceunits.dat.ADM"),
+        os.path.join(appdata_root, "massfile.dat"),
+        os.path.join(appdata_root, "massfile.dat.ADM"),
+    ]
+    for sc in stale_caches:
+        if os.path.exists(sc):
+            try:
+                os.remove(sc)
+                print(f"[Sync] Removed stale binary cache: {sc}")
+            except Exception as e:
+                print(f"[Sync] Warning: could not remove {sc}: {e}")
+
+    # Remove any leftover media/units in mod folder
+    mod_units = os.path.join(dest_media, "units")
+    if os.path.exists(mod_units):
+        shutil.rmtree(mod_units, ignore_errors=True)
+        print(f"[Sync] Removed obsolete units override: {mod_units}")
 
     # 4. Verify critical files
     crit_files = [
@@ -45,7 +62,6 @@ def sync_mod():
         os.path.join(dest_media, "UI", "charactercreate.layout"),
         os.path.join(dest_media, "UI", "tipmenu.layout"),
         os.path.join(dest_media, "UI", "questdialogmenu.layout"),
-        os.path.join(dest_media, "masterresourceunits.dat.ADM"),
         os.path.join(dest_trans, "translation.dat"),
     ]
     for cf in crit_files:
