@@ -65,25 +65,22 @@
 		  </Window>
 
 	<Window Type="GuiLook/StaticTextOutline" Name="CharacterClass" >
-	    		  <Property Name="Text" Value="1"/>
          		   <Property Name="UnifiedPosition" Value="{{.5,-300},{1,-175}}" />
          		   <Property Name="UnifiedSize" Value="{{0,600},{0,60}}" />
 			<Property Name="Text" Value="Destruidor" />
-			<Property Name="Font" Value="SerifHuge" /> 
+			<Property Name="Font" Value="SerifHuge" />
 			<Property Name="MousePassThroughEnabled" Value="True" />
 			<Property Name="AlwaysOnTop" Value="True" />
 		    <Property Name="HorzTextFormatting" Value="CentreAligned" />
 		  </Window>
 	<Window Type="GuiLook/StaticText" Name="CharacterClassDescription" >
-	    		  <Property Name="Text" Value="1"/>
-         		   <Property Name="UnifiedPosition" Value="{{.5,-150},{1,-140}}" />
-         		   <Property Name="UnifiedSize" Value="{{0,300},{0,64}}" />
-			<Property Name="Font" Value="SerifSmall" /> 
-			<Property Name="Text" Value="O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais" />
+         		   <Property Name="UnifiedPosition" Value="{{.5,-250},{1,-140}}" />
+         		   <Property Name="UnifiedSize" Value="{{0,500},{0,64}}" />
+			<Property Name="Font" Value="SerifSmall" />
+			<Property Name="Text" Value="O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos." />
 			<Property Name="MousePassThroughEnabled" Value="True" />
 			<Property Name="AlwaysOnTop" Value="True" />
 	          <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />
-
 		  </Window>
 
     <Window Type="GuiLook/StandardButton" Name="Back">
@@ -167,8 +164,8 @@
     </Window>
         <Window Type="GuiLook/StaticText" Name="PetName" >
             <Property Name="Text" Value="Nome do Mascote" />
-            <Property Name="UnifiedPosition" Value="{{0,0},{0,140}}" />
-            <Property Name="UnifiedSize" Value="{{0,140},{0,24}}" />
+            <Property Name="UnifiedPosition" Value="{{0,-30},{0,140}}" />
+            <Property Name="UnifiedSize" Value="{{0,200},{0,24}}" />
             <Property Name="HorzTextFormatting" Value="CentreAligned" />
         <Property Name="MousePassThroughEnabled" Value="True" />
         </Window>
@@ -203,8 +200,8 @@
         </Window>
         <Window Type="GuiLook/StaticText" Name="Name" >
             <Property Name="Text" Value="Nome do Personagem" />
-            <Property Name="UnifiedPosition" Value="{{.5,-70},{1,-88}}" />
-            <Property Name="UnifiedSize" Value="{{0,140},{0,24}}" />
+            <Property Name="UnifiedPosition" Value="{{.5,-130},{1,-88}}" />
+            <Property Name="UnifiedSize" Value="{{0,260},{0,24}}" />
             <Property Name="HorzTextFormatting" Value="CentreAligned" />
         <Property Name="MousePassThroughEnabled" Value="True" />
         </Window>

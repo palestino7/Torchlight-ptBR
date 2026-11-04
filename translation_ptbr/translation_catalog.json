@@ -352,7 +352,7 @@
       },
       {
         "original": "Enable/Disable Full-Scene Antialiasing\n|cFFFFBA00(requires restart)|u",
-        "translation": "Ativar/Desativar Anti-serrilhado de Cena Inteira\n|cFFFFBA00(requer reiniciar)|u",
+        "translation": "Ativar/Desativar Anti-serrilhado de Cena Inteira\n(requer reiniciar)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -366,7 +366,7 @@
       },
       {
         "original": "Enable/Disable Hardware Skinning\n|cFFFFBA00(requires restart)|u",
-        "translation": "Ativar/Desativar Skinning por Hardware\n|cFFFFBA00(requer reiniciar)|u",
+        "translation": "Ativar/Desativar Skinning por Hardware\n(requer reiniciar)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -394,14 +394,14 @@
       },
       {
         "original": "Enable/Disable the rimlight effect\n|cFFFFBA00(requires restart)|u",
-        "translation": "Ativar/Desativar efeito de luz de borda\n|cFFFFBA00(requer reiniciar)|u",
+        "translation": "Ativar/Desativar efeito de luz de borda\n(requer reiniciar)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "Enable/Disable Vertical Sync\n|cFFFFBA00(requires restart)|u",
-        "translation": "Ativar/Desativar Sincronização Vertical (VSync)\n|cFFFFBA00(requer reiniciar)|u",
+        "translation": "Ativar/Desativar Sincronização Vertical (VSync)\n(requer reiniciar)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -443,7 +443,7 @@
       {
         "id": "UI_0017",
         "original": "Fame:",
-        "translation": "Fama:",
+        "translation": "Fama: ",
         "context": "media/UI/questmenu.layout"
       },
       {
@@ -496,7 +496,7 @@
       {
         "id": "UI_0006",
         "original": "GP:",
-        "translation": "PO:",
+        "translation": "PO: ",
         "context": "media/UI/questmenu.layout",
         "status": "translated"
       },
@@ -528,7 +528,7 @@
       },
       {
         "original": "Hold |cFFffba00[SHIFT]|u while clicking an item to\ninstantly move it to the |cFFffba00opposite pane|u\n(or |cFFffba00buy and sell|u in Merchant interface)",
-        "translation": "Segure |cFFffba00[SHIFT]|u ao clicar em um item para\nmovê-lo instantaneamente ao |cFFffba00painel oposto|u\n(ou |cFFffba00comprar e vender|u no Comerciante)",
+        "translation": "Segure [SHIFT] ao clicar em um item para\nmovê-lo instantaneamente ao painel oposto\n(ou comprar e vender no Comerciante)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -767,7 +767,7 @@
       },
       {
         "original": "Pause Mode|cFF5e88ff(Enter)|u",
-        "translation": "Modo de Pausa|cFF5e88ff(Enter)|u",
+        "translation": "Modo de Pausa(Enter)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -1203,7 +1203,7 @@
       },
       {
         "original": "Switch active weapon set |cFF5e88ff(Press W)|u",
-        "translation": "Alternar conjunto de armas ativo |cFF5e88ff(Pressione W)|u",
+        "translation": "Alternar conjunto de armas ativo (Pressione W)",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -1298,7 +1298,7 @@
       {
         "id": "UI_0008",
         "original": "XP:",
-        "translation": "XP:",
+        "translation": "XP: ",
         "context": "media/UI/questmenu.layout"
       },
       {
@@ -1317,63 +1317,63 @@
       },
       {
         "original": "|cFF5e88ff(A)|uutomap - use [ and ] to zoom in and out",
-        "translation": "|cFF5e88ff(A)|uAutomapa - use [ e ] para aproximar/afastar",
+        "translation": "(A)Automapa - use [ e ] para aproximar/afastar",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(ALT)|uToggle Item Names",
-        "translation": "|cFF5e88ff(ALT)|uAlternar Nomes dos Itens",
+        "translation": "(ALT)Alternar Nomes dos Itens",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(C)|uharacter Sheet",
-        "translation": "|cFF5e88ff(C)|uFicha do Personagem",
+        "translation": "(C)Ficha do Personagem",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(ESC)|uOptions",
-        "translation": "|cFF5e88ff(ESC)|uOpções",
+        "translation": "(ESC)Opções",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(I)|unventory",
-        "translation": "|cFF5e88ff(I)|unventário",
+        "translation": "(I)nventário",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(J)|uournal",
-        "translation": "|cFF5e88ff(J)|uDiário",
+        "translation": "(J)Diário",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(P)|uet Sheet",
-        "translation": "|cFF5e88ff(P)|uFicha do Mascote",
+        "translation": "(P)Ficha do Mascote",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(Q)|uuests",
-        "translation": "|cFF5e88ff(Q)|uMissões",
+        "translation": "(Q)Missões",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
       },
       {
         "original": "|cFF5e88ff(S)|ukills",
-        "translation": "|cFF5e88ff(S)|uHabilidades",
+        "translation": "(S)Habilidades",
         "category": "UI",
         "source_file": "media/UI/*.layout",
         "status": "translated"
@@ -3057,7 +3057,7 @@
       {
         "id": "Quests_0280",
         "original": "|cFFFFBA00Gar?|u",
-        "translation": "|cFFFFBA00Gar?|u",
+        "translation": "Gar?",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
@@ -3219,7 +3219,7 @@
       {
         "id": "Quests_0307",
         "original": "|cFFFFBA00Ordrak|u",
-        "translation": "|cFFFFBA00Ordrak|u",
+        "translation": "Ordrak",
         "context": "media/Quests/StoryQuest/Palace/PALACEPT2_2.DAT.adm"
       },
       {
@@ -3297,7 +3297,7 @@
       {
         "id": "Quests_0320",
         "original": "|cFFFFBA00Victory|u",
-        "translation": "|cFFFFBA00Vitória|u",
+        "translation": "Vitória",
         "context": "media/Quests/StoryQuest/CompleteGame/COMPLETEGAME.DAT.adm"
       },
       {
@@ -3399,7 +3399,7 @@
       {
         "id": "Quests_0337",
         "original": "|cFFFFBA00Aid Brink|u",
-        "translation": "|cFFFFBA00Ajudar Brink|u",
+        "translation": "Ajudar Brink",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT3.DAT.adm"
       },
       {
@@ -3465,7 +3465,7 @@
       {
         "id": "Quests_0348",
         "original": "|cFFFFBA00Rescue Syl|u",
-        "translation": "|cFFFFBA00Resgatar Syl|u",
+        "translation": "Resgatar Syl",
         "context": "media/Quests/StoryQuest/Fortress/FORTRESSBOSSDEFEAT.DAT.adm"
       },
       {
@@ -3513,7 +3513,7 @@
       {
         "id": "Quests_0356",
         "original": "|cFFFFBA00Peer Review|u",
-        "translation": "|cFFFFBA00Revisão por Pares|u",
+        "translation": "Revisão por Pares",
         "context": "media/Quests/VasmanRandom/PEERREVIEWCAVES.DAT.adm"
       },
       {
@@ -3543,19 +3543,19 @@
       {
         "id": "Quests_0361",
         "original": "|cFFFFBA00Ember Hunter|u",
-        "translation": "|cFFFFBA00Caçador de Âmbar|u",
+        "translation": "Caçador de Âmbar",
         "context": "media/Quests/VasmanRandom/EMBERHUNTERCAVES.DAT.adm"
       },
       {
         "id": "Quests_0362",
         "original": "|cFFFFBA00Miner Greets|u",
-        "translation": "|cFFFFBA00Saudações do Mineiro|u",
+        "translation": "Saudações do Mineiro",
         "context": "media/Quests/MINERDIALOG.DAT.adm"
       },
       {
         "id": "Quests_0363",
         "original": "|cFFFFBA00Seismic Core|u",
-        "translation": "|cFFFFBA00Núcleo Sísmico|u",
+        "translation": "Núcleo Sísmico",
         "context": "media/Quests/StoryQuest/Cave/CAVEDEFEATBOSS.DAT.adm"
       },
       {
@@ -3585,19 +3585,19 @@
       {
         "id": "Quests_0368",
         "original": "|cFFFFBA00Another Piece|u",
-        "translation": "|cFFFFBA00Mais um Fragmento|u",
+        "translation": "Mais um Fragmento",
         "context": "media/Quests/VasmanRandom/ANOTHERPIECECAVES.DAT.adm"
       },
       {
         "id": "Quests_0369",
         "original": "|cFFFFBA00Deepest Ember|u",
-        "translation": "|cFFFFBA00Âmbar Mais Profundo|u",
+        "translation": "Âmbar Mais Profundo",
         "context": "media/Quests/Vasman/QUEST7.DAT.adm"
       },
       {
         "id": "Quests_0370",
         "original": "|cFFFFBA00Thaumic Focus|u",
-        "translation": "|cFFFFBA00Foco Táumico|u",
+        "translation": "Foco Táumico",
         "context": "media/Quests/Random/RANDOMQUEST01.DAT.adm"
       },
       {
@@ -3627,25 +3627,25 @@
       {
         "id": "Quests_0375",
         "original": "|cFFFFBA00Alric's demise|u",
-        "translation": "|cFFFFBA00A queda de Alric|u",
+        "translation": "A queda de Alric",
         "context": "media/Quests/StoryQuest/Palace/PALACEPT1.DAT.adm"
       },
       {
         "id": "Quests_0376",
         "original": "|cFFFFBA00Confront Alric|u",
-        "translation": "|cFFFFBA00Confrontar Alric|u",
+        "translation": "Confrontar Alric",
         "context": "media/Quests/StoryQuest/Palace/PALACEPT2.DAT.adm"
       },
       {
         "id": "Quests_0377",
         "original": "|cFFFFBA00Down the Hatch|u",
-        "translation": "|cFFFFBA00Pelo Alçapão|u",
+        "translation": "Pelo Alçapão",
         "context": "media/Quests/Hatch/QUEST1.DAT.adm"
       },
       {
         "id": "Quests_0378",
         "original": "|cFFFFBA00Primal Caverns|u",
-        "translation": "|cFFFFBA00Cavernas Primordiais|u",
+        "translation": "Cavernas Primordiais",
         "context": "media/Quests/Vasman/QUEST4.DAT.adm"
       },
       {
@@ -3669,7 +3669,7 @@
       {
         "id": "Quests_0382",
         "original": "|cFFFFBA00The Ember Forge|u",
-        "translation": "|cFFFFBA00A Forja de Âmbar|u",
+        "translation": "A Forja de Âmbar",
         "context": "media/Quests/StoryQuest/Fortress/FORTRESSPT1.DAT.adm"
       },
       {
@@ -3711,13 +3711,13 @@
       {
         "id": "Quests_0389",
         "original": "|cFFFFBA00Battle Varkaseer|u",
-        "translation": "|cFFFFBA00Batalhar com Varkaseer|u",
+        "translation": "Batalhar com Varkaseer",
         "context": "media/Quests/Bard/QUEST1.DAT.adm"
       },
       {
         "id": "Quests_0390",
         "original": "|cFFFFBA00The final portal|u",
-        "translation": "|cFFFFBA00O portal final|u",
+        "translation": "O portal final",
         "context": "media/Quests/StoryQuest/ruins/RUINSPT2.2.DAT.adm"
       },
       {
@@ -3729,25 +3729,25 @@
       {
         "id": "Quests_0392",
         "original": "|cFFFFBA00A Quest for Glory|u",
-        "translation": "|cFFFFBA00Uma Busca por Glória|u",
+        "translation": "Uma Busca por Glória",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0393",
         "original": "|cFFFFBA00Brink of Disaster|u",
-        "translation": "|cFFFFBA00À Beira do Desastre|u",
+        "translation": "À Beira do Desastre",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT4.DAT.adm"
       },
       {
         "id": "Quests_0394",
         "original": "|cFFFFBA00Ember Examination|u",
-        "translation": "|cFFFFBA00Exame de Âmbar|u",
+        "translation": "Exame de Âmbar",
         "context": "media/Quests/VasmanRandom/EMBEREXAMINATIONCAVES.DAT.adm"
       },
       {
         "id": "Quests_0395",
         "original": "|cFFFFBA00The Savage Prison|u",
-        "translation": "|cFFFFBA00A Prisão Selvagem|u",
+        "translation": "A Prisão Selvagem",
         "context": "media/Quests/Vasman/QUEST5.DAT.adm"
       },
       {
@@ -3771,25 +3771,25 @@
       {
         "id": "Quests_0399",
         "original": "The |cFFFFBA00Gleaming Ember|u",
-        "translation": "O |cFFFFBA00Âmbar Reluzente|u",
+        "translation": "O Âmbar Reluzente",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
         "id": "Quests_0400",
         "original": "|cFFFFBA00Estherian Remnants|u",
-        "translation": "|cFFFFBA00Vestígios Esterianos|u",
+        "translation": "Vestígios Esterianos",
         "context": "media/Quests/StoryQuest/ruins/RUINSPT1.DAT.adm"
       },
       {
         "id": "Quests_0401",
         "original": "|cFFFFBA00Population Control|u",
-        "translation": "|cFFFFBA00Controle de População|u",
+        "translation": "Controle de População",
         "context": "media/Quests/Random/RANDOMQUEST02.DAT.adm"
       },
       {
         "id": "Quests_0402",
         "original": "|cFFFFBA00Through the Portal|u",
-        "translation": "|cFFFFBA00Através do Portal|u",
+        "translation": "Através do Portal",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -3801,25 +3801,25 @@
       {
         "id": "Quests_0404",
         "original": "|cFFFFBA00Minions of Darkness|u",
-        "translation": "|cFFFFBA00Lacaios da Escuridão|u",
+        "translation": "Lacaios da Escuridão",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0405",
         "original": "|cFFFFBA00Rumbles in the Deep|u",
-        "translation": "|cFFFFBA00Estrondos nas Profundezas|u",
+        "translation": "Estrondos nas Profundezas",
         "context": "media/Quests/StoryQuest/Cave/CAVEPT1.DAT.adm"
       },
       {
         "id": "Quests_0406",
         "original": "|cFFFFBA00The Ember Collector|u",
-        "translation": "|cFFFFBA00O Colecionador de Âmbar|u",
+        "translation": "O Colecionador de Âmbar",
         "context": "media/Quests/VasmanRandom/THEEMBERCOLLECTORCAVES.DAT.adm"
       },
       {
         "id": "Quests_0407",
         "original": "|cFFFFBA00The Shimmering Deep|u",
-        "translation": "|cFFFFBA00As Profundezas Cintilantes|u",
+        "translation": "As Profundezas Cintilantes",
         "context": "media/Quests/Vasman/QUEST3.DAT.adm"
       },
       {
@@ -3837,7 +3837,7 @@
       {
         "id": "Quests_0410",
         "original": "|cFFFFBA00Brink has joined you|u",
-        "translation": "|cFFFFBA00Brink juntou-se a você|u",
+        "translation": "Brink juntou-se a você",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT3_PET.DAT.adm"
       },
       {
@@ -3855,25 +3855,25 @@
       {
         "id": "Quests_0413",
         "original": "|cFFFFBA00A Cure for Corruption|u",
-        "translation": "|cFFFFBA00Uma Cura para a Corrupção|u",
+        "translation": "Uma Cura para a Corrupção",
         "context": "media/Quests/StoryQuest/Crypt/CRYPTFIRSTQUEST.DAT.adm"
       },
       {
         "id": "Quests_0414",
         "original": "|cFFFFBA00The Strength of Ember|u",
-        "translation": "|cFFFFBA00A Força do Âmbar|u",
+        "translation": "A Força do Âmbar",
         "context": "media/Quests/Vasman/QUEST6.DAT.adm"
       },
       {
         "id": "Quests_0415",
         "original": "|cFFFFBA00Ember of Another Color|u",
-        "translation": "|cFFFFBA00Âmbar de Outra Cor|u",
+        "translation": "Âmbar de Outra Cor",
         "context": "media/Quests/Vasman/QUEST2.DAT.adm"
       },
       {
         "id": "Quests_0416",
         "original": "|cFFFFBA00Through Flame and Fury|u",
-        "translation": "|cFFFFBA00Através de Chamas e Fúria|u",
+        "translation": "Através de Chamas e Fúria",
         "context": "media/Quests/StoryQuest/Lava/LAVAPT1.DAT.adm"
       },
       {
@@ -3885,7 +3885,7 @@
       {
         "id": "Quests_0418",
         "original": "|cFFFFBA00Torchlight Under Attack|u",
-        "translation": "|cFFFFBA00Torchlight Sob Ataque|u",
+        "translation": "Torchlight Sob Ataque",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT1.DAT.adm"
       },
       {
@@ -3963,7 +3963,7 @@
       {
         "id": "Quests_0431",
         "original": "Pursue |cFFFFBA00Alric|u deeper into the palace.",
-        "translation": "Persiga |cFFFFBA00Alric|u mais fundo no palácio.",
+        "translation": "Persiga Alric mais fundo no palácio.",
         "context": "media/Quests/StoryQuest/Palace/PALACEPT1.DAT.adm"
       },
       {
@@ -4101,7 +4101,7 @@
       {
         "id": "Quests_0454",
         "original": "La la floor |cFFFFBA00[DEFEAT1DEPTH]|u, tra la la |cFFFFBA00[DEFEAT1]|u.",
-        "translation": "Lá lá andar |cFFFFBA00[DEFEAT1DEPTH]|u, trá lá lá |cFFFFBA00[DEFEAT1]|u.",
+        "translation": "Lá lá andar [DEFEAT1DEPTH], trá lá lá [DEFEAT1].",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4143,7 +4143,7 @@
       {
         "id": "Quests_0461",
         "original": "|cFFFFBA00Varkaseer|u awaits you in the mines, make it battle worthy of song!",
-        "translation": "|cFFFFBA00Varkaseer|u espera por você nas minas, faça disto uma batalha digna de canções!",
+        "translation": "Varkaseer espera por você nas minas, faça disto uma batalha digna de canções!",
         "context": "media/Quests/Bard/QUEST1.DAT.adm"
       },
       {
@@ -4161,7 +4161,7 @@
       {
         "id": "Quests_0464",
         "original": "Vasman has asked you to find a piece of |cFFFFBA00Gleaming Ember|u in the mines.",
-        "translation": "Vasman pediu para você encontrar um fragmento de |cFFFFBA00Âmbar Reluzente|u nas minas.",
+        "translation": "Vasman pediu para você encontrar um fragmento de Âmbar Reluzente nas minas.",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
@@ -4185,7 +4185,7 @@
       {
         "id": "Quests_0468",
         "original": "Trill has asked you to slay |cFFFFBA00Varkaseer|u on the third floor of the mines.",
-        "translation": "Trill pediu para você derrotar |cFFFFBA00Varkaseer|u no terceiro andar das minas.",
+        "translation": "Trill pediu para você derrotar Varkaseer no terceiro andar das minas.",
         "context": "media/Quests/Bard/QUEST1.DAT.adm"
       },
       {
@@ -4215,7 +4215,7 @@
       {
         "id": "Quests_0473",
         "original": "Seg Gar garap ag |cFFFFBA00[ACQUIRE1]|u arag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!\\n\\nGar!",
-        "translation": "Seg Gar garap ag |cFFFFBA00[ACQUIRE1]|u arag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!\\n\\nGar!",
+        "translation": "Seg Gar garap ag [ACQUIRE1] arag flurk [ACQUIRE1DEPTH]!\\n\\nGar!",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
@@ -4233,7 +4233,7 @@
       {
         "id": "Quests_0476",
         "original": "Gar!\\n\\nKrop barag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u kag garan ag |cFFFFBA00[ACQUIRE1]|u!",
-        "translation": "Gar!\\n\\nKrop barag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u kag garan ag |cFFFFBA00[ACQUIRE1]|u!",
+        "translation": "Gar!\\n\\nKrop barag flurk [ACQUIRE1DEPTH] kag garan ag [ACQUIRE1]!",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
@@ -4269,13 +4269,13 @@
       {
         "id": "Quests_0482",
         "original": "Gar seems to want you to find him a |cFFFFBA00[ACQUIRE1]|u on floor |cFFFFBA00[ACQUIRE1DEPTH]|u.",
-        "translation": "Gar parece querer que você encontre para ele um |cFFFFBA00[ACQUIRE1]|u no andar |cFFFFBA00[ACQUIRE1DEPTH]|u.",
+        "translation": "Gar parece querer que você encontre para ele um [ACQUIRE1] no andar [ACQUIRE1DEPTH].",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
         "id": "Quests_0483",
         "original": "Vasman has asked you to find a piece of |cFFFFBA00Deathlace Ember|u in the |cFFFFBA00necropolis|u.",
-        "translation": "Vasman pediu para você encontrar um fragmento de |cFFFFBA00Âmbar da Renda da Morte|u na |cFFFFBA00necrópole|u.",
+        "translation": "Vasman pediu para você encontrar um fragmento de Âmbar da Renda da Morte na necrópole.",
         "context": "media/Quests/Vasman/QUEST2.DAT.adm"
       },
       {
@@ -4305,7 +4305,7 @@
       {
         "id": "Quests_0488",
         "original": "You will find |cFFFFBA00[DEFEAT1]|u's lair below us, |cFFFFBA00[DEFEAT1DEPTH]|u floors beneath the surface.",
-        "translation": "Você encontrará o covil de |cFFFFBA00[DEFEAT1]|u abaixo de nós, |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da superfície.",
+        "translation": "Você encontrará o covil de [DEFEAT1] abaixo de nós, [DEFEAT1DEPTH] andares abaixo da superfície.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4317,25 +4317,25 @@
       {
         "id": "Quests_0490",
         "original": "There's the |cFFFFBA00[ACQUIRE1]|u I've been waiting for!  Our buyer has offered a fine price, here's your share!",
-        "translation": "Aí está o |cFFFFBA00[ACQUIRE1]|u pelo qual estive esperando! Nosso comprador ofereceu um ótimo preço, aqui está sua parte!",
+        "translation": "Aí está o [ACQUIRE1] pelo qual estive esperando! Nosso comprador ofereceu um ótimo preço, aqui está sua parte!",
         "context": "media/Quests/VasmanRandom/PEERREVIEWCAVES.DAT.adm"
       },
       {
         "id": "Quests_0491",
         "original": "I believe this |cFFFFBA00[ACQUIRE1]|u will satisfy our buyer!  You've done well, here is your share of the profit.",
-        "translation": "Acredito que este |cFFFFBA00[ACQUIRE1]|u satisfará nosso comprador! Você se saiu muito bem, aqui está sua parte do lucro.",
+        "translation": "Acredito que este [ACQUIRE1] satisfará nosso comprador! Você se saiu muito bem, aqui está sua parte do lucro.",
         "context": "media/Quests/VasmanRandom/EMBERHUNTERCAVES.DAT.adm"
       },
       {
         "id": "Quests_0492",
         "original": "Valeria wants you to slay a corrupted champion known as |cFFFFBA00[DEFEAT1]|u on floor |cFFFFBA00[DEFEAT1DEPTH]|u.",
-        "translation": "Valeria quer que você derrote um campeão corrompido conhecido como |cFFFFBA00[DEFEAT1]|u no andar |cFFFFBA00[DEFEAT1DEPTH]|u.",
+        "translation": "Valeria quer que você derrote um campeão corrompido conhecido como [DEFEAT1] no andar [DEFEAT1DEPTH].",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0493",
         "original": "Hatch has opened a |cFFFFBA00portal|u in town, he wants you to go through and retrieve a treasure from the other side.",
-        "translation": "Hatch abriu um |cFFFFBA00portal|u na cidade, ele quer que você atravesse e recupere um tesouro do outro lado.",
+        "translation": "Hatch abriu um portal na cidade, ele quer que você atravesse e recupere um tesouro do outro lado.",
         "context": "media/Quests/Hatch/QUEST1.DAT.adm"
       },
       {
@@ -4347,13 +4347,13 @@
       {
         "id": "Quests_0495",
         "original": "Humen garap grap ag garan |cFFFFBA00[ACQUIRE1]|u!\\n\\nBreg flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!  Gar seg larag, humen larag!",
-        "translation": "Humen garap grap ag garan |cFFFFBA00[ACQUIRE1]|u!\\n\\nBreg flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!  Gar seg larag, humen larag!",
+        "translation": "Humen garap grap ag garan [ACQUIRE1]!\\n\\nBreg flurk [ACQUIRE1DEPTH]!  Gar seg larag, humen larag!",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
         "id": "Quests_0496",
         "original": "I felt the blight recoil and retreat when you slew the dark champion |cFFFFBA00[DEFEAT1]|u.  You have earned this reward.",
-        "translation": "Senti a praga recuar e bater em retirada quando você derrotou o campeão sombrio |cFFFFBA00[DEFEAT1]|u. Você fez por merecer esta recompensa.",
+        "translation": "Senti a praga recuar e bater em retirada quando você derrotou o campeão sombrio [DEFEAT1]. Você fez por merecer esta recompensa.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4365,7 +4365,7 @@
       {
         "id": "Quests_0498",
         "original": "Trill wants you to slay |cFFFFBA00[DEFEAT1]|u on floor |cFFFFBA00[DEPTH]|u so that he can compose a song about the battle.",
-        "translation": "Trill quer que você derrote |cFFFFBA00[DEFEAT1]|u no andar |cFFFFBA00[DEPTH]|u para que ele possa compor uma canção sobre a batalha.",
+        "translation": "Trill quer que você derrote [DEFEAT1] no andar [DEPTH] para que ele possa compor uma canção sobre a batalha.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4389,7 +4389,7 @@
       {
         "id": "Quests_0502",
         "original": "Gar!  Brek garap krog ag garan |cFFFFBA00[ACQUIRE1]|u!\\n\\nGar seg humen ga!  Larag ag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!  Gar!",
-        "translation": "Gar!  Brek garap krog ag garan |cFFFFBA00[ACQUIRE1]|u!\\n\\nGar seg humen ga!  Larag ag flurk |cFFFFBA00[ACQUIRE1DEPTH]|u!  Gar!",
+        "translation": "Gar!  Brek garap krog ag garan [ACQUIRE1]!\\n\\nGar seg humen ga!  Larag ag flurk [ACQUIRE1DEPTH]!  Gar!",
         "context": "media/Quests/Gar/GARRANDOMACQUIRE.DAT.adm"
       },
       {
@@ -4401,7 +4401,7 @@
       {
         "id": "Quests_0504",
         "original": "You slew |cFFFFBA00[DEFEAT1]|u with such eagerness, such lust for battle; be wary the blight does not find purchase within you.",
-        "translation": "Você derrotou |cFFFFBA00[DEFEAT1]|u com tamanha avidez, tanta sede de batalha; tenha cuidado para que a praga não crie raízes dentro de você.",
+        "translation": "Você derrotou [DEFEAT1] com tamanha avidez, tanta sede de batalha; tenha cuidado para que a praga não crie raízes dentro de você.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4413,7 +4413,7 @@
       {
         "id": "Quests_0506",
         "original": "Flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u, kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nBra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!\\n\\nGorak!",
-        "translation": "Flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u, kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nBra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!\\n\\nGorak!",
+        "translation": "Flurk [DEFEAT1ACQUIRE1DEPTH], kratk [DEFEAT1]!\\n\\nBra'nag asa [DEFEAT1ACQUIRE1] Gar!\\n\\nGorak!",
         "context": "media/Quests/Gar/GARRANDOMDEFEATACQUIRE.DAT.adm"
       },
       {
@@ -4425,19 +4425,19 @@
       {
         "id": "Quests_0508",
         "original": "Hatch has opened a |cFFFFBA00portal|u in town, he wants you to go through and retrieve a |cFFFFBA00[ACQUIRE1]|u from the other side.",
-        "translation": "Hatch abriu um |cFFFFBA00portal|u na cidade, ele quer que você passe por ele e recupere um |cFFFFBA00[ACQUIRE1]|u do outro lado.",
+        "translation": "Hatch abriu um portal na cidade, ele quer que você passe por ele e recupere um [ACQUIRE1] do outro lado.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0509",
         "original": "Vasman has asked you to find a piece of |cFFFFBA00[ACQUIRE1]|u on floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u.",
-        "translation": "Vasman pediu para você encontrar um fragmento de |cFFFFBA00[ACQUIRE1]|u no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u.",
+        "translation": "Vasman pediu para você encontrar um fragmento de [ACQUIRE1] no andar [ACQUIRE1DEPTH] do Cofre das Sombras.",
         "context": "media/Quests/VasmanRandom/ANOTHERPIECECAVES.DAT.adm"
       },
       {
         "id": "Quests_0510",
         "original": "The |cFFFFBA00[ACQUIRE1]|u was right where the book said wasn't it?  Whoever wrote this thing was a real oracle!\\n\\nHere's your share.",
-        "translation": "O |cFFFFBA00[ACQUIRE1]|u estava bem onde o livro dizia, não é? Quem escreveu essa obra era um verdadeiro oráculo!\\n\\nAqui está sua parte.",
+        "translation": "O [ACQUIRE1] estava bem onde o livro dizia, não é? Quem escreveu essa obra era um verdadeiro oráculo!\\n\\nAqui está sua parte.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4455,13 +4455,13 @@
       {
         "id": "Quests_0513",
         "original": "Bra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!  Kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nHumen gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u!  Gar!",
-        "translation": "Bra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!  Kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nHumen gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u!  Gar!",
+        "translation": "Bra'nag asa [DEFEAT1ACQUIRE1] Gar!  Kratk [DEFEAT1]!\\n\\nHumen gara flurk [DEFEAT1ACQUIRE1DEPTH]!  Gar!",
         "context": "media/Quests/Gar/GARRANDOMDEFEATACQUIRE.DAT.adm"
       },
       {
         "id": "Quests_0514",
         "original": "Gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u, kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nBra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar.  Gar!\\n\\nGar!",
-        "translation": "Gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u, kratk |cFFFFBA00[DEFEAT1]|u!\\n\\nBra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar.  Gar!\\n\\nGar!",
+        "translation": "Gara flurk [DEFEAT1ACQUIRE1DEPTH], kratk [DEFEAT1]!\\n\\nBra'nag asa [DEFEAT1ACQUIRE1] Gar.  Gar!\\n\\nGar!",
         "context": "media/Quests/Gar/GARRANDOMDEFEATACQUIRE.DAT.adm"
       },
       {
@@ -4479,19 +4479,19 @@
       {
         "id": "Quests_0517",
         "original": "If my Tome of Fiends says that |cFFFFBA00[DEFEAT1]|u awaits you on floor |cFFFFBA00[DEFEAT1DEPTH]|u, then you can be sure the beast is there.",
-        "translation": "Se o meu Tomo dos Demônios diz que |cFFFFBA00[DEFEAT1]|u espera por você no andar |cFFFFBA00[DEFEAT1DEPTH]|u, então pode ter certeza de que a fera está lá.",
+        "translation": "Se o meu Tomo dos Demônios diz que [DEFEAT1] espera por você no andar [DEFEAT1DEPTH], então pode ter certeza de que a fera está lá.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0518",
         "original": "This |cFFFFBA00[ACQUIRE1]|u will be a fine replacement!  I'll try not to destroy it as quickly as the last sample.  Here's your fee, partner.",
-        "translation": "Este |cFFFFBA00[ACQUIRE1]|u será uma ótima substituição! Vou tentar não destruí-lo tão depressa quanto a última amostra. Aqui está seu pagamento, parceiro.",
+        "translation": "Este [ACQUIRE1] será uma ótima substituição! Vou tentar não destruí-lo tão depressa quanto a última amostra. Aqui está seu pagamento, parceiro.",
         "context": "media/Quests/VasmanRandom/ANOTHERPIECECAVES.DAT.adm"
       },
       {
         "id": "Quests_0519",
         "original": "You found the |cFFFFBA00[ACQUIRE1]|u, you're a wonder partner!  I know just where I can find a buyer too, so here's your share of the profit.",
-        "translation": "Você encontrou o |cFFFFBA00[ACQUIRE1]|u, você é maravilhoso, parceiro! Eu sei exatamente onde encontrar um comprador, então aqui está sua fatia do lucro.",
+        "translation": "Você encontrou o [ACQUIRE1], você é maravilhoso, parceiro! Eu sei exatamente onde encontrar um comprador, então aqui está sua fatia do lucro.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4503,7 +4503,7 @@
       {
         "id": "Quests_0521",
         "original": "Bards through the ages will sing of your battle with |cFFFFBA00[DEFEAT1]|u, but of course, none of their voices shall sound as sweet as my own.",
-        "translation": "Bardos através das eras cantarão sobre sua batalha contra |cFFFFBA00[DEFEAT1]|u, mas é claro que nenhuma das vozes deles soará tão doce quanto a minha.",
+        "translation": "Bardos através das eras cantarão sobre sua batalha contra [DEFEAT1], mas é claro que nenhuma das vozes deles soará tão doce quanto a minha.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4515,13 +4515,13 @@
       {
         "id": "Quests_0523",
         "original": "Gar seems to want you to kill |cFFFFBA00[DEFEAT1]|u on floor |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u and bring back a |cFFFFBA00[DEFEAT1ACQUIRE1]|u.\\n\\n",
-        "translation": "Gar parece querer que você mate |cFFFFBA00[DEFEAT1]|u no andar |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u e traga de volta um |cFFFFBA00[DEFEAT1ACQUIRE1]|u.\\n\\n",
+        "translation": "Gar parece querer que você mate [DEFEAT1] no andar [DEFEAT1ACQUIRE1DEPTH] e traga de volta um [DEFEAT1ACQUIRE1].\\n\\n",
         "context": "media/Quests/Gar/GARRANDOMDEFEATACQUIRE.DAT.adm"
       },
       {
         "id": "Quests_0524",
         "original": "Gar!  \\n\\nKratk |cFFFFBA00[DEFEAT1]|u!  Bra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!\\n\\nHumen gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u!  Gar!",
-        "translation": "Gar!  \\n\\nKratk |cFFFFBA00[DEFEAT1]|u!  Bra'nag asa |cFFFFBA00[DEFEAT1ACQUIRE1]|u Gar!\\n\\nHumen gara flurk |cFFFFBA00[DEFEAT1ACQUIRE1DEPTH]|u!  Gar!",
+        "translation": "Gar!  \\n\\nKratk [DEFEAT1]!  Bra'nag asa [DEFEAT1ACQUIRE1] Gar!\\n\\nHumen gara flurk [DEFEAT1ACQUIRE1DEPTH]!  Gar!",
         "context": "media/Quests/Gar/GARRANDOMDEFEATACQUIRE.DAT.adm"
       },
       {
@@ -4533,25 +4533,25 @@
       {
         "id": "Quests_0526",
         "original": "A blight festers within |cFFFFBA00[DEFEAT1]|u, and it will continue to spread.  Descend |cFFFFBA00[DEFEAT1DEPTH]|u floors and drive the corruption back.",
-        "translation": "Uma praga se espalha dentro de |cFFFFBA00[DEFEAT1]|u e continuará a crescer. Desça |cFFFFBA00[DEFEAT1DEPTH]|u andares e faça a corrupção recuar.",
+        "translation": "Uma praga se espalha dentro de [DEFEAT1] e continuará a crescer. Desça [DEFEAT1DEPTH] andares e faça a corrupção recuar.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0527",
         "original": "You have freed |cFFFFBA00[DEFEAT1]|u from the blight.  This world is safer, and I can continue to breathe the evening air.\\n\\nLet me reward your courage.",
-        "translation": "Você libertou |cFFFFBA00[DEFEAT1]|u da praga. Este mundo está mais seguro e posso continuar a respirar o ar da noite.\\n\\nPermita-me recompensar sua coragem.",
+        "translation": "Você libertou [DEFEAT1] da praga. Este mundo está mais seguro e posso continuar a respirar o ar da noite.\\n\\nPermita-me recompensar sua coragem.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0528",
         "original": "You have the |cFFFFBA00[ACQUIRE1]|u already?  You're a fast as an arrow and twice as deadly, I'd better pay prompt and stay on your good side, eh partner?",
-        "translation": "Você já pegou o |cFFFFBA00[ACQUIRE1]|u? Você é rápido como uma flecha e duas vezes mais mortal, é melhor eu pagar logo para ficar de bem com você, não é, parceiro?",
+        "translation": "Você já pegou o [ACQUIRE1]? Você é rápido como uma flecha e duas vezes mais mortal, é melhor eu pagar logo para ficar de bem com você, não é, parceiro?",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0529",
         "original": "I bet those monsters never saw you coming!  Thanks for finding the |cFFFFBA00[ACQUIRE1]|u, I'm sure this is just the beginning of the treasures we'll find!",
-        "translation": "Aposto que aqueles monstros nem viram você chegar! Obrigado por encontrar o |cFFFFBA00[ACQUIRE1]|u, tenho certeza de que este é só o começo dos tesouros que acharemos!",
+        "translation": "Aposto que aqueles monstros nem viram você chegar! Obrigado por encontrar o [ACQUIRE1], tenho certeza de que este é só o começo dos tesouros que acharemos!",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4563,25 +4563,25 @@
       {
         "id": "Quests_0531",
         "original": "I'm sure you'll find lots of valuables on the other side of this portal, but don't forget to pick up the |cFFFFBA00[ACQUIRE1]|u for me.  I'm counting on you!",
-        "translation": "Tenho certeza de que você encontrará muitas coisas valiosas do outro lado deste portal, mas não se esqueça de pegar o |cFFFFBA00[ACQUIRE1]|u para mim. Conto com você!",
+        "translation": "Tenho certeza de que você encontrará muitas coisas valiosas do outro lado deste portal, mas não se esqueça de pegar o [ACQUIRE1] para mim. Conto com você!",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0532",
         "original": "The |cFFFFBA00[ACQUIRE1]|u is somewhere on the other side of the portal, the book doesn't say exactly where it's at, I can just get you into the general area.",
-        "translation": "O |cFFFFBA00[ACQUIRE1]|u está em algum lugar do outro lado do portal, o livro não diz exatamente onde fica, só consigo colocar você na área geral.",
+        "translation": "O [ACQUIRE1] está em algum lugar do outro lado do portal, o livro não diz exatamente onde fica, só consigo colocar você na área geral.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0533",
         "original": "The |cFFFFBA00[ACQUIRE1]|u, you've found it!  This is a fine specimen, our collector will be pleased- and we'll be pleased to take his gold!  Here's your share.",
-        "translation": "O |cFFFFBA00[ACQUIRE1]|u, você o encontrou! Este é um espécime magnífico, nosso colecionador vai adorar — e nós vamos adorar ficar com o ouro dele! Aqui está sua parte.",
+        "translation": "O [ACQUIRE1], você o encontrou! Este é um espécime magnífico, nosso colecionador vai adorar — e nós vamos adorar ficar com o ouro dele! Aqui está sua parte.",
         "context": "media/Quests/VasmanRandom/THEEMBERCOLLECTORCAVES.DAT.adm"
       },
       {
         "id": "Quests_0534",
         "original": "Have you found the |cFFFFBA00[ACQUIRE1]|u yet?  It should be on floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u.  I'm counting on you, partner!",
-        "translation": "Você já encontrou o |cFFFFBA00[ACQUIRE1]|u? Deve estar no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u. Estou contando com você, parceiro!",
+        "translation": "Você já encontrou o [ACQUIRE1]? Deve estar no andar [ACQUIRE1DEPTH] do Cofre das Sombras. Estou contando com você, parceiro!",
         "context": "media/Quests/VasmanRandom/ANOTHERPIECECAVES.DAT.adm"
       },
       {
@@ -4593,7 +4593,7 @@
       {
         "id": "Quests_0536",
         "original": "|cFFFFBA00[DEFEAT1]|u is defeated; you have dispersed a part of Ordak's spirit.  Still, I sometimes feel this is a battle with no end.\\n\\nSpend this gold while you can.",
-        "translation": "|cFFFFBA00[DEFEAT1]|u foi derrotado; você dispersou uma parte do espírito de Ordrak. Ainda assim, às vezes sinto que esta é uma batalha sem fim.\\n\\nGaste este ouro enquanto pode.",
+        "translation": "[DEFEAT1] foi derrotado; você dispersou uma parte do espírito de Ordrak. Ainda assim, às vezes sinto que esta é uma batalha sem fim.\\n\\nGaste este ouro enquanto pode.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4617,43 +4617,43 @@
       {
         "id": "Quests_0540",
         "original": "Sometimes I can still hear Ordrak's whisper.  Perhaps one day you will have to face me in battle, and cut me down as you did |cFFFFBA00[DEFEAT1]|u.\\n\\nMay that day never come.",
-        "translation": "Às vezes ainda consigo ouvir o sussurro de Ordrak. Talvez um dia você tenha que me enfrentar em batalha e me abater como fez com |cFFFFBA00[DEFEAT1]|u.\\n\\nQue esse dia nunca chegue.",
+        "translation": "Às vezes ainda consigo ouvir o sussurro de Ordrak. Talvez um dia você tenha que me enfrentar em batalha e me abater como fez com [DEFEAT1].\\n\\nQue esse dia nunca chegue.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0541",
         "original": "Ah, you've found the |cFFFFBA00[ACQUIRE1]|u, you've found it!  There are more impurities here than I expected.  I wonder, is it just chance or is this more evidence of corruption?",
-        "translation": "Ah, você encontrou o |cFFFFBA00[ACQUIRE1]|u, você o achou! Há mais impurezas aqui do que eu esperava. Eu me pergunto: é mero acaso ou mais uma evidência de corrupção?",
+        "translation": "Ah, você encontrou o [ACQUIRE1], você o achou! Há mais impurezas aqui do que eu esperava. Eu me pergunto: é mero acaso ou mais uma evidência de corrupção?",
         "context": "media/Quests/VasmanRandom/EMBEREXAMINATIONCAVES.DAT.adm"
       },
       {
         "id": "Quests_0542",
         "original": "Is that the |cFFFFBA00[ACQUIRE1]|u?  It looks different than I thought it would, but I think you're right.\\n\\nHere's your reward partner, there's plenty more where that came from!",
-        "translation": "Aquele é o |cFFFFBA00[ACQUIRE1]|u? Parece diferente do que imaginei, mas acho que você está certo.\\n\\nAqui está sua recompensa, parceiro, há muito mais de onde veio isso!",
+        "translation": "Aquele é o [ACQUIRE1]? Parece diferente do que imaginei, mas acho que você está certo.\\n\\nAqui está sua recompensa, parceiro, há muito mais de onde veio isso!",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0543",
         "original": "Tra la la, the fiend is slain, |cFFFFBA00[DEFEAT1]|u is no more!  Tra la la, our hero won, we shall be greatful evermore!\\n\\nWhy the sour look, have you no appreciation for verse?",
-        "translation": "Trá lá lá, o monstro caiu, |cFFFFBA00[DEFEAT1]|u já era! Trá lá lá, nosso herói venceu, seremos gratos para sempre!\\n\\nPor que essa cara amarrada, você não aprecia poesia?",
+        "translation": "Trá lá lá, o monstro caiu, [DEFEAT1] já era! Trá lá lá, nosso herói venceu, seremos gratos para sempre!\\n\\nPor que essa cara amarrada, você não aprecia poesia?",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0544",
         "original": "Perhaps |cFFFFBA00[DEFEAT1]|u will find peace, but that is not my purpose here.  If I can keep the immortality Ordrak granted me, I wish to spend it in a world free of his torment.",
-        "translation": "Talvez |cFFFFBA00[DEFEAT1]|u encontre a paz, mas esse não é o meu propósito aqui. Se eu puder manter a imortalidade que Ordrak me concedeu, desejo passá-la em um mundo livre de seu tormento.",
+        "translation": "Talvez [DEFEAT1] encontre a paz, mas esse não é o meu propósito aqui. Se eu puder manter a imortalidade que Ordrak me concedeu, desejo passá-la em um mundo livre de seu tormento.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0545",
         "original": "All you must do is slay |cFFFFBA00[DEFEAT1]|u in his floor |cFFFFBA00[DEFEAT1DEPTH]|u lair, my task requires true talent.  How many rhymes can you produce for the name |cFFFFBA00[DEFEAT1]|u?",
-        "translation": "Tudo o que você precisa fazer é derrotar |cFFFFBA00[DEFEAT1]|u em seu covil no andar |cFFFFBA00[DEFEAT1DEPTH]|u, minha tarefa exige talento de verdade. Quantas rimas você consegue produzir para o nome |cFFFFBA00[DEFEAT1]|u?",
+        "translation": "Tudo o que você precisa fazer é derrotar [DEFEAT1] em seu covil no andar [DEFEAT1DEPTH], minha tarefa exige talento de verdade. Quantas rimas você consegue produzir para o nome [DEFEAT1]?",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0546",
         "original": "The Ember here once shone so brightly, before Ordrak's spirit spidered through the veins.  Perhaps it will shine again, if you continue to slay corrupted champions like |cFFFFBA00[DEFEAT1]|u.",
-        "translation": "O Âmbar aqui já brilhou com tanta intensidade antes que o espírito de Ordrak se espalhasse pelos veios. Talvez ele volte a brilhar se você continuar derrotando campeões corrompidos como |cFFFFBA00[DEFEAT1]|u.",
+        "translation": "O Âmbar aqui já brilhou com tanta intensidade antes que o espírito de Ordrak se espalhasse pelos veios. Talvez ele volte a brilhar se você continuar derrotando campeões corrompidos como [DEFEAT1].",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4683,7 +4683,7 @@
       {
         "id": "Quests_0551",
         "original": "Remember, keep your eyes peeled for a |cFFFFBA00[ACQUIRE1]|u somewhere on the other side of this portal.  You can keep all the other loot you find for yourself, but bring the |cFFFFBA00[ACQUIRE1]|u to me.",
-        "translation": "Lembre-se: fique de olhos bem abertos para um |cFFFFBA00[ACQUIRE1]|u em algum lugar do outro lado deste portal. Você pode ficar com todos os outros saques, mas traga o |cFFFFBA00[ACQUIRE1]|u para mim.",
+        "translation": "Lembre-se: fique de olhos bem abertos para um [ACQUIRE1] em algum lugar do outro lado deste portal. Você pode ficar com todos os outros saques, mas traga o [ACQUIRE1] para mim.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4695,49 +4695,49 @@
       {
         "id": "Quests_0553",
         "original": "Dark champions such as |cFFFFBA00[DEFEAT1]|u must be slain.  Only you can delve |cFFFFBA00[DEFEAT1DEPTH]|u floors into the pit without being consumed from the blight, and that is why this must be your fight.",
-        "translation": "Campeões sombrios como |cFFFFBA00[DEFEAT1]|u devem ser eliminados. Apenas você pode descer |cFFFFBA00[DEFEAT1DEPTH]|u andares no fosso sem ser consumido pela praga, e é por isso que esta luta deve ser sua.",
+        "translation": "Campeões sombrios como [DEFEAT1] devem ser eliminados. Apenas você pode descer [DEFEAT1DEPTH] andares no fosso sem ser consumido pela praga, e é por isso que esta luta deve ser sua.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0554",
         "original": "Obtaining a piece of |cFFFFBA00Deathlace Ember|u would make me the envy of my peers.  Oh, how I'll rub their smug noses in it.  I'll pay you well of course, just look for it in the |cFFFFBA00necropolis|u below.",
-        "translation": "Conseguir um pedaço de |cFFFFBA00Âmbar da Renda da Morte|u me tornaria a inveja dos meus colegas. Ah, como vou esfregar isso na cara arrogante deles. Pagarei bem, é claro, basta procurar na |cFFFFBA00necrópole|u abaixo.",
+        "translation": "Conseguir um pedaço de Âmbar da Renda da Morte me tornaria a inveja dos meus colegas. Ah, como vou esfregar isso na cara arrogante deles. Pagarei bem, é claro, basta procurar na necrópole abaixo.",
         "context": "media/Quests/Vasman/QUEST2.DAT.adm"
       },
       {
         "id": "Quests_0555",
         "original": "Tell me, how did you defeat |cFFFFBA00[DEFEAT1]|u?\\n\\nHmmm, interesting... but not epic!  I'll need to spice that up a bit if your tale is to have lasting appeal.  Still, you should be rewarded for your effort.",
-        "translation": "Diga-me, como você derrotou |cFFFFBA00[DEFEAT1]|u?\\n\\nHmmm, interessante... mas não épico! Vou precisar apimentar um pouco isso se o seu conto for ter apelo duradouro. Ainda assim, você deve ser recompensado pelo esforço.",
+        "translation": "Diga-me, como você derrotou [DEFEAT1]?\\n\\nHmmm, interessante... mas não épico! Vou precisar apimentar um pouco isso se o seu conto for ter apelo duradouro. Ainda assim, você deve ser recompensado pelo esforço.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0556",
         "original": "I'm afraid my experiments have destroyed the sample of |cFFFFBA00[ACQUIRE1]|u.  If you could retrieve another from floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u, I will pay you for your trouble.",
-        "translation": "Receio que meus experimentos tenham destruído a amostra de |cFFFFBA00[ACQUIRE1]|u. Se você puder recuperar outra no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u, pagarei pelo seu incômodo.",
+        "translation": "Receio que meus experimentos tenham destruído a amostra de [ACQUIRE1]. Se você puder recuperar outra no andar [ACQUIRE1DEPTH] do Cofre das Sombras, pagarei pelo seu incômodo.",
         "context": "media/Quests/VasmanRandom/ANOTHERPIECECAVES.DAT.adm"
       },
       {
         "id": "Quests_0557",
         "original": "I've recently heard from a colleague who very much wants a sample of |cFFFFBA00[ACQUIRE1]|u.  Find one on floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u, and I will start negotiating a fitting price.",
-        "translation": "Recentemente ouvi de um colega que deseja muito uma amostra de |cFFFFBA00[ACQUIRE1]|u. Encontre uma no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u e começarei a negociar um preço adequado.",
+        "translation": "Recentemente ouvi de um colega que deseja muito uma amostra de [ACQUIRE1]. Encontre uma no andar [ACQUIRE1DEPTH] do Cofre das Sombras e começarei a negociar um preço adequado.",
         "context": "media/Quests/VasmanRandom/PEERREVIEWCAVES.DAT.adm"
       },
       {
         "id": "Quests_0558",
         "original": "My research requires another piece of |cFFFFBA00[ACQUIRE1]|u.  I believe you could find it on floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u.  I would go myself, but...  Well, you've seen the monsters!",
-        "translation": "Minha pesquisa requer outro pedaço de |cFFFFBA00[ACQUIRE1]|u. Acredito que você possa encontrá-lo no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u. Eu mesmo iria, mas... bem, você viu os monstros!",
+        "translation": "Minha pesquisa requer outro pedaço de [ACQUIRE1]. Acredito que você possa encontrá-lo no andar [ACQUIRE1DEPTH] do Cofre das Sombras. Eu mesmo iria, mas... bem, você viu os monstros!",
         "context": "media/Quests/VasmanRandom/EMBEREXAMINATIONCAVES.DAT.adm"
       },
       {
         "id": "Quests_0559",
         "original": "|cFFFFBA00[DEFEAT1]|u's struggle was once my own, but only I found the strength to break free of the Ordrak's corruption.  Search |cFFFFBA00[DEFEAT1DEPTH]|u floors beneath the surface, and end the poor beast's suffering.",
-        "translation": "A luta de |cFFFFBA00[DEFEAT1]|u já foi a minha própria, mas apenas eu encontrei a força para me libertar da corrupção de Ordrak. Procure |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da superfície e dê fim ao sofrimento da pobre criatura.",
+        "translation": "A luta de [DEFEAT1] já foi a minha própria, mas apenas eu encontrei a força para me libertar da corrupção de Ordrak. Procure [DEFEAT1DEPTH] andares abaixo da superfície e dê fim ao sofrimento da pobre criatura.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0560",
         "original": "Please find me a piece of |cFFFFBA00Gleaming Ember|u on the |cFFFFBA00first floor|u of the mines.  I know tunnels will be littered with lower quality crystals, but I've already learned as much as I can from studying those.",
-        "translation": "Por favor, encontre para mim um fragmento de |cFFFFBA00Âmbar Reluzente|u no |cFFFFBA00primeiro andar|u das minas. Sei que os túneis estarão cheios de cristais inferiores, mas já aprendi tudo o que podia estudando aqueles.",
+        "translation": "Por favor, encontre para mim um fragmento de Âmbar Reluzente no primeiro andar das minas. Sei que os túneis estarão cheios de cristais inferiores, mas já aprendi tudo o que podia estudando aqueles.",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
@@ -4767,7 +4767,7 @@
       {
         "id": "Quests_0565",
         "original": "I've been watching you, hero.\\n\\n|cFFFFBA00[DEFEAT1]|u has watched you too.  Darkness enfolds his floor |cFFFFBA00[DEFEAT1DEPTH]|u lair- that is where he will challenge you.  Release him from his service, and I will reward you well.",
-        "translation": "Eu estive observando você, herói.\\n\\n|cFFFFBA00[DEFEAT1]|u também observou você. A escuridão envolve seu covil no andar |cFFFFBA00[DEFEAT1DEPTH]|u — é lá que ele o desafiará. Liberte-o do seu serviço e recompensarei você muito bem.",
+        "translation": "Eu estive observando você, herói.\\n\\n[DEFEAT1] também observou você. A escuridão envolve seu covil no andar [DEFEAT1DEPTH] — é lá que ele o desafiará. Liberte-o do seu serviço e recompensarei você muito bem.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4779,13 +4779,13 @@
       {
         "id": "Quests_0567",
         "original": "You must have a will of iron, few can withstand the corruption so well.  I could not, and |cFFFFBA00[DEFEAT1]|u fared far worse.\\n\\nThe champions of blight must be defeated, descend to floor |cFFFFBA00[DEFEAT1DEPTH]|u and see to it.",
-        "translation": "Você deve ter uma vontade de ferro, poucos conseguem resistir à corrupção tão bem. Eu não consegui, e |cFFFFBA00[DEFEAT1]|u se saiu muito pior.\\n\\nOs campeões da praga devem ser derrotados, desça até o andar |cFFFFBA00[DEFEAT1DEPTH]|u e cuide disso.",
+        "translation": "Você deve ter uma vontade de ferro, poucos conseguem resistir à corrupção tão bem. Eu não consegui, e [DEFEAT1] se saiu muito pior.\\n\\nOs campeões da praga devem ser derrotados, desça até o andar [DEFEAT1DEPTH] e cuide disso.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0568",
         "original": "I know a collector who would pay handsomely for a piece of |cFFFFBA00[ACQUIRE1]|u.  Floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u is your best bet, return with the Ember and I'll give you your share of the profit.",
-        "translation": "Conheço um colecionador que pagaria generosamente por um fragmento de |cFFFFBA00[ACQUIRE1]|u. O andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u é sua melhor aposta; volte com o Âmbar e darei a sua parte do lucro.",
+        "translation": "Conheço um colecionador que pagaria generosamente por um fragmento de [ACQUIRE1]. O andar [ACQUIRE1DEPTH] do Cofre das Sombras é sua melhor aposta; volte com o Âmbar e darei a sua parte do lucro.",
         "context": "media/Quests/VasmanRandom/THEEMBERCOLLECTORCAVES.DAT.adm"
       },
       {
@@ -4797,13 +4797,13 @@
       {
         "id": "Quests_0570",
         "original": "|cFFFFBA00[DEFEAT1]|u must be destroyed, but I cannot risk returning to the depths.  If you will go in my place, I will reward you well.\\n\\nYou will find |cFFFFBA00[DEFEAT1]|u |cFFFFBA00[DEFEAT1DEPTH]|u floors below us.  Tread carefully.",
-        "translation": "|cFFFFBA00[DEFEAT1]|u deve ser destruído, mas não posso arriscar retornar às profundezas. Se você for em meu lugar, vou recompensá-lo muito bem.\\n\\nVocê encontrará |cFFFFBA00[DEFEAT1]|u |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de nós. Vá com cuidado.",
+        "translation": "[DEFEAT1] deve ser destruído, mas não posso arriscar retornar às profundezas. Se você for em meu lugar, vou recompensá-lo muito bem.\\n\\nVocê encontrará [DEFEAT1] [DEFEAT1DEPTH] andares abaixo de nós. Vá com cuidado.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0571",
         "original": "|cFFFFBA00[DEFEAT1]|u is gathering strength, soon the fiend will emerge from his lair, rising |cFFFFBA00[DEFEAT1DEPTH]|u floors to the surface and ravaging this town.  You can prevent this destruction if you wish, what path will you choose?",
-        "translation": "|cFFFFBA00[DEFEAT1]|u está acumulando forças, logo o monstro emergirá de seu covil, subindo |cFFFFBA00[DEFEAT1DEPTH]|u andares até a superfície e devastando esta cidade. Você pode impedir esta destruição se quiser, qual caminho escolherá?",
+        "translation": "[DEFEAT1] está acumulando forças, logo o monstro emergirá de seu covil, subindo [DEFEAT1DEPTH] andares até a superfície e devastando esta cidade. Você pode impedir esta destruição se quiser, qual caminho escolherá?",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4845,7 +4845,7 @@
       {
         "id": "Quests_0578",
         "original": "Ah, you've slain |cFFFFBA00[DEFEAT1]|u and come to tell me of your victory!\\n\\nNo?  You have yet to meet him in battle?  If you still have the courage, descend to floor |cFFFFBA00[DEFEAT1DEPTH]|u.  Of course, I could just as easily spread word of your retreat.",
-        "translation": "Ah, você matou |cFFFFBA00[DEFEAT1]|u e veio me contar sobre sua vitória!\\n\\nNão? Você ainda não o enfrentou em batalha? Se ainda tiver coragem, desça até o andar |cFFFFBA00[DEFEAT1DEPTH]|u. É claro que eu poderia facilmente espalhar a notícia de sua retirada.",
+        "translation": "Ah, você matou [DEFEAT1] e veio me contar sobre sua vitória!\\n\\nNão? Você ainda não o enfrentou em batalha? Se ainda tiver coragem, desça até o andar [DEFEAT1DEPTH]. É claro que eu poderia facilmente espalhar a notícia de sua retirada.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4857,13 +4857,13 @@
       {
         "id": "Quests_0580",
         "original": "You've earned a new title my friend, Defeater of |cFFFFBA00[DEFEAT1]|u!  Snappy isn't it?  Would you prefer Slaughterer of |cFFFFBA00[DEFEAT1]|u?  Conquerer of |cFFFFBA00[DEFEAT1]|u?\\n\\nAh, there's just no pleasing most people.  Here's some gold for you trouble.",
-        "translation": "Você ganhou um novo título, meu amigo: Derrotador de |cFFFFBA00[DEFEAT1]|u! Marcante, não é? Preferiria Carniceiro de |cFFFFBA00[DEFEAT1]|u? Conquistador de |cFFFFBA00[DEFEAT1]|u?\\n\\nAh, é impossível agradar a todos. Aqui está um pouco de ouro pelo seu esforço.",
+        "translation": "Você ganhou um novo título, meu amigo: Derrotador de [DEFEAT1]! Marcante, não é? Preferiria Carniceiro de [DEFEAT1]? Conquistador de [DEFEAT1]?\\n\\nAh, é impossível agradar a todos. Aqui está um pouco de ouro pelo seu esforço.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0581",
         "original": "I've been working on a song about |cFFFFBA00[DEFEAT1]|u, but it doesn't have a fitting, um, conclusion.  Perhaps you can pay a visit to floor |cFFFFBA00[DEFEAT1DEPTH]|u and do something about that?  I'll cast your story in the most heroic light possible, of course.",
-        "translation": "Estive trabalhando em uma canção sobre |cFFFFBA00[DEFEAT1]|u, mas ela não tem uma conclusão... hum... adequada. Talvez você possa fazer uma visita ao andar |cFFFFBA00[DEFEAT1DEPTH]|u e dar um jeito nisso? Colocarei sua história sob a luz mais heroica possível, é claro.",
+        "translation": "Estive trabalhando em uma canção sobre [DEFEAT1], mas ela não tem uma conclusão... hum... adequada. Talvez você possa fazer uma visita ao andar [DEFEAT1DEPTH] e dar um jeito nisso? Colocarei sua história sob a luz mais heroica possível, é claro.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4875,25 +4875,25 @@
       {
         "id": "Quests_0583",
         "original": "You've slain that horrible bat creature, |cFFFFBA00Varkaseer|u!  I could see it in your eyes as soon as you approached.  I can imagine the battle now; it will make a fine ballad!  Well, the beginning one at least.\\n\\nI think this collaboration may be a boon to us both.",
-        "translation": "Você matou aquela horrível criatura morcego, |cFFFFBA00Varkaseer|u! Pude ver em seus olhos assim que você se aproximou. Consigo imaginar a batalha agora; será uma bela balada! Bem, ao menos o início dela.\\n\\nAcho que esta colaboração será proveitosa para nós dois.",
+        "translation": "Você matou aquela horrível criatura morcego, Varkaseer! Pude ver em seus olhos assim que você se aproximou. Consigo imaginar a batalha agora; será uma bela balada! Bem, ao menos o início dela.\\n\\nAcho que esta colaboração será proveitosa para nós dois.",
         "context": "media/Quests/Bard/QUEST1.DAT.adm"
       },
       {
         "id": "Quests_0584",
         "original": "Even these dull miners will be able to appreciate this tale!\\n\\n|cFFFFBA00[DEFEAT1]|u lurks |cFFFFBA00[DEFEAT1DEPTH]|u floors below Torchlight, meet him in battle and I will weave an epic tale of your victory!  Or your defeat, really I think either shall work wonderfully!",
-        "translation": "Até mesmo esses mineiros rústicos poderão apreciar este conto!\\n\\n|cFFFFBA00[DEFEAT1]|u espreita |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de Torchlight, enfrente-o em combate e tecerei um conto épico de sua vitória! Ou de sua derrota, sinceramente acho que qualquer um funcionará muito bem!",
+        "translation": "Até mesmo esses mineiros rústicos poderão apreciar este conto!\\n\\n[DEFEAT1] espreita [DEFEAT1DEPTH] andares abaixo de Torchlight, enfrente-o em combate e tecerei um conto épico de sua vitória! Ou de sua derrota, sinceramente acho que qualquer um funcionará muito bem!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0585",
         "original": "An.. acquaintance been inquiring about |cFFFFBA00[ACQUIRE1]|u.  I'm not certain what use he has in mind for it, but I do know we can make quite a profit on the sale.  Look on floor |cFFFFBA00[ACQUIRE1DEPTH]|u of the |cFFFFBA00Shadow Vault|u, and I will take care of the rest.",
-        "translation": "Um... conhecido tem perguntado sobre |cFFFFBA00[ACQUIRE1]|u. Não tenho certeza de qual utilidade ele tem em mente para isso, mas sei que podemos obter um ótimo lucro na venda. Procure no andar |cFFFFBA00[ACQUIRE1DEPTH]|u do |cFFFFBA00Cofre das Sombras|u, e eu cuidarei do restante.",
+        "translation": "Um... conhecido tem perguntado sobre [ACQUIRE1]. Não tenho certeza de qual utilidade ele tem em mente para isso, mas sei que podemos obter um ótimo lucro na venda. Procure no andar [ACQUIRE1DEPTH] do Cofre das Sombras, e eu cuidarei do restante.",
         "context": "media/Quests/VasmanRandom/EMBERHUNTERCAVES.DAT.adm"
       },
       {
         "id": "Quests_0586",
         "original": "How do I know where to find these monsters?  Why, a bard knows my friend!  A bard knows.\\n\\nFor example, |cFFFFBA00[DEFEAT1DEPTH]|u floors below Torchlight there waits a forsaken beast by the name of |cFFFFBA00[DEFEAT1]|u.  Meet it in battle, and return to me with your tale of glory!",
-        "translation": "Como eu sei onde encontrar esses monstros? Ora, um bardo sempre sabe, meu amigo! Um bardo sabe.\\n\\nPor exemplo, |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de Torchlight aguarda uma fera abandonada de nome |cFFFFBA00[DEFEAT1]|u. Enfrente-a em batalha e volte para mim com sua história de glória!",
+        "translation": "Como eu sei onde encontrar esses monstros? Ora, um bardo sempre sabe, meu amigo! Um bardo sabe.\\n\\nPor exemplo, [DEFEAT1DEPTH] andares abaixo de Torchlight aguarda uma fera abandonada de nome [DEFEAT1]. Enfrente-a em batalha e volte para mim com sua história de glória!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4905,25 +4905,25 @@
       {
         "id": "Quests_0588",
         "original": "I have already finished the tale of your battle, but |cFFFFBA00[DEFEAT1]|u still lives!  If someone discovers him alive, they'll think we're complete frauds.  Think of my reputation!  Poetic license only goes so far.\\n\\nHurry to floor |cFFFFBA00[DEFEAT1DEPTH]|u before we're found out!",
-        "translation": "Já terminei a história da sua batalha, mas |cFFFFBA00[DEFEAT1]|u ainda vive! Se alguém o descobrir vivo, vão achar que somos farsantes completos. Pense na minha reputação! Licença poética tem limites.\\n\\nDepressa, vá para o andar |cFFFFBA00[DEFEAT1DEPTH]|u antes que sejamos desmascarados!",
+        "translation": "Já terminei a história da sua batalha, mas [DEFEAT1] ainda vive! Se alguém o descobrir vivo, vão achar que somos farsantes completos. Pense na minha reputação! Licença poética tem limites.\\n\\nDepressa, vá para o andar [DEFEAT1DEPTH] antes que sejamos desmascarados!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0589",
         "original": "This one looks promising!  There's a |cFFFFBA00[ACQUIRE1]|u in some forgotten nook below us, I bet I can sell one of those for a king's ransom!  Well, part of one anyhow.\\n\\nI'll open the portal, and if you can find the |cFFFFBA00[ACQUIRE1]|u bring it back for your share of the profit!",
-        "translation": "Este parece promissor! Há um |cFFFFBA00[ACQUIRE1]|u em algum recanto esquecido abaixo de nós, aposto que posso vender um desses pelo resgate de um rei! Bem, por parte de um, pelo menos.\\n\\nVou abrir o portal, e se você conseguir encontrar o |cFFFFBA00[ACQUIRE1]|u, traga-o de volta para receber sua parte do lucro!",
+        "translation": "Este parece promissor! Há um [ACQUIRE1] em algum recanto esquecido abaixo de nós, aposto que posso vender um desses pelo resgate de um rei! Bem, por parte de um, pelo menos.\\n\\nVou abrir o portal, e se você conseguir encontrar o [ACQUIRE1], traga-o de volta para receber sua parte do lucro!",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0590",
         "original": "You've found it!  This is just grand!\\n\\nThere's something odd about it though... something a bit dark.  Perhaps it's just the nature of |cFFFFBA00Deathlace Ember|u, but I can feel a thread of living spirit within this piece.\\n\\nThank you for finding it, here is your reward as promised.",
-        "translation": "Você o encontrou! Isso é grandioso!\\n\\nHá algo estranho nele, no entanto... algo meio sombrio. Talvez seja apenas a natureza do |cFFFFBA00Âmbar da Renda da Morte|u, mas posso sentir um fio de espírito vivo dentro desta peça.\\n\\nObrigado por encontrá-lo, aqui está sua recompensa como prometido.",
+        "translation": "Você o encontrou! Isso é grandioso!\\n\\nHá algo estranho nele, no entanto... algo meio sombrio. Talvez seja apenas a natureza do Âmbar da Renda da Morte, mas posso sentir um fio de espírito vivo dentro desta peça.\\n\\nObrigado por encontrá-lo, aqui está sua recompensa como prometido.",
         "context": "media/Quests/Vasman/QUEST2.DAT.adm"
       },
       {
         "id": "Quests_0591",
         "original": "I think this shall be my finest song yet!\\n\\nI've heard that |cFFFFBA00[DEFEAT1]|u can slay any warrior, but perhaps you have grown strong enough to survive the battle.  Either way it shall be a harrowing tale, descend |cFFFFBA00[DEFEAT1DEPTH]|u floors below Torchlight and meet your destiny!",
-        "translation": "Acho que esta será a minha melhor canção até agora!\\n\\nOuvi dizer que |cFFFFBA00[DEFEAT1]|u pode abater qualquer guerreiro, mas talvez você tenha ficado forte o bastante para sobreviver à batalha. De qualquer forma, será um conto angustiante; desça |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de Torchlight e encontre o seu destino!",
+        "translation": "Acho que esta será a minha melhor canção até agora!\\n\\nOuvi dizer que [DEFEAT1] pode abater qualquer guerreiro, mas talvez você tenha ficado forte o bastante para sobreviver à batalha. De qualquer forma, será um conto angustiante; desça [DEFEAT1DEPTH] andares abaixo de Torchlight e encontre o seu destino!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4941,7 +4941,7 @@
       {
         "id": "Quests_0594",
         "original": "Aha, I see you've found the |cFFFFBA00Gleaming Ember|u!  I hope it wasn't too much trouble.  Here is your reward.\\n\\nThis is a fine, clear piece, but still there is something odd about it.  All of the Ember from Torchlight seems to have a special quality...  Well, I'll soon understand it better.",
-        "translation": "Aha, vejo que encontrou o |cFFFFBA00Âmbar Reluzente|u! Espero que não tenha sido trabalhoso demais. Aqui está sua recompensa.\\n\\nEsta é uma peça límpida e refinada, mas ainda há algo curioso nela. Todo o Âmbar de Torchlight parece ter uma propriedade especial... Bem, em breve compreenderei melhor.",
+        "translation": "Aha, vejo que encontrou o Âmbar Reluzente! Espero que não tenha sido trabalhoso demais. Aqui está sua recompensa.\\n\\nEsta é uma peça límpida e refinada, mas ainda há algo curioso nela. Todo o Âmbar de Torchlight parece ter uma propriedade especial... Bem, em breve compreenderei melhor.",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
@@ -4953,13 +4953,13 @@
       {
         "id": "Quests_0596",
         "original": "The stage is a lonely place, my friend, it holds more terror than a thousand fiends.\\n\\nLuckily, you have me to face those dangers, and you need only brave the caverns below.  Have you slain |cFFFFBA00[DEFEAT1]|u already?  Why, I've barely had time to put my thoughts in order!  Tell me everything.",
-        "translation": "O palco é um lugar solitário, meu amigo, guarda mais terror do que mil demônios.\\n\\nPor sorte, você tem a mim para encarar esses perigos, e você só precisa desbravar as cavernas abaixo. Já matou |cFFFFBA00[DEFEAT1]|u? Ora, mal tive tempo de organizar meus pensamentos! Conte-me tudo.",
+        "translation": "O palco é um lugar solitário, meu amigo, guarda mais terror do que mil demônios.\\n\\nPor sorte, você tem a mim para encarar esses perigos, e você só precisa desbravar as cavernas abaixo. Já matou [DEFEAT1]? Ora, mal tive tempo de organizar meus pensamentos! Conte-me tudo.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0597",
         "original": "With this book and this wand, we're gonna be rich!\\n\\nIt says here there's a |cFFFFBA00[ACQUIRE1]|u hidden deep below us.  There's no tunnel that goes there anymore, but I'll open a portal for you.  I know a collector who'll pay big for the |cFFFFBA00[ACQUIRE1]|u and I'll cut you in on the profit.",
-        "translation": "Com este livro e esta varinha, vamos ficar ricos!\\n\\nDiz aqui que há um |cFFFFBA00[ACQUIRE1]|u escondido nas profundezas abaixo de nós. Não há mais nenhum túnel que leve até lá, mas abrirei um portal para você. Conheço um colecionador que pagará uma fortuna pelo |cFFFFBA00[ACQUIRE1]|u e darei a sua fatia do lucro.",
+        "translation": "Com este livro e esta varinha, vamos ficar ricos!\\n\\nDiz aqui que há um [ACQUIRE1] escondido nas profundezas abaixo de nós. Não há mais nenhum túnel que leve até lá, mas abrirei um portal para você. Conheço um colecionador que pagará uma fortuna pelo [ACQUIRE1] e darei a sua fatia do lucro.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4971,19 +4971,19 @@
       {
         "id": "Quests_0599",
         "original": "I've had an inspiration!  It isn't enough to tell the tale of one battle, I must weave a tale of countless victories!\\n\\nLeave the hard work of storytelling to me, all you need do is slay the monsters!  For a start, test your strength against |cFFFFBA00[DEFEAT1]|u in his floor |cFFFFBA00[DEFEAT1DEPTH]|u lair.",
-        "translation": "Tive uma inspiração! Não basta contar a história de uma única batalha, preciso tecer um conto de incontáveis vitórias!\\n\\nDeixe o árduo trabalho da narrativa comigo, tudo o que você precisa fazer é abater os monstros! Para começar, teste sua força contra |cFFFFBA00[DEFEAT1]|u em seu covil no andar |cFFFFBA00[DEFEAT1DEPTH]|u.",
+        "translation": "Tive uma inspiração! Não basta contar a história de uma única batalha, preciso tecer um conto de incontáveis vitórias!\\n\\nDeixe o árduo trabalho da narrativa comigo, tudo o que você precisa fazer é abater os monstros! Para começar, teste sua força contra [DEFEAT1] em seu covil no andar [DEFEAT1DEPTH].",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0600",
         "original": "Did you hear me practicing?  Truly, my voice could bring even great warriors to tears.\\n\\nHave you survived the battle with |cFFFFBA00[DEFEAT1]|u?  What am I saying, of course you have!  I'll have to change the ending of my song, but that's a small matter for one with such talent as mine.  No need to apologize!",
-        "translation": "Você me ouviu praticando? De fato, minha voz poderia levar até mesmo grandes guerreiros às lágrimas.\\n\\nVocê sobreviveu à batalha com |cFFFFBA00[DEFEAT1]|u? O que estou dizendo, é claro que sim! Terei que mudar o desfecho da minha canção, mas isso é coisa pouca para alguém com tamanho talento como o meu. Não precisa se desculpar!",
+        "translation": "Você me ouviu praticando? De fato, minha voz poderia levar até mesmo grandes guerreiros às lágrimas.\\n\\nVocê sobreviveu à batalha com [DEFEAT1]? O que estou dizendo, é claro que sim! Terei que mudar o desfecho da minha canção, mas isso é coisa pouca para alguém com tamanho talento como o meu. Não precisa se desculpar!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0601",
         "original": "Free...  \\n\\nI've escaped Ordrak's grip, but I fear his corruption may yet consume this world.  Then where shall I flee?\\n\\nIf you descend to floor |cFFFFBA00[DEFEAT1DEPTH]|u, you will encounter a dark champion known as |cFFFFBA00[DEFEAT1]|u.  Slay the champion, and drive the corruption another step from the surface.",
-        "translation": "Livre...\\n\\nEscapei das garras de Ordrak, mas temo que sua corrupção ainda possa consumir este mundo. Para onde fugirei então?\\n\\nSe você descer até o andar |cFFFFBA00[DEFEAT1DEPTH]|u, encontrará um campeão sombrio conhecido como |cFFFFBA00[DEFEAT1]|u. Elimine o campeão e empurre a corrupção mais um passo para longe da superfície.",
+        "translation": "Livre...\\n\\nEscapei das garras de Ordrak, mas temo que sua corrupção ainda possa consumir este mundo. Para onde fugirei então?\\n\\nSe você descer até o andar [DEFEAT1DEPTH], encontrará um campeão sombrio conhecido como [DEFEAT1]. Elimine o campeão e empurre a corrupção mais um passo para longe da superfície.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -4995,13 +4995,13 @@
       {
         "id": "Quests_0603",
         "original": "I wish I could fight like you partner, I could keep all these profits for myself!  Well, those monsters would tear me to pieces so it's no good dreaming.\\n\\nLet's get some more treasure!  The tome says a forgotten piece of the mountain holds a lost |cFFFFBA00[ACQUIRE1]|u, I'll open the portal and you can grab the loot.",
-        "translation": "Gostaria de poder lutar como você, parceiro, assim ficaria com todos esses lucros para mim! Bem, aqueles monstros me despedaçariam, então não adianta sonhar.\\n\\nVamos buscar mais tesouros! O tomo diz que um pedaço esquecido da montanha guarda um |cFFFFBA00[ACQUIRE1]|u perdido, abrirei o portal e você pega o saque.",
+        "translation": "Gostaria de poder lutar como você, parceiro, assim ficaria com todos esses lucros para mim! Bem, aqueles monstros me despedaçariam, então não adianta sonhar.\\n\\nVamos buscar mais tesouros! O tomo diz que um pedaço esquecido da montanha guarda um [ACQUIRE1] perdido, abrirei o portal e você pega o saque.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
         "id": "Quests_0604",
         "original": "Remember, these battles are more about style and panache than who wins and who loses.  Perhaps you should prepare some words for when you encounter |cFFFFBA00[DEFEAT1]|u on floor |cFFFFBA00[DEFEAT1DEPTH]|u.  Something bold and dashing!\\n\\nI won't use them in my song of course, but perhaps it will broaden your horizons.",
-        "translation": "Lembre-se: essas batalhas são mais sobre estilo e elegância do que sobre quem ganha ou perde. Talvez você deva preparar algumas palavras para quando encontrar |cFFFFBA00[DEFEAT1]|u no andar |cFFFFBA00[DEFEAT1DEPTH]|u. Algo ousado e garboso!\\n\\nNão vou usá-las na minha canção, é claro, mas talvez amplie seus horizontes.",
+        "translation": "Lembre-se: essas batalhas são mais sobre estilo e elegância do que sobre quem ganha ou perde. Talvez você deva preparar algumas palavras para quando encontrar [DEFEAT1] no andar [DEFEAT1DEPTH]. Algo ousado e garboso!\\n\\nNão vou usá-las na minha canção, é claro, mas talvez amplie seus horizontes.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5013,19 +5013,19 @@
       {
         "id": "Quests_0606",
         "original": "I can pay you in gold, but a world free of the blight is your true reward.\\n\\nOrdrak invested dark champions with portions of his power, as long as they live Ordrak cannot truly be destroyed.  |cFFFFBA00[DEFEAT1]|u is one such champion, travel |cFFFFBA00[DEFEAT1DEPTH]|u floors below and scourge the fiend from this mountain.",
-        "translation": "Posso pagar a você em ouro, mas um mundo livre da praga é sua verdadeira recompensa.\\n\\nOrdrak conferiu a campeões sombrios partes do seu poder; enquanto eles viverem, Ordrak não poderá ser verdadeiramente destruído. |cFFFFBA00[DEFEAT1]|u é um desses campeões; viaje |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo e expurgue a criatura desta montanha.",
+        "translation": "Posso pagar a você em ouro, mas um mundo livre da praga é sua verdadeira recompensa.\\n\\nOrdrak conferiu a campeões sombrios partes do seu poder; enquanto eles viverem, Ordrak não poderá ser verdadeiramente destruído. [DEFEAT1] é um desses campeões; viaje [DEFEAT1DEPTH] andares abaixo e expurgue a criatura desta montanha.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0607",
         "original": "Truly an epic victory, I can picture it now.  |cFFFFBA00[DEFEAT1]|u roaring mightily, you striking a dashing pose!  I wish I could have been there to see it!  Of course, there's the danger, one with talent such as mine simply cannot be risked on such perilous errands.\\n\\nI will spread word of your victory in song and verse!",
-        "translation": "Verdadeiramente uma vitória épica, posso imaginá-la agora. |cFFFFBA00[DEFEAT1]|u rugindo poderosamente, você fazendo uma pose garbosa! Gostaria de ter estado lá para ver! É claro que há o perigo, alguém com tamanho talento simplesmente não pode se arriscar em tarefas tão perigosas.\\n\\nEspalharei notícias de sua vitória em canção e verso!",
+        "translation": "Verdadeiramente uma vitória épica, posso imaginá-la agora. [DEFEAT1] rugindo poderosamente, você fazendo uma pose garbosa! Gostaria de ter estado lá para ver! É claro que há o perigo, alguém com tamanho talento simplesmente não pode se arriscar em tarefas tão perigosas.\\n\\nEspalharei notícias de sua vitória em canção e verso!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0608",
         "original": "Have you returned with |cFFFFBA00[DEFEAT1]|u's head?\\n\\nI'm speaking metaphorically of course, what would I do with a messy, dripping head?  I don't perform with props you know.  Anyhow, you're just in time, I completed the tale of your victory only moments ago!  Here is some gold for your effort, but fame is your true reward.",
-        "translation": "Você retornou com a cabeça de |cFFFFBA00[DEFEAT1]|u?\\n\\nEstou falando metaforicamente, é claro; o que eu faria com uma cabeça ensanguentada e pingando? Eu não atuo com adereços, sabe. De qualquer forma, você chegou bem a tempo: completei o conto da sua vitória há poucos instantes! Aqui está um pouco de ouro pelo seu esforço, mas a fama é a sua verdadeira recompensa.",
+        "translation": "Você retornou com a cabeça de [DEFEAT1]?\\n\\nEstou falando metaforicamente, é claro; o que eu faria com uma cabeça ensanguentada e pingando? Eu não atuo com adereços, sabe. De qualquer forma, você chegou bem a tempo: completei o conto da sua vitória há poucos instantes! Aqui está um pouco de ouro pelo seu esforço, mas a fama é a sua verdadeira recompensa.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5043,7 +5043,7 @@
       {
         "id": "Quests_0611",
         "original": "If you wish to be a hero truly worthy of song, you must prove yourself able slay even the fiercest of beasts.  |cFFFFBA00[DEFEAT1]|u is thought to be an invincible foe, but a courageous warrior need not listen to such rumors.\\n\\nThe beast's lair is |cFFFFBA00[DEFEAT1DEPTH]|u floors below Torchlight.  Return and tell me your tale!",
-        "translation": "Se você deseja ser um herói verdadeiramente digno de canções, deve provar que é capaz de abater até a mais feroz das feras. Dizem que |cFFFFBA00[DEFEAT1]|u é um inimigo invencível, mas um guerreiro corajoso não dá ouvidos a tais boatos.\\n\\nO covil da fera fica |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de Torchlight. Retorne e conte-me sua história!",
+        "translation": "Se você deseja ser um herói verdadeiramente digno de canções, deve provar que é capaz de abater até a mais feroz das feras. Dizem que [DEFEAT1] é um inimigo invencível, mas um guerreiro corajoso não dá ouvidos a tais boatos.\\n\\nO covil da fera fica [DEFEAT1DEPTH] andares abaixo de Torchlight. Retorne e conte-me sua história!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5079,7 +5079,7 @@
       {
         "id": "Quests_0617",
         "original": "That book you brought me, the Tome of Revelation, remember?  Anyway, it mentions a [ACQUIRE1] tucked away deep in the mountain.  I'm sure it's overrun with monsters, but that just means that no one else can steal our treasure.\\n\\nI'll open a portal, and if you can get me that |cFFFFBA00[ACQUIRE1]|u I'll even give you a reward.  Thanks to you, I can afford it!",
-        "translation": "Aquele livro que você me trouxe, o Tomo da Revelação, lembra? Bem, ele menciona um [ACQUIRE1] guardado nas profundezas da montanha. Tenho certeza de que está infestado de monstros, mas isso só significa que ninguém mais pode roubar nosso tesouro.\\n\\nVou abrir um portal, e se você puder me trazer aquele |cFFFFBA00[ACQUIRE1]|u, até darei uma recompensa a você. Graças a você, posso pagar por isso!",
+        "translation": "Aquele livro que você me trouxe, o Tomo da Revelação, lembra? Bem, ele menciona um [ACQUIRE1] guardado nas profundezas da montanha. Tenho certeza de que está infestado de monstros, mas isso só significa que ninguém mais pode roubar nosso tesouro.\\n\\nVou abrir um portal, e se você puder me trazer aquele [ACQUIRE1], até darei uma recompensa a você. Graças a você, posso pagar por isso!",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -5091,7 +5091,7 @@
       {
         "id": "Quests_0619",
         "original": "Looking at this book, I don't know how the mountain even holds together.  It seems to be completely filled with disconnected labyrinths and caverns.  Well, more treasure for us I suppose.\\n\\nFor example, there's a |cFFFFBA00[ACQUIRE1]|u in a chamber completely cut off from the rest of the tunnels.  I'll open a portal, and if you can find it, I'll share the wealth.",
-        "translation": "Olhando para este livro, nem sei como a montanha ainda fica de pé. Ela parece completamente repleta de labirintos e cavernas desconexos. Bem, mais tesouros para nós, suponho.\\n\\nPor exemplo, há um |cFFFFBA00[ACQUIRE1]|u em uma câmara completamente isolada do restante dos túneis. Vou abrir um portal e, se você conseguir encontrá-lo, compartilharei a riqueza.",
+        "translation": "Olhando para este livro, nem sei como a montanha ainda fica de pé. Ela parece completamente repleta de labirintos e cavernas desconexos. Bem, mais tesouros para nós, suponho.\\n\\nPor exemplo, há um [ACQUIRE1] em uma câmara completamente isolada do restante dos túneis. Vou abrir um portal e, se você conseguir encontrá-lo, compartilharei a riqueza.",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -5103,7 +5103,7 @@
       {
         "id": "Quests_0621",
         "original": "Slay this fiend and they shall sing of your glory through the ages!  Of course, we will know that your fame is truly due to my skill in crafting the verse, but I am not one to brag.\\n\\n|cFFFFBA00[DEFEAT1]|u awaits you in his floor |cFFFFBA00[DEFEAT1DEPTH]|u lair.  I already have the tale of your battle half written, and so far, you appear to be winning.  Don't disappoint me!",
-        "translation": "Derrote esta fera e cantarão sobre sua glória através das eras! É claro que nós saberemos que sua fama se deve, na verdade, à minha habilidade em tecer os versos, mas não sou de me gabar.\\n\\n|cFFFFBA00[DEFEAT1]|u espera por você em seu covil no andar |cFFFFBA00[DEFEAT1DEPTH]|u. Já tenho a história de sua batalha semi-escrita e, até agora, você parece estar vencendo. Não me desaponte!",
+        "translation": "Derrote esta fera e cantarão sobre sua glória através das eras! É claro que nós saberemos que sua fama se deve, na verdade, à minha habilidade em tecer os versos, mas não sou de me gabar.\\n\\n[DEFEAT1] espera por você em seu covil no andar [DEFEAT1DEPTH]. Já tenho a história de sua batalha semi-escrita e, até agora, você parece estar vencendo. Não me desaponte!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5115,13 +5115,13 @@
       {
         "id": "Quests_0623",
         "original": "Have you returned to stare into the pit?  You seem resistant to its call...\\n\\nI wish my own will had been so strong, I spent an age gathering the strength to extract myself from the corruption below.\\n\\n|cFFFFBA00[DEFEAT1]|u has no wish to be free from the blight.  You will have to use violent persuasion.  Descend to floor |cFFFFBA00[DEFEAT1DEPTH]|u, and you will find your prey.",
-        "translation": "Você retornou para encarar o fosso? Você parece resistente ao seu chamado...\\n\\nEu gostaria que minha própria vontade tivesse sido tão forte; passei uma era reunindo forças para me libertar da corrupção abaixo.\\n\\n|cFFFFBA00[DEFEAT1]|u não deseja se libertar da praga. Você terá que usar persuasão violenta. Desça até o andar |cFFFFBA00[DEFEAT1DEPTH]|u e encontrará sua presa.",
+        "translation": "Você retornou para encarar o fosso? Você parece resistente ao seu chamado...\\n\\nEu gostaria que minha própria vontade tivesse sido tão forte; passei uma era reunindo forças para me libertar da corrupção abaixo.\\n\\n[DEFEAT1] não deseja se libertar da praga. Você terá que usar persuasão violenta. Desça até o andar [DEFEAT1DEPTH] e encontrará sua presa.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0624",
         "original": "I had forgotten the air could be so fresh, here above ground.  It has been so long since I have seen the stars...\\n\\nIf you wish to keep this world as it is, you must destroy the champions of the corruption below.  If you delve |cFFFFBA00[DEFEAT1DEPTH]|u floors below the surface, you will find such a champion.  Slay |cFFFFBA00[DEFEAT1]|u and drive the blight further into the depths.",
-        "translation": "Eu havia me esquecido de como o ar podia ser tão fresco aqui acima do solo. Faz tanto tempo que não vejo as estrelas...\\n\\nSe você deseja manter este mundo como ele é, deve destruir os campeões da corrupção lá embaixo. Se descer |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da superfície, encontrará um desses campeões. Elimine |cFFFFBA00[DEFEAT1]|u e empurre a praga mais para o fundo das profundezas.",
+        "translation": "Eu havia me esquecido de como o ar podia ser tão fresco aqui acima do solo. Faz tanto tempo que não vejo as estrelas...\\n\\nSe você deseja manter este mundo como ele é, deve destruir os campeões da corrupção lá embaixo. Se descer [DEFEAT1DEPTH] andares abaixo da superfície, encontrará um desses campeões. Elimine [DEFEAT1] e empurre a praga mais para o fundo das profundezas.",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -5151,13 +5151,13 @@
       {
         "id": "Quests_0629",
         "original": "Ember is the essence of magic, and it assumes aspects of its environment.  That is why Ember from different locations can appear and behave completely differently.\\n\\nI've heard of a vast |cFFFFBA00necropolis|u buried below the mines.  |cFFFFBA00Deathlace Ember|u can sometimes be found in such places.  Studying such a rare type of Ember is a long held dream of mine.  You'll bring me any you find won't you?",
-        "translation": "O Âmbar é a essência da magia e assume aspectos de seu ambiente. É por isso que o Âmbar de diferentes locais pode parecer e se comportar de forma completamente diferente.\\n\\nOuvi falar de uma vasta |cFFFFBA00necrópole|u enterrada abaixo das minas. O |cFFFFBA00Âmbar da Renda da Morte|u às vezes pode ser encontrado em tais lugares. Estudar um tipo tão raro de Âmbar é um sonho antigo meu. Você me trará qualquer um que encontrar, não trará?",
+        "translation": "O Âmbar é a essência da magia e assume aspectos de seu ambiente. É por isso que o Âmbar de diferentes locais pode parecer e se comportar de forma completamente diferente.\\n\\nOuvi falar de uma vasta necrópole enterrada abaixo das minas. O Âmbar da Renda da Morte às vezes pode ser encontrado em tais lugares. Estudar um tipo tão raro de Âmbar é um sonho antigo meu. Você me trará qualquer um que encontrar, não trará?",
         "context": "media/Quests/Vasman/QUEST2.DAT.adm"
       },
       {
         "id": "Quests_0630",
         "original": "This shall be my greatest ballad!  It's true that none of my songs have met with their deserved acclaim so far, but this one shall be different.\\n\\n|cFFFFBA00[DEFEAT1]|u has been terrorizing Torchlight since the first miners arrived, slinking up from its lair |cFFFFBA00[DEFEAT1DEPTH]|u floors below the town.  They will rejoice to hear of its defeat, and it should give them a new appreciation for my talent.",
-        "translation": "Esta será a minha maior balada! É verdade que nenhuma das minhas canções obteve a merecida aclamação até agora, mas esta será diferente.\\n\\n|cFFFFBA00[DEFEAT1]|u tem aterrorizado Torchlight desde que os primeiros mineradores chegaram, rastejando para fora de seu covil |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da cidade. Eles se alegrarão ao saber de sua derrota, e isso deverá lhes dar uma nova apreciação pelo meu talento.",
+        "translation": "Esta será a minha maior balada! É verdade que nenhuma das minhas canções obteve a merecida aclamação até agora, mas esta será diferente.\\n\\n[DEFEAT1] tem aterrorizado Torchlight desde que os primeiros mineradores chegaram, rastejando para fora de seu covil [DEFEAT1DEPTH] andares abaixo da cidade. Eles se alegrarão ao saber de sua derrota, e isso deverá lhes dar uma nova apreciação pelo meu talento.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5175,7 +5175,7 @@
       {
         "id": "Quests_0633",
         "original": "It has been a long journey for you - if you wish, you may |cFFFFBA00Retire.|u Be forewarned, retirement is permanent.\\n\\nUpon retiring, you may pass down one of your items as an |cFFFFBA00Heirloom|u to your descendent, and it will be further enhanced.  Your descendent will receive the benefit of your Fame, and begin their own journey with increased skill.\\n\\nCome speak to me again when you wish to |cFFFFBA00Retire.|u",
-        "translation": "Foi uma longa jornada para você — se desejar, você pode se |cFFFFBA00Aposentar.|u Fique avisado, a aposentadoria é permanente.\\n\\nAo se aposentar, você pode legar um de seus itens como uma |cFFFFBA00Herança de Família|u para seu descendente, e ele será ainda mais aprimorado. Seu descendente receberá os benefícios da sua Fama e iniciará sua própria jornada com habilidades aumentadas.\\n\\nVenha falar comigo novamente quando desejar se |cFFFFBA00Aposentar.|u",
+        "translation": "Foi uma longa jornada para você — se desejar, você pode se Aposentar. Fique avisado, a aposentadoria é permanente.\\n\\nAo se aposentar, você pode legar um de seus itens como uma Herança de Família para seu descendente, e ele será ainda mais aprimorado. Seu descendente receberá os benefícios da sua Fama e iniciará sua própria jornada com habilidades aumentadas.\\n\\nVenha falar comigo novamente quando desejar se Aposentar.",
         "context": "media/Quests/RETIREMENT.DAT.adm"
       },
       {
@@ -5229,13 +5229,13 @@
       {
         "id": "Quests_0642",
         "original": "When I was built, my creator and I would often see bards entertaining people on street corners, it's what inspired me to greatness!  Of course he doesn't see it that way, not yet.\\n\\nI recall a tale of a mighty fiend, |cFFFFBA00[DEFEAT1]|u, who slew countless warriors before disappearing into the wild.  I believe it's here, just |cFFFFBA00[DEFEAT1DEPTH]|u floors below Torchlight!  Isn't it thrilling?  Cut the beast down and I shall make heroes of us both!",
-        "translation": "Quando fui construído, meu criador e eu costumávamos ver bardos entretendo as pessoas nas esquinas; foi isso que me inspirou para a grandeza! É claro que ele não vê dessa forma, ainda não.\\n\\nLembro-me de um conto sobre um monstro formidável, |cFFFFBA00[DEFEAT1]|u, que abateu incontáveis guerreiros antes de desaparecer na selva. Acredito que ele esteja aqui, apenas |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo de Torchlight! Não é empolgante? Derrube a fera e farei heróis de nós dois!",
+        "translation": "Quando fui construído, meu criador e eu costumávamos ver bardos entretendo as pessoas nas esquinas; foi isso que me inspirou para a grandeza! É claro que ele não vê dessa forma, ainda não.\\n\\nLembro-me de um conto sobre um monstro formidável, [DEFEAT1], que abateu incontáveis guerreiros antes de desaparecer na selva. Acredito que ele esteja aqui, apenas [DEFEAT1DEPTH] andares abaixo de Torchlight! Não é empolgante? Derrube a fera e farei heróis de nós dois!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
         "id": "Quests_0643",
         "original": "These monster attacks are disrupting my work!\\n\\nI am Vasman, a scholar of Ember.  I traveled to Torchlight to study the vast supply of Ember below, but these creatures make it impossible to obtain the samples I need.\\n\\nPerhaps you have more courage than these miners.  If you brave the tunnels and bring me a sample of |cFFFFBA00Gleaming Ember|u, I will reward you well.  It should not be difficult, look for the Ember on the |cFFFFBA00first floor|u of the mine.",
-        "translation": "Estes ataques de monstros estão atrapalhando meu trabalho!\\n\\nEu sou Vasman, um estudioso do Âmbar. Viajei para Torchlight para estudar o vasto suprimento de Âmbar abaixo, mas estas criaturas tornam impossível obter as amostras de que preciso.\\n\\nTalvez você tenha mais coragem do que estes mineradores. Se você desbravar os túneis e me trouxer uma amostra de |cFFFFBA00Âmbar Reluzente|u, recompensarei você muito bem. Não deve ser difícil: procure pelo Âmbar no |cFFFFBA00primeiro andar|u da mina.",
+        "translation": "Estes ataques de monstros estão atrapalhando meu trabalho!\\n\\nEu sou Vasman, um estudioso do Âmbar. Viajei para Torchlight para estudar o vasto suprimento de Âmbar abaixo, mas estas criaturas tornam impossível obter as amostras de que preciso.\\n\\nTalvez você tenha mais coragem do que estes mineradores. Se você desbravar os túneis e me trouxer uma amostra de Âmbar Reluzente, recompensarei você muito bem. Não deve ser difícil: procure pelo Âmbar no primeiro andar da mina.",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
@@ -5247,7 +5247,7 @@
       {
         "id": "Quests_0645",
         "original": "I can see it now.  You, weary from battle, your sword wavering in your hands.  |cFFFFBA00[DEFEAT1]|u, cackling with vile laughter, wielding a giant flaming club.  For a moment, you thought all was lost- but then, a rush of inspiration!\\n\\nYou remembered your mother, no, your love!  Yes, your far away love, and your promise to return!  In a rush of righteous fury, you struck the fiend down, and returned here victorious!\\n\\nHa, I will make you the hero of our age!",
-        "translation": "Posso ver tudo agora. Você, exausto do combate, sua espada vacilando em suas mãos. |cFFFFBA00[DEFEAT1]|u, gargalhando com riso vil, empunhando uma clava flamejante gigante. Por um instante, você pensou que tudo estava perdido — mas então, uma onda de inspiração!\\n\\nVocê se lembrou da sua mãe, não, do seu amor! Sim, do seu amor distante e da sua promessa de retornar! Em um ímpeto de justa fúria, você derrubou a criatura e retornou aqui vitorioso!\\n\\nHá, farei de você o herói da nossa era!",
+        "translation": "Posso ver tudo agora. Você, exausto do combate, sua espada vacilando em suas mãos. [DEFEAT1], gargalhando com riso vil, empunhando uma clava flamejante gigante. Por um instante, você pensou que tudo estava perdido — mas então, uma onda de inspiração!\\n\\nVocê se lembrou da sua mãe, não, do seu amor! Sim, do seu amor distante e da sua promessa de retornar! Em um ímpeto de justa fúria, você derrubou a criatura e retornou aqui vitorioso!\\n\\nHá, farei de você o herói da nossa era!",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -5301,7 +5301,7 @@
       {
         "id": "Quests_0654",
         "original": "I am the great bard Trill, perhaps you've heard of me?  No?\\n\\nThat's the problem really; despite my astonishing talent, word of my ascendancy has not yet spread among the masses.  My ability is beyond question, but perhaps I have not yet found a tale truly worth telling.\\n\\nPerhaps your heroic deeds will inspire me.  A beast known as |cFFFFBA00Varkaseer|u has been emerging at night to prowl about Torchlight, he is said to be a batlike creature with great power.  His lair is said to be on the third floor of the mine, slay him and I will immortalize your battle in verse!",
-        "translation": "Eu sou o grande bardo Trill, talvez você já tenha ouvido falar de mim? Não?\\n\\nEsse é o problema, na verdade; apesar do meu talento assombroso, a notícia da minha ascensão ainda não se espalhou entre as massas. Minha habilidade está além de qualquer dúvida, mas talvez eu ainda não tenha encontrado um conto que realmente valha a pena ser contado.\\n\\nTalvez seus feitos heroicos me inspirem. Uma fera conhecida como |cFFFFBA00Varkaseer|u tem emergido à noite para rondar Torchlight; dizem que é uma criatura parecida com um morcego, dotada de grande poder. Dizem que seu covil fica no terceiro andar da mina; mate-o e imortalizarei sua batalha em verso!",
+        "translation": "Eu sou o grande bardo Trill, talvez você já tenha ouvido falar de mim? Não?\\n\\nEsse é o problema, na verdade; apesar do meu talento assombroso, a notícia da minha ascensão ainda não se espalhou entre as massas. Minha habilidade está além de qualquer dúvida, mas talvez eu ainda não tenha encontrado um conto que realmente valha a pena ser contado.\\n\\nTalvez seus feitos heroicos me inspirem. Uma fera conhecida como Varkaseer tem emergido à noite para rondar Torchlight; dizem que é uma criatura parecida com um morcego, dotada de grande poder. Dizem que seu covil fica no terceiro andar da mina; mate-o e imortalizarei sua batalha em verso!",
         "context": "media/Quests/Bard/QUEST1.DAT.adm"
       },
       {
@@ -5319,7 +5319,7 @@
       {
         "id": "Quests_0657",
         "original": "Hey there stranger, welcome to Torchlight.  I'm Hatch, richest man in town.  Well, that's my plan anyhow.\\n\\nI haven't worked out all the details yet, but the key is this here wand.  It opens a |cFFFFBA00portal|u to one particular spot, and I'm sure it must be full of treasure.  Problem is, it's also full of monsters, so I can't have a look for myself.\\n\\nIf you can handle the monsters and bring me the best |cFFFFBA00treasure|u you find in there, you can keep any gold and weapons for yourself.  Be careful though, I don't think any other portals will work in there.  What do you say?",
-        "translation": "Olá, estranho, bem-vindo a Torchlight. Eu sou Hatch, o homem mais rico da cidade. Bem, esse é o meu plano, de qualquer forma.\\n\\nAinda não acertei todos os detalhes, mas a chave é esta varinha aqui. Ela abre um |cFFFFBA00portal|u para um lugar específico, e tenho certeza de que deve estar cheio de tesouros. O problema é que também está cheio de monstros, então não posso ir conferir por mim mesmo.\\n\\nSe você conseguir lidar com os monstros e me trazer o melhor |cFFFFBA00tesouro|u que encontrar lá dentro, poderá ficar com todo o ouro e as armas para si. Mas cuidado, acho que nenhum outro portal funcionará lá dentro. O que me diz?",
+        "translation": "Olá, estranho, bem-vindo a Torchlight. Eu sou Hatch, o homem mais rico da cidade. Bem, esse é o meu plano, de qualquer forma.\\n\\nAinda não acertei todos os detalhes, mas a chave é esta varinha aqui. Ela abre um portal para um lugar específico, e tenho certeza de que deve estar cheio de tesouros. O problema é que também está cheio de monstros, então não posso ir conferir por mim mesmo.\\n\\nSe você conseguir lidar com os monstros e me trazer o melhor tesouro que encontrar lá dentro, poderá ficar com todo o ouro e as armas para si. Mas cuidado, acho que nenhum outro portal funcionará lá dentro. O que me diz?",
         "context": "media/Quests/Hatch/QUEST1.DAT.adm"
       },
       {
@@ -82375,13 +82375,13 @@
       {
         "id": "Globals_2271",
         "original": "Unidentified items may be identified by using an |cFFFFBA00identify scroll|u on them.",
-        "translation": "Itens não identificados podem ser identificados usando um |cFFFFBA00pergaminho de identificação|u neles.",
+        "translation": "Itens não identificados podem ser identificados usando um pergaminho de identificação neles.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2272",
         "original": "Hold |cFFFFBA00[Ctrl]|u and click on a Skill or Item link in your hotbar to remove it.",
-        "translation": "Segure |cFFFFBA00[Ctrl]|u e clique em um atalho de Habilidade ou Item na barra para removê-lo.",
+        "translation": "Segure [Ctrl] e clique em um atalho de Habilidade ou Item na barra para removê-lo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82405,7 +82405,7 @@
       {
         "id": "Globals_2276",
         "original": "Holding |cFFFFBA00[SHIFT]|u while attacking will allow you to remain in place during combat.",
-        "translation": "Segurar |cFFFFBA00[SHIFT]|u ao atacar permitirá que você permaneça no lugar durante o combate.",
+        "translation": "Segurar [SHIFT] ao atacar permitirá que você permaneça no lugar durante o combate.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82429,13 +82429,13 @@
       {
         "id": "Globals_2280",
         "original": "Holding |cFFFFBA00[SHIFT]|u while clicking on an item will cause your pet to run and pick it up.",
-        "translation": "Segurar |cFFFFBA00[SHIFT]|u ao clicar em um item fará seu mascote correr e pegá-lo.",
+        "translation": "Segurar [SHIFT] ao clicar em um item fará seu mascote correr e pegá-lo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2281",
         "original": "If you are dealing lots of |cFFFFBA00'Glancing Blows'|u, you probably need to upgrade your weapons.",
-        "translation": "Se você estiver desferindo muitos |cFFFFBA00'Golpes de Raspão'|u, provavelmente precisa aprimorar suas armas.",
+        "translation": "Se você estiver desferindo muitos 'Golpes de Raspão', provavelmente precisa aprimorar suas armas.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82447,13 +82447,13 @@
       {
         "id": "Globals_2283",
         "original": "|cFFFFBA00Left-click|u on monsters to attack - hold the left mouse button down to continuously attack.",
-        "translation": "|cFFFFBA00Clique com o botão esquerdo|u nos monstros para atacar — segure o botão esquerdo para atacar continuamente.",
+        "translation": "Clique com o botão esquerdo nos monstros para atacar — segure o botão esquerdo para atacar continuamente.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2284",
         "original": "Holding |cFFFFBA00[SHIFT]|u while clicking on an item in a Merchant screen will instantly sell or buy it.",
-        "translation": "Segurar |cFFFFBA00[SHIFT]|u ao clicar em um item na tela de Mercador irá vendê-lo ou comprá-lo instantaneamente.",
+        "translation": "Segurar [SHIFT] ao clicar em um item na tela de Mercador irá vendê-lo ou comprá-lo instantaneamente.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82471,7 +82471,7 @@
       {
         "id": "Globals_2287",
         "original": "This is the |cFFFFBA00Enchantment interface|u. Place items here and pay a fee to receive random enchantments.",
-        "translation": "Esta é a |cFFFFBA00interface de Encantamento|u. Coloque itens aqui e pague uma taxa para receber encantamentos aleatórios.",
+        "translation": "Esta é a interface de Encantamento. Coloque itens aqui e pague uma taxa para receber encantamentos aleatórios.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82483,19 +82483,19 @@
       {
         "id": "Globals_2289",
         "original": "Press |cFFFFBA00A|u to toggle the |cFFFFBA00minimap|u, and use |cFFFFBA00[|u and |cFFFFBA00]|u to zoom in and out.",
-        "translation": "Pressione |cFFFFBA00A|u para alternar o |cFFFFBA00minimapa|u e use |cFFFFBA00[|u e |cFFFFBA00]|u para aproximar ou afastar o zoom.",
+        "translation": "Pressione A para alternar o minimapa e use [ e ] para aproximar ou afastar o zoom.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2290",
         "original": "Hold |cFFFFBA00[ALT]|u to see any items scattered on the ground, or toggle this view with the magnifying glass icon.",
-        "translation": "Segure |cFFFFBA00[ALT]|u para ver itens espalhados pelo chão, ou alterne essa visão com o ícone de lupa.",
+        "translation": "Segure [ALT] para ver itens espalhados pelo chão, ou alterne essa visão com o ícone de lupa.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2291",
         "original": "This is your |cFFFFBA00Shared Stash|u. Placing items here makes them accessible to other characters you have created.",
-        "translation": "Este é o seu |cFFFFBA00Baú Compartilhado|u. Colocar itens aqui os torna acessíveis a outros personagens que você criou.",
+        "translation": "Este é o seu Baú Compartilhado. Colocar itens aqui os torna acessíveis a outros personagens que você criou.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82507,7 +82507,7 @@
       {
         "id": "Globals_2293",
         "original": "Hold |cFFFFBA00[Ctrl]|u and click on a learned spell to unlearn it - you'll lose the spell, but you will be able to learn a new one.",
-        "translation": "Segure |cFFFFBA00[Ctrl]|u e clique em um feitiço aprendido para esquecê-lo — você perderá o feitiço, mas poderá aprender um novo.",
+        "translation": "Segure [Ctrl] e clique em um feitiço aprendido para esquecê-lo — você perderá o feitiço, mas poderá aprender um novo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82519,13 +82519,13 @@
       {
         "id": "Globals_2295",
         "original": "This is your |cFFFFBA00Stash|u. You can place items here for long-term storage.  If your inventory is getting full, offload some artifacts here.",
-        "translation": "Este é o seu |cFFFFBA00Baú|u. Você pode guardar itens aqui para armazenamento de longo prazo. Se o inventário estiver cheio, descarregue alguns artefatos aqui.",
+        "translation": "Este é o seu Baú. Você pode guardar itens aqui para armazenamento de longo prazo. Se o inventário estiver cheio, descarregue alguns artefatos aqui.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2296",
         "original": "You've gained a level! Click on the |cFFFFBA00Stats Up|u and |cFFFFBA00Skills Up|u buttons on either side of the screen to apply your newfound wisdom.",
-        "translation": "Você subiu de nível! Clique nos botões |cFFFFBA00Atributos|u e |cFFFFBA00Habilidades|u em ambos os lados da tela para aplicar seus pontos.",
+        "translation": "Você subiu de nível! Clique nos botões Atributos e Habilidades em ambos os lados da tela para aplicar seus pontos.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82537,37 +82537,37 @@
       {
         "id": "Globals_2298",
         "original": "Your |cFFFFBA00inventory is full|u. Either drop unwanted items, or give them to your pet by opening your pet's inventory and dragging items to empty slots.",
-        "translation": "Seu |cFFFFBA00inventário está cheio|u. Solte itens indesejados ou entregue-os ao mascote abrindo o inventário dele e arrastando os itens.",
+        "translation": "Seu inventário está cheio. Solte itens indesejados ou entregue-os ao mascote abrindo o inventário dele e arrastando os itens.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2299",
         "original": "Send your pet to town to sell any excess items so that you can keep adventuring - click on the pet's |cFFFFBA00green merchant|u icon to send them on their way.",
-        "translation": "Envie seu mascote à cidade para vender itens excedentes e continuar sua aventura — clique no ícone de |cFFFFBA00mercador verde|u do mascote para enviá-lo.",
+        "translation": "Envie seu mascote à cidade para vender itens excedentes e continuar sua aventura — clique no ícone de mercador verde do mascote para enviá-lo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2300",
         "original": "|cFFFFBA00Left click|u to attack an enemy with your weapon. |cFFFFBA00Right Click|u to cast your readied |cFFFFBA00Skill|u, which is powerful, but consumes Mana.",
-        "translation": "|cFFFFBA00Clique com o botão esquerdo|u para atacar com a arma. |cFFFFBA00Clique com o botão direito|u para usar a |cFFFFBA00Habilidade|u preparada, que consome Mana.",
+        "translation": "Clique com o botão esquerdo para atacar com a arma. Clique com o botão direito para usar a Habilidade preparada, que consome Mana.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2301",
         "original": "|cFFFFBA00Right-click|u to use your currently assigned |cFFFFBA00skill or spell|u.   You can also use |cFFFFBA00TAB|u to switch between it and an alternate skill, noted on the bottom menu.",
-        "translation": "|cFFFFBA00Clique com o botão direito|u para usar a |cFFFFBA00habilidade ou feitiço|u atribuído. Use |cFFFFBA00TAB|u para alternar com uma habilidade secundária.",
+        "translation": "Clique com o botão direito para usar a habilidade ou feitiço atribuído. Use TAB para alternar com uma habilidade secundária.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2302",
         "original": "This is the |cFFFFBA00Gambling interface|u. All of the merchant's items have unknown properties - you'll have to purchase them to find out what they do. Every item is guaranteed to be magical.",
-        "translation": "Esta é a |cFFFFBA00interface de Apostas|u. Todos os itens do mercador possuem propriedades desconhecidas — compre-os para descobrir o que fazem. Todos são mágicos.",
+        "translation": "Esta é a interface de Apostas. Todos os itens do mercador possuem propriedades desconhecidas — compre-os para descobrir o que fazem. Todos são mágicos.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2303",
         "original": "This is the |cFFFFBA00Transmutation interface|u. Place items here and attempt to combine them with the transmute button. There are many recipes for transmuting items, so try many combinations.",
-        "translation": "Esta é a |cFFFFBA00interface de Transmutação|u. Coloque itens aqui e tente combiná-los com o botão transmutar. Existem muitas receitas de transmutação.",
+        "translation": "Esta é a interface de Transmutação. Coloque itens aqui e tente combiná-los com o botão transmutar. Existem muitas receitas de transmutação.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82579,97 +82579,97 @@
       {
         "id": "Globals_2305",
         "original": "You have inscribed a |cFFFFBA00new spell|u to your spellbook; you may now cast it as you would any other skill.  Skills and spells can be mapped to the quickslots on the bottom of the screen by clicking on them.",
-        "translation": "Você inscreveu um |cFFFFBA00novo feitiço|u em seu grimório; agora você pode conjurá-lo como qualquer outra habilidade. Habilidades e feitiços podem ser atribuídos aos atalhos na parte inferior da tela clicando neles.",
+        "translation": "Você inscreveu um novo feitiço em seu grimório; agora você pode conjurá-lo como qualquer outra habilidade. Habilidades e feitiços podem ser atribuídos aos atalhos na parte inferior da tela clicando neles.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2306",
         "original": "You have |cFFFFBA00completed a quest|u. To receive your reward, travel back to the town and speak to the individual with a |cFFFFBA00?|u above their head. Use a |cFFFFBA00Town Portal Scroll|u to return directly to Torchlight.",
-        "translation": "Você |cFFFFBA00concluiu uma missão|u. Para receber sua recompensa, volte à cidade e fale com o habitante que tiver um |cFFFFBA00?|u sobre a cabeça. Use um |cFFFFBA00Pergaminho de Portal da Cidade|u para retornar diretamente a Torchlight.",
+        "translation": "Você concluiu uma missão. Para receber sua recompensa, volte à cidade e fale com o habitante que tiver um ? sobre a cabeça. Use um Pergaminho de Portal da Cidade para retornar diretamente a Torchlight.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2307",
         "original": "Welcome to the town of |cFFFFBA00Torchlight|u. Explore the area by |cFFFFBA00left-clicking to move around|u. Visit the denizens of the town to shop or find quests to perform. When you are ready, enter the mines to begin your journey!",
-        "translation": "Boas-vindas à cidade de |cFFFFBA00Torchlight|u. Explore a área |cFFFFBA00clicando com o botão esquerdo para mover-se|u. Visite os habitantes da cidade para negociar ou encontrar missões a cumprir. Quando estiver pronto, entre nas minas para começar sua jornada!",
+        "translation": "Boas-vindas à cidade de Torchlight. Explore a área clicando com o botão esquerdo para mover-se. Visite os habitantes da cidade para negociar ou encontrar missões a cumprir. Quando estiver pronto, entre nas minas para começar sua jornada!",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2308",
         "original": "You have discovered a |cFFFFBA00magical item|u! It is |cFFFFBA00unidentified|u, which means that its magic powers are undiscovered. Identify it by |cFFFFBA00right-clicking an Identify Scroll|u, then |cFFFFBA00left-clicking on the item|u.",
-        "translation": "Você descobriu um |cFFFFBA00item mágico|u! Ele está |cFFFFBA00não identificado|u, o que significa que seus poderes mágicos ainda são desconhecidos. Identifique-o |cFFFFBA00clicando com o botão direito em um Pergaminho de Identificação|u e, em seguida, |cFFFFBA00clicando com o botão esquerdo no item|u.",
+        "translation": "Você descobriu um item mágico! Ele está não identificado, o que significa que seus poderes mágicos ainda são desconhecidos. Identifique-o clicando com o botão direito em um Pergaminho de Identificação e, em seguida, clicando com o botão esquerdo no item.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2309",
         "original": "You have discovered a |cFFFFBA00socketable item|u! Socketable items imbue your weapons and armor with new magical properties when inserted.  If you discover an item with sockets, simply install the gemstone by |cFFFFBA00dropping it onto the item|u.",
-        "translation": "Você descobriu um |cFFFFBA00item com engaste|u! Itens com engastes concedem novas propriedades mágicas às armas e armaduras quando gemas são inseridas. Se encontrar um item com engastes, instale a gema |cFFFFBA00arrastando-a sobre o item|u.",
+        "translation": "Você descobriu um item com engaste! Itens com engastes concedem novas propriedades mágicas às armas e armaduras quando gemas são inseridas. Se encontrar um item com engastes, instale a gema arrastando-a sobre o item.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2310",
         "original": "You have new |cFFFFBA00Stat Points|u to distribute! Click the button next to each attribute to improve that aspect of your character. You also have new Skill Points that may be used to improve your character's abilities in the Skill Menu (press S).",
-        "translation": "Você tem novos |cFFFFBA00Pontos de Atributo|u para distribuir! Clique no botão ao lado de cada atributo para aprimorá-lo. Você também tem novos Pontos de Habilidade que podem ser usados para melhorar as habilidades do seu personagem no Menu de Habilidades (tecla S).",
+        "translation": "Você tem novos Pontos de Atributo para distribuir! Clique no botão ao lado de cada atributo para aprimorá-lo. Você também tem novos Pontos de Habilidade que podem ser usados para melhorar as habilidades do seu personagem no Menu de Habilidades (tecla S).",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2311",
         "original": "This is a |cFFFFBA00fishing hole|u. Click the hook icon when the circle goes red and you hear the splash of a bite.  Most of the fish you catch may be used to transform your pet into other creatures.  You may even catch special items from the depths.",
-        "translation": "Este é um |cFFFFBA00ponto de pesca|u. Clique no ícone de anzol quando o círculo ficar vermelho e você ouvir o som da mordida. A maioria dos peixes pescados pode ser usada para transformar seu mascote em outras criaturas. Você pode até fisgar itens especiais das profundezas.",
+        "translation": "Este é um ponto de pesca. Clique no ícone de anzol quando o círculo ficar vermelho e você ouvir o som da mordida. A maioria dos peixes pescados pode ser usada para transformar seu mascote em outras criaturas. Você pode até fisgar itens especiais das profundezas.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2312",
         "original": "Your |cFFFFBA00health is low|u. To heal yourself and avoid an untimely demise, |cFFFFBA00right-click on a health potion|u to drink it. You may also press the corresponding number key of any potion mapped to the quick-slot bar at the bottom of the screen.",
-        "translation": "Sua |cFFFFBA00vida está baixa|u. Para curar-se e evitar uma morte prematura, |cFFFFBA00clique com o botão direito em uma poção de vida|u para bebê-la. Você também pode pressionar a tecla numérica correspondente de qualquer poção mapeada na barra de atalhos na parte inferior da tela.",
+        "translation": "Sua vida está baixa. Para curar-se e evitar uma morte prematura, clique com o botão direito em uma poção de vida para bebê-la. Você também pode pressionar a tecla numérica correspondente de qualquer poção mapeada na barra de atalhos na parte inferior da tela.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2313",
         "original": "|cFFC0FFC0Green|u items have minor enchantments, |cFFC0C0FFBlue|u items are rare and powerful, |cFFFFCC3DGold|u items are unique and have more potent properties, and |cFFF54DFFPurple|u items are members of a Set, which gain additional abilities the more pieces you wear.",
-        "translation": "Itens |cFFC0FFC0Verdes|u possuem encantamentos menores, itens |cFFC0C0FFAzuis|u são raros e poderosos, itens |cFFFFCC3DDourados|u são únicos com propriedades mais potentes, e itens |cFFF54DFFRoxos|u fazem parte de um Conjunto, ganhando habilidades adicionais quanto mais peças você vestir.",
+        "translation": "Itens Verdes possuem encantamentos menores, itens Azuis são raros e poderosos, itens Dourados são únicos com propriedades mais potentes, e itens Roxos fazem parte de um Conjunto, ganhando habilidades adicionais quanto mais peças você vestir.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2314",
         "original": "Your |cFFFFBA00pet's inventory is full|u. You can |cFFFFBA00send your pet back to town|u by clicking on the |cFFFFBA00green arrow button|u in the pet interface. Your pet will depart for a short time to go sell the contents of it's inventory, then bring the profits back to you!",
-        "translation": "O |cFFFFBA00inventário do mascote está cheio|u. Você pode |cFFFFBA00enviar seu mascote de volta à cidade|u clicando no |cFFFFBA00botão de seta verde|u na interface do mascote. Ele venderá os itens e trará os lucros de volta!",
+        "translation": "O inventário do mascote está cheio. Você pode enviar seu mascote de volta à cidade clicando no botão de seta verde na interface do mascote. Ele venderá os itens e trará os lucros de volta!",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2315",
         "original": "This is your |cFFFFBA00pet's inventory|u. Your pet can carry as many items as you can. You can also have your pet pick up items directly from the ground by holding |cFFFFBA00[SHIFT]|u and clicking on them. Your pet can also equip a limited selection of items to improve their abilities.",
-        "translation": "Este é o |cFFFFBA00inventário do mascote|u. Seu mascote pode carregar tantos itens quanto você. Segure |cFFFFBA00[SHIFT]|u e clique no chão para fazê-lo pegar itens. Ele também pode equipar itens selecionados.",
+        "translation": "Este é o inventário do mascote. Seu mascote pode carregar tantos itens quanto você. Segure [SHIFT] e clique no chão para fazê-lo pegar itens. Ele também pode equipar itens selecionados.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2316",
         "original": "Your |cFFFFBA00pet is fleeing|u - it will no longer attack and cannot pick up items for you. Pet health will slowly recover automatically, but you may heal your pet by dragging a potion to the pet bowl icon at the top left of the screen, or holding |cFFFFBA00[SHIFT]|u while right-clicking it.",
-        "translation": "Seu |cFFFFBA00mascote está em fuga|u — ele não atacará nem pegará itens. A vida dele se recuperará devagar, mas você pode curá-lo com poções no ícone de tigela ou segurando |cFFFFBA00[SHIFT]|u ao clicar nele com o botão direito.",
+        "translation": "Seu mascote está em fuga — ele não atacará nem pegará itens. A vida dele se recuperará devagar, mas você pode curá-lo com poções no ícone de tigela ou segurando [SHIFT] ao clicar nele com o botão direito.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2317",
         "original": "This is the |cFFFFBA00merchant interface|u - drag items from the left to the right to buy them, and vice-versa to sell.  You can perform an instantaneous transaction by holding |cFFFFBA00[SHIFT]|u while clicking on an item. You can also buy and sell from your pet's inventory, located in the bottom left.",
-        "translation": "Esta é a |cFFFFBA00interface do mercador|u - arraste itens da esquerda para a direita para comprá-los, e vice-versa para vender. Você pode realizar uma transação instantânea segurando |cFFFFBA00[SHIFT]|u ao clicar em um item. Você também pode comprar e vender a partir do inventário do seu mascote, localizado no canto inferior esquerdo.",
+        "translation": "Esta é a interface do mercador - arraste itens da esquerda para a direita para comprá-los, e vice-versa para vender. Você pode realizar uma transação instantânea segurando [SHIFT] ao clicar em um item. Você também pode comprar e vender a partir do inventário do seu mascote, localizado no canto inferior esquerdo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2318",
         "original": "Your |cFFFFBA00Mana is low|u. Mana is used to perform skills or cast spells.  Mana recharges over time, but for a quick boost, |cFFFFBA00drink a mana potion by right-clicking on it|u.  You may also press the corresponding number key of any potion mapped to the quick-slot bar at the bottom of the screen.",
-        "translation": "Sua |cFFFFBA00Mana está baixa|u. A Mana é usada para habilidades e feitiços. Para recuperar rápido, |cFFFFBA00beba uma poção de mana clicando com o botão direito nela|u ou use a tecla correspondente na barra de atalhos.",
+        "translation": "Sua Mana está baixa. A Mana é usada para habilidades e feitiços. Para recuperar rápido, beba uma poção de mana clicando com o botão direito nela ou use a tecla correspondente na barra de atalhos.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2319",
         "original": "You have found a |cFFFFBA00spell scroll|u! In the Spells tab of your inventory, you can |cFFFFBA00right-click on the scroll|u or drop it into one of your spell slots to learn it, and you'll gain a new ability. You can also teach your pet spells by dropping them into the appropriate slots in their inventory.",
-        "translation": "Você encontrou um |cFFFFBA00pergaminho de feitiço|u! Na aba Feitiços do inventário, |cFFFFBA00clique com o botão direito no pergaminho|u ou arraste-o para um espaço de feitiço para aprendê-lo. Você também pode ensinar feitiços ao seu mascote.",
+        "translation": "Você encontrou um pergaminho de feitiço! Na aba Feitiços do inventário, clique com o botão direito no pergaminho ou arraste-o para um espaço de feitiço para aprendê-lo. Você também pode ensinar feitiços ao seu mascote.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2320",
         "original": "This is your |cFFFFBA00inventory screen|u. Drag weapons and armor into the appropriate slots to equip them.  Drop items by dragging them into the play area.  Useable items may be activated by right-clicking on them. To use items on your pet, drag them to the pet bowl icon at the top left of the screen, or hold |cFFFFBA00[SHIFT]|u while right-clicking them.",
-        "translation": "Esta é a sua |cFFFFBA00tela de inventário|u. Arraste armas e armaduras para os espaços apropriados para equipá-las. Solte itens arrastando-os para a área de jogo. Itens utilizáveis podem ser ativados clicando com o botão direito neles. Para usar itens em seu mascote, arraste-os para o ícone de tigela do mascote no canto superior esquerdo da tela, ou segure |cFFFFBA00[SHIFT]|u enquanto clica com o botão direito neles.",
+        "translation": "Esta é a sua tela de inventário. Arraste armas e armaduras para os espaços apropriados para equipá-las. Solte itens arrastando-os para a área de jogo. Itens utilizáveis podem ser ativados clicando com o botão direito neles. Para usar itens em seu mascote, arraste-os para o ícone de tigela do mascote no canto superior esquerdo da tela, ou segure [SHIFT] enquanto clica com o botão direito neles.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {

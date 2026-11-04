@@ -2,15 +2,16 @@
 """
 tools/patch_torchlight_exe.py - Torchlight Executable Localizer
 
-Patches Torchlight.exe to localize the hardcoded settings dropdown options:
-- Shadows: "Off", "Lighting Only", "Low", "Medium", "High", "Very High"
+Patches Torchlight.exe to localize hardcoded strings:
+- Shadows options: "Off", "Lighting Only", "Low", "Medium", "High", "Very High"
   -> "Desligado", "Apenas Iluminação", "Baixo", "Médio", "Alto", "Muito Alto"
 - Particles: "Low", "Medium", "High"
   -> "Baixo", "Médio", "Alto"
+- TipMenu Title: "Tip" -> "Dica" (UTF-16LE)
 
 Works by:
-1. Writing the UTF-8 Portuguese strings into .rdata slack space at file offset 0x7e6912 (VA 0xbe7712).
-2. Updating the 32-bit push pointer opcodes in the static initializer functions.
+1. Writing the localized strings into .rdata slack space at file offset 0x7e6912 (VA 0xbe7712).
+2. Updating the 32-bit push pointer opcodes in the functions.
 3. Automatically backing up the original binary to Torchlight.exe.orig.
 """
 
@@ -20,17 +21,17 @@ import shutil
 import struct
 
 # New strings mapped to VA addresses in .rdata slack (base raw: 0x7e6912, VA: 0xbe7712)
-# Encoded in Windows-1252 / ISO-8859-1 (CEGUI String(const char*) zero-extends bytes to utf32)
 SLACK_RAW_START = 0x7e6912
 SLACK_VA_START = 0xbe7712
 
 STRINGS_TO_EMBED = [
     ("Desligado", b"Desligado\x00"),                              # len 10
-    ("Apenas Iluminação", b"Apenas Ilumina\xe7\xe3o\x00"),        # len 18
+    ("Apenas Iluminacao", b"Apenas Ilumina\xe7\xe3o\x00"),        # len 18
     ("Baixo", b"Baixo\x00"),                                      # len 6
-    ("Médio", b"M\xe9dio\x00"),                                   # len 6
+    ("Medio", b"M\xe9dio\x00"),                                   # len 6
     ("Alto", b"Alto\x00"),                                        # len 5
     ("Muito Alto", b"Muito Alto\x00"),                            # len 11
+    ("Dica", "Dica\x00".encode("utf-16le")),                     # len 10 (UTF-16LE for TipMenu title)
 ]
 
 # Calculate VAs for each string
@@ -45,37 +46,40 @@ for name, data in STRINGS_TO_EMBED:
 # Push offsets to update in Torchlight.exe (Build 17685)
 # Map (raw_offset, original_bytes, new_va)
 PATCH_TABLE = [
+    # TipMenu::init (0x5af740) - Modal Title "Tip" -> "Dica"
+    (0x1af76a, 0xa8fc0c, EMBEDDED_VAS["Dica"]),
+
     # SettingsMenu::static_init (0x9a1850)
     (0x5a0c55, 0xa89a94, EMBEDDED_VAS["Desligado"]),          # push "Off"
-    (0x5a0c65, 0xa89a84, EMBEDDED_VAS["Apenas Iluminação"]),  # push "Lighting Only"
+    (0x5a0c65, 0xa89a84, EMBEDDED_VAS["Apenas Iluminacao"]),  # push "Lighting Only"
     (0x5a0c7d, 0xa89a80, EMBEDDED_VAS["Baixo"]),              # push "Low"
-    (0x5a0c92, 0xa89a78, EMBEDDED_VAS["Médio"]),              # push "Medium"
+    (0x5a0c92, 0xa89a78, EMBEDDED_VAS["Medio"]),              # push "Medium"
     (0x5a0ca7, 0xa89a70, EMBEDDED_VAS["Alto"]),               # push "High"
     (0x5a0cbc, 0xa89a64, EMBEDDED_VAS["Muito Alto"]),         # push "Very High"
     (0x5a0d05, 0xa89a80, EMBEDDED_VAS["Baixo"]),              # push "Low" (particles)
-    (0x5a0d15, 0xa89a78, EMBEDDED_VAS["Médio"]),              # push "Medium" (particles)
+    (0x5a0d15, 0xa89a78, EMBEDDED_VAS["Medio"]),              # push "Medium" (particles)
     (0x5a0d2d, 0xa89a70, EMBEDDED_VAS["Alto"]),               # push "High" (particles)
 
     # TU1 static_init (0x9574b0)
     (0x5568b5, 0xa89a94, EMBEDDED_VAS["Desligado"]),
-    (0x5568c5, 0xa89a84, EMBEDDED_VAS["Apenas Iluminação"]),
+    (0x5568c5, 0xa89a84, EMBEDDED_VAS["Apenas Iluminacao"]),
     (0x5568dd, 0xa89a80, EMBEDDED_VAS["Baixo"]),
-    (0x5568f2, 0xa89a78, EMBEDDED_VAS["Médio"]),
+    (0x5568f2, 0xa89a78, EMBEDDED_VAS["Medio"]),
     (0x556907, 0xa89a70, EMBEDDED_VAS["Alto"]),
     (0x55691c, 0xa89a64, EMBEDDED_VAS["Muito Alto"]),
     (0x556965, 0xa89a80, EMBEDDED_VAS["Baixo"]),
-    (0x556975, 0xa89a78, EMBEDDED_VAS["Médio"]),
+    (0x556975, 0xa89a78, EMBEDDED_VAS["Medio"]),
     (0x55698d, 0xa89a70, EMBEDDED_VAS["Alto"]),
 
     # TU3 static_init (0xa27f20)
     (0x627325, 0xa89a94, EMBEDDED_VAS["Desligado"]),
-    (0x627335, 0xa89a84, EMBEDDED_VAS["Apenas Iluminação"]),
+    (0x627335, 0xa89a84, EMBEDDED_VAS["Apenas Iluminacao"]),
     (0x62734d, 0xa89a80, EMBEDDED_VAS["Baixo"]),
-    (0x627362, 0xa89a78, EMBEDDED_VAS["Médio"]),
+    (0x627362, 0xa89a78, EMBEDDED_VAS["Medio"]),
     (0x627377, 0xa89a70, EMBEDDED_VAS["Alto"]),
     (0x62738c, 0xa89a64, EMBEDDED_VAS["Muito Alto"]),
     (0x6273e5, 0xa89a80, EMBEDDED_VAS["Baixo"]),
-    (0x6273f5, 0xa89a78, EMBEDDED_VAS["Médio"]),
+    (0x6273f5, 0xa89a78, EMBEDDED_VAS["Medio"]),
     (0x62740d, 0xa89a70, EMBEDDED_VAS["Alto"]),
 ]
 
@@ -139,7 +143,7 @@ def revert_executable(exe_path: str) -> bool:
 
 def main():
     default_exe = r"C:\Program Files (x86)\Steam\steamapps\common\Torchlight\Torchlight.exe"
-    parser = argparse.ArgumentParser(description="Patch Torchlight.exe to localize options dropdowns")
+    parser = argparse.ArgumentParser(description="Patch Torchlight.exe to localize options dropdowns and UI strings")
     parser.add_argument("--exe", default=default_exe, help=f"Path to Torchlight.exe (default: {default_exe})")
     parser.add_argument("--revert", action="store_true", help="Revert to Torchlight.exe.orig")
     args = parser.parse_args()

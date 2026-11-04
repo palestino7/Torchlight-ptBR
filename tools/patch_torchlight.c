@@ -181,6 +181,7 @@ int main(int argc, char* argv[]) {
     const unsigned int va_medio = 0xbe7734;
     const unsigned int va_alto = 0xbe773a;
     const unsigned int va_muito_alto = 0xbe773f;
+    const unsigned int va_dica = 0xbe774a;
 
     const char s_desligado[] = "Desligado";
     const char s_iluminacao[] = "Apenas Ilumina\xe7\xe3o";
@@ -188,6 +189,7 @@ int main(int argc, char* argv[]) {
     const char s_medio[] = "M\xe9" "dio";
     const char s_alto[] = "Alto";
     const char s_muito_alto[] = "Muito Alto";
+    const wchar_t s_dica[] = L"Dica";
 
     memset(buf + 0x7e6912, 0, 100);
     memcpy(buf + 0x7e6912, s_desligado, sizeof(s_desligado));
@@ -196,8 +198,12 @@ int main(int argc, char* argv[]) {
     memcpy(buf + 0x7e6934, s_medio, sizeof(s_medio));
     memcpy(buf + 0x7e693a, s_alto, sizeof(s_alto));
     memcpy(buf + 0x7e693f, s_muito_alto, sizeof(s_muito_alto));
+    memcpy(buf + 0x7e694a, s_dica, sizeof(s_dica));
 
     PatchEntry patches[] = {
+        // TipMenu::init (0x5af740) - Modal Title "Tip" -> "Dica"
+        { 0x1af76a, 0xa8fc0c, va_dica },
+
         // SettingsMenu::static_init (0x9a1850)
         { 0x5a0c55, 0xa89a94, va_desligado },
         { 0x5a0c65, 0xa89a84, va_iluminacao },

@@ -283,11 +283,145 @@ def compile_layout_files(
             compiled_count += 1
             text_replacements_total += replacements_in_file
 
+    apply_layout_geometry_fixes(output_layout_dir)
+
     if verbose:
         print(f"[Compiler] Processed {compiled_count} .layout files into {output_layout_dir}")
         print(f"           - Total text properties substituted: {text_replacements_total}")
+        print(f"           - Applied viewbox and typography geometry fixes")
 
     return compiled_count
+
+
+def apply_layout_geometry_fixes(output_layout_dir: str) -> None:
+    """
+    Applies custom UI viewbox expansions and alignment fixes to compiled layouts:
+    - charactercreate.layout: Widens 'Name' ("Nome do Personagem") from 140 to 260px,
+      centers it, widens 'PetName' to 200px, widens 'CharacterClassDescription' to 500px,
+      and sets default class text to "Destruidor".
+    - tipmenu.layout: Sets Title to "Dica", adjusts Dialog width to 450px with 25px margins
+      to prevent clipping against ornamental borders.
+    - questdialogmenu.layout: Ensures reward stat labels have trailing space ("PO: 0", "XP: 0", "Fama: 0").
+    """
+    cc_path = os.path.join(output_layout_dir, "charactercreate.layout")
+    if os.path.exists(cc_path):
+        with open(cc_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Fix CharacterClass
+        class_pat = r'(<Window Type="GuiLook/StaticTextOutline" Name="CharacterClass"\s*>)([\s\S]*?)(</Window>)'
+        rep_class = (
+            r'\1\n'
+            '         \t\t   <Property Name="UnifiedPosition" Value="{{.5,-300},{1,-175}}" />\n'
+            '         \t\t   <Property Name="UnifiedSize" Value="{{0,600},{0,60}}" />\n'
+            '\t\t\t<Property Name="Text" Value="Destruidor" />\n'
+            '\t\t\t<Property Name="Font" Value="SerifHuge" />\n'
+            '\t\t\t<Property Name="MousePassThroughEnabled" Value="True" />\n'
+            '\t\t\t<Property Name="AlwaysOnTop" Value="True" />\n'
+            '\t\t    <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
+            r'\t\t  \3'
+        )
+        content = re.sub(class_pat, rep_class, content)
+
+        # Fix CharacterClassDescription
+        desc_pat = r'(<Window Type="GuiLook/StaticText" Name="CharacterClassDescription"\s*>)([\s\S]*?)(</Window>)'
+        rep_desc = (
+            r'\1\n'
+            '         \t\t   <Property Name="UnifiedPosition" Value="{{.5,-250},{1,-140}}" />\n'
+            '         \t\t   <Property Name="UnifiedSize" Value="{{0,500},{0,64}}" />\n'
+            '\t\t\t<Property Name="Font" Value="SerifSmall" />\n'
+            '\t\t\t<Property Name="Text" Value="O Destruidor destaca-se no combate corpo a corpo e canaliza o poder dos seus ancestrais para derrotar seus inimigos." />\n'
+            '\t\t\t<Property Name="MousePassThroughEnabled" Value="True" />\n'
+            '\t\t\t<Property Name="AlwaysOnTop" Value="True" />\n'
+            '\t          <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />\n'
+            r'\t\t  \3'
+        )
+        content = re.sub(desc_pat, rep_desc, content)
+
+        # Fix Name ("Nome do Personagem")
+        name_pat = r'(<Window Type="GuiLook/StaticText" Name="Name"\s*>)([\s\S]*?)(</Window>)'
+        rep_name = (
+            r'\1\n'
+            '            <Property Name="Text" Value="Nome do Personagem" />\n'
+            '            <Property Name="UnifiedPosition" Value="{{.5,-130},{1,-88}}" />\n'
+            '            <Property Name="UnifiedSize" Value="{{0,260},{0,24}}" />\n'
+            '            <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
+            '        <Property Name="MousePassThroughEnabled" Value="True" />\n'
+            r'        \3'
+        )
+        content = re.sub(name_pat, rep_name, content)
+
+        # Fix PetName ("Nome do Mascote")
+        pet_pat = r'(<Window Type="GuiLook/StaticText" Name="PetName"\s*>)([\s\S]*?)(</Window>)'
+        rep_pet = (
+            r'\1\n'
+            '            <Property Name="Text" Value="Nome do Mascote" />\n'
+            '            <Property Name="UnifiedPosition" Value="{{0,-30},{0,140}}" />\n'
+            '            <Property Name="UnifiedSize" Value="{{0,200},{0,24}}" />\n'
+            '            <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
+            '        <Property Name="MousePassThroughEnabled" Value="True" />\n'
+            r'        \3'
+        )
+        content = re.sub(pet_pat, rep_pet, content)
+
+        with open(cc_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+    # Fix tipmenu.layout
+    tip_path = os.path.join(output_layout_dir, "tipmenu.layout")
+    if os.path.exists(tip_path):
+        with open(tip_path, "rb") as f:
+            raw = f.read()
+        is_u16 = raw.startswith(b"\xff\xfe")
+        txt = raw[2:].decode("utf-16le") if is_u16 else raw.decode("utf-8")
+
+        # Title -> Dica
+        title_pat = r'(<Window Type="GuiLook/StaticText" Name="Title"\s*>)([\s\S]*?)(</Window>)'
+        rep_title = (
+            r'\1\n'
+            '        <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
+            '        <Property Name="VertFormatting" Value="CentreAligned" />\n'
+            '        <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
+            '\t\t<Property Name="TextColour" Value="FFFFFFFF"/>\n'
+            '\t\t<Property Name="Font" Value="SerifBig"/>\n'
+            '        <Property Name="Text" Value="Dica" />\n'
+            r'        \3'
+        )
+        txt = re.sub(title_pat, rep_title, txt)
+
+        # Dialog margins
+        dlg_pat = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
+        rep_dlg = (
+            r'\1\n'
+            '\t\t    <Property Name="Font" Value="SerifBig" />\n'
+            '\t\t    <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />\n'
+            '\t\t    <Property Name="VertFormatting" Value="TopAligned" />\n'
+            '         \t\t   <Property Name="UnifiedPosition" Value="{{0,25},{0,25}}" />\n'
+            '         \t\t   <Property Name="UnifiedSize" Value="{{0,450},{0,260}}" />\n'
+            '\t\t\t<Property Name="TextColour" Value="FFFFFFFF"/>\n'
+            '\t\t\t<Property Name="MousePassThroughEnabled" Value="True" />\n'
+            r'\t\t\3'
+        )
+        txt = re.sub(dlg_pat, rep_dlg, txt)
+
+        out_b = (b"\xff\xfe" + txt.encode("utf-16le")) if is_u16 else txt.encode("utf-8")
+        with open(tip_path, "wb") as f:
+            f.write(out_b)
+
+    # Fix questdialogmenu.layout
+    qd_path = os.path.join(output_layout_dir, "questdialogmenu.layout")
+    if os.path.exists(qd_path):
+        with open(qd_path, "rb") as f:
+            raw = f.read()
+        is_u16 = raw.startswith(b"\xff\xfe")
+        txt = raw[2:].decode("utf-16le") if is_u16 else raw.decode("utf-8")
+        txt = txt.replace('Value="PO:0"', 'Value="PO: 0"')
+        txt = txt.replace('Value="XP:0"', 'Value="XP: 0"')
+        txt = txt.replace('Value="Fame:0"', 'Value="Fama: 0"')
+        txt = txt.replace('Value="Fama:0"', 'Value="Fama: 0"')
+        out_b = (b"\xff\xfe" + txt.encode("utf-16le")) if is_u16 else txt.encode("utf-8")
+        with open(qd_path, "wb") as f:
+            f.write(out_b)
 
 
 def main() -> int:

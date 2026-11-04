@@ -116,7 +116,11 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 [System.IO.File]::WriteAllText($readmePath, $readmeContent, [System.Text.Encoding]::UTF8)
 
 # 5. Create Distribution Zip Package
-$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.3.1.zip"
+# Dynamically extract version from setup.iss
+$versionMatch = Select-String -Path $IssFile -Pattern '#define MyAppVersion "([^"]+)"'
+$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.2" }
+
+$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v${appVersion}.zip"
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }
