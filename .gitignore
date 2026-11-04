@@ -16,6 +16,20 @@ tools/untranslated_dump.json
 # Agent metadata and working state
 .agents/
 
+# Local development, test suites, and internal scratch files
+tests/
+conftest.py
+PROJECT.md
+TEST_*.md
+RELEASE_NOTES_*.md
+tools/data_*.py
+tools/apply_*.py
+tools/add_*.py
+tools/*_engine.py
+tools/generate_assets.py
+tools/quest_translations_full.py
+tools/translate_catalog.py
+
 # Local source images staging folder
 imagens/
 Thumbs.db

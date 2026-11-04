@@ -86,7 +86,7 @@ Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exe
 $readmeContent = @"
 ================================================================================
  TRADUÇÃO TORCHLIGHT (pt-BR) - PORTUGUÊS DO BRASIL
- Versão: 1.0.0 (Steam Build 17685 / v1.15)
+ Versão: 1.1.0 (Steam Build 17685 / v1.15)
  Criador: Palestino7
  GitHub: https://github.com/palestino7/Torchlight-ptBR
 ================================================================================
@@ -116,7 +116,7 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 [System.IO.File]::WriteAllText($readmePath, $readmeContent, [System.Text.Encoding]::UTF8)
 
 # 5. Create Distribution Zip Package
-$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.0.0.zip"
+$zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v1.1.0.zip"
 if (Test-Path $zipPath) {
     Remove-Item $zipPath -Force
 }
@@ -145,14 +145,15 @@ function Get-FileSHA256([string]$filePath) {
 $exeHash = Get-FileSHA256 -filePath $exePath
 $zipHash = Get-FileSHA256 -filePath $zipPath
 
+$zipName = Split-Path -Leaf $zipPath
 $sumsPath = Join-Path $absOutputDir "SHA256SUMS.txt"
-$sumsContent = "$exeHash *Torchlight_Traducao_ptBR_Setup.exe`r`n$zipHash *Torchlight_Traducao_ptBR_v1.0.0.zip`r`n"
+$sumsContent = "$exeHash *Torchlight_Traducao_ptBR_Setup.exe`r`n$zipHash *$zipName`r`n"
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
 [System.IO.File]::WriteAllText($sumsPath, $sumsContent, $utf8NoBom)
 
 Write-Host "[OK] SHA256SUMS.txt gerado com sucesso." -ForegroundColor Green
 Write-Host "  - Torchlight_Traducao_ptBR_Setup.exe : $exeHash" -ForegroundColor Gray
-Write-Host "  - Torchlight_Traducao_ptBR_v1.0.0.zip : $zipHash" -ForegroundColor Gray
+Write-Host "  - $zipName : $zipHash" -ForegroundColor Gray
 
 Write-Host "========================================================================" -ForegroundColor Cyan
 Write-Host "[SUCESSO] Pipeline de compilação concluído com 100% de êxito!" -ForegroundColor Green

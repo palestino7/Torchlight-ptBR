@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
+[![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1.0-blue.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
 [![Status da Tradução](https://img.shields.io/badge/status-100%25%20pt--BR-brightgreen.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR)
 [![Compatibilidade Steam](https://img.shields.io/badge/Steam-Build%2017685%20(v1.15)-orange.svg?style=for-the-badge)](https://store.steampowered.com/app/41500/Torchlight/)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-yellow.svg?style=for-the-badge)](LICENSE)
@@ -15,7 +15,7 @@ Criado e mantido por **[Palestino7](https://github.com/palestino7)**.
 
 <br>
 
-[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.0.0/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.0.0/Torchlight_Traducao_ptBR_v1.0.0.zip)
+[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.1.0/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.1.0/Torchlight_Traducao_ptBR_v1.1.0.zip)
 
 <br>
 
@@ -40,7 +40,7 @@ Toda a história, missões, itens, falas e árvores de habilidades das 3 classes
 
 ## 🚀 Como Instalar (3 Passos Rápidos)
 
-1. **Passo 1:** Baixe o arquivo [Torchlight_Traducao_ptBR_Setup.exe](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.0.0/Torchlight_Traducao_ptBR_Setup.exe).
+1. **Passo 1:** Baixe o arquivo [Torchlight_Traducao_ptBR_Setup.exe](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.1.0/Torchlight_Traducao_ptBR_Setup.exe).
 2. **Passo 2:** Feche o jogo e execute o instalador baixado.  
    *(Ele encontra automaticamente a pasta do jogo na Steam: `C:\Program Files (x86)\Steam\steamapps\common\Torchlight`)*.
 3. **Passo 3:** Clique em **Avançar** $\rightarrow$ **Instalar** e abra o jogo pela Steam ou pelo atalho na Área de Trabalho!
@@ -60,12 +60,12 @@ Por ser um instalador comunitário novo e gratuito (sem certificado comercial pa
 
 ## 🔐 Hashes Oficiais (SHA-256 Checksum)
 
-Se desejar conferir a autenticidade dos arquivos da [Release Oficial](https://github.com/palestino7/Torchlight-ptBR/releases/tag/v1.0.0):
+Se desejar conferir a autenticidade dos arquivos da [Release Oficial](https://github.com/palestino7/Torchlight-ptBR/releases/tag/v1.1.0):
 
 | Arquivo de Distribuição | Tamanho | Hash SHA-256 Oficial |
 | :--- | :--- | :--- |
-| `Torchlight_Traducao_ptBR_Setup.exe` | 2.5 MB | `4310513727ce2b933474028f9f47d73f61c64ea94e8ee56ffa9b32623ec4bdc1` |
-| `Torchlight_Traducao_ptBR_v1.0.0.zip` | 2.0 MB | `12b80f1b4354ba4435a4eb98fb34f2f8a2af04a4c6bd953a097db56a69db232c` |
+| `Torchlight_Traducao_ptBR_Setup.exe` | 2.5 MB | `b7386d7f111ac16578474f2461f4d4f27de67f3949615bbe794f8ce5d24f4e5e` |
+| `Torchlight_Traducao_ptBR_v1.1.0.zip` | 2.0 MB | `53754443542e2b488911f9943153ac6aa949154b1b2247aa8bc7a88c59d6e392` |
 
 ---
 
