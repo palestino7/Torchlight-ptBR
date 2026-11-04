@@ -1019,7 +1019,7 @@
       {
         "id": "Quests_0091",
         "original": "ScotGreet",
-        "translation": "Scot Saudação",
+        "translation": "Saudação de Scot",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT1.DAT.adm"
       },
       {
@@ -1085,7 +1085,7 @@
       {
         "id": "Quests_0102",
         "original": "VQGAMEWIN",
-        "translation": "VITORIA_CONQUISTADORA",
+        "translation": "VITORIA_VINGADORA",
         "context": "media/Cinematics/VANQ_GAMEWIN.DAT.adm"
       },
       {
@@ -1421,7 +1421,7 @@
       {
         "id": "Quests_0158",
         "original": "OldManGreet",
-        "translation": "Velho Homem Saudação",
+        "translation": "Saudação do Ancião",
         "context": "media/Quests/StoryQuest/Intro/INTROTOGAMEPT1.DAT.adm"
       },
       {
@@ -1433,7 +1433,7 @@
       {
         "id": "Quests_0160",
         "original": "PrimalEmber",
-        "translation": "Primitivo Âmbar",
+        "translation": "Âmbar Primordial",
         "context": "media/Quests/Vasman/QUEST4.DAT.adm"
       },
       {
@@ -1445,7 +1445,7 @@
       {
         "id": "Quests_0162",
         "original": "SavageEmber",
-        "translation": "Selvagem Âmbar",
+        "translation": "Âmbar Selvagem",
         "context": "media/Quests/Vasman/QUEST5.DAT.adm"
       },
       {
@@ -1457,7 +1457,7 @@
       {
         "id": "Quests_0164",
         "original": "AdamantEmber",
-        "translation": "Adamantino Âmbar",
+        "translation": "Âmbar Adamantino",
         "context": "media/Quests/Vasman/QUEST6.DAT.adm"
       },
       {
@@ -1559,7 +1559,7 @@
       {
         "id": "Quests_0181",
         "original": "SanguinEmber",
-        "translation": "Sanguíneo Âmbar",
+        "translation": "Âmbar Sanguíneo",
         "context": "media/Quests/VasmanRandom/EMBEREXAMINATIONPALACE.DAT.adm"
       },
       {
@@ -1577,7 +1577,7 @@
       {
         "id": "Quests_0184",
         "original": "EmberColossus",
-        "translation": "Âmbar Colosso",
+        "translation": "Colosso de Âmbar",
         "context": "media/Quests/StoryQuest/Cave/CAVEPT1.DAT.adm"
       },
       {
@@ -1607,7 +1607,7 @@
       {
         "id": "Quests_0189",
         "original": "GleamingEmber",
-        "translation": "Brilhante Âmbar",
+        "translation": "Âmbar Reluzente",
         "context": "media/Quests/Vasman/QUEST1.DAT.adm"
       },
       {
@@ -1937,7 +1937,7 @@
       {
         "id": "Quests_0244",
         "original": "DefeatFirstBoss",
-        "translation": "DefeatFirstChefe",
+        "translation": "DerrotarPrimeiroChefe",
         "context": "media/Quests/StoryQuest/Intro/DEFEATTHEFIRSTBOSS.DAT.adm"
       },
       {
@@ -2033,7 +2033,7 @@
       {
         "id": "Quests_0260",
         "original": "VanquisherIntro",
-        "translation": "VanquisherIntroducao",
+        "translation": "VingadoraIntroducao",
         "context": "media/Cinematics/VANQUISHERINTRO.DAT.adm"
       },
       {
@@ -2207,7 +2207,7 @@
       {
         "id": "Quests_0289",
         "original": "FEMALEFLIRTYGREET",
-        "translation": "SAUDAÇÃO DE FEMALEFLIRTY",
+        "translation": "SAUDAÇÃO SEDUTORA",
         "context": "media/Quests/mistressRandom/MISTRESSRANDOM.DAT.adm"
       },
       {
@@ -3305,7 +3305,7 @@
       {
         "id": "Quests_0472",
         "original": "Vasman has asked you to find a piece of Shimmering Ember in an area filled with water.",
-        "translation": "Vasman pediu para você encontrar um fragmento de Âmbar Tremeluzente em uma área inundada.",
+        "translation": "Vasman pediu para você encontrar um fragmento de Âmbar Cintilante em uma área inundada.",
         "context": "media/Quests/Vasman/QUEST3.DAT.adm"
       },
       {
@@ -3341,7 +3341,7 @@
       {
         "id": "Quests_0478",
         "original": "<LOOKAT=SEER>Syl, have you come to join us?  I knew you would hear Ordrak's call eventually.",
-        "translation": "<LOOKAT=SEER>Syl, você veio se juntar a nós? Eu sabia que você ouviria o chamado de Ordrak eventualmente.",
+        "translation": "<LOOKAT=SEER>Syl, você veio se juntar a nós? Eu sabia que você ouviria o chamado de Ordrak mais cedo ou mais tarde.",
         "context": "media/Quests/StoryQuest/Fortress/FORTRESSPT2.DAT.adm"
       },
       {
@@ -3641,7 +3641,7 @@
       {
         "id": "Quests_0528",
         "original": "You have the |cFFFFBA00[ACQUIRE1]|u already?  You're a fast as an arrow and twice as deadly, I'd better pay prompt and stay on your good side, eh partner?",
-        "translation": "Você já pegou o |cFFFFBA00[ACQUIRE1]|u? Você é rápido como uma flecha e duas vezes mais mortal, é melhor eu pagar logo e ficar do seu lado bom, não é parceiro?",
+        "translation": "Você já pegou o |cFFFFBA00[ACQUIRE1]|u? Você é rápido como uma flecha e duas vezes mais mortal, é melhor eu pagar logo para ficar de bem com você, não é, parceiro?",
         "context": "media/Quests/HatchRandom/HATCHRANDOMACQUIRECAVE.DAT.adm"
       },
       {
@@ -4253,7 +4253,7 @@
       {
         "id": "Quests_0630",
         "original": "This shall be my greatest ballad!  It's true that none of my songs have met with their deserved acclaim so far, but this one shall be different.\\n\\n|cFFFFBA00[DEFEAT1]|u has been terrorizing Torchlight since the first miners arrived, slinking up from its lair |cFFFFBA00[DEFEAT1DEPTH]|u floors below the town.  They will rejoice to hear of its defeat, and it should give them a new appreciation for my talent.",
-        "translation": "Esta será a minha maior balada! É verdade que nenhuma das minhas canções obteve o merecido aclamação até agora, mas esta será diferente.\\n\\n|cFFFFBA00[DEFEAT1]|u tem aterrorizado Torchlight desde que os primeiros mineradores chegaram, rastejando para fora de seu covil |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da cidade. Eles se alegrarão ao saber de sua derrota, e isso deverá lhes dar uma nova apreciação pelo meu talento.",
+        "translation": "Esta será a minha maior balada! É verdade que nenhuma das minhas canções obteve a merecida aclamação até agora, mas esta será diferente.\n\n|cFFFFBA00[DEFEAT1]|u tem aterrorizado Torchlight desde que os primeiros mineradores chegaram, rastejando para fora de seu covil |cFFFFBA00[DEFEAT1DEPTH]|u andares abaixo da cidade. Eles se alegrarão ao saber de sua derrota, e isso deverá lhes dar uma nova apreciação pelo meu talento.",
         "context": "media/Quests/BardRandom/BARDRANDOM.DAT.adm"
       },
       {
@@ -4289,7 +4289,7 @@
       {
         "id": "Quests_0636",
         "original": "It is no wonder the Estherians' knowledge advanced so quickly, they were perched atop an endless supply of Ember!\\n\\nWe will need all three of the missing destination glyphs.  The Estherians must have hidden them in the ruins to seal off the corruption below.  I expect one is hidden through each of the active rune gates.\\n\\nWe must not waste time.  So far Ember Blight has only made you stronger, but eventually it will control you.",
-        "translation": "Não é de admirar que o conhecimento dos esterianos tenha avançado tão rápido; eles estavam estabelecidos sobre uma fonte infinita de Âmbar!\\n\\nPrecisaremos de todos os três glifos de destino que estão faltando. Os esterianos devem tê-los escondido nas ruínas para isolar a corrupção abaixo. Suponho que haja um escondido através de cada um dos portais rúnicos ativos.\\n\\nNão devemos perder tempo. Até agora a Praga de Âmbar apenas tornou você mais forte, mas eventualmente ela o controlará.",
+        "translation": "Não é de admirar que o conhecimento dos esterianos tenha avançado tão rápido; eles estavam estabelecidos sobre uma fonte infinita de Âmbar!\n\nPrecisaremos de todos os três glifos de destino que estão faltando. Os esterianos devem tê-los escondido nas ruínas para isolar a corrupção abaixo. Suponho que haja um escondido através de cada um dos portais rúnicos ativos.\n\nNão devemos perder tempo. Até agora a Praga de Âmbar apenas tornou você mais forte, mas mais cedo ou mais tarde ela o controlará.",
         "context": "media/Quests/StoryQuest/ruins/RUINSPT2.DAT.adm"
       },
       {
@@ -4313,7 +4313,7 @@
       {
         "id": "Quests_0640",
         "original": "The cycle is broken, Ordrak will not consume Torchlight as he did so many other civilizations.  And yet, the corruption remains, perhaps some part of his spirit lingers even now.\\n\\nI will remain here a while to ensure the town is safe.  I understand if you must continue your journey, but there are still unexplored chambers below.  We will have to deal with the twisted creatures there eventually, and the treasures you find may prove useful.",
-        "translation": "O ciclo foi quebrado, Ordrak não consumirá Torchlight como fez com tantas outras civilizações. E, no entanto, a corrupção permanece; talvez alguma parte do espírito dele ainda perdure.\\n\\nFicarei aqui por algum tempo para garantir que a cidade esteja segura. Compreendo se você tiver que continuar sua jornada, mas ainda há câmaras inexploradas abaixo. Teremos que lidar com as criaturas deformadas de lá eventualmente, e os tesouros que você encontrar podem se mostrar úteis.",
+        "translation": "O ciclo foi quebrado, Ordrak não consumirá Torchlight como fez com tantas outras civilizações. E, no entanto, a corrupção permanece; talvez alguma parte do espírito dele ainda perdure.\n\nFicarei aqui por algum tempo para garantir que a cidade esteja segura. Compreendo se você tiver que continuar sua jornada, mas ainda há câmaras inexploradas abaixo. Teremos que lidar com as criaturas deformadas de lá mais cedo ou mais tarde, e os tesouros que você encontrar podem se mostrar úteis.",
         "context": "media/Quests/StoryQuest/CompleteGame/COMPLETEGAME.DAT.adm"
       },
       {
@@ -4337,7 +4337,7 @@
       {
         "id": "Quests_0644",
         "original": "The tremors are subsiding; my faith in you was well placed.  Have you encountered Master Alric again?  I will have to deal with him eventually - I cannot allow him to become a servant of darkness.\\n\\nWe are approaching the Ember Forge, but one final obstacle remains.  The Overseer's notes mention an ancient fortress infested with goblins, the hordes prevented him from ever reaching the Dwarven fortress itself.  Defeat the goblins and we'll be close to our goal.",
-        "translation": "Os tremores estão diminuindo; minha confiança em você foi bem depositada. Você encontrou o Mestre Alric novamente? Terei que lidar com ele eventualmente — não posso permitir que ele se torne um servo da escuridão.\\n\\nEstamos nos aproximando da Forja de Âmbar, mas um obstáculo final permanece. As anotações do Feitor mencionam uma antiga fortaleza infestada de goblins; as hordas o impediram de alcançar a fortaleza dos anões propriamente dita. Derrote os goblins e estaremos perto do nosso objetivo.",
+        "translation": "Os tremores estão diminuindo; minha confiança em você foi bem depositada. Você encontrou o Mestre Alric novamente? Terei que lidar com ele mais cedo ou mais tarde — não posso permitir que ele se torne um servo da escuridão.\n\nEstamos nos aproximando da Forja de Âmbar, mas um obstáculo final permanece. As anotações do Feitor mencionam uma antiga fortaleza infestada de goblins; as hordas o impediram de alcançar a fortaleza dos anões propriamente dita. Derrote os goblins e estaremos perto do nosso objetivo.",
         "context": "media/Quests/StoryQuest/Lava/LAVAPT1.DAT.adm"
       },
       {
@@ -11077,7 +11077,7 @@
       {
         "id": "Items_1106",
         "original": "Primal Ember",
-        "translation": "Âmbar Primitivo",
+        "translation": "Âmbar Primordial",
         "context": "media/units/items/quest_items/VasmanEmber/PRIMALEMBER.DAT.adm"
       },
       {
@@ -12553,7 +12553,7 @@
       {
         "id": "Items_1352",
         "original": "Flawless Ruby",
-        "translation": "Rubi Perfeito",
+        "translation": "Rubi Impecável",
         "context": "media/units/items/socketables/GEM_RUBY_08.DAT.adm"
       },
       {
@@ -14527,13 +14527,13 @@
       {
         "id": "Items_1681",
         "original": "Flawless Pearl",
-        "translation": "Pérola Perfeita",
+        "translation": "Pérola Impecável",
         "context": "media/units/items/socketables/GEM_PEARL_08.DAT.adm"
       },
       {
         "id": "Items_1682",
         "original": "Flawless Skull",
-        "translation": "Caveira Perfeita",
+        "translation": "Caveira Impecável",
         "context": "media/units/items/socketables/GEM_SKULL_08.DAT.adm"
       },
       {
@@ -14587,7 +14587,7 @@
       {
         "id": "Items_1691",
         "original": "Gleaming Ember",
-        "translation": "Âmbar Brilhante",
+        "translation": "Âmbar Reluzente",
         "context": "media/units/items/quest_items/VasmanEmber/GLEAMINGEMBER.DAT.adm"
       },
       {
@@ -19375,25 +19375,25 @@
       {
         "id": "Items_2489",
         "original": "Flawless Citrine",
-        "translation": "Citrino Perfeito",
+        "translation": "Citrino Impecável",
         "context": "media/units/items/socketables/GEM_CITRINE_08.DAT.adm"
       },
       {
         "id": "Items_2490",
         "original": "Flawless Diamond",
-        "translation": "Diamante Perfeito",
+        "translation": "Diamante Impecável",
         "context": "media/units/items/socketables/GEM_DIAMOND_08.DAT.adm"
       },
       {
         "id": "Items_2491",
         "original": "Flawless Emerald",
-        "translation": "Esmeralda Perfeita",
+        "translation": "Esmeralda Impecável",
         "context": "media/units/items/socketables/GEM_EMERALD_08.DAT.adm"
       },
       {
         "id": "Items_2492",
         "original": "Flawless Eyeball",
-        "translation": "Globo Ocular Perfeito",
+        "translation": "Globo Ocular Impecável",
         "context": "media/units/items/socketables/GEM_EYEBALL_08.DAT.adm"
       },
       {
@@ -19789,7 +19789,7 @@
       {
         "id": "Items_2558",
         "original": "Shimmering Ember",
-        "translation": "Âmbar Tremeluzente",
+        "translation": "Âmbar Cintilante",
         "context": "media/units/items/quest_items/VasmanEmber/SHIMMERINGEMBER.DAT.adm"
       },
       {
@@ -22279,13 +22279,13 @@
       {
         "id": "Items_2973",
         "original": "Flawless Amethyst",
-        "translation": "Ametista Perfeita",
+        "translation": "Ametista Impecável",
         "context": "media/units/items/socketables/GEM_AMETHYST_08.DAT.adm"
       },
       {
         "id": "Items_2974",
         "original": "Flawless Sapphire",
-        "translation": "Safira Perfeita",
+        "translation": "Safira Impecável",
         "context": "media/units/items/socketables/GEM_SAPPHIRE_08.DAT.adm"
       },
       {
@@ -28123,43 +28123,43 @@
       {
         "id": "Items_3947",
         "original": "Flawless Cold-Ember",
-        "translation": "Âmbar Gélido Perfeito",
+        "translation": "Âmbar Gélido Impecável",
         "context": "media/units/items/socketables/GEM_SAPPHIRE_08.DAT.adm"
       },
       {
         "id": "Items_3948",
         "original": "Flawless Core-Ember",
-        "translation": "Âmbar do Núcleo Perfeito",
+        "translation": "Âmbar do Núcleo Impecável",
         "context": "media/units/items/socketables/GEM_PEARL_08.DAT.adm"
       },
       {
         "id": "Items_3949",
         "original": "Flawless Deep-Ember",
-        "translation": "Âmbar Profundo Perfeito",
+        "translation": "Âmbar Profundo Impecável",
         "context": "media/units/items/socketables/GEM_AMETHYST_08.DAT.adm"
       },
       {
         "id": "Items_3950",
         "original": "Flawless Fire-Ember",
-        "translation": "Âmbar do Fogo Perfeito",
+        "translation": "Âmbar do Fogo Impecável",
         "context": "media/units/items/socketables/GEM_RUBY_08.DAT.adm"
       },
       {
         "id": "Items_3951",
         "original": "Flawless Flow-Ember",
-        "translation": "Âmbar do Fluxo Perfeito",
+        "translation": "Âmbar do Fluxo Impecável",
         "context": "media/units/items/socketables/GEM_CITRINE_08.DAT.adm"
       },
       {
         "id": "Items_3952",
         "original": "Flawless Life-Ember",
-        "translation": "Âmbar da Vida Perfeito",
+        "translation": "Âmbar da Vida Impecável",
         "context": "media/units/items/socketables/GEM_EMERALD_08.DAT.adm"
       },
       {
         "id": "Items_3953",
         "original": "Flawless Pure-Ember",
-        "translation": "Âmbar Puro Perfeito",
+        "translation": "Âmbar Puro Impecável",
         "context": "media/units/items/socketables/GEM_DIAMOND_08.DAT.adm"
       },
       {
@@ -33505,7 +33505,7 @@
       {
         "id": "Items_4844",
         "original": "Epic Skullhead Shotgun",
-        "translation": "Espingarda Cabeça de Caveira Épico",
+        "translation": "Espingarda Cabeça de Caveira Épica",
         "context": "media/units/items/itemstier2/rifles/EPICRIFLE_MAGIC_5B.DAT.adm"
       },
       {
@@ -44835,7 +44835,7 @@
       {
         "id": "Skills_0907",
         "original": "EmberColossusBeam",
-        "translation": "Âmbar Colosso Viga",
+        "translation": "Raio do Colosso de Âmbar",
         "context": "media/skills/monsters/EmberColossus/EMBERBEAM.DAT.adm"
       },
       {
@@ -45783,49 +45783,49 @@
       {
         "id": "Skills_1065",
         "original": "Alchemic Beam Golem2",
-        "translation": "Alquímico Raio Golem2",
+        "translation": "Golem de Raio Alquímico 2",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1066",
         "original": "Alchemic Beam Golem3",
-        "translation": "Alquímico Raio Golem3",
+        "translation": "Golem de Raio Alquímico 3",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1067",
         "original": "Alchemic Beam Golem4",
-        "translation": "Alquímico Raio Golem4",
+        "translation": "Golem de Raio Alquímico 4",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1068",
         "original": "Alchemic Beam Golem5",
-        "translation": "Alquímico Raio Golem5",
+        "translation": "Golem de Raio Alquímico 5",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1069",
         "original": "Alchemic Beam Golem6",
-        "translation": "Alquímico Raio Golem6",
+        "translation": "Golem de Raio Alquímico 6",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1070",
         "original": "Alchemic Beam Golem7",
-        "translation": "Alquímico Raio Golem7",
+        "translation": "Golem de Raio Alquímico 7",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1071",
         "original": "Alchemic Beam Golem8",
-        "translation": "Alquímico Raio Golem8",
+        "translation": "Golem de Raio Alquímico 8",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
         "id": "Skills_1072",
         "original": "Alchemic Beam Golem9",
-        "translation": "Alquímico Raio Golem9",
+        "translation": "Golem de Raio Alquímico 9",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
@@ -57339,7 +57339,7 @@
       {
         "id": "Recipes_0196",
         "original": "FLAWLESS RUBY",
-        "translation": "RUBI PERFEITO",
+        "translation": "RUBI IMPECÁVEL",
         "context": "media/recipes/RUBY06X4.DAT.adm"
       },
       {
@@ -57405,13 +57405,13 @@
       {
         "id": "Recipes_0207",
         "original": "FLAWLESS PEARL",
-        "translation": "PÉROLA PERFEITA",
+        "translation": "PÉROLA IMPECÁVEL",
         "context": "media/recipes/PEARL06X4.DAT.adm"
       },
       {
         "id": "Recipes_0208",
         "original": "FLAWLESS SKULL",
-        "translation": "CAVEIRA PERFEITA",
+        "translation": "CAVEIRA IMPECÁVEL",
         "context": "media/recipes/SKULL06X4.DAT.adm"
       },
       {
@@ -57549,25 +57549,25 @@
       {
         "id": "Recipes_0231",
         "original": "FLAWLESS CITRINE",
-        "translation": "CITRINO PERFEITO",
+        "translation": "CITRINO IMPECÁVEL",
         "context": "media/recipes/CITRINE06X4.DAT.adm"
       },
       {
         "id": "Recipes_0232",
         "original": "FLAWLESS DIAMOND",
-        "translation": "DIAMANTE PERFEITO",
+        "translation": "DIAMANTE IMPECÁVEL",
         "context": "media/recipes/DIAMOND06X4.DAT.adm"
       },
       {
         "id": "Recipes_0233",
         "original": "FLAWLESS EMERALD",
-        "translation": "ESMERALDA PERFEITA",
+        "translation": "ESMERALDA IMPECÁVEL",
         "context": "media/recipes/EMERALD06X4.DAT.adm"
       },
       {
         "id": "Recipes_0234",
         "original": "FLAWLESS EYEBALL",
-        "translation": "GLOBO OCULAR PERFEITO",
+        "translation": "GLOBO OCULAR IMPECÁVEL",
         "context": "media/recipes/EYEBALL06X4.DAT.adm"
       },
       {
@@ -57621,13 +57621,13 @@
       {
         "id": "Recipes_0243",
         "original": "FLAWLESS AMETHYST",
-        "translation": "AMETISTA PERFEITA",
+        "translation": "AMETISTA IMPECÁVEL",
         "context": "media/recipes/AMETHYST6X4.DAT.adm"
       },
       {
         "id": "Recipes_0244",
         "original": "FLAWLESS SAPPHIRE",
-        "translation": "SAFIRA PERFEITA",
+        "translation": "SAFIRA IMPECÁVEL",
         "context": "media/recipes/SAPPHIRE06X4.DAT.adm"
       },
       {
