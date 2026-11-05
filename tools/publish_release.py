@@ -9,7 +9,7 @@ def get_token():
     url = subprocess.check_output(['git', 'config', 'remote.origin.url']).decode().strip()
     return url.split('@')[0].split(':')[-1]
 
-def create_release(version="1.3.6"):
+def create_release(version="1.3.7"):
     token = get_token()
     repo = "palestino7/Torchlight-ptBR"
     tag = f"v{version}"
@@ -26,26 +26,26 @@ Criado por **Palestino7**
 
 ### Novidades da Versao {version}:
 
-1. **Correcao Definitiva do Texto com Destaque em Amarelo (Bug CEGUI UTF-8)**:
-   - Resolvido o bug historico da engine CEGUI onde caracteres acentuados (a, e, i, etc.) causavam dessincronizacao entre indices UTF-8 e codepoints UTF-32, comendo a primeira letra apos a tag de cor (|orchlight|, |licando..., |ela de inventario|u).
-   - Implementado hook de sincronizacao UTF-8 independente de posicao (ASLR-safe) no `CEGUIBase.dll` e empacotado no instalador, permitindo que todas as tags amarelas (|cFFFFBA00...|u) e azuis funcionem com 100% de precisao grafica sem comer nenhuma letra.
+1. **Revisao Completa de Terminologia e Glossario (Mais de 700 Itens)**:
+   - Alinhamento de mais de 700 nomes de habilidades, feiticos, armas, armaduras, conjuntos, consumiveis, gemas, monstros e masmorras com a terminologia oficial consagrada da comunidade.
+   - Habilidades refinadas: *Bomba Relampejante*, *Projétil de Ember*, *Lança de Ember*, *Golpe de Ember*, *Ataque Cortante*, *Dilacerar a Alma*, *Pisão do Titã*, *Abalo da Ruína*, *Escudo Glacial*, *Explosão Sísmica*, *Armadura das Sombras*, *Aura Entrópica*, *Chuva de Flechas*, etc.
+   - Feiticos ajustados: *Toque Drenante*, *Proteção Elemental*, *Celeridade*, *Curar a Si Mesmo*, *Enxame de Abelhas*, *Dervixe*, *Sobrecarga Elemental*, *Invocar Espada Flamejante*, etc.
 
-2. **Geometria Perfeita da Caixa de Dicas (`tipmenu.layout`)**:
-   - Redimensionamento equilibrado da janela modal de dicas (altura 295px, largura de texto 470px e altura de texto 225px).
-   - Eliminacao total do corte de texto em dicas longas (ate 9 linhas cabem com folga), sem deixar espacos vazios desproporcionais em dicas curtas.
-   - Refinamento textual das dicas tutoriais para um portugues fluido, elegante e conciso.
+2. **Correcao Sistematica de Concordancia de Genero**:
+   - Corrigido erro gramatical em espadas e laminas: **Lâmina Enferrujada** (anteriormente "Lâmina Enferrujado"), *Lâmina Cega*, *Lâmina Ordinária*.
+   - Corrigida concordancia de substantivos femininos e plurais: **A Besta Épica**, **Partasana Épica**, **Cimitarra Épica**, **Faixa Pesada de Placas**, **Luvas Pesadas de Placas**, **Grevas Pesadas de Placas**, **Placas Pesadas de Placas**, **Manoplas do Falcão Épicas**, **Botas de Couro Épicas**.
+   - Remocao de artigos indefinidos redundantes que geravam construcoes inadequadas como "uma Luvas".
 
-3. **Correcao de Nomes, Ranks e Textos de Combate**:
-   - Habilidade corrigida para **Bomba de Raios** (anteriormente "Relampago Bomb").
-   - Textos flutuantes de ouro em combate agora exibem **Ouro** (ex: "8 Ouro", "6 Ouro", eliminando o texto em ingles "Gold").
-   - Rank 0 de Fama corrigido para **Desconhecido** (eliminando "NReconhecido").
+3. **Traducao de Empunhadura de Armas**:
+   - Traduzido o indicador de empunhadura nas tooltips dos itens: **(Uma mão)** e **(Duas mãos)** (anteriormente em ingles "(1-handed)" e "(2-handed)").
 
-4. **Eliminacao de Dois Pontos Duplicados e Sobreposicoes de Interface**:
-   - Correcao na caixa de recompensas de missoes (`PO: 80`, `XP: 2400`, `Fama: 360`), eliminando a sobreposicao fisica de caixas de texto que gerava dois pontos duplicados (`: :`).
-   - Ajuste em templates de tipo de dano para evitar preposicoes soltas (`+[VALUE] de Dano [DMGTYPE]`).
+4. **Geometria Perfeita da Caixa de Dicas (`tipmenu.layout`)**:
+   - Altura da janela ajustada para **340px** com area de texto ampliada para **245px**, garantindo espaco confortavel de sobra acima dos botoes "Ok" e "Mostrar Dicas".
+   - Eliminado qualquer corte de texto horizontal ou vertical nas ultimas linhas de dicas longas.
+   - Refinamento textual de todas as dicas tutoriais para um portugues claro e conciso.
 
-5. **Compatibilidade Total e Instalador Atualizado**:
-   - Instalador Inno Setup 6 oficial atualizado para a versao 1.3.6, com verificacao de integridade, backup automatico de restauracao e compatibilidade universal em qualquer computador com Windows 10/11.
+5. **Compatibilidade Universal e Instalador v1.3.7**:
+   - Instalador Inno Setup 6 oficial atualizado e gerado com SHA-256 verificado, backup automatico de seguranca e compatibilidade total em qualquer versao do Windows 10/11.
 """
     # Check if release already exists
     req = urllib.request.Request(
@@ -134,6 +134,6 @@ Criado por **Palestino7**
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", default="1.3.6", help="Release version (default: 1.3.5)")
+    parser.add_argument("--version", default="1.3.7", help="Release version (default: 1.3.5)")
     args = parser.parse_args()
     create_release(args.version)

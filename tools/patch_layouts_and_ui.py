@@ -108,7 +108,7 @@ def patch_tipmenu(layout_path: str):
     framec_pattern = r'(<Window Type="GuiLook/ItemText" Name="Framec"\s*>)([\s\S]*?)(<Window Type="GuiLook/ItemText" Name="Frameb")'
     rep_framec = (
         r'\1\n'
-        '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-175}}" />\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-200}}" />\n'
         '            <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
         '        <Window Type="GuiLook/StaticText" Name="Title">\n'
         '        <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
@@ -123,17 +123,17 @@ def patch_tipmenu(layout_path: str):
     )
     text = re.sub(framec_pattern, rep_framec, text)
 
-    # Frameb size & position (balanced height 295, fits up to 9 lines of tips without clipping or void space)
+    # Frameb size & position (height 340, fits long tips cleanly without overflowing buttons or clipping)
     frameb_pattern = r'(<Window Type="GuiLook/ItemText" Name="Frameb"\s*>)([\s\S]*?)(<Window Type="GuiLook/StaticText" Name="Dialog")'
     rep_frameb = (
         r'\1\n'
-        '\t\t    <Property Name="UnifiedPosition" Value="{{.5,-250},{.5,-160}}" />\n'
-        '\t\t    <Property Name="UnifiedSize" Value="{{0,500},{0,295}}" />\n\n\t\t'
+        '\t\t    <Property Name="UnifiedPosition" Value="{{.5,-250},{.5,-180}}" />\n'
+        '\t\t    <Property Name="UnifiedSize" Value="{{0,500},{0,340}}" />\n\n\t\t'
         r'\3'
     )
     text = re.sub(frameb_pattern, rep_frameb, text)
 
-    # Dialog static text inside Frameb (wider width 470, height 220, fits long tips cleanly without overflow)
+    # Dialog static text inside Frameb (width 460, height 245, generous clearance above buttons)
     dialog_pattern = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
     def replace_dialog(m):
         prefix = m.group(1)
@@ -142,8 +142,8 @@ def patch_tipmenu(layout_path: str):
 \t\t    <Property Name="Font" Value="SerifBig" />
 \t\t    <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />
 \t\t    <Property Name="VertFormatting" Value="TopAligned" />
-\t\t    <Property Name="UnifiedPosition" Value="{{0,15},{0,20}}" />
-\t\t    <Property Name="UnifiedSize" Value="{{0,470},{0,225}}" />
+\t\t    <Property Name="UnifiedPosition" Value="{{0,20},{0,25}}" />
+\t\t    <Property Name="UnifiedSize" Value="{{0,460},{0,245}}" />
 \t\t\t<Property Name="TextColour" Value="FFFFFFFF"/>
 \t\t\t<Property Name="MousePassThroughEnabled" Value="True" />
 \t\t"""
@@ -155,7 +155,7 @@ def patch_tipmenu(layout_path: str):
     ok_pattern = r'(<Window Type="GuiLook/StandardButton" Name="Ok"\s*>)([\s\S]*?)(</Window>)'
     rep_ok = (
         r'\1\n'
-        '            <Property Name="UnifiedPosition" Value="{{.5,-76},{1,-42}}" />\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,-76},{1,-45}}" />\n'
         '            <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />\n'
         '            <Property Name="Text" Value="Ok"/>\n'
         '\t\t<Property Name="onClick" Value="guiOk"/>\n'
@@ -168,7 +168,7 @@ def patch_tipmenu(layout_path: str):
     rep_showtips = (
         r'\1\n'
         '            <Property Name="Text" Value="Mostrar Dicas" />\n'
-        '            <Property Name="UnifiedPosition" Value="{{.5,65},{1,-45}}" />\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,65},{1,-48}}" />\n'
         '            <Property Name="UnifiedSize" Value="{{0,50},{0,32}}" />\n'
         '        '
         r'\3'

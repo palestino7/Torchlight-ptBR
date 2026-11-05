@@ -245,7 +245,8 @@ class TranslationVerifier:
                         else:
                             words = current_orig.replace("\\n", " ").split()
                             is_goblin = any(g in current_orig for g in ("Brasag", "Garan", "kratk", "flurk", "larag", "Bra'nag", "garap"))
-                            if len(words) > 1 and not current_orig.startswith("Bip") and not is_goblin and current_orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                            allowed_proper_names = ("Nicola Brink", "Trill-Bot 4000", "Elephant Ngaw", "Raleigh Claire", "Crowfly", "Strangelove", "Luminorum", "Blazemore")
+                            if len(words) > 1 and not current_orig.startswith("Bip") and not is_goblin and current_orig not in allowed_proper_names:
                                 self.errors.append(
                                     f"Untranslated multi-word English phrase in translation.dat: '{current_orig}'"
                                 )
@@ -360,7 +361,8 @@ class TranslationVerifier:
                 if trans == orig or not trans:
                     words = orig.replace("\r\n", " ").replace("\n", " ").split()
                     is_goblin = any(g in orig for g in ("Brasag", "Garan", "kratk", "flurk", "larag", "Bra'nag", "garap"))
-                    if len(words) > 1 and not orig.startswith("Bip") and not is_goblin and orig not in ("Nicola Brink", "Trill-Bot 4000"):
+                    allowed_proper_names = ("Nicola Brink", "Trill-Bot 4000", "Elephant Ngaw", "Raleigh Claire", "Crowfly", "Strangelove", "Luminorum", "Blazemore")
+                    if len(words) > 1 and not orig.startswith("Bip") and not is_goblin and orig not in allowed_proper_names:
                         self.errors.append(
                             f"Catalog untranslated multi-word English phrase in category '{cat_name}' (id: {entry_id}): '{orig}'"
                         )
