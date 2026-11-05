@@ -375,50 +375,94 @@ def apply_layout_geometry_fixes(output_layout_dir: str) -> None:
         is_u16 = raw.startswith(b"\xff\xfe")
         txt = raw[2:].decode("utf-16le") if is_u16 else raw.decode("utf-8")
 
-        # Title -> Dica
-        title_pat = r'(<Window Type="GuiLook/StaticText" Name="Title"\s*>)([\s\S]*?)(</Window>)'
-        rep_title = (
+        # Framec & Title -> Dica
+        framec_pattern = r'(<Window Type="GuiLook/ItemText" Name="Framec"\s*>)([\s\S]*?)(<Window Type="GuiLook/ItemText" Name="Frameb")'
+        rep_framec = (
             r'\1\n'
+            '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-205}}" />\n'
+            '            <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
+            '        <Window Type="GuiLook/StaticText" Name="Title">\n'
             '        <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
             '        <Property Name="VertFormatting" Value="CentreAligned" />\n'
             '        <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
             '\t\t<Property Name="TextColour" Value="FFFFFFFF"/>\n'
             '\t\t<Property Name="Font" Value="SerifBig"/>\n'
             '        <Property Name="Text" Value="Dica" />\n'
-            r'        \3'
+            '        </Window>   \n'
+            '\t</Window>\n\n\n        '
+            r'\3'
         )
-        txt = re.sub(title_pat, rep_title, txt)
+        txt = re.sub(framec_pattern, rep_framec, txt)
 
-        # Dialog margins
-        dlg_pat = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
-        rep_dlg = (
+        # Frameb size & position (height 265 instead of 350, eliminating giant void)
+        frameb_pattern = r'(<Window Type="GuiLook/ItemText" Name="Frameb"\s*>)([\s\S]*?)(<Window Type="GuiLook/StaticText" Name="Dialog")'
+        rep_frameb = (
+            r'\1\n'
+            '\t\t    <Property Name="UnifiedPosition" Value="{{.5,-250},{.5,-160}}" />\n'
+            '\t\t    <Property Name="UnifiedSize" Value="{{0,500},{0,265}}" />\n\n\t\t'
+            r'\3'
+        )
+        txt = re.sub(frameb_pattern, rep_frameb, txt)
+
+        # Dialog static text inside Frameb
+        dialog_pattern = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
+        rep_dialog = (
             r'\1\n'
             '\t\t    <Property Name="Font" Value="SerifBig" />\n'
             '\t\t    <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />\n'
             '\t\t    <Property Name="VertFormatting" Value="TopAligned" />\n'
-            '         \t\t   <Property Name="UnifiedPosition" Value="{{0,25},{0,25}}" />\n'
-            '         \t\t   <Property Name="UnifiedSize" Value="{{0,450},{0,260}}" />\n'
+            '\t\t    <Property Name="UnifiedPosition" Value="{{0,25},{0,25}}" />\n'
+            '\t\t    <Property Name="UnifiedSize" Value="{{0,450},{0,180}}" />\n'
             '\t\t\t<Property Name="TextColour" Value="FFFFFFFF"/>\n'
             '\t\t\t<Property Name="MousePassThroughEnabled" Value="True" />\n'
-            r'\t\t\3'
+            '\t\t'
+            r'\3'
         )
-        txt = re.sub(dlg_pat, rep_dlg, txt)
+        txt = re.sub(dialog_pattern, rep_dialog, txt)
+
+        # Adjust buttons inside Frameb
+        ok_pattern = r'(<Window Type="GuiLook/StandardButton" Name="Ok"\s*>)([\s\S]*?)(</Window>)'
+        rep_ok = (
+            r'\1\n'
+            '            <Property Name="UnifiedPosition" Value="{{.5,-76},{1,-45}}" />\n'
+            '            <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />\n'
+            '            <Property Name="Text" Value="Ok"/>\n'
+            '\t\t<Property Name="onClick" Value="guiOk"/>\n'
+            '    '
+            r'\3'
+        )
+        txt = re.sub(ok_pattern, rep_ok, txt)
+
+        showtips_pattern = r'(<Window Type="GuiLook/Checkbox" Name="ShowTips"\s*>)([\s\S]*?)(</Window>)'
+        rep_showtips = (
+            r'\1\n'
+            '            <Property Name="Text" Value="Mostrar Dicas" />\n'
+            '            <Property Name="UnifiedPosition" Value="{{.5,70},{1,-48}}" />\n'
+            '            <Property Name="UnifiedSize" Value="{{0,50},{0,32}}" />\n'
+            '        '
+            r'\3'
+        )
+        txt = re.sub(showtips_pattern, rep_showtips, txt)
 
         out_b = (b"\xff\xfe" + txt.encode("utf-16le")) if is_u16 else txt.encode("utf-8")
         with open(tip_path, "wb") as f:
             f.write(out_b)
 
-    # Fix questdialogmenu.layout
+    # Fix questdialogmenu.layout (blank child texts to prevent double colons)
     qd_path = os.path.join(output_layout_dir, "questdialogmenu.layout")
     if os.path.exists(qd_path):
         with open(qd_path, "rb") as f:
             raw = f.read()
         is_u16 = raw.startswith(b"\xff\xfe")
         txt = raw[2:].decode("utf-16le") if is_u16 else raw.decode("utf-8")
-        txt = txt.replace('Value="PO:0"', 'Value="PO: 0"')
-        txt = txt.replace('Value="XP:0"', 'Value="XP: 0"')
-        txt = txt.replace('Value="Fame:0"', 'Value="Fama: 0"')
-        txt = txt.replace('Value="Fama:0"', 'Value="Fama: 0"')
+        txt = re.sub(r'<Property Name="Text" Value="GP:0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="PO:0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="PO: 0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="XP:0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="XP: 0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="Fame:0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="Fama:0"\s*/>', '<Property Name="Text" Value="" />', txt)
+        txt = re.sub(r'<Property Name="Text" Value="Fama: 0"\s*/>', '<Property Name="Text" Value="" />', txt)
         out_b = (b"\xff\xfe" + txt.encode("utf-16le")) if is_u16 else txt.encode("utf-8")
         with open(qd_path, "wb") as f:
             f.write(out_b)

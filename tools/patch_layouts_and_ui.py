@@ -104,24 +104,36 @@ def patch_tipmenu(layout_path: str):
     is_utf16 = raw.startswith(b"\xff\xfe")
     text = raw[2:].decode("utf-16le") if is_utf16 else raw.decode("utf-8")
 
-    # Add Text="Dica" to Title if not already there
-    title_pattern = r'(<Window Type="GuiLook/StaticText" Name="Title"\s*>)([\s\S]*?)(</Window>)'
-    def replace_title(m):
-        prefix = m.group(1)
-        suffix = m.group(3)
-        body = """
-        <Property Name="HorzTextFormatting" Value="CentreAligned" />
-        <Property Name="VertFormatting" Value="CentreAligned" />
-        <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />
-\t\t<Property Name="TextColour" Value="FFFFFFFF"/>
-\t\t<Property Name="Font" Value="SerifBig"/>
-        <Property Name="Text" Value="Dica" />
-        """
-        return f"{prefix}{body}{suffix}"
+    # Title "Dica" frame position and text
+    framec_pattern = r'(<Window Type="GuiLook/ItemText" Name="Framec"\s*>)([\s\S]*?)(<Window Type="GuiLook/ItemText" Name="Frameb")'
+    rep_framec = (
+        r'\1\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-205}}" />\n'
+        '            <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
+        '        <Window Type="GuiLook/StaticText" Name="Title">\n'
+        '        <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
+        '        <Property Name="VertFormatting" Value="CentreAligned" />\n'
+        '        <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
+        '\t\t<Property Name="TextColour" Value="FFFFFFFF"/>\n'
+        '\t\t<Property Name="Font" Value="SerifBig"/>\n'
+        '        <Property Name="Text" Value="Dica" />\n'
+        '        </Window>   \n'
+        '\t</Window>\n\n\n        '
+        r'\3'
+    )
+    text = re.sub(framec_pattern, rep_framec, text)
 
-    text = re.sub(title_pattern, replace_title, text)
+    # Frameb size & position (reduce height from 350 to 265 to eliminate empty void space)
+    frameb_pattern = r'(<Window Type="GuiLook/ItemText" Name="Frameb"\s*>)([\s\S]*?)(<Window Type="GuiLook/StaticText" Name="Dialog")'
+    rep_frameb = (
+        r'\1\n'
+        '\t\t    <Property Name="UnifiedPosition" Value="{{.5,-250},{.5,-160}}" />\n'
+        '\t\t    <Property Name="UnifiedSize" Value="{{0,500},{0,265}}" />\n\n\t\t'
+        r'\3'
+    )
+    text = re.sub(frameb_pattern, rep_frameb, text)
 
-    # Adjust Dialog position and size
+    # Dialog static text inside Frameb (fits up to 8 lines cleanly without overflow)
     dialog_pattern = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
     def replace_dialog(m):
         prefix = m.group(1)
@@ -131,13 +143,37 @@ def patch_tipmenu(layout_path: str):
 \t\t    <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />
 \t\t    <Property Name="VertFormatting" Value="TopAligned" />
 \t\t    <Property Name="UnifiedPosition" Value="{{0,25},{0,25}}" />
-\t\t    <Property Name="UnifiedSize" Value="{{0,450},{0,260}}" />
+\t\t    <Property Name="UnifiedSize" Value="{{0,450},{0,180}}" />
 \t\t\t<Property Name="TextColour" Value="FFFFFFFF"/>
 \t\t\t<Property Name="MousePassThroughEnabled" Value="True" />
 \t\t"""
         return f"{prefix}{body}{suffix}"
 
     text = re.sub(dialog_pattern, replace_dialog, text)
+
+    # Adjust buttons inside Frameb
+    ok_pattern = r'(<Window Type="GuiLook/StandardButton" Name="Ok"\s*>)([\s\S]*?)(</Window>)'
+    rep_ok = (
+        r'\1\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,-76},{1,-45}}" />\n'
+        '            <Property Name="UnifiedSize" Value="{{0,152},{0,28}}" />\n'
+        '            <Property Name="Text" Value="Ok"/>\n'
+        '\t\t<Property Name="onClick" Value="guiOk"/>\n'
+        '    '
+        r'\3'
+    )
+    text = re.sub(ok_pattern, rep_ok, text)
+
+    showtips_pattern = r'(<Window Type="GuiLook/Checkbox" Name="ShowTips"\s*>)([\s\S]*?)(</Window>)'
+    rep_showtips = (
+        r'\1\n'
+        '            <Property Name="Text" Value="Mostrar Dicas" />\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,70},{1,-48}}" />\n'
+        '            <Property Name="UnifiedSize" Value="{{0,50},{0,32}}" />\n'
+        '        '
+        r'\3'
+    )
+    text = re.sub(showtips_pattern, rep_showtips, text)
 
     encoded = (b"\xff\xfe" + text.encode("utf-16le")) if is_utf16 else text.encode("utf-8")
     with open(layout_path, "wb") as f:
@@ -152,11 +188,15 @@ def patch_questdialog(layout_path: str):
     is_utf16 = raw.startswith(b"\xff\xfe")
     text = raw[2:].decode("utf-16le") if is_utf16 else raw.decode("utf-8")
 
-    # Ensure spaces after colons
-    text = text.replace('Value="PO:0"', 'Value="PO: 0"')
-    text = text.replace('Value="XP:0"', 'Value="XP: 0"')
-    text = text.replace('Value="Fame:0"', 'Value="Fama: 0"')
-    text = text.replace('Value="Fama:0"', 'Value="Fama: 0"')
+    # Clear child text properties so they don't produce double colons with parent badge text
+    text = re.sub(r'<Property Name="Text" Value="GP:0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="PO:0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="PO: 0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="XP:0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="XP: 0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="Fame:0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="Fama:0"\s*/>', '<Property Name="Text" Value="" />', text)
+    text = re.sub(r'<Property Name="Text" Value="Fama: 0"\s*/>', '<Property Name="Text" Value="" />', text)
 
     encoded = (b"\xff\xfe" + text.encode("utf-16le")) if is_utf16 else text.encode("utf-8")
     with open(layout_path, "wb") as f:

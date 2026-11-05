@@ -85,7 +85,7 @@ Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exe
 # 4. Generate LEIAME.txt for Distribution
 # Dynamically extract version from setup.iss
 $versionMatch = Select-String -Path $IssFile -Pattern '#define MyAppVersion "([^"]+)"'
-$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.4" }
+$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.5" }
 
 $readmeContent = @"
 ================================================================================
@@ -122,7 +122,7 @@ $readmePath = Join-Path $absOutputDir "LEIAME.txt"
 # 5. Create Distribution Zip Package
 # Dynamically extract version from setup.iss
 $versionMatch = Select-String -Path $IssFile -Pattern '#define MyAppVersion "([^"]+)"'
-$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.2" }
+$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.5" }
 
 $zipPath = Join-Path $absOutputDir "Torchlight_Traducao_ptBR_v${appVersion}.zip"
 if (Test-Path $zipPath) {

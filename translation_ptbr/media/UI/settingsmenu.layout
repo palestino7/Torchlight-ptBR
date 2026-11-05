@@ -41,7 +41,7 @@
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-100},{.5,-270}}" />
 		<Property Name="Tooltip">Ativar/Desativar Anti-serrilhado de Cena Inteira
-(requer reiniciar)</Property>
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="RenderBehind" >
             <Property Name="Text" Value="Renderizar Atrás de Paredes" />
@@ -55,21 +55,21 @@
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-300},{.5,-220}}" />
 		<Property Name="Tooltip">Ativar/Desativar efeito de luz de borda
-(requer reiniciar)</Property>
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="HardwareSkinning" >
             <Property Name="Text" Value="Skinning por HW" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,-100},{.5,-220}}" />
 		<Property Name="Tooltip">Ativar/Desativar Skinning por Hardware
-(requer reiniciar)</Property>
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
         <Window Type="GuiLook/Checkbox" Name="VSync" >
             <Property Name="Text" Value="VSync" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
             <Property Name="UnifiedPosition" Value="{{.5,100},{.5,-220}}" />
 		<Property Name="Tooltip">Ativar/Desativar Sincronização Vertical (VSync)
-(requer reiniciar)</Property>
+|cFFFFBA00(requer reiniciar)|u</Property>
         </Window>
 
         <Window Type="GuiLook/Combobox" Name="ResolutionDropdown" >

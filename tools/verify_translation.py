@@ -340,14 +340,16 @@ class TranslationVerifier:
                 if not orig:
                     continue
 
+                orig_norm = orig.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
                 if orig in seen_catalog_keys:
-                    prev_loc = seen_catalog_keys[orig]
-                    catalog_duplicates.append(
-                        f"'{orig}' in category '{cat_name}' (id: {entry_id}), previously in {prev_loc}"
-                    )
+                    prev_loc, prev_trans = seen_catalog_keys[orig]
+                    if prev_trans != trans:
+                        catalog_duplicates.append(
+                            f"'{orig}' has conflicting translations: '{trans}' in category '{cat_name}' (id: {entry_id}) vs '{prev_trans}' in {prev_loc}"
+                        )
                 else:
-                    seen_catalog_keys[orig] = f"category '{cat_name}' (id: {entry_id})"
-                    catalog_originals.add(orig)
+                    seen_catalog_keys[orig] = (f"category '{cat_name}' (id: {entry_id})", trans)
+                    catalog_originals.add(orig_norm)
 
                 if trans:
                     cat_tag_errors = self.validate_formatting_and_tags(orig, trans)

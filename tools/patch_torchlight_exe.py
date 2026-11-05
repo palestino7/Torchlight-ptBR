@@ -302,11 +302,25 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
     # 3. Character Creation class names / descriptions (position independent hooks)
     class_ok = apply_class_patch(data)
 
+    # 4. In-place string patch: " Gold" -> " Ouro" for floating combat text
+    gold_count = 0
+    # Raw 0x67bd84 (ASCII, 6 bytes): b" Gold\0" -> b" Ouro\0"
+    if len(data) > 0x67BD84 + 6 and (data[0x67BD84 : 0x67BD84 + 6] == b" Gold\x00" or data[0x67BD84 : 0x67BD84 + 6] == b" Ouro\x00"):
+        data[0x67BD84 : 0x67BD84 + 6] = b" Ouro\x00"
+        gold_count += 1
+    # Raw 0x67e854 (UTF-16LE, 12 bytes): L" Gold\0" -> L" Ouro\0"
+    u16_gold = " Gold\x00".encode("utf-16le")
+    u16_ouro = " Ouro\x00".encode("utf-16le")
+    if len(data) > 0x67E854 + 12 and (data[0x67E854 : 0x67E854 + 12] == u16_gold or data[0x67E854 : 0x67E854 + 12] == u16_ouro):
+        data[0x67E854 : 0x67E854 + 12] = u16_ouro
+        gold_count += 1
+
     with open(exe_path, "wb") as f:
         f.write(data)
 
     print(f"[Success] Patched {patched_count}/{len(PATCH_TABLE)} option instructions in {exe_path}")
     print(f"          - Character creation localizer: {'applied' if class_ok else 'SKIPPED'}")
+    print(f"          - Floating combat text ' Gold' -> ' Ouro': {gold_count}/2 applied")
     print(f"          - Embedded strings written to {hex(SLACK_RAW_START)}")
     return True
 

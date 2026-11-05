@@ -272,6 +272,22 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    // In-place string patch: " Gold" -> " Ouro" for floating combat text
+    // Raw 0x67bd84 (ASCII, 6 bytes): " Gold\0" -> " Ouro\0"
+    if (fsize > 0x67bd84 + 6) {
+        if (memcmp(buf + 0x67bd84, " Gold\0", 6) == 0 || memcmp(buf + 0x67bd84, " Ouro\0", 6) == 0) {
+            memcpy(buf + 0x67bd84, " Ouro\0", 6);
+        }
+    }
+    // Raw 0x67e854 (UTF-16LE, 12 bytes): L" Gold\0" -> L" Ouro\0"
+    if (fsize > 0x67e854 + 12) {
+        const wchar_t w_gold[] = L" Gold";
+        const wchar_t w_ouro[] = L" Ouro";
+        if (memcmp(buf + 0x67e854, w_gold, sizeof(w_gold)) == 0 || memcmp(buf + 0x67e854, w_ouro, sizeof(w_ouro)) == 0) {
+            memcpy(buf + 0x67e854, w_ouro, sizeof(w_ouro));
+        }
+    }
+
     f = fopen(exe_path, "wb");
     if (!f) {
         free(buf);
