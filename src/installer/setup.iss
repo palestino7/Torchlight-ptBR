@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.3.3"
+#define MyAppVersion "1.3.4"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -34,10 +34,10 @@ WizardImageFile=wizard_large.bmp
 WizardSmallImageFile=wizard_small.bmp
 SetupIconFile=torchlight_ptbr.ico
 UninstallDisplayIcon={app}\Torchlight.exe
-VersionInfoVersion=1.3.3.0
+VersionInfoVersion=1.3.4.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription=Instalador da Tradução de Torchlight para Português do Brasil
-VersionInfoProductVersion=1.3.3.0
+VersionInfoProductVersion=1.3.4.0
 VersionInfoCopyright={#MyAppCopyright}
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -75,7 +75,7 @@ Source: "..\..\translation_ptbr\translations\*"; DestDir: "{userappdata}\runic g
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Run]
-Filename: "{tmp}\patch_torchlight.exe"; Parameters: """{app}\Torchlight.exe"""; Flags: runhidden; StatusMsg: "Aplicando localização nas opções gráficas..."
+Filename: "{tmp}\patch_torchlight.exe"; Parameters: """{app}\Torchlight.exe"""; Flags: runhidden; StatusMsg: "Aplicando localização no executável do jogo..."
 
 [Code]
 // ==============================================================================

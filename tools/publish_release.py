@@ -11,30 +11,32 @@ def get_token():
 def create_release():
     token = get_token()
     repo = "palestino7/Torchlight-ptBR"
-    tag = "v1.3.3"
+    tag = "v1.3.4"
     
-    release_body = """# Tradução Completa para Torchlight (pt-BR) - v1.3.3
+    release_body = """# Tradução Completa para Torchlight (pt-BR) - v1.3.4
 Criado por **Palestino7**
 
 ### 📦 Arquivos para Download:
 - **`Torchlight_Traducao_ptBR_Setup.exe`**: Instalador executável automático oficial (instalação em 1 clique).
-- **`Torchlight_Traducao_ptBR_v1.3.3.zip`**: Pacote ZIP com instalador e instruções offline.
+- **`Torchlight_Traducao_ptBR_v1.3.4.zip`**: Pacote ZIP com instalador e instruções offline.
 - **`SHA256SUMS.txt`**: Assinaturas criptográficas SHA-256 oficiais.
 
 ---
 
-### 🌟 Novidades da Versão 1.3.3:
+### 🌟 Novidades da Versão 1.3.4:
 
-1. **Localização do Cache Mestre de Unidades (`masterresourceunits.dat.ADM`)**:
-   - Correção definitiva das classes de personagens e descrições no menu de criação de personagem (**Destruidor**, **Alquimista**, **Vencedora**). O Torchlight lê o arquivo pré-compilado mestre em vez dos arquivos individuais de unidades.
-2. **Sincronização Completa com a Pasta de Mods do AppData**:
-   - Atualização automática dos layouts corrigidos, fonte cartunesca com acentos e catálogo traduzido na pasta `%APPDATA%\\runic games\\torchlight\\mods\\Traducao_ptBR`.
-3. **Limpeza Automática de Caches Binários Obsoletos**:
-   - O instalador remove caches antigos (`TRANSLATION.DAT.adm`) para garantir que o jogo carregue sempre o arquivo de tradução mais recente e limpo.
+1. **Localização Definitiva das Classes e Descrições de Personagem (Sem Travamentos)**:
+   - Tradução de **Destruidor**, **Alquimista** e **Conquistadora**, além de suas 3 descrições completas em Português do Brasil na tela de criação de personagem.
+   - Implementado através de desvio estritamente independente de posição (**Position-Independent Code / PIC**), imune a ASLR (*Address Space Layout Randomization*) e sem qualquer alteração nos identificadores internos do motor de jogo — preservando 100% a compatibilidade com saves existentes.
+2. **Localização Completa dos Menus de Opções Gráficas e Diálogos**:
+   - Menus dropdown de Sombras e Partículas no `Torchlight.exe`: "Desligado", "Apenas Iluminação", "Baixo", "Médio", "Alto", "Muito Alto".
+   - Títulos de janelas modais traduzidos ("Dica" em UTF-16LE).
+3. **Detecção e Ajuste Automático de Resolução Nativa**:
+   - O instalador configura o arquivo `local_settings.txt` para a resolução nativa do monitor em tela cheia na primeira inicialização.
 4. **Fonte Cartunesca Original com Acentuação Completa**:
-   - `Torchlight Regular.ttf` totalmente corrigida com suporte a `ç`, `ã`, `õ`, `á`, `é`, `í`, `ó`, etc., sem qualquer perda do estilo visual original.
-5. **Correção de Viewbox e Deriva de Tags de Cor**:
-   - "Nome do Personagem" sem cortes e eliminação de caracteres soltos (`|orchlight|`, `|cbar`).
+   - `Torchlight Regular.ttf` com suporte a todos os diacríticos (`ç`, `ã`, `õ`, `á`, `é`, `í`, `ó`, etc.), mantendo a identidade visual autêntica.
+5. **Correção de Viewbox e Limpeza de Caches Obsoletos**:
+   - Eliminação de quebras de texto e remoção automática de caches pré-compilados antigos durante a instalação.
 """
 
     # Check if release already exists
@@ -60,7 +62,7 @@ Criado por **Palestino7**
         create_payload = json.dumps({
             "tag_name": tag,
             "target_commitish": "main",
-            "name": "Torchlight pt-BR v1.3.2 - Correção de Fontes, Classes, Viewbox e Diálogos",
+            "name": "Torchlight pt-BR v1.3.4 - Localização de Classes, Opções Gráficas e Fix ASLR",
             "body": release_body,
             "draft": False,
             "prerelease": False
@@ -84,7 +86,7 @@ Criado por **Palestino7**
     # Upload files
     files_to_upload = [
         ("Torchlight_Traducao_ptBR_Setup.exe", "dist/Torchlight_Traducao_ptBR_Setup.exe", "application/x-msdownload"),
-        ("Torchlight_Traducao_ptBR_v1.3.3.zip", "dist/Torchlight_Traducao_ptBR_v1.3.3.zip", "application/zip"),
+        ("Torchlight_Traducao_ptBR_v1.3.4.zip", "dist/Torchlight_Traducao_ptBR_v1.3.4.zip", "application/zip"),
         ("SHA256SUMS.txt", "dist/SHA256SUMS.txt", "text/plain"),
     ]
 

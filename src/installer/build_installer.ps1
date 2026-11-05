@@ -83,6 +83,10 @@ $exeSize = (Get-Item $exePath).Length
 Write-Host "[OK] Executável compilado com sucesso: $exePath ($("{0:N0}" -f $exeSize) bytes)" -ForegroundColor Green
 
 # 4. Generate LEIAME.txt for Distribution
+# Dynamically extract version from setup.iss
+$versionMatch = Select-String -Path $IssFile -Pattern '#define MyAppVersion "([^"]+)"'
+$appVersion = if ($versionMatch) { $versionMatch.Matches[0].Groups[1].Value } else { "1.3.4" }
+
 $readmeContent = @"
 ================================================================================
  TRADUÇÃO TORCHLIGHT (pt-BR) - PORTUGUÊS DO BRASIL
