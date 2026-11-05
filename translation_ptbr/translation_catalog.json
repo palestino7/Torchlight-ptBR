@@ -82591,7 +82591,7 @@
       {
         "id": "Globals_2307",
         "original": "Welcome to the town of |cFFFFBA00Torchlight|u. Explore the area by |cFFFFBA00left-clicking to move around|u. Visit the denizens of the town to shop or find quests to perform. When you are ready, enter the mines to begin your journey!",
-        "translation": "Boas-vindas à cidade de |cFFFFBA00Torchlight|u. Explore a área |cFFFFBA00clicando com o botão esquerdo para mover-se|u. Visite os habitantes da cidade para negociar ou encontrar missões a cumprir. Quando estiver pronto, entre nas minas para começar sua jornada!",
+        "translation": "Boas-vindas à cidade de |cFFFFBA00Torchlight|u! Explore a área |cFFFFBA00clicando com o botão esquerdo para mover-se|u. Visite os habitantes da cidade para negociar ou encontrar missões. Quando estiver pronto, entre nas minas para começar sua jornada!",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82645,31 +82645,31 @@
       {
         "id": "Globals_2316",
         "original": "Your |cFFFFBA00pet is fleeing|u - it will no longer attack and cannot pick up items for you. Pet health will slowly recover automatically, but you may heal your pet by dragging a potion to the pet bowl icon at the top left of the screen, or holding |cFFFFBA00[SHIFT]|u while right-clicking it.",
-        "translation": "Seu |cFFFFBA00mascote está em fuga|u - ele não atacará mais nem pegará itens para você. A vida do mascote se recuperará lentamente de forma automática, mas você pode curar seu mascote arrastando uma poção para o ícone de tigela no canto superior esquerdo da tela, ou segurando |cFFFFBA00[SHIFT]|u enquanto clica nele com o botão direito.",
+        "translation": "Seu |cFFFFBA00mascote está em fuga|u — ele não atacará nem pegará itens no momento. A vida dele se recuperará aos poucos, mas você pode curá-lo arrastando uma poção para a tigela no topo da tela, ou segurando |cFFFFBA00[SHIFT]|u ao clicar nele com o botão direito.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2317",
         "original": "This is the |cFFFFBA00merchant interface|u - drag items from the left to the right to buy them, and vice-versa to sell.  You can perform an instantaneous transaction by holding |cFFFFBA00[SHIFT]|u while clicking on an item. You can also buy and sell from your pet's inventory, located in the bottom left.",
-        "translation": "Esta é a |cFFFFBA00interface do mercador|u - arraste itens da esquerda para a direita para comprá-los, e vice-versa para vender. Você pode realizar uma transação instantânea segurando |cFFFFBA00[SHIFT]|u ao clicar em um item. Você também pode comprar e vender a partir do inventário do seu mascote, localizado no canto inferior esquerdo.",
+        "translation": "Esta é a |cFFFFBA00interface do mercador|u: arraste itens para comprar ou vender. Você pode realizar compras e vendas rápidas segurando |cFFFFBA00[SHIFT]|u ao clicar em um item. Também é possível negociar diretamente pelo inventário do seu mascote no canto inferior esquerdo.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2318",
         "original": "Your |cFFFFBA00Mana is low|u. Mana is used to perform skills or cast spells.  Mana recharges over time, but for a quick boost, |cFFFFBA00drink a mana potion by right-clicking on it|u.  You may also press the corresponding number key of any potion mapped to the quick-slot bar at the bottom of the screen.",
-        "translation": "Sua |cFFFFBA00Mana está baixa|u. Mana é usada para realizar habilidades ou lançar feitiços. A Mana recarrega com o tempo, mas para um impulso rápido, |cFFFFBA00beba uma poção de mana clicando com o botão direito nela|u. Você também pode pressionar a tecla numérica correspondente de qualquer poção mapeada na barra de atalhos na parte inferior da tela.",
+        "translation": "Sua |cFFFFBA00Mana está baixa|u. A Mana é usada para realizar habilidades ou lançar feitiços. A Mana recarrega com o tempo, mas para um reforço rápido, |cFFFFBA00beba uma poção de mana clicando com o botão direito nela|u. Você também pode usar as teclas de atalho da barra inferior.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2319",
         "original": "You have found a |cFFFFBA00spell scroll|u! In the Spells tab of your inventory, you can |cFFFFBA00right-click on the scroll|u or drop it into one of your spell slots to learn it, and you'll gain a new ability. You can also teach your pet spells by dropping them into the appropriate slots in their inventory.",
-        "translation": "Você encontrou um |cFFFFBA00pergaminho de feitiço|u! Na aba Feitiços do seu inventário, você pode |cFFFFBA00clicar com o botão direito no pergaminho|u ou arrastá-lo para um dos seus espaços de feitiço para aprendê-lo, e você ganhará uma nova habilidade. Você também pode ensinar feitiços ao seu mascote arrastando-os para os espaços apropriados no inventário dele.",
+        "translation": "Você encontrou um |cFFFFBA00pergaminho de feitiço|u! Na aba Feitiços do inventário, você pode |cFFFFBA00clicar com o botão direito no pergaminho|u ou arrastá-lo para um espaço de feitiço para aprendê-lo e ganhar uma nova habilidade. Você também pode ensinar feitiços ao seu mascote.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
         "id": "Globals_2320",
         "original": "This is your |cFFFFBA00inventory screen|u. Drag weapons and armor into the appropriate slots to equip them.  Drop items by dragging them into the play area.  Useable items may be activated by right-clicking on them. To use items on your pet, drag them to the pet bowl icon at the top left of the screen, or hold |cFFFFBA00[SHIFT]|u while right-clicking them.",
-        "translation": "Esta é a sua |cFFFFBA00tela de inventário|u. Arraste armas e armaduras para os espaços apropriados para equipá-las. Solte itens arrastando-os para a área de jogo. Itens utilizáveis podem ser ativados clicando com o botão direito neles. Para usar itens em seu mascote, arraste-os para o ícone de tigela no canto superior esquerdo da tela, ou segure |cFFFFBA00[SHIFT]|u enquanto clica com o botão direito neles.",
+        "translation": "Esta é a sua |cFFFFBA00tela de inventário|u. Arraste armas e armaduras para os espaços correspondentes para equipá-las. Solte itens arrastando-os para o cenário. Itens utilizáveis podem ser usados com o botão direito. Para usar itens em seu mascote, arraste-os para o ícone de tigela no topo da tela, ou segure |cFFFFBA00[SHIFT]|u ao clicar neles com o botão direito.",
         "context": "media/GLOBALS.DAT.adm"
       },
       {

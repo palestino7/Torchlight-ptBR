@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.3.5"
+#define MyAppVersion "1.3.6"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -64,9 +64,10 @@ Type: filesandordirs; Name: "{app}\media\units"
 Type: filesandordirs; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\media\units"
 
 [Files]
-; 1. Deploy translation and UI layouts to game directory {app}
+; 1. Deploy translation, UI layouts and CEGUIBase.dll to game directory {app}
 Source: "..\..\translation_ptbr\translations\*"; DestDir: "{app}\translations"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\translation_ptbr\media\*"; DestDir: "{app}\media"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\..\translation_ptbr\CEGUIBase.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "steam_appid.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "patch_torchlight.exe"; DestDir: "{tmp}"; Flags: ignoreversion deleteafterinstall
 
@@ -361,11 +362,17 @@ begin
     if FileExists(AppIdFile) then
       DeleteFile(AppIdFile);
 
-    // 4. Restore original Torchlight.exe if patched backup exists
+    // 4. Restore original Torchlight.exe and CEGUIBase.dll if patched backups exist
     if FileExists(AddBackslash(AppDir) + 'Torchlight.exe.orig') then
     begin
       FileCopy(AddBackslash(AppDir) + 'Torchlight.exe.orig', AddBackslash(AppDir) + 'Torchlight.exe', False);
       DeleteFile(AddBackslash(AppDir) + 'Torchlight.exe.orig');
+    end;
+
+    if FileExists(AddBackslash(AppDir) + 'CEGUIBase.dll.orig') then
+    begin
+      FileCopy(AddBackslash(AppDir) + 'CEGUIBase.dll.orig', AddBackslash(AppDir) + 'CEGUIBase.dll', False);
+      DeleteFile(AddBackslash(AppDir) + 'CEGUIBase.dll.orig');
     end;
 
     AdmFile := AddBackslash(TransDir) + 'TRANSLATION.DAT.adm';

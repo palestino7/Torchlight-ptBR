@@ -9,42 +9,44 @@ def get_token():
     url = subprocess.check_output(['git', 'config', 'remote.origin.url']).decode().strip()
     return url.split('@')[0].split(':')[-1]
 
-def create_release(version="1.3.5"):
+def create_release(version="1.3.6"):
     token = get_token()
     repo = "palestino7/Torchlight-ptBR"
     tag = f"v{version}"
     
-    release_body = f"""# Tradução Completa para Torchlight (pt-BR) - v{version}
+    release_body = f"""# Traducao Completa para Torchlight (pt-BR) - v{version}
 Criado por **Palestino7**
 
-### 📦 Arquivos para Download:
-- **`Torchlight_Traducao_ptBR_Setup.exe`**: Instalador executável automático oficial (instalação em 1 clique).
-- **`Torchlight_Traducao_ptBR_v{version}.zip`**: Pacote ZIP com instalador e instruções offline.
-- **`SHA256SUMS.txt`**: Assinaturas criptográficas SHA-256 oficiais.
+### Arquivos para Download:
+- **`Torchlight_Traducao_ptBR_Setup.exe`**: Instalador executavel automatico oficial (instalacao em 1 clique).
+- **`Torchlight_Traducao_ptBR_v{version}.zip`**: Pacote ZIP com instalador e instrucoes offline.
+- **`SHA256SUMS.txt`**: Assinaturas criptograficas SHA-256 oficiais.
 
 ---
 
-### 🌟 Novidades da Versão {version}:
+### Novidades da Versao {version}:
 
-1. **Correção de Nomes e Textos Flutuantes de Combate**:
-   - Habilidade corrigida para **Bomba de Raios** (anteriormente "Relâmpago Bomb").
-   - Textos flutuantes de ouro em combate agora exibem **Ouro** (ex: "8 Ouro", "6 Ouro", eliminando o texto em inglês "Gold").
-   - Rank 0 de Fama corrigido para **Desconhecido** (anteriormente exibido como "NReconhecido").
+1. **Correcao Definitiva do Texto com Destaque em Amarelo (Bug CEGUI UTF-8)**:
+   - Resolvido o bug historico da engine CEGUI onde caracteres acentuados (a, e, i, etc.) causavam dessincronizacao entre indices UTF-8 e codepoints UTF-32, comendo a primeira letra apos a tag de cor (|orchlight|, |licando..., |ela de inventario|u).
+   - Implementado hook de sincronizacao UTF-8 independente de posicao (ASLR-safe) no `CEGUIBase.dll` e empacotado no instalador, permitindo que todas as tags amarelas (|cFFFFBA00...|u) e azuis funcionem com 100% de precisao grafica sem comer nenhuma letra.
 
-2. **Eliminação de Dois Pontos Duplicados e Sobreposições de Interface**:
-   - Correção definitiva na caixa de recompensas de missões (`PO: 80`, `XP: 2400`, `Fama: 360`), eliminando a sobreposição física de caixas de texto que gerava dois pontos duplicados (`: :`).
-   - Ajuste em templates de tipo de dano para evitar preposições soltas (`+[VALUE] de Dano [DMGTYPE]`).
+2. **Geometria Perfeita da Caixa de Dicas (`tipmenu.layout`)**:
+   - Redimensionamento equilibrado da janela modal de dicas (altura 295px, largura de texto 470px e altura de texto 225px).
+   - Eliminacao total do corte de texto em dicas longas (ate 9 linhas cabem com folga), sem deixar espacos vazios desproporcionais em dicas curtas.
+   - Refinamento textual das dicas tutoriais para um portugues fluido, elegante e conciso.
 
-3. **Ajuste Geométrico da Caixa de Dicas (`tipmenu.layout`)**:
-   - Redução da altura da janela modal de dicas, eliminando o espaço vazio excessivo no rodapé e mantendo uma moldura harmoniosa e compacta sem cortar textos longos.
+3. **Correcao de Nomes, Ranks e Textos de Combate**:
+   - Habilidade corrigida para **Bomba de Raios** (anteriormente "Relampago Bomb").
+   - Textos flutuantes de ouro em combate agora exibem **Ouro** (ex: "8 Ouro", "6 Ouro", eliminando o texto em ingles "Gold").
+   - Rank 0 de Fama corrigido para **Desconhecido** (eliminando "NReconhecido").
 
-4. **Restauração Completa dos Destaques em Cores Autênticas**:
-   - Restauração de todas as marcações de cor originais da engine da Runic Games: amarelo (`|cFFFFBA00...|u`), teclas de atalho em azul (`|cFF5e88ff...|u`) e cores de raridade de itens em todas as dicas, diálogos de missões e opções de interface, com sintaxe 100% validada e imune a falhas.
+4. **Eliminacao de Dois Pontos Duplicados e Sobreposicoes de Interface**:
+   - Correcao na caixa de recompensas de missoes (`PO: 80`, `XP: 2400`, `Fama: 360`), eliminando a sobreposicao fisica de caixas de texto que gerava dois pontos duplicados (`: :`).
+   - Ajuste em templates de tipo de dano para evitar preposicoes soltas (`+[VALUE] de Dano [DMGTYPE]`).
 
-5. **Compatibilidade Total e Patch ASLR**:
-   - Mantida toda a arquitetura de código independente de posição (PIC), garantindo suporte a qualquer computador com Windows 10/11 e total integridade com saves da Steam.
+5. **Compatibilidade Total e Instalador Atualizado**:
+   - Instalador Inno Setup 6 oficial atualizado para a versao 1.3.6, com verificacao de integridade, backup automatico de restauracao e compatibilidade universal em qualquer computador com Windows 10/11.
 """
-
     # Check if release already exists
     req = urllib.request.Request(
         f"https://api.github.com/repos/{repo}/releases/tags/{tag}",
@@ -132,6 +134,6 @@ Criado por **Palestino7**
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", default="1.3.5", help="Release version (default: 1.3.5)")
+    parser.add_argument("--version", default="1.3.6", help="Release version (default: 1.3.5)")
     args = parser.parse_args()
     create_release(args.version)

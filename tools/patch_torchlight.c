@@ -118,6 +118,81 @@ static void optimize_display_settings(void) {
     free(out_buf);
 }
 
+static void patch_cegui_base(const char* exe_path) {
+    char dll_path[MAX_PATH];
+    strncpy(dll_path, exe_path, sizeof(dll_path) - 1);
+    dll_path[sizeof(dll_path) - 1] = '\0';
+
+    char* last_slash = strrchr(dll_path, '\\');
+    char* last_fwd = strrchr(dll_path, '/');
+    if (last_fwd && (!last_slash || last_fwd > last_slash)) {
+        last_slash = last_fwd;
+    }
+
+    if (last_slash) {
+        strcpy(last_slash + 1, "CEGUIBase.dll");
+    } else {
+        strcpy(dll_path, "CEGUIBase.dll");
+    }
+
+    FILE* f = fopen(dll_path, "rb");
+    if (!f) return;
+    fseek(f, 0, SEEK_END);
+    long fsize = ftell(f);
+    fseek(f, 0, SEEK_SET);
+
+    if (fsize < 0x7b658 + 6) {
+        fclose(f);
+        return;
+    }
+
+    unsigned char* buf = (unsigned char*)malloc(fsize);
+    if (!buf) {
+        fclose(f);
+        return;
+    }
+
+    if (fread(buf, 1, fsize, f) != (size_t)fsize) {
+        free(buf);
+        fclose(f);
+        return;
+    }
+    fclose(f);
+
+    const unsigned char orig_hook[6] = { 0x47, 0x46, 0x89, 0x7c, 0x24, 0x1c };
+    const unsigned char patched_hook[6] = { 0xe9, 0x87, 0x0c, 0xfe, 0xff, 0x90 };
+    const unsigned char cave_bytes[24] = {
+        0x47, 0x46, 0x80, 0x3e, 0x80, 0x72, 0x08, 0x80,
+        0x3e, 0xc0, 0x73, 0x03, 0x46, 0xeb, 0xf3, 0x89,
+        0x7c, 0x24, 0x1c, 0xe9, 0x62, 0xf3, 0x01, 0x00
+    };
+
+    if (memcmp(buf + 0x7b658, orig_hook, 6) == 0 || memcmp(buf + 0x7b658, patched_hook, 6) == 0) {
+        char backup_path[MAX_PATH];
+        snprintf(backup_path, sizeof(backup_path), "%s.orig", dll_path);
+        FILE* fb = fopen(backup_path, "rb");
+        if (!fb) {
+            fb = fopen(backup_path, "wb");
+            if (fb) {
+                fwrite(buf, 1, fsize, fb);
+                fclose(fb);
+            }
+        } else {
+            fclose(fb);
+        }
+
+        memcpy(buf + 0x7b658, patched_hook, 6);
+        memcpy(buf + 0x5c2e4, cave_bytes, 24);
+
+        f = fopen(dll_path, "wb");
+        if (f) {
+            fwrite(buf, 1, fsize, f);
+            fclose(f);
+        }
+    }
+    free(buf);
+}
+
 int main(int argc, char* argv[]) {
     char exe_path[MAX_PATH];
     if (argc > 1) {
@@ -296,6 +371,9 @@ int main(int argc, char* argv[]) {
     fwrite(buf, 1, fsize, f);
     fclose(f);
     free(buf);
+
+    // Patch CEGUIBase.dll with UTF-8 synchronization hook to support diacritics in color tags
+    patch_cegui_base(exe_path);
 
     // Optimize local_settings.txt so Torchlight launches in native resolution and Fullscreen
     optimize_display_settings();
