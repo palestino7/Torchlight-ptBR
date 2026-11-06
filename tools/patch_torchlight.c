@@ -258,6 +258,7 @@ int main(int argc, char* argv[]) {
     const unsigned int va_alto = 0xbe773a;
     const unsigned int va_muito_alto = 0xbe773f;
     const unsigned int va_dica = 0xbe774a;
+    const unsigned int va_dificuldade_colon = 0xa8092c;
 
     const char s_desligado[] = "Desligado";
     const char s_iluminacao[] = "Apenas Ilumina\xe7\xe3o";
@@ -266,6 +267,7 @@ int main(int argc, char* argv[]) {
     const char s_alto[] = "Alto";
     const char s_muito_alto[] = "Muito Alto";
     const wchar_t s_dica[] = L"Dica";
+    const wchar_t s_dificuldade_colon[] = L"Dificuldade:";
 
     memset(buf + 0x7e6912, 0, 100);
     memcpy(buf + 0x7e6912, s_desligado, sizeof(s_desligado));
@@ -275,6 +277,11 @@ int main(int argc, char* argv[]) {
     memcpy(buf + 0x7e693a, s_alto, sizeof(s_alto));
     memcpy(buf + 0x7e693f, s_muito_alto, sizeof(s_muito_alto));
     memcpy(buf + 0x7e694a, s_dica, sizeof(s_dica));
+
+    // Embed L"Dificuldade:" in .rdata slack space at raw 0x67fb2c (VA 0xa8092c, 26 bytes)
+    if (fsize > 0x67fb2c + (long)sizeof(s_dificuldade_colon)) {
+        memcpy(buf + 0x67fb2c, s_dificuldade_colon, sizeof(s_dificuldade_colon));
+    }
 
     // Character Creation screen (class names + descriptions).
     // Position independent hooks (Torchlight.exe uses ASLR), never touching bytes covered by
@@ -301,6 +308,9 @@ int main(int argc, char* argv[]) {
     PatchEntry patches[] = {
         // TipMenu::init (0x5af740) - Modal Title "Tip" -> "Dica"
         { 0x1af76a, 0xa8fc0c, va_dica },
+
+        // Journal/Diary screen (0x5819b5) - "Difficulty:" -> "Dificuldade:"
+        { 0x180db5, 0xa8ec20, va_dificuldade_colon },
 
         // SettingsMenu::static_init (0x9a1850)
         { 0x5a0c55, 0xa89a94, va_desligado },
@@ -341,7 +351,7 @@ int main(int argc, char* argv[]) {
         unsigned int off = patches[i].raw_offset;
         if (buf[off] == 0x68) {
             unsigned int* pval = (unsigned int*)(buf + off + 1);
-            if (*pval == patches[i].orig_va || (*pval >= 0xbe7712 && *pval <= 0xbe7760)) {
+            if (*pval == patches[i].orig_va || *pval == patches[i].new_va || (*pval >= 0xbe7712 && *pval <= 0xbe7760)) {
                 *pval = patches[i].new_va;
             }
         }
@@ -360,6 +370,42 @@ int main(int argc, char* argv[]) {
         const wchar_t w_ouro[] = L" Ouro";
         if (memcmp(buf + 0x67e854, w_gold, sizeof(w_gold)) == 0 || memcmp(buf + 0x67e854, w_ouro, sizeof(w_ouro)) == 0) {
             memcpy(buf + 0x67e854, w_ouro, sizeof(w_ouro));
+        }
+    }
+
+    // Raw 0x668698 (UTF-16LE, 14 bytes): L"Floor \0" -> L"Andar \0" (Scenario entry overlay: e.g. "Minas de Orden" / "Andar 1")
+    if (fsize > 0x668698 + 14) {
+        const wchar_t w_floor[] = L"Floor ";
+        const wchar_t w_andar[] = L"Andar ";
+        if (memcmp(buf + 0x668698, w_floor, sizeof(w_floor)) == 0 || memcmp(buf + 0x668698, w_andar, sizeof(w_andar)) == 0) {
+            memcpy(buf + 0x668698, w_andar, sizeof(w_andar));
+        }
+    }
+
+    // Raw 0x6801f0 (UTF-16LE, 20 bytes): L" - Floor \0" -> L" - Andar \0"
+    if (fsize > 0x6801f0 + 20) {
+        const wchar_t w_dash_floor[] = L" - Floor ";
+        const wchar_t w_dash_andar[] = L" - Andar ";
+        if (memcmp(buf + 0x6801f0, w_dash_floor, sizeof(w_dash_floor)) == 0 || memcmp(buf + 0x6801f0, w_dash_andar, sizeof(w_dash_andar)) == 0) {
+            memcpy(buf + 0x6801f0, w_dash_andar, sizeof(w_dash_andar));
+        }
+    }
+
+    // Raw 0x68ddc8 (UTF-16LE, 24 bytes): L"Ancestors:\0\0" -> L"Ancestrais:\0" (Journal/Diary screen)
+    if (fsize > 0x68ddc8 + 24) {
+        const wchar_t w_ancestors[] = L"Ancestors:\0";
+        const wchar_t w_ancestrais[] = L"Ancestrais:";
+        if (memcmp(buf + 0x68ddc8, w_ancestors, 22) == 0 || memcmp(buf + 0x68ddc8, w_ancestrais, sizeof(w_ancestrais)) == 0) {
+            memcpy(buf + 0x68ddc8, w_ancestrais, sizeof(w_ancestrais));
+        }
+    }
+
+    // Raw 0x68ef2c (UTF-16LE, 24 bytes): L"Difficulty\0\0" -> L"Dificuldade\0"
+    if (fsize > 0x68ef2c + 24) {
+        const wchar_t w_difficulty[] = L"Difficulty\0";
+        const wchar_t w_dificuldade[] = L"Dificuldade";
+        if (memcmp(buf + 0x68ef2c, w_difficulty, 22) == 0 || memcmp(buf + 0x68ef2c, w_dificuldade, sizeof(w_dificuldade)) == 0) {
+            memcpy(buf + 0x68ef2c, w_dificuldade, sizeof(w_dificuldade));
         }
     }
 

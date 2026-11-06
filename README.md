@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Versão](https://img.shields.io/badge/vers%C3%A3o-1.3.8-blue.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
+[![Versão](https://img.shields.io/badge/vers%C3%A3o-1.3.9-blue.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
 [![Status da Tradução](https://img.shields.io/badge/status-100%25%20pt--BR-brightgreen.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR)
 [![Compatibilidade Steam](https://img.shields.io/badge/Steam-Build%2017685%20(v1.15)-orange.svg?style=for-the-badge)](https://store.steampowered.com/app/41500/Torchlight/)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-yellow.svg?style=for-the-badge)](LICENSE)
@@ -15,7 +15,7 @@ Criado e mantido por **[Palestino7](https://github.com/palestino7)**.
 
 <br>
 
-[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.3.8/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.3.8/Torchlight_Traducao_ptBR_v1.3.8.zip)
+[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.3.9/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/download/v1.3.9/Torchlight_Traducao_ptBR_v1.3.9.zip)
 
 <br>
 

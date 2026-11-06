@@ -57,6 +57,9 @@ PATCH_TABLE = [
     # TipMenu::init (0x5af740) - Modal Title "Tip" -> "Dica"
     (0x1af76a, 0xa8fc0c, EMBEDDED_VAS["Dica"]),
 
+    # Journal/Diary screen (0x5819b5) - "Difficulty:" -> "Dificuldade:"
+    (0x180db5, 0xa8ec20, 0xa8092c),
+
     # SettingsMenu::static_init (0x9a1850)
     (0x5a0c55, 0xa89a94, EMBEDDED_VAS["Desligado"]),
     (0x5a0c65, 0xa89a84, EMBEDDED_VAS["Apenas Iluminacao"]),
@@ -302,7 +305,12 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
     # 3. Character Creation class names / descriptions (position independent hooks)
     class_ok = apply_class_patch(data)
 
-    # 4. In-place string patch: " Gold" -> " Ouro" for floating combat text
+    # 4. Embed L"Dificuldade:" in .rdata slack space at raw 0x67fb2c (VA 0xa8092c, 26 bytes)
+    u16_dificuldade_colon = "Dificuldade:\x00".encode("utf-16le")
+    if len(data) > 0x67FB2C + len(u16_dificuldade_colon):
+        data[0x67FB2C : 0x67FB2C + len(u16_dificuldade_colon)] = u16_dificuldade_colon
+
+    # 5. In-place string patches
     gold_count = 0
     # Raw 0x67bd84 (ASCII, 6 bytes): b" Gold\0" -> b" Ouro\0"
     if len(data) > 0x67BD84 + 6 and (data[0x67BD84 : 0x67BD84 + 6] == b" Gold\x00" or data[0x67BD84 : 0x67BD84 + 6] == b" Ouro\x00"):
@@ -314,6 +322,30 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
     if len(data) > 0x67E854 + 12 and (data[0x67E854 : 0x67E854 + 12] == u16_gold or data[0x67E854 : 0x67E854 + 12] == u16_ouro):
         data[0x67E854 : 0x67E854 + 12] = u16_ouro
         gold_count += 1
+
+    # Raw 0x668698 (UTF-16LE, 14 bytes): L"Floor \0" -> L"Andar \0" (Scenario entry overlay: e.g. "Minas de Orden" / "Andar 1")
+    u16_floor = "Floor \x00".encode("utf-16le")
+    u16_andar = "Andar \x00".encode("utf-16le")
+    if len(data) > 0x668698 + 14 and (data[0x668698 : 0x668698 + 14] == u16_floor or data[0x668698 : 0x668698 + 14] == u16_andar):
+        data[0x668698 : 0x668698 + 14] = u16_andar
+
+    # Raw 0x6801f0 (UTF-16LE, 20 bytes): L" - Floor \0" -> L" - Andar \0"
+    u16_dash_floor = " - Floor \x00".encode("utf-16le")
+    u16_dash_andar = " - Andar \x00".encode("utf-16le")
+    if len(data) > 0x6801F0 + 20 and (data[0x6801F0 : 0x6801F0 + 20] == u16_dash_floor or data[0x6801F0 : 0x6801F0 + 20] == u16_dash_andar):
+        data[0x6801F0 : 0x6801F0 + 20] = u16_dash_andar
+
+    # Raw 0x68ddc8 (UTF-16LE, 24 bytes): L"Ancestors:\0\0" -> L"Ancestrais:\0" (Journal/Diary screen)
+    u16_ancestors = "Ancestors:\x00\x00".encode("utf-16le")
+    u16_ancestrais = "Ancestrais:\x00".encode("utf-16le")
+    if len(data) > 0x68DDC8 + 24 and (data[0x68DDC8 : 0x68DDC8 + 22] == "Ancestors:\x00".encode("utf-16le") or data[0x68DDC8 : 0x68DDC8 + 24] == u16_ancestrais):
+        data[0x68DDC8 : 0x68DDC8 + 24] = u16_ancestrais
+
+    # Raw 0x68ef2c (UTF-16LE, 24 bytes): L"Difficulty\0\0" -> L"Dificuldade\0"
+    u16_difficulty = "Difficulty\x00\x00".encode("utf-16le")
+    u16_dificuldade = "Dificuldade\x00".encode("utf-16le")
+    if len(data) > 0x68EF2C + 24 and (data[0x68EF2C : 0x68EF2C + 22] == "Difficulty\x00".encode("utf-16le") or data[0x68EF2C : 0x68EF2C + 24] == u16_dificuldade):
+        data[0x68EF2C : 0x68EF2C + 24] = u16_dificuldade
 
     with open(exe_path, "wb") as f:
         f.write(data)

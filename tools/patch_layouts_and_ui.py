@@ -104,12 +104,13 @@ def patch_tipmenu(layout_path: str):
     is_utf16 = raw.startswith(b"\xff\xfe")
     text = raw[2:].decode("utf-16le") if is_utf16 else raw.decode("utf-8")
 
-    # Title "Dica" frame position and text (sits comfortably on the top border)
+    # Title "Dica" frame position and text (floats cleanly 22px above Frameb, never overlapping)
     framec_pattern = r'(<Window Type="GuiLook/ItemText" Name="Framec"\s*>)([\s\S]*?)(<Window Type="GuiLook/ItemText" Name="Frameb")'
     rep_framec = (
         r'\1\n'
-        '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-142}}" />\n'
+        '            <Property Name="UnifiedPosition" Value="{{.5,-71},{.5,-175}}" />\n'
         '            <Property Name="UnifiedSize" Value="{{0,142},{0,28}}" />\n'
+        '            <Property Name="AlwaysOnTop" Value="True" />\n'
         '        <Window Type="GuiLook/StaticText" Name="Title">\n'
         '        <Property Name="HorzTextFormatting" Value="CentreAligned" />\n'
         '        <Property Name="VertFormatting" Value="CentreAligned" />\n'
@@ -123,17 +124,17 @@ def patch_tipmenu(layout_path: str):
     )
     text = re.sub(framec_pattern, rep_framec, text)
 
-    # Frameb size & position (width 520, height 245 - compact, centered, comfortable for short and long tips)
+    # Frameb size & position (width 520, height 250 - centered, ample room for long tips)
     frameb_pattern = r'(<Window Type="GuiLook/ItemText" Name="Frameb"\s*>)([\s\S]*?)(<Window Type="GuiLook/StaticText" Name="Dialog")'
     rep_frameb = (
         r'\1\n'
         '\t\t    <Property Name="UnifiedPosition" Value="{{.5,-260},{.5,-125}}" />\n'
-        '\t\t    <Property Name="UnifiedSize" Value="{{0,520},{0,245}}" />\n\n\t\t'
+        '\t\t    <Property Name="UnifiedSize" Value="{{0,520},{0,250}}" />\n\n\t\t'
         r'\3'
     )
     text = re.sub(frameb_pattern, rep_frameb, text)
 
-    # Dialog static text inside Frameb (width 480, height 168, VertFormatting CentreAligned)
+    # Dialog static text inside Frameb (width 480, height 170, VertFormatting CentreAligned)
     dialog_pattern = r'(<Window Type="GuiLook/StaticText" Name="Dialog"\s*>)([\s\S]*?)(</Window>)'
     def replace_dialog(m):
         prefix = m.group(1)
@@ -142,8 +143,8 @@ def patch_tipmenu(layout_path: str):
 \t\t    <Property Name="Font" Value="SerifBig" />
 \t\t    <Property Name="HorzTextFormatting" Value="WordWrapCentreAligned" />
 \t\t    <Property Name="VertFormatting" Value="CentreAligned" />
-\t\t    <Property Name="UnifiedPosition" Value="{{0,20},{0,22}}" />
-\t\t    <Property Name="UnifiedSize" Value="{{0,480},{0,168}}" />
+\t\t    <Property Name="UnifiedPosition" Value="{{0,20},{0,25}}" />
+\t\t    <Property Name="UnifiedSize" Value="{{0,480},{0,170}}" />
 \t\t\t<Property Name="TextColour" Value="FFFFFFFF"/>
 \t\t\t<Property Name="MousePassThroughEnabled" Value="True" />
 \t\t"""
