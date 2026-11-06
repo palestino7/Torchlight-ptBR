@@ -126,6 +126,6 @@ Criado por **Palestino7**
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--version", default="1.3.7", help="Release version (default: 1.3.5)")
+    parser.add_argument("--version", default="1.3.8", help="Release version (default: 1.3.5)")
     args = parser.parse_args()
     create_release(args.version)
