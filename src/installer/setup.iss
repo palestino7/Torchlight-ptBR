@@ -48,7 +48,9 @@ EnableDirDoesntExistWarning=yes
 Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
 
 [Messages]
-brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Palestino7
+brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Desenvolvido por Palestino7
+brazilianportuguese.WelcomeLabel1=Bem-vindo ao instalador da Tradução de Torchlight pt-BR
+brazilianportuguese.WelcomeLabel2=Este assistente instalará a Tradução Completa para Português do Brasil de Torchlight (Edição Definitiva por Palestino7) no seu computador.%n%nRecomenda-se fechar o Torchlight antes de continuar.%n%nClique em Avançar para prosseguir.
 
 [InstallDelete]
 Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations\TRANSLATION.DAT.adm"
