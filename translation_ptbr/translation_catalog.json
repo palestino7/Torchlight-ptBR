@@ -71460,7 +71460,7 @@
       {
         "id": "Globals_0452",
         "original": "unknown",
-        "translation": "unknown",
+        "translation": "desconhecido",
         "context": "media/massfile.dat.ADM"
       },
       {
@@ -71544,7 +71544,7 @@
       {
         "id": "Globals_0466",
         "original": "COOLDOWN",
-        "translation": "COOLDOWN",
+        "translation": "RECARGA",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -71928,7 +71928,7 @@
       {
         "id": "Globals_0530",
         "original": "REQUIRES",
-        "translation": "REQUIRES",
+        "translation": "REQUER",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
