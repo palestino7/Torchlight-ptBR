@@ -14,7 +14,7 @@
 
 <br>
 
-[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE OFFLINE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_v1.3.9.zip)
+[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE OFFLINE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_v1.4.0.zip)
 
 <br>
 
@@ -47,11 +47,11 @@ Esta tradução foi feita para oferecer a melhor experiência possível de **Tor
 
 A tradução lançada pela Tribo Gamer em 2011 foi importante para a época, mas possui limitações técnicas hoje superadas:
 
-| Recurso | Tradução Tribo Gamer (2011) | Nossa Tradução (v1.3.9 - Palestino7) |
+| Recurso | Tradução Tribo Gamer (2011) | Nossa Tradução (v1.4.0 - Palestino7) |
 | :--- | :---: | :---: |
 | **Integração com a Steam** | Modifica o arquivo core `PAK.ZIP` (desfaz se a Steam verificar arquivos) | 🟢 **Nativa e segura** (não altera o `PAK.ZIP` original) |
 | **Acentuação** | Sem acentos na maioria das palavras (*"nao"*, *"espaco"*) | 🟢 **Acentuação completa e correta** |
-| **Cobertura de Textos** | ~3.000 textos em arquivos soltos de unidades | 🟢 **13.760 blocos completos** (catálogo 100% traduzido) |
+| **Cobertura de Textos** | ~3.000 textos em arquivos soltos de unidades | 🟢 **13.838 blocos completos** (catálogo e engine 100% traduzidos) |
 | **Menus de Opções de Vídeo** | Em inglês (*Off*, *Low*, *High*) | 🟢 **Totalmente em português** |
 | **Instalador** | Instalador antigo com barras de patrocinadores da época | 🟢 **Instalador limpo, moderno e livre de propagandas** |
 
@@ -85,12 +85,12 @@ Por ser um instalador comunitário novo e independente, o Windows Defender Smart
 
 ## 🔐 Hashes Criptográficos (SHA-256)
 
-Para conferência de integridade dos arquivos oficiais da [Release v1.3.9](https://github.com/palestino7/Torchlight-ptBR/releases/latest):
+Para conferência de integridade dos arquivos oficiais da [Release v1.4.0](https://github.com/palestino7/Torchlight-ptBR/releases/latest):
 
 | Arquivo | Tamanho | Hash SHA-256 |
 | :--- | :--- | :--- |
-| `Torchlight_Traducao_ptBR_Setup.exe` | 2.88 MB | `9a0a4bf76439400f0bc181ec14ccd6ec487e5cb334ed8c58337d01d9a66dde59` |
-| `Torchlight_Traducao_ptBR_v1.3.9.zip` | 2.36 MB | `7a5f0f263dae74755c53c97cb02b91af4215aa372bd187659e0257ab7d64a6cb` |
+| `Torchlight_Traducao_ptBR_Setup.exe` | 2.88 MB | `9f7c7836a0dbe5641572ab11d707e74c94956c5a0df9b7cc9e7c78d33bea6baf` |
+| `Torchlight_Traducao_ptBR_v1.4.0.zip` | 2.36 MB | `d5369aabad8277a3dabe06b57c7105154042a102c6a947c559904fda7f8a9a23` |
 
 ---
 

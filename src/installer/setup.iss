@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.3.9"
+#define MyAppVersion "1.4.0"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -36,10 +36,10 @@ WizardImageFile=wizard_large.bmp
 WizardSmallImageFile=wizard_small.bmp
 SetupIconFile=torchlight_ptbr.ico
 UninstallDisplayIcon={app}\Torchlight.exe
-VersionInfoVersion=1.3.9.0
+VersionInfoVersion=1.4.0.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription=Instalador da Tradução de Torchlight para Português do Brasil
-VersionInfoProductVersion=1.3.9.0
+VersionInfoProductVersion=1.4.0.0
 VersionInfoCopyright={#MyAppCopyright}
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
