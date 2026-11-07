@@ -5,7 +5,7 @@
 ; ==============================================================================
 
 #define MyAppName "Torchlight Tradução pt-BR"
-#define MyAppVersion "1.4.0"
+#define MyAppVersion "1.4.1"
 #define MyAppPublisher "Palestino7"
 #define MyAppCopyright "Copyright (C) 2026 Palestino7"
 #define MyAppURL "https://github.com/palestino7/Torchlight-ptBR"
@@ -22,8 +22,10 @@ AppUpdatesURL={#MyAppURL}
 AppCopyright={#MyAppCopyright}
 DefaultDirName={code:GetDefaultInstallDir}
 DefaultGroupName={#MyAppName}
+DisableWelcomePage=no
 DisableProgramGroupPage=yes
 DisableDirPage=no
+UsePreviousAppDir=no
 AlwaysShowDirOnReadyPage=yes
 OutputBaseFilename=Torchlight_Traducao_ptBR_Setup
 OutputDir=..\..\dist
@@ -36,10 +38,10 @@ WizardImageFile=wizard_large.bmp
 WizardSmallImageFile=wizard_small.bmp
 SetupIconFile=torchlight_ptbr.ico
 UninstallDisplayIcon={app}\Torchlight.exe
-VersionInfoVersion=1.4.0.0
+VersionInfoVersion=1.4.1.0
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoDescription=Instalador da Tradução de Torchlight para Português do Brasil
-VersionInfoProductVersion=1.4.0.0
+VersionInfoProductVersion=1.4.1.0
 VersionInfoCopyright={#MyAppCopyright}
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -50,9 +52,11 @@ EnableDirDoesntExistWarning=yes
 Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
 
 [Messages]
-brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR • Desenvolvido por Palestino7
-brazilianportuguese.WelcomeLabel1=Bem-vindo ao instalador da Tradução de Torchlight pt-BR
-brazilianportuguese.WelcomeLabel2=Este assistente instalará a Tradução Completa para Português do Brasil de Torchlight (Edição Definitiva por Palestino7) no seu computador.%n%nRecomenda-se fechar o Torchlight antes de continuar.%n%nClique em Avançar para prosseguir.
+brazilianportuguese.BeveledLabel=Tradução Torchlight pt-BR v{#MyAppVersion} • Por Palestino7
+brazilianportuguese.WelcomeLabel1=Bem-vindo ao Instalador da Tradução de Torchlight (pt-BR)
+brazilianportuguese.WelcomeLabel2=Este assistente instalará a Tradução Completa para Português do Brasil de Torchlight (v{#MyAppVersion} por Palestino7).%n%n• 100% dos textos, menus, dicas, missões e habilidades traduzidos%n• Fonte acentuada nativa e compatibilidade total com saves existentes%n%nFeche o jogo antes de continuar e clique em Avançar.
+brazilianportuguese.SelectDirDesc=Onde o Torchlight está instalado?
+brazilianportuguese.SelectDirLabel3=O instalador detectou automaticamente o local do Torchlight abaixo. Se o seu jogo estiver instalado em outra pasta ou unidade, clique em Procurar para alterar.
 
 [InstallDelete]
 Type: files; Name: "{userappdata}\runic games\torchlight\mods\Traducao_ptBR\translations\TRANSLATION.DAT.adm"

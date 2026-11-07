@@ -1,101 +1,86 @@
-# Torchlight — Tradução em Português do Brasil (pt-BR)
-
-![Torchlight Tradução pt-BR](docs/images/banner_hero.png)
-
 <div align="center">
 
-[![Versão](https://img.shields.io/badge/vers%C3%A3o-1.3.9-blue.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
-[![Status](https://img.shields.io/badge/status-100%25%20pt--BR-brightgreen.svg?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR)
-[![Compatibilidade Steam](https://img.shields.io/badge/Steam-Build%2017685%20(v1.15)-orange.svg?style=for-the-badge)](https://store.steampowered.com/app/41500/Torchlight/)
-[![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-
-**Tradução completa, canônica e profissional de *Torchlight* para Português do Brasil.**  
-*Criado e mantido por **[Palestino7](https://github.com/palestino7)**.*
+<img src="docs/images/banner_hero.png" alt="Torchlight Tradução pt-BR" width="100%" />
 
 <br>
 
-[⬇️ **BAIXAR INSTALADOR (.EXE)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe) &nbsp;&bull;&nbsp; [📦 **BAIXAR PACOTE OFFLINE (.ZIP)**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_v1.4.0.zip)
+[![Release](https://img.shields.io/badge/Vers%C3%A3o-1.4.1-d99b26?style=for-the-badge&logo=steam&logoColor=white)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
+[![Idioma](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(pt--BR)%20100%25-2ea043?style=for-the-badge)](https://github.com/palestino7/Torchlight-ptBR/releases/latest)
+[![Compatibilidade](https://img.shields.io/badge/Steam-Build%2017685%20(v1.15)-1b2838?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/41500/Torchlight/)
+[![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-555555?style=for-the-badge)](LICENSE)
 
-<br>
+<p align="center">
+  <b>Tradução completa de <i>Torchlight</i> para Português do Brasil.</b><br>
+  Desenvolvida por <a href="https://github.com/palestino7"><b>Palestino7</b></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe">
+    <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20BAIXAR%20INSTALADOR%20(.EXE)-v1.4.1-2ea043?style=for-the-badge" alt="Baixar Instalador (.EXE)" height="42" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_v1.4.1.zip">
+    <img src="https://img.shields.io/badge/%F0%9F%93%A6%20PACOTE%20PORT%C3%81TIL%20(.ZIP)-v1.4.1-30363d?style=for-the-badge" alt="Baixar ZIP" height="42" />
+  </a>
+</p>
 
 </div>
 
 ---
 
-## 🚀 Como Instalar (3 Passos Rápidos)
+## ⚡ Instalação em 3 Passos
 
-1. **Baixe o instalador**: Clique em [Torchlight_Traducao_ptBR_Setup.exe](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe).
-2. **Execute a instalação**: Feche o jogo e abra o instalador. Ele detecta a pasta do jogo na Steam automaticamente, mas você pode escolher outro local se desejar.
-3. **Jogue pela Steam**: Abra o **Torchlight** normalmente pela sua biblioteca Steam. O jogo iniciará 100% em português!
+1. **Baixe o instalador** clicando em [**`Torchlight_Traducao_ptBR_Setup.exe`**](https://github.com/palestino7/Torchlight-ptBR/releases/latest/download/Torchlight_Traducao_ptBR_Setup.exe).
+2. **Execute o instalador** com o jogo fechado — a pasta da Steam é detectada automaticamente (ou clique em **Procurar...** para escolher outro local).
+3. **Inicie o jogo normalmente pela Steam.**
 
-> [!TIP]
-> O instalador não cria atalhos duplicados na Área de Trabalho para manter seu sistema limpo. Inicie o jogo direto pela Steam.
+<details>
+<summary>🛡️ <b>Aviso do Windows SmartScreen / Como Desinstalar</b></summary>
+<br>
 
----
+- **Windows SmartScreen:** Caso o Windows exiba a tela *"O Windows protegeu o seu computador"*, clique em **Mais informações** e depois em **Executar assim mesmo**. O instalador é 100% aberto e livre de empacotadores externos.
+- **Saves Preservados:** Seus personagens e baús compartilhados nunca são alterados.
+- **Desinstalação:** Pode ser revertida a qualquer momento pelo Painel de Controle do Windows (`Adicionar ou remover programas`), restaurando o backup original automaticamente.
 
-## 📌 Sobre o Projeto
-
-Esta tradução foi feita para oferecer a melhor experiência possível de **Torchlight** (Steam Build 17685 / v1.15) em nosso idioma:
-
-- **100% dos Textos em Português**: Menus, diálogos de NPCs, missões principais e secundárias, livros de lore, habilidades, afixos de itens e receitas de transmutação.
-- **Acentuação Completa**: Suporte total a caracteres acentuados da língua portuguesa (`á`, `é`, `ã`, `ç`, etc.).
-- **Integração Segura**: Utiliza o motor oficial de internacionalização do jogo. Seus personagens salvos nunca são alterados ou perdidos.
+</details>
 
 ---
 
-## ⚖️ Comparativo com a Versão Antiga (Tribo Gamer - 2011)
+## ✨ Destaques da Tradução
 
-A tradução lançada pela Tribo Gamer em 2011 foi importante para a época, mas possui limitações técnicas hoje superadas:
-
-| Recurso | Tradução Tribo Gamer (2011) | Nossa Tradução (v1.4.0 - Palestino7) |
-| :--- | :---: | :---: |
-| **Integração com a Steam** | Modifica o arquivo core `PAK.ZIP` (desfaz se a Steam verificar arquivos) | 🟢 **Nativa e segura** (não altera o `PAK.ZIP` original) |
-| **Acentuação** | Sem acentos na maioria das palavras (*"nao"*, *"espaco"*) | 🟢 **Acentuação completa e correta** |
-| **Cobertura de Textos** | ~3.000 textos em arquivos soltos de unidades | 🟢 **13.838 blocos completos** (catálogo e engine 100% traduzidos) |
-| **Menus de Opções de Vídeo** | Em inglês (*Off*, *Low*, *High*) | 🟢 **Totalmente em português** |
-| **Instalador** | Instalador antigo com barras de patrocinadores da época | 🟢 **Instalador limpo, moderno e livre de propagandas** |
+| Área | Escopo |
+| :--- | :--- |
+| **Textos e Diálogos** | **13.858 blocos** traduzidos (missões, NPCs, dicas, tutoriais e livros de história) |
+| **Itens, Magias e Monstros** | Todos os equipamentos, encantamentos, gemas, magias, árvores de habilidades e chefes |
+| **Interface e Fontes** | **35 telas de interface** ajustadas com fonte tipográfica acentuada (`á, é, í, ó, ú, ã, õ, ç`) |
+| **Motor Nativo** | Integração direta com o executável e sistema de mods do jogo sem corromper o `Pak.zip` |
 
 ---
 
-## 🎮 Classes Totalmente Traduzidas
-
-Todas as 3 classes originais possuem falas, árvores de habilidades e histórias traduzidas:
+## 🎮 Classes Jogáveis
 
 <div align="center">
 
 | **Destruidor** | **Alquimista** | **Conquistadora** |
 | :---: | :---: | :---: |
-| <img src="docs/images/destroyer.png" width="200" alt="Destruidor" /> | <img src="docs/images/alchemist.png" width="165" alt="Alquimista" /> | <img src="docs/images/vanquisher.png" width="165" alt="Conquistadora" /> |
-| Especialista em combate corpo a corpo brutal | Mestre em magia elemental e golens de Âmbar | Atiradora com armas de fogo, arcos e armadilhas |
+| <img src="docs/images/destroyer.png" height="210" alt="Destruidor" /> | <img src="docs/images/alchemist.png" height="210" alt="Alquimista" /> | <img src="docs/images/vanquisher.png" height="210" alt="Conquistadora" /> |
+| *Titã • Carrasco • Espectral* | *Arcano • Erudição • Forja* | *Atiradora • Ladina • Árbitra* |
 
 </div>
 
 ---
 
-## 🛡️ Aviso do Windows SmartScreen
+## 📂 Estrutura do Repositório
 
-Por ser um instalador comunitário novo e independente, o Windows Defender SmartScreen pode exibir uma tela azul preventiva dizendo *"O Windows protegeu o seu computador"*:
-
-1. Clique em **"Mais informações"**.
-2. Clique no botão **"Executar assim mesmo"**.
-
-> O instalador é **100% seguro e limpo (0/72 detecções no VirusTotal)**, compilado sem instaladores suspeitos e com código-fonte aberto aqui no repositório.
-
----
-
-## 🔐 Hashes Criptográficos (SHA-256)
-
-Para conferência de integridade dos arquivos oficiais da [Release v1.4.0](https://github.com/palestino7/Torchlight-ptBR/releases/latest):
-
-| Arquivo | Tamanho | Hash SHA-256 |
-| :--- | :--- | :--- |
-| `Torchlight_Traducao_ptBR_Setup.exe` | 2.88 MB | `9f7c7836a0dbe5641572ab11d707e74c94956c5a0df9b7cc9e7c78d33bea6baf` |
-| `Torchlight_Traducao_ptBR_v1.4.0.zip` | 2.36 MB | `d5369aabad8277a3dabe06b57c7105154042a102c6a947c559904fda7f8a9a23` |
+```text
+├── docs/images/              # Artes e recursos visuais da documentação
+├── src/installer/            # Script Inno Setup 6 (setup.iss) e pipeline de compilação
+├── tools/                    # Compilador de tradução, patcher binário C e verificador
+└── translation_ptbr/         # Catálogo JSON, translation.dat, fonte TTF e layouts XML
+```
 
 ---
 
-## 👤 Créditos
-
-- **Idealização, Tradução e Instalador**: **[Palestino7](https://github.com/palestino7)**
-- **Desenvolvedora do Jogo**: Runic Games Inc. (*Torchlight* © 2009)
-- **Licença**: [MIT License](LICENSE)
+<div align="center">
+  <sub>Desenvolvido por <a href="https://github.com/palestino7"><b>Palestino7</b></a> • Distribuído sob a <a href="LICENSE">Licença MIT</a></sub>
+</div>
