@@ -347,6 +347,38 @@ def patch_executable(exe_path: str, backup: bool = True) -> bool:
     if len(data) > 0x68EF2C + 24 and (data[0x68EF2C : 0x68EF2C + 22] == "Difficulty\x00".encode("utf-16le") or data[0x68EF2C : 0x68EF2C + 24] == u16_dificuldade):
         data[0x68EF2C : 0x68EF2C + 24] = u16_dificuldade
 
+    # Raw 0x68ee8c (UTF-16LE, 20 bytes): L"Waypoints\0" -> L"Teleporte\0"
+    u16_waypoints = "Waypoints\x00".encode("utf-16le")
+    u16_teleporte = "Teleporte\x00".encode("utf-16le")
+    if len(data) > 0x68EE8C + 20 and (data[0x68EE8C : 0x68EE8C + 20] == u16_waypoints or data[0x68EE8C : 0x68EE8C + 20] == u16_teleporte):
+        data[0x68EE8C : 0x68EE8C + 20] = u16_teleporte
+
+    # Raw 0x6914d8 (UTF-16LE, 20 bytes): L" Defeated\0" -> L" Abatidos\0"
+    u16_def = " Defeated\x00".encode("utf-16le")
+    u16_aba = " Abatidos\x00".encode("utf-16le")
+    if len(data) > 0x6914D8 + 20 and (data[0x6914D8 : 0x6914D8 + 20] == u16_def or data[0x6914D8 : 0x6914D8 + 20] == u16_aba):
+        data[0x6914D8 : 0x6914D8 + 20] = u16_aba
+
+    # Raw 0x6914ec (UTF-16LE, 12 bytes): L"Found\0" -> L"Pegos\0"
+    u16_found = "Found\x00".encode("utf-16le")
+    u16_pegos = "Pegos\x00".encode("utf-16le")
+    if len(data) > 0x6914EC + 12 and (data[0x6914EC : 0x6914EC + 12] == u16_found or data[0x6914EC : 0x6914EC + 12] == u16_pegos):
+        data[0x6914EC : 0x6914EC + 12] = u16_pegos
+
+    # Pet return notifications (Raw 0x67bbf4 to 0x67bd08)
+    if len(data) > 0x67BD08 + 88:
+        pet_patches = [
+            (0x67BBF4, 56, "Your pet returns from town.\x00".encode("utf-16le"), "Seu mascote retornou.\x00".encode("utf-16le")),
+            (0x67BC2C, 56, "Your pet meets you in town.\x00".encode("utf-16le"), "Seu mascote o encontrou.\x00".encode("utf-16le")),
+            (0x67BC68, 88, "Your pet returns from town, and brings you\n\x00".encode("utf-16le"), "Seu mascote retornou e trouxe para você:\n\x00".encode("utf-16le")),
+            (0x67BCC8, 60, " Gold\nfrom the sale of items.\x00".encode("utf-16le"), " de ouro\npela venda de itens.\x00".encode("utf-16le")),
+            (0x67BD08, 88, "Your pet meets you in town, and brings you\n\x00".encode("utf-16le"), "Seu mascote o achou e trouxe para você:\n\x00".encode("utf-16le")),
+        ]
+        for p_off, p_max, p_orig, p_trans in pet_patches:
+            if data[p_off : p_off + len(p_orig)] == p_orig or data[p_off : p_off + len(p_trans)] == p_trans:
+                data[p_off : p_off + p_max] = b"\x00" * p_max
+                data[p_off : p_off + len(p_trans)] = p_trans
+
     with open(exe_path, "wb") as f:
         f.write(data)
 

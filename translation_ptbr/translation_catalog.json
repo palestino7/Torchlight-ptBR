@@ -204,7 +204,8 @@
         "id": "UI_0034",
         "original": "Continue",
         "translation": "Continuar",
-        "context": "media/UI/mainmenuframe.layout"
+        "context": "media/UI/mainmenuframe.layout",
+        "status": "translated"
       },
       {
         "id": "UI_0035",
@@ -236,7 +237,8 @@
         "id": "UI_0069",
         "original": "damage per second",
         "translation": "dano por segundo",
-        "context": "media/UI/tooltip.layout"
+        "context": "media/UI/tooltip.layout",
+        "status": "translated"
       },
       {
         "original": "Death is permanent!",
@@ -516,8 +518,9 @@
       {
         "id": "UI_0036",
         "original": "Hardcore",
-        "translation": "Hardcore",
-        "context": "media/UI/difficulty.layout"
+        "translation": "Modo Hardcore",
+        "context": "media/UI/difficulty.layout",
+        "status": "translated"
       },
       {
         "original": "High",
@@ -2788,7 +2791,8 @@
         "id": "Quests_0235",
         "original": "QUEST COMPLETE",
         "translation": "MISSÃO CONCLUÍDA",
-        "context": "media/Quests/StoryQuest/ruins/RUINSPT1.DAT.adm"
+        "context": "media/Quests/StoryQuest/ruins/RUINSPT1.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Quests_0236",
@@ -49600,7 +49604,8 @@
         "id": "Affixes_0065",
         "original": "CHEST ARMOR",
         "translation": "ARMADURA DE PEITORAL",
-        "context": "media/Affixes/Items/OFTHECHEETAH.DAT.adm"
+        "context": "media/Affixes/Items/OFTHECHEETAH.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Affixes_0066",
@@ -50278,7 +50283,8 @@
         "id": "Affixes_0178",
         "original": "SHOULDER ARMOR",
         "translation": "ARMADURA DE OMBREIRAS",
-        "context": "media/Affixes/Items/OFTHEMULE.DAT.adm"
+        "context": "media/Affixes/Items/OFTHEMULE.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Affixes_0179",
@@ -68921,8 +68927,9 @@
       {
         "id": "Globals_0029",
         "original": "HRS",
-        "translation": "HRS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "H",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0030",
@@ -69024,8 +69031,9 @@
       {
         "id": "Globals_0046",
         "original": "TIP",
-        "translation": "TIP",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DICA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0047",
@@ -69114,8 +69122,9 @@
       {
         "id": "Globals_0061",
         "original": "hrs",
-        "translation": "hrs",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "h",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0062",
@@ -69432,8 +69441,9 @@
       {
         "id": "Globals_0114",
         "original": "MINS",
-        "translation": "MINS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MIN",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0115",
@@ -69516,8 +69526,9 @@
       {
         "id": "Globals_0128",
         "original": "RARE",
-        "translation": "RARE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RARO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0129",
@@ -69535,7 +69546,8 @@
         "id": "Globals_0131",
         "original": "Rare",
         "translation": "Raro",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0132",
@@ -69552,8 +69564,9 @@
       {
         "id": "Globals_0134",
         "original": "SECS",
-        "translation": "SECS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "S",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0135",
@@ -69822,8 +69835,9 @@
       {
         "id": "Globals_0179",
         "original": "DEATH",
-        "translation": "DEATH",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DA MORTE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0180",
@@ -69835,7 +69849,8 @@
         "id": "Globals_0181",
         "original": "Death",
         "translation": "da Morte",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0182",
@@ -69888,8 +69903,9 @@
       {
         "id": "Globals_0190",
         "original": "Floor",
-        "translation": "Chão",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Andar",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0191",
@@ -69996,8 +70012,9 @@
       {
         "id": "Globals_0208",
         "original": "PRICE",
-        "translation": "PRICE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PREÇO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0209",
@@ -70056,8 +70073,9 @@
       {
         "id": "Globals_0218",
         "original": "TITLE",
-        "translation": "TITLE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "TÍTULO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0219",
@@ -70176,8 +70194,9 @@
       {
         "id": "Globals_0238",
         "original": "price",
-        "translation": "price",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "preço",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0239",
@@ -70500,8 +70519,9 @@
       {
         "id": "Globals_0292",
         "original": "PIECES",
-        "translation": "PIECES",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PEÇAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0293",
@@ -70566,8 +70586,9 @@
       {
         "id": "Globals_0303",
         "original": "RETIRE",
-        "translation": "RETIRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "APOSENTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0304",
@@ -70590,8 +70611,9 @@
       {
         "id": "Globals_0307",
         "original": "Retire",
-        "translation": "Retire",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Aposentar",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0308",
@@ -70662,8 +70684,9 @@
       {
         "id": "Globals_0319",
         "original": "TITLES",
-        "translation": "TITLES",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "TÍTULOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0320",
@@ -70818,8 +70841,9 @@
       {
         "id": "Globals_0345",
         "original": "pieces",
-        "translation": "pieces",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "peças",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0346",
@@ -70920,8 +70944,9 @@
       {
         "id": "Globals_0362",
         "original": "BLOCKED",
-        "translation": "BLOCKED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "BLOQUEADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0363",
@@ -70933,7 +70958,8 @@
         "id": "Globals_0364",
         "original": "Blocked",
         "translation": "Bloqueado",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0365",
@@ -70950,8 +70976,9 @@
       {
         "id": "Globals_0367",
         "original": "DESTROY",
-        "translation": "DESTROY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DESTRUIR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0368",
@@ -70968,8 +70995,9 @@
       {
         "id": "Globals_0370",
         "original": "Demigod",
-        "translation": "Demigod",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Semideus",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0371",
@@ -70986,8 +71014,9 @@
       {
         "id": "Globals_0373",
         "original": "ENCHANT",
-        "translation": "ENCHANT",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ENCANTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0374",
@@ -71016,14 +71045,16 @@
       {
         "id": "Globals_0378",
         "original": "FISHING",
-        "translation": "FISHING",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PESCA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0379",
         "original": "FLEEING",
-        "translation": "FLEEING",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "FUGINDO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0380",
@@ -71041,13 +71072,15 @@
         "id": "Globals_0382",
         "original": "Fishing",
         "translation": "Pesca",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0383",
         "original": "Fleeing",
-        "translation": "Em Fuga",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Fugindo",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0384",
@@ -71112,8 +71145,9 @@
       {
         "id": "Globals_0394",
         "original": "LEVELUP",
-        "translation": "LEVELUP",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SUBIU DE NÍVEL",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0395",
@@ -71226,20 +71260,23 @@
       {
         "id": "Globals_0413",
         "original": "REACHED",
-        "translation": "REACHED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ALCANÇADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0414",
         "original": "RECOVER",
-        "translation": "RECOVER",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RECUPERAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0415",
         "original": "RETIRED",
-        "translation": "RETIRED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "APOSENTADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0416",
@@ -71419,7 +71456,8 @@
         "id": "Globals_0445",
         "original": "reached",
         "translation": "alcançado",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0446",
@@ -71514,8 +71552,9 @@
       {
         "id": "Globals_0461",
         "original": "BUYPRICE",
-        "translation": "BUYPRICE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PREÇO DE COMPRA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0462",
@@ -71538,8 +71577,9 @@
       {
         "id": "Globals_0465",
         "original": "CONTINUE",
-        "translation": "CONTINUE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CONTINUAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0466",
@@ -71622,8 +71662,9 @@
       {
         "id": "Globals_0479",
         "original": "EQUIPPED",
-        "translation": "EQUIPPED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "EQUIPADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0480",
@@ -71730,14 +71771,16 @@
       {
         "id": "Globals_0497",
         "original": "HARDCORE",
-        "translation": "HARDCORE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MODO HARDCORE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0498",
         "original": "HEIRLOOM",
-        "translation": "HEIRLOOM",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "HERANÇA DE FAMÍLIA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0499",
@@ -71766,8 +71809,9 @@
       {
         "id": "Globals_0503",
         "original": "INFLICTS",
-        "translation": "INFLICTS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CAUSA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0504",
@@ -71778,8 +71822,9 @@
       {
         "id": "Globals_0505",
         "original": "Inflicts",
-        "translation": "Inflicts",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Aplica",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0506",
@@ -71803,7 +71848,8 @@
         "id": "Globals_0509",
         "original": "Level Up",
         "translation": "Subiu de Nível",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0510",
@@ -71814,8 +71860,9 @@
       {
         "id": "Globals_0511",
         "original": "Lionized",
-        "translation": "Lionized",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "Aclamado",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0512",
@@ -71886,8 +71933,9 @@
       {
         "id": "Globals_0523",
         "original": "NEWQUEST",
-        "translation": "NEWQUEST",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NOVA MISSÃO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0524",
@@ -71916,8 +71964,9 @@
       {
         "id": "Globals_0528",
         "original": "PURCHASE",
-        "translation": "PURCHASE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "COMPRAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0529",
@@ -72018,8 +72067,9 @@
       {
         "id": "Globals_0545",
         "original": "VERYHARD",
-        "translation": "VERYHARD",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MUITO DIFÍCIL",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0546",
@@ -72090,8 +72140,9 @@
       {
         "id": "Globals_0557",
         "original": "ANCESTORS",
-        "translation": "ANCESTORS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ANCESTRAIS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0558",
@@ -72258,8 +72309,9 @@
       {
         "id": "Globals_0585",
         "original": "ENCHANTED",
-        "translation": "ENCHANTED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ENCANTADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0586",
@@ -72444,8 +72496,9 @@
       {
         "id": "Globals_0616",
         "original": "NEXTLEVEL",
-        "translation": "NEXTLEVEL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PRÓXIMO NÍVEL",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0617",
@@ -72486,8 +72539,9 @@
       {
         "id": "Globals_0623",
         "original": "PERSECOND",
-        "translation": "PERSECOND",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "POR SEGUNDO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0624",
@@ -72504,8 +72558,9 @@
       {
         "id": "Globals_0626",
         "original": "RESURRECT",
-        "translation": "RESURRECT",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RESSUSCITAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0627",
@@ -72528,8 +72583,9 @@
       {
         "id": "Globals_0630",
         "original": "SELLPRICE",
-        "translation": "SELLPRICE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PREÇO DE VENDA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0631",
@@ -72841,14 +72897,16 @@
       {
         "id": "Globals_0682",
         "original": "CHESTARMOR",
-        "translation": "CHESTARMOR",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ARMADURA DE PEITORAL",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0683",
         "original": "CLASSSKILL",
-        "translation": "CLASSSKILL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "HABILIDADE DE CLASSE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0684",
@@ -72883,14 +72941,16 @@
       {
         "id": "Globals_0689",
         "original": "DIFFICULTY",
-        "translation": "DIFFICULTY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DIFICULDADE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0690",
         "original": "DRAGASPELL",
-        "translation": "DRAGASPELL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ARRASTE UM FEITIÇO AQUI PARA APRENDÊ-LO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0691",
@@ -72902,7 +72962,8 @@
         "id": "Globals_0692",
         "original": "Difficulty",
         "translation": "Dificuldade",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0693",
@@ -72955,8 +73016,9 @@
       {
         "id": "Globals_0701",
         "original": "FISHCAUGHT",
-        "translation": "FISHCAUGHT",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PEIXES PESCADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0702",
@@ -73009,8 +73071,9 @@
       {
         "id": "Globals_0710",
         "original": "INCOMPLETE",
-        "translation": "INCOMPLETE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "INCOMPLETO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0711",
@@ -73087,8 +73150,9 @@
       {
         "id": "Globals_0723",
         "original": "NOHEIRLOOM",
-        "translation": "NOHEIRLOOM",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SEM HERANÇA DE FAMÍLIA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0724",
@@ -73225,8 +73289,9 @@
       {
         "id": "Globals_0746",
         "original": "STEPSTAKEN",
-        "translation": "STEPSTAKEN",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PASSOS DADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0747",
@@ -73285,8 +73350,9 @@
       {
         "id": "Globals_0756",
         "original": "TIMEPLAYED",
-        "translation": "TIMEPLAYED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "TEMPO JOGADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0757",
@@ -73375,8 +73441,9 @@
       {
         "id": "Globals_0771",
         "original": "YOUCAUGHTA",
-        "translation": "YOUCAUGHTA",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VOCÊ PESCOU UM(A)",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0772",
@@ -73406,7 +73473,8 @@
         "id": "Globals_0776",
         "original": "per second",
         "translation": "por segundo",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0777",
@@ -73573,8 +73641,9 @@
       {
         "id": "Globals_0804",
         "original": "BLOCKCHANCE",
-        "translation": "BLOCKCHANCE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CHANCE DE BLOQUEIO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0805",
@@ -73651,8 +73720,9 @@
       {
         "id": "Globals_0817",
         "original": "CONTEXTTIPS",
-        "translation": "CONTEXTTIPS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DICAS DE CONTEXTO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0818",
@@ -73808,7 +73878,8 @@
         "id": "Globals_0843",
         "original": "Fish Caught",
         "translation": "Peixes Pescados",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0844",
@@ -73885,8 +73956,9 @@
       {
         "id": "Globals_0856",
         "original": "LOADINGTIPS",
-        "translation": "LOADINGTIPS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DICAS DE CARREGAMENTO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0857",
@@ -73915,8 +73987,9 @@
       {
         "id": "Globals_0861",
         "original": "OFWEAPONDPS",
-        "translation": "OFWEAPONDPS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DO DPS DA ARMA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0862",
@@ -73939,20 +74012,23 @@
       {
         "id": "Globals_0865",
         "original": "PORTALSUSED",
-        "translation": "PORTALSUSED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PORTAIS USADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0866",
         "original": "POTIONSUSED",
-        "translation": "POTIONSUSED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "POÇÕES USADAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0867",
         "original": "PRESSRETIRE",
-        "translation": "PRESSRETIRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PRESSIONE APOSENTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0868",
@@ -74077,8 +74153,9 @@
       {
         "id": "Globals_0888",
         "original": "TRAPSSPRUNG",
-        "translation": "TRAPSSPRUNG",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ARMADILHAS DESARMADAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0889",
@@ -74125,8 +74202,9 @@
       {
         "id": "Globals_0896",
         "original": "USEIDENTIFY",
-        "translation": "USEIDENTIFY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "USE UM PERGAMINHO DE IDENTIFICAÇÃO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0897",
@@ -74317,8 +74395,9 @@
       {
         "id": "Globals_0928",
         "original": "AREDESTROYED",
-        "translation": "AREDESTROYED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SÃO DESTRUÍDAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0929",
@@ -74449,8 +74528,9 @@
       {
         "id": "Globals_0950",
         "original": "CANNOTRETIRE",
-        "translation": "CANNOTRETIRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NÃO PODE SE APOSENTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0951",
@@ -74461,8 +74541,9 @@
       {
         "id": "Globals_0952",
         "original": "CHESTSOPENED",
-        "translation": "CHESTSOPENED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "BAÚS ABERTOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0953",
@@ -74527,8 +74608,9 @@
       {
         "id": "Globals_0963",
         "original": "ENCHANTPRICE",
-        "translation": "ENCHANTPRICE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PREÇO DO ENCANTAMENTO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0964",
@@ -74587,8 +74669,9 @@
       {
         "id": "Globals_0973",
         "original": "GLANCINGBLOW",
-        "translation": "GLANCINGBLOW",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "GOLPE RASANTE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0974",
@@ -74599,8 +74682,9 @@
       {
         "id": "Globals_0975",
         "original": "GOLDGATHERED",
-        "translation": "GOLDGATHERED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "OURO COLETADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0976",
@@ -74647,8 +74731,9 @@
       {
         "id": "Globals_0983",
         "original": "INTOTHELIGHT",
-        "translation": "INTOTHELIGHT",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NA LUZ",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_0984",
@@ -74767,8 +74852,9 @@
       {
         "id": "Globals_1003",
         "original": "QUESTLOGFULL",
-        "translation": "QUESTLOGFULL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REGISTRO DE MISSÕES CHEIO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1004",
@@ -74791,8 +74877,9 @@
       {
         "id": "Globals_1007",
         "original": "REMOVEASPELL",
-        "translation": "REMOVEASPELL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REMOVER UM FEITIÇO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1008",
@@ -74869,8 +74956,9 @@
       {
         "id": "Globals_1020",
         "original": "TIMESGAMBLED",
-        "translation": "TIMESGAMBLED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "APOSTAS REALIZADAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1021",
@@ -74911,8 +74999,9 @@
       {
         "id": "Globals_1027",
         "original": "UNIDENTIFIED",
-        "translation": "UNIDENTIFIED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NÃO IDENTIFICADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1028",
@@ -74989,14 +75078,16 @@
       {
         "id": "Globals_1040",
         "original": "YOUPLUNGETHE",
-        "translation": "YOUPLUNGETHE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VOCÊ MERGULHA O(A)",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1041",
         "original": "You caught a",
         "translation": "Você pescou um(a)",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1042",
@@ -75157,8 +75248,9 @@
       {
         "id": "Globals_1068",
         "original": "ALWAYSENABLED",
-        "translation": "ALWAYSENABLED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SEMPRE HABILITADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1069",
@@ -75169,8 +75261,9 @@
       {
         "id": "Globals_1070",
         "original": "BARRELSBROKEN",
-        "translation": "BARRELSBROKEN",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "BARRIS QUEBRADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1071",
@@ -75223,8 +75316,9 @@
       {
         "id": "Globals_1079",
         "original": "DUELWIELDONLY",
-        "translation": "DUELWIELDONLY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "APENAS EMPUNHADURA DUPLA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1080",
@@ -75259,8 +75353,9 @@
       {
         "id": "Globals_1085",
         "original": "FAMEINCREASED",
-        "translation": "FAMEINCREASED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "FAMA AUMENTADA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1086",
@@ -75320,7 +75415,8 @@
         "id": "Globals_1095",
         "original": "Glancing Blow",
         "translation": "Golpe Rasante",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1096",
@@ -75338,7 +75434,8 @@
         "id": "Globals_1098",
         "original": "Gold Gathered",
         "translation": "Ouro Coletado",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1099",
@@ -75583,8 +75680,9 @@
       {
         "id": "Globals_1139",
         "original": "QUESTCOMPLETE",
-        "translation": "QUESTCOMPLETE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MISSÃO CONCLUÍDA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1140",
@@ -75601,20 +75699,23 @@
       {
         "id": "Globals_1142",
         "original": "REMOVEASPELL2",
-        "translation": "REMOVEASPELL2",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REMOVER UM FEITIÇO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1143",
         "original": "REQUIRESLEVEL",
-        "translation": "REQUIRESLEVEL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUER NÍVEL",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1144",
         "original": "REQUIRESMAGIC",
-        "translation": "REQUIRESMAGIC",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUER MAGIA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1145",
@@ -75637,8 +75738,9 @@
       {
         "id": "Globals_1148",
         "original": "SHOULDERARMOR",
-        "translation": "SHOULDERARMOR",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ARMADURA DE OMBREIRAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1149",
@@ -75776,7 +75878,8 @@
         "id": "Globals_1171",
         "original": "are destroyed",
         "translation": "são destruídas",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1172",
@@ -75812,7 +75915,8 @@
         "id": "Globals_1177",
         "original": "of Weapon DPS",
         "translation": "do DPS da Arma",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1178",
@@ -75968,7 +76072,8 @@
         "id": "Globals_1203",
         "original": "Always Enabled",
         "translation": "Sempre Habilitado",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1204",
@@ -75997,8 +76102,9 @@
       {
         "id": "Globals_1208",
         "original": "CRITICALSTRIKE",
-        "translation": "CRITICALSTRIKE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ACERTO CRÍTICO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1209",
@@ -76051,8 +76157,9 @@
       {
         "id": "Globals_1217",
         "original": "DEFENSIVESPELL",
-        "translation": "DEFENSIVESPELL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "FEITIÇO DEFENSIVO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1218",
@@ -76142,7 +76249,8 @@
         "id": "Globals_1232",
         "original": "Fame Increased",
         "translation": "Fama Aumentada",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1233",
@@ -76225,8 +76333,9 @@
       {
         "id": "Globals_1246",
         "original": "ITEMSENCHANTED",
-        "translation": "ITEMSENCHANTED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ITENS ENCANTADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1247",
@@ -76237,8 +76346,9 @@
       {
         "id": "Globals_1248",
         "original": "LEVELSEXPLORED",
-        "translation": "LEVELSEXPLORED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NÍVEIS EXPLORADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1249",
@@ -76297,8 +76407,9 @@
       {
         "id": "Globals_1258",
         "original": "OFFENSIVESPELL",
-        "translation": "OFFENSIVESPELL",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "FEITIÇO OFENSIVO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1259",
@@ -76339,8 +76450,9 @@
       {
         "id": "Globals_1265",
         "original": "PHYSICALDAMAGE",
-        "translation": "PHYSICALDAMAGE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DANO FÍSICO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1266",
@@ -76364,7 +76476,8 @@
         "id": "Globals_1269",
         "original": "Requires Level",
         "translation": "Requer Nível",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1270",
@@ -76435,8 +76548,9 @@
       {
         "id": "Globals_1281",
         "original": "TWOHANDEDMELEE",
-        "translation": "TWOHANDEDMELEE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CORPO A CORPO DE DUAS MÃOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1282",
@@ -76490,7 +76604,8 @@
         "id": "Globals_1290",
         "original": "You plunge the",
         "translation": "Você mergulha o(a)",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1291",
@@ -76532,7 +76647,8 @@
         "id": "Globals_1297",
         "original": "into the light",
         "translation": "na luz",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1298",
@@ -76544,7 +76660,8 @@
         "id": "Globals_1299",
         "original": "requires Magic",
         "translation": "requer Magia",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1300",
@@ -76670,7 +76787,8 @@
         "id": "Globals_1320",
         "original": "Critical Strike",
         "translation": "Acerto Crítico",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1321",
@@ -76687,8 +76805,9 @@
       {
         "id": "Globals_1323",
         "original": "DAMAGEPERSECOND",
-        "translation": "DAMAGEPERSECOND",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "DANO POR SEGUNDO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1324",
@@ -76795,8 +76914,9 @@
       {
         "id": "Globals_1341",
         "original": "FASTATTACKSPEED",
-        "translation": "FASTATTACKSPEED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VELOCIDADE DE ATAQUE RÁPIDA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1342",
@@ -76861,8 +76981,9 @@
       {
         "id": "Globals_1352",
         "original": "ITEMSTRANSMUTED",
-        "translation": "ITEMSTRANSMUTED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ITENS TRANSMUTADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1353",
@@ -76879,8 +77000,9 @@
       {
         "id": "Globals_1355",
         "original": "LEFTHANDREQUIRE",
-        "translation": "LEFTHANDREQUIRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUISITOS DA MÃO ESQUERDA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1356",
@@ -76957,14 +77079,16 @@
       {
         "id": "Globals_1368",
         "original": "NOGEMSTODESTROY",
-        "translation": "NOGEMSTODESTROY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SEM GEMAS PARA DESTRUIR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1369",
         "original": "NOGEMSTORECOVER",
-        "translation": "NOGEMSTORECOVER",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SEM GEMAS PARA RECUPERAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1370",
@@ -77035,8 +77159,9 @@
       {
         "id": "Globals_1381",
         "original": "POINTSREMAINING",
-        "translation": "POINTSREMAINING",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PONTOS RESTANTES",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1382",
@@ -77047,8 +77172,9 @@
       {
         "id": "Globals_1383",
         "original": "QUESTSCOMPLETED",
-        "translation": "QUESTSCOMPLETED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MISSÕES CONCLUÍDAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1384",
@@ -77059,8 +77185,9 @@
       {
         "id": "Globals_1385",
         "original": "REQUIRESDEFENSE",
-        "translation": "REQUIRESDEFENSE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUER DEFESA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1386",
@@ -77089,8 +77216,9 @@
       {
         "id": "Globals_1390",
         "original": "SLOWATTACKSPEED",
-        "translation": "SLOWATTACKSPEED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VELOCIDADE DE ATAQUE LENTA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1391",
@@ -77113,8 +77241,9 @@
       {
         "id": "Globals_1394",
         "original": "TWOHANDEDRANGED",
-        "translation": "TWOHANDEDRANGED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "À DISTÂNCIA DE DUAS MÃOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1395",
@@ -77251,8 +77380,9 @@
       {
         "id": "Globals_1417",
         "original": "DISENCHANTCHANCE",
-        "translation": "DISENCHANTCHANCE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CHANCE DE DESENCANTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1418",
@@ -77407,8 +77537,9 @@
       {
         "id": "Globals_1443",
         "original": "MONSTERSDEFEATED",
-        "translation": "MONSTERSDEFEATED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MONSTROS DERROTADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1444",
@@ -77503,20 +77634,23 @@
       {
         "id": "Globals_1459",
         "original": "REQUIRESSTRENGTH",
-        "translation": "REQUIRESSTRENGTH",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUER FORÇA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1460",
         "original": "RIGHTHANDREQUIRE",
-        "translation": "RIGHTHANDREQUIRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUISITOS DA MÃO DIREITA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1461",
         "original": "SECONDARYEFFECTS",
-        "translation": "SECONDARYEFFECTS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "EFEITOS SECUNDÁRIOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1462",
@@ -77545,8 +77679,9 @@
       {
         "id": "Globals_1466",
         "original": "THEGEMSWITHINTHE",
-        "translation": "THEGEMSWITHINTHE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "AS GEMAS DENTRO DO(A)",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1467",
@@ -77569,8 +77704,9 @@
       {
         "id": "Globals_1470",
         "original": "YOUCAUGHTNOTHING",
-        "translation": "YOUCAUGHTNOTHING",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VOCÊ NÃO PESCOU NADA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1471",
@@ -77594,7 +77730,8 @@
         "id": "Globals_1474",
         "original": "requires Defense",
         "translation": "requer Defesa",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1475",
@@ -77623,8 +77760,9 @@
       {
         "id": "Globals_1479",
         "original": "BUTNOTHINGHAPPENS",
-        "translation": "BUTNOTHINGHAPPENS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MAS NADA ACONTECE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1480",
@@ -77641,14 +77779,16 @@
       {
         "id": "Globals_1482",
         "original": "CANNOTENCHANTITEM",
-        "translation": "CANNOTENCHANTITEM",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "NÃO É POSSÍVEL ENCANTAR O ITEM",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1483",
         "original": "CHAMPIONSDEFEATED",
-        "translation": "CHAMPIONSDEFEATED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CAMPEÕES DERROTADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1484",
@@ -77732,7 +77872,8 @@
         "id": "Globals_1497",
         "original": "Fast Attack Speed",
         "translation": "Velocidade de Ataque Rápida",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1498",
@@ -77857,8 +77998,9 @@
       {
         "id": "Globals_1518",
         "original": "REQUIRESDEXTERITY",
-        "translation": "REQUIRESDEXTERITY",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "REQUER DESTREZA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1519",
@@ -77869,8 +78011,9 @@
       {
         "id": "Globals_1520",
         "original": "SINGLEHANDEDMELEE",
-        "translation": "SINGLEHANDEDMELEE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CORPO A CORPO DE UMA MÃO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1521",
@@ -77900,7 +78043,8 @@
         "id": "Globals_1525",
         "original": "Slow Attack Speed",
         "translation": "Velocidade de Ataque Lenta",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1526",
@@ -77917,8 +78061,9 @@
       {
         "id": "Globals_1528",
         "original": "WAYPOINTACTIVATED",
-        "translation": "WAYPOINTACTIVATED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "MARCO DE VIAGEM ATIVADO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1529",
@@ -77930,7 +78075,8 @@
         "id": "Globals_1530",
         "original": "requires Strength",
         "translation": "requer Força",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1531",
@@ -77959,8 +78105,9 @@
       {
         "id": "Globals_1535",
         "original": "AVERAGEATTACKSPEED",
-        "translation": "AVERAGEATTACKSPEED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VELOCIDADE DE ATAQUE MÉDIA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1536",
@@ -78055,8 +78202,9 @@
       {
         "id": "Globals_1551",
         "original": "FASTESTATTACKSPEED",
-        "translation": "FASTESTATTACKSPEED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VELOCIDADE DE ATAQUE MAIS RÁPIDA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1552",
@@ -78187,8 +78335,9 @@
       {
         "id": "Globals_1573",
         "original": "SINGLEHANDEDRANGED",
-        "translation": "SINGLEHANDEDRANGED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "À DISTÂNCIA DE UMA MÃO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1574",
@@ -78199,8 +78348,9 @@
       {
         "id": "Globals_1575",
         "original": "SLOWESTATTACKSPEED",
-        "translation": "SLOWESTATTACKSPEED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VELOCIDADE DE ATAQUE MAIS LENTA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1576",
@@ -78235,14 +78385,16 @@
       {
         "id": "Globals_1581",
         "original": "YOUATTAINTHERANKOF",
-        "translation": "YOUATTAINTHERANKOF",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VOCÊ ALCANÇA O POSTO DE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1582",
         "original": "You caught nothing",
         "translation": "Você não pescou nada",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1583",
@@ -78302,7 +78454,8 @@
         "id": "Globals_1592",
         "original": "requires Dexterity",
         "translation": "requer Destreza",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1593",
@@ -78355,14 +78508,16 @@
       {
         "id": "Globals_1601",
         "original": "CANTUSEUNIDENTIFIED",
-        "translation": "CANTUSEUNIDENTIFIED",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "ITENS NÃO IDENTIFICADOS NÃO PODEM SER USADOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1602",
         "original": "Cannot enchant item",
         "translation": "Não é possível encantar o item",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1603",
@@ -78505,8 +78660,9 @@
       {
         "id": "Globals_1626",
         "original": "MAXIMUMENCHANTMENTS",
-        "translation": "MAXIMUMENCHANTMENTS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "LIMITE MÁXIMO DE ENCANTAMENTOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1627",
@@ -78584,7 +78740,8 @@
         "id": "Globals_1639",
         "original": "The gems within the",
         "translation": "As gemas dentro do(a)",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1640",
@@ -78602,7 +78759,8 @@
         "id": "Globals_1642",
         "original": "but nothing happens",
         "translation": "mas nada acontece",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1643",
@@ -78644,7 +78802,8 @@
         "id": "Globals_1649",
         "original": "un-learn this spell",
         "translation": "esquecer este feitiço",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1650",
@@ -78661,20 +78820,23 @@
       {
         "id": "Globals_1652",
         "original": "ANDACCIDENTALLYREMOV",
-        "translation": "ANDACCIDENTALLYREMOV",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "E ACIDENTALMENTE REMOVE TODOS OS ENCANTAMENTOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1653",
         "original": "ANDADDSNEWENCHANTMEN",
-        "translation": "ANDADDSNEWENCHANTMEN",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "E ADICIONA NOVOS ENCANTAMENTOS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1654",
         "original": "ANDCREATESNEWSOCKETS",
-        "translation": "ANDCREATESNEWSOCKETS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "E CRIA NOVOS ENGASTES",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1655",
@@ -78686,7 +78848,8 @@
         "id": "Globals_1656",
         "original": "Average Attack Speed",
         "translation": "Velocidade de Ataque Média",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1657",
@@ -78746,7 +78909,8 @@
         "id": "Globals_1666",
         "original": "Fastest Attack Speed",
         "translation": "Velocidade de Ataque Mais Rápida",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1667",
@@ -78757,8 +78921,9 @@
       {
         "id": "Globals_1668",
         "original": "LEFTCLICKTOASSIGNSKI",
-        "translation": "LEFTCLICKTOASSIGNSKI",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "CLIQUE COM O BOTÃO ESQUERDO PARA ATRIBUIR HABILIDADES OU ITENS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1669",
@@ -78775,38 +78940,44 @@
       {
         "id": "Globals_1671",
         "original": "PLACEITEMHERETODESTR",
-        "translation": "PLACEITEMHERETODESTR",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "COLOQUE O ITEM AQUI PARA DESTRUIR AS GEMAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1672",
         "original": "PLACEITEMHERETOENCHA",
-        "translation": "PLACEITEMHERETOENCHA",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "COLOQUE O ITEM AQUI PARA ENCANTAR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1673",
         "original": "PLACEITEMHERETORECOV",
-        "translation": "PLACEITEMHERETORECOV",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "COLOQUE O ITEM AQUI PARA RECUPERAR AS GEMAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1674",
         "original": "PRESSDESTROYTODESTRO",
-        "translation": "PRESSDESTROYTODESTRO",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PRESSIONE DESTRUIR PARA DESTRUIR AS GEMAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1675",
         "original": "PRESSENCHANTTORECEIV",
-        "translation": "PRESSENCHANTTORECEIV",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PRESSIONE ENCANTAR PARA RECEBER UM EFEITO ALEATÓRIO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1676",
         "original": "PRESSRECOVERTORECOVE",
-        "translation": "PRESSRECOVERTORECOVE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "PRESSIONE RECUPERAR PARA RECUPERAR AS GEMAS",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1677",
@@ -78823,32 +78994,37 @@
       {
         "id": "Globals_1679",
         "original": "RESURRECTATTHEENTRAN",
-        "translation": "RESURRECTATTHEENTRAN",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RESSUSCITE NA ENTRADA DESTE ANDAR, MAS PERCA OURO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1680",
         "original": "RESURRECTHEREBUTLOSE",
-        "translation": "RESURRECTHEREBUTLOSE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RESSUSCITE AQUI, MAS PERCA EXPERIÊNCIA E FAMA",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1681",
         "original": "RESURRECTINTOWNANDLO",
-        "translation": "RESURRECTINTOWNANDLO",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "RESSUSCITE NA CIDADE SEM PENALIDADE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1682",
         "original": "RIGHTANDLEFTHANDSREQ",
-        "translation": "RIGHTANDLEFTHANDSREQ",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "AMBAS AS MÃOS REQUEREM",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1683",
         "original": "Slowest Attack Speed",
         "translation": "Velocidade de Ataque Mais Lenta",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1684",
@@ -78871,14 +79047,16 @@
       {
         "id": "Globals_1687",
         "original": "THEENCHANTERPERFORMS",
-        "translation": "THEENCHANTERPERFORMS",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "O ENCANTADOR REALIZA OS RITOS ANCESTRAIS NO(A)",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1688",
         "original": "THEITEMISDESTROYEDRE",
-        "translation": "THEITEMISDESTROYEDRE",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "O ITEM É DESTRUÍDO, RECUPERANDO AS GEMAS EM SEU INTERIOR",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1689",
@@ -78889,14 +79067,16 @@
       {
         "id": "Globals_1690",
         "original": "YOUCAUGHTAFISHCONTAI",
-        "translation": "YOUCAUGHTAFISHCONTAI",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "VOCÊ PESCOU UM PEIXE CONTENDO",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1691",
         "original": "YOURPETCANNOTDEPARTF",
-        "translation": "YOURPETCANNOTDEPARTF",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "SEU MASCOTE NÃO PODE PARTIR DAQUI",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1692",
@@ -79328,7 +79508,8 @@
         "id": "Globals_1763",
         "original": "You attain the rank of",
         "translation": "Você alcança o posto de",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1764",
@@ -79501,8 +79682,9 @@
       {
         "id": "Globals_1792",
         "original": "PLACEITEMHERETOPASSDOWN",
-        "translation": "PLACEITEMHERETOPASSDOWN",
-        "context": "media/GLOBALS.DAT.adm"
+        "translation": "COLOQUE O ITEM AQUI PARA PASSAR ADIANTE",
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1793",
@@ -79544,7 +79726,8 @@
         "id": "Globals_1799",
         "original": "Your quest log is full!",
         "translation": "Seu registro de missões está cheio!",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1800",
@@ -79556,7 +79739,8 @@
         "id": "Globals_1801",
         "original": "and creates new sockets",
         "translation": "e cria novos engastes",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1802",
@@ -79850,7 +80034,8 @@
         "id": "Globals_1850",
         "original": "and adds new enchantments",
         "translation": "e adiciona novos encantamentos",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1851",
@@ -80222,7 +80407,8 @@
         "id": "Globals_1912",
         "original": "You caught a fish containing",
         "translation": "Você pescou um peixe contendo",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1913",
@@ -80300,7 +80486,8 @@
         "id": "Globals_1925",
         "original": "Drag a spell here to learn it",
         "translation": "Arraste um feitiço aqui para aprendê-lo",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_1926",
@@ -80780,7 +80967,8 @@
         "id": "Globals_2005",
         "original": "Your pet cannot depart from here!",
         "translation": "Seu mascote não pode partir daqui!",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2006",
@@ -80816,7 +81004,8 @@
         "id": "Globals_2011",
         "original": "Unidentified items cannot be used-",
         "translation": "Itens não identificados não podem ser usados-",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2012",
@@ -80948,7 +81137,8 @@
         "id": "Globals_2033",
         "original": "Left-Click to assign Skills or Items",
         "translation": "Clique com o botão esquerdo para atribuir Habilidades ou Itens",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2034",
@@ -81128,7 +81318,8 @@
         "id": "Globals_2063",
         "original": "You cannot retire until you reach level",
         "translation": "Você não pode se aposentar até alcançar o nível",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2064",
@@ -81230,7 +81421,8 @@
         "id": "Globals_2080",
         "original": "and accidentally removes all enchantments",
         "translation": "e acidentalmente remove todos os encantamentos",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2081",
@@ -81422,7 +81614,8 @@
         "id": "Globals_2112",
         "original": "use an Identify Scroll to reveal enchantments",
         "translation": "use um Pergaminho de Identificação para revelar encantamentos",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2113",
@@ -81506,7 +81699,8 @@
         "id": "Globals_2126",
         "original": "The enchanter performs the ancient rites on the",
         "translation": "O encantador realiza os ritos ancestrais no(a)",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2127",
@@ -81626,7 +81820,8 @@
         "id": "Globals_2146",
         "original": "The item is destroyed, recovering the gems within",
         "translation": "O item é destruído, recuperando as gemas em seu interior",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2147",
@@ -82082,7 +82277,8 @@
         "id": "Globals_2222",
         "original": "Resurrect here, but lose [XP] Experience and [FAME] Fame.",
         "translation": "Ressuscite aqui, mas perca [XP] de Experiência e [FAME] de Fama.",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2223",
@@ -82208,7 +82404,8 @@
         "id": "Globals_2243",
         "original": "Resurrect at the entrance to this floor, but lose [GOLD] Gold.",
         "translation": "Ressuscite na entrada deste andar, mas perca [GOLD] de Ouro.",
-        "context": "media/GLOBALS.DAT.adm"
+        "context": "media/GLOBALS.DAT.adm",
+        "status": "translated"
       },
       {
         "id": "Globals_2244",
@@ -82737,6 +82934,538 @@
         "original": "Type",
         "translation": "Tipo",
         "context": "media/GLOBALS.DAT.adm"
+      },
+      {
+        "id": "Globals_2332",
+        "original": "VERY HARD",
+        "translation": "MUITO DIFÍCIL",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2333",
+        "original": "Difficulty:",
+        "translation": "Dificuldade:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2334",
+        "original": "Ancestors:",
+        "translation": "Ancestrais:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2335",
+        "original": "PRESS RETIRE",
+        "translation": "PRESSIONE APOSENTAR",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2336",
+        "original": "CANNOT RETIRE",
+        "translation": "NÃO PODE SE APOSENTAR",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2337",
+        "original": "NO HEIRLOOM",
+        "translation": "SEM HERANÇA DE FAMÍLIA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2339",
+        "original": "Disenchant chance:",
+        "translation": "Chance de desencantar:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2340",
+        "original": "DISENCHANT CHANCE",
+        "translation": "CHANCE DE DESENCANTAR",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2341",
+        "original": "Enchant price:",
+        "translation": "Preço do encantamento:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2342",
+        "original": "ENCHANT PRICE",
+        "translation": "PREÇO DO ENCANTAMENTO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2343",
+        "original": "ITEMS ENCHANTED",
+        "translation": "ITENS ENCANTADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2344",
+        "original": "MAXIMUM ENCHANTMENTS",
+        "translation": "LIMITE MÁXIMO DE ENCANTAMENTOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2345",
+        "original": "ITEMS TRANSMUTED",
+        "translation": "ITENS TRANSMUTADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2346",
+        "original": "Armor/Trinkets:",
+        "translation": "Armadura/Acessórios:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2347",
+        "original": "Weapon:",
+        "translation": "Arma:",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2348",
+        "original": "Conveys",
+        "translation": "Concede",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2350",
+        "original": "Equipped",
+        "translation": "Equipado",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2351",
+        "original": "CLASS SKILL",
+        "translation": "HABILIDADE DE CLASSE",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2352",
+        "original": "NEXT LEVEL",
+        "translation": "PRÓXIMO NÍVEL",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2353",
+        "original": "PER SECOND",
+        "translation": "POR SEGUNDO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2354",
+        "original": "BLOCK CHANCE",
+        "translation": "CHANCE DE BLOQUEIO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2355",
+        "original": "DAMAGE PER SECOND",
+        "translation": "DANO POR SEGUNDO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2356",
+        "original": "FAST ATTACK SPEED",
+        "translation": "VELOCIDADE DE ATAQUE RÁPIDA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2357",
+        "original": "FASTEST ATTACK SPEED",
+        "translation": "VELOCIDADE DE ATAQUE MAIS RÁPIDA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2358",
+        "original": "SLOW ATTACK SPEED",
+        "translation": "VELOCIDADE DE ATAQUE LENTA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2359",
+        "original": "SLOWEST ATTACK SPEED",
+        "translation": "VELOCIDADE DE ATAQUE MAIS LENTA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2360",
+        "original": "AVERAGE ATTACK SPEED",
+        "translation": "VELOCIDADE DE ATAQUE MÉDIA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2361",
+        "original": "TWO-HANDED MELEE",
+        "translation": "CORPO A CORPO DE DUAS MÃOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2362",
+        "original": "TWO-HANDED RANGED",
+        "translation": "À DISTÂNCIA DE DUAS MÃOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2363",
+        "original": "SINGLE-HANDED MELEE",
+        "translation": "CORPO A CORPO DE UMA MÃO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2364",
+        "original": "SINGLE-HANDED RANGED",
+        "translation": "À DISTÂNCIA DE UMA MÃO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2365",
+        "original": "DUAL WIELD ONLY",
+        "translation": "APENAS EMPUNHADURA DUPLA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2366",
+        "original": "REQUIRES LEVEL",
+        "translation": "REQUER NÍVEL",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2367",
+        "original": "REQUIRES STRENGTH",
+        "translation": "REQUER FORÇA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2368",
+        "original": "REQUIRES DEXTERITY",
+        "translation": "REQUER DESTREZA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2369",
+        "original": "REQUIRES MAGIC",
+        "translation": "REQUER MAGIA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2370",
+        "original": "REQUIRES DEFENSE",
+        "translation": "REQUER DEFESA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2371",
+        "original": "PHYSICAL DAMAGE",
+        "translation": "DANO FÍSICO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2372",
+        "original": "SECONDARY EFFECTS",
+        "translation": "EFEITOS SECUNDÁRIOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2373",
+        "original": "DEFENSIVE SPELL",
+        "translation": "FEITIÇO DEFENSIVO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2374",
+        "original": "OFFENSIVE SPELL",
+        "translation": "FEITIÇO OFENSIVO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2377",
+        "original": "LEVELS EXPLORED",
+        "translation": "NÍVEIS EXPLORADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2378",
+        "original": "WAYPOINT ACTIVATED",
+        "translation": "MARCO DE VIAGEM ATIVADO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2379",
+        "original": "PORTALS USED",
+        "translation": "PORTAIS USADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2380",
+        "original": "CRITICAL STRIKE",
+        "translation": "ACERTO CRÍTICO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2381",
+        "original": "GLANCING BLOW",
+        "translation": "GOLPE RASANTE",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2382",
+        "original": "LEVEL UP",
+        "translation": "SUBIU DE NÍVEL",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2383",
+        "original": "FAME INCREASED",
+        "translation": "FAMA AUMENTADA",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2384",
+        "original": "STUNNED",
+        "translation": "ATORDOADO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2386",
+        "original": "QUESTS COMPLETED",
+        "translation": "MISSÕES CONCLUÍDAS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2387",
+        "original": "GOLD GATHERED",
+        "translation": "OURO COLETADO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2388",
+        "original": "MONSTERS DEFEATED",
+        "translation": "MONSTROS DERROTADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2389",
+        "original": "CHAMPIONS DEFEATED",
+        "translation": "CAMPEÕES DERROTADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2390",
+        "original": "CHESTS OPENED",
+        "translation": "BAÚS ABERTOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2391",
+        "original": "BARRELS BROKEN",
+        "translation": "BARRIS QUEBRADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2392",
+        "original": "TRAPS SPRUNG",
+        "translation": "ARMADILHAS DESARMADAS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2393",
+        "original": "TIMES GAMBLED",
+        "translation": "APOSTAS REALIZADAS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2394",
+        "original": "POTIONS USED",
+        "translation": "POÇÕES USADAS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2395",
+        "original": "STEPS TAKEN",
+        "translation": "PASSOS DADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2396",
+        "original": "TIME PLAYED",
+        "translation": "TEMPO JOGADO",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2397",
+        "original": "POINTS REMAINING",
+        "translation": "PONTOS RESTANTES",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2398",
+        "original": "FISH CAUGHT",
+        "translation": "PEIXES PESCADOS",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2399",
+        "original": "Your pet returns from town.",
+        "translation": "O mascote voltou da cidade.",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2400",
+        "original": "Your pet meets you in town.",
+        "translation": "O mascote te achou na cidade.",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2401",
+        "original": "Your pet returns from town, and brings you\n",
+        "translation": "O mascote retornou da cidade e trouxe\n",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2402",
+        "original": "Your pet meets you in town, and brings you\n",
+        "translation": "O mascote te achou na cidade e trouxe\n",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2404",
+        "original": "Tip",
+        "translation": "Dica",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2399",
+        "original": "- Floor",
+        "translation": "- Andar",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2400",
+        "original": "Absorbed!",
+        "translation": "Absorvido!",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "Globals_2401",
+        "original": "Gold\nfrom the sale of items.",
+        "translation": "de Ouro\nda venda de itens.",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2404",
+        "original": "Unknown",
+        "translation": "Desconhecido",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2405",
+        "original": "Hero",
+        "translation": "Herói",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2406",
+        "original": "Godlike",
+        "translation": "Divino",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2407",
+        "original": "Defeated",
+        "translation": "Derrotado(s)",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2408",
+        "original": "Found",
+        "translation": "Encontrado(s)",
+        "context": "engine/deep_audit",
+        "status": "translated"
+      },
+      {
+        "id": "DeepAudit_2409",
+        "original": "Waypoint",
+        "translation": "Ponto de Teleporte",
+        "context": "engine/deep_audit",
+        "status": "translated"
       }
     ]
   }

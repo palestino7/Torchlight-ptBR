@@ -409,6 +409,71 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    // Raw 0x68ee8c (UTF-16LE, 20 bytes): L"Waypoints\0" -> L"Teleporte\0" (Waypoint Menu title)
+    if (fsize > 0x68ee8c + 20) {
+        const wchar_t w_waypoints[] = L"Waypoints";
+        const wchar_t w_teleporte[] = L"Teleporte";
+        if (memcmp(buf + 0x68ee8c, w_waypoints, sizeof(w_waypoints)) == 0 || memcmp(buf + 0x68ee8c, w_teleporte, sizeof(w_teleporte)) == 0) {
+            memcpy(buf + 0x68ee8c, w_teleporte, sizeof(w_teleporte));
+        }
+    }
+
+    // Raw 0x6914d8 (UTF-16LE, 20 bytes): L" Defeated\0" -> L" Abatidos\0" (Quest objective tracker)
+    if (fsize > 0x6914d8 + 20) {
+        const wchar_t w_def[] = L" Defeated";
+        const wchar_t w_aba[] = L" Abatidos";
+        if (memcmp(buf + 0x6914d8, w_def, sizeof(w_def)) == 0 || memcmp(buf + 0x6914d8, w_aba, sizeof(w_aba)) == 0) {
+            memcpy(buf + 0x6914d8, w_aba, sizeof(w_aba));
+        }
+    }
+
+    // Raw 0x6914ec (UTF-16LE, 12 bytes): L"Found\0" -> L"Pegos\0" (Quest objective tracker)
+    if (fsize > 0x6914ec + 12) {
+        const wchar_t w_found[] = L"Found";
+        const wchar_t w_pegos[] = L"Pegos";
+        if (memcmp(buf + 0x6914ec, w_found, sizeof(w_found)) == 0 || memcmp(buf + 0x6914ec, w_pegos, sizeof(w_pegos)) == 0) {
+            memcpy(buf + 0x6914ec, w_pegos, sizeof(w_pegos));
+        }
+    }
+
+    // Pet return notifications (Raw 0x67bbf4 to 0x67bd08)
+    if (fsize > 0x67bd08 + 88) {
+        const wchar_t w_pet1[] = L"Your pet returns from town.";
+        const wchar_t w_pet1_pt[] = L"Seu mascote retornou.";
+        if (memcmp(buf + 0x67bbf4, w_pet1, sizeof(w_pet1)) == 0 || memcmp(buf + 0x67bbf4, w_pet1_pt, sizeof(w_pet1_pt)) == 0) {
+            memset(buf + 0x67bbf4, 0, 56);
+            memcpy(buf + 0x67bbf4, w_pet1_pt, sizeof(w_pet1_pt));
+        }
+
+        const wchar_t w_pet2[] = L"Your pet meets you in town.";
+        const wchar_t w_pet2_pt[] = L"Seu mascote o encontrou.";
+        if (memcmp(buf + 0x67bc2c, w_pet2, sizeof(w_pet2)) == 0 || memcmp(buf + 0x67bc2c, w_pet2_pt, sizeof(w_pet2_pt)) == 0) {
+            memset(buf + 0x67bc2c, 0, 56);
+            memcpy(buf + 0x67bc2c, w_pet2_pt, sizeof(w_pet2_pt));
+        }
+
+        const wchar_t w_pet3[] = L"Your pet returns from town, and brings you\n";
+        const wchar_t w_pet3_pt[] = L"Seu mascote retornou e trouxe para você:\n";
+        if (memcmp(buf + 0x67bc68, w_pet3, sizeof(w_pet3)) == 0 || memcmp(buf + 0x67bc68, w_pet3_pt, sizeof(w_pet3_pt)) == 0) {
+            memset(buf + 0x67bc68, 0, 88);
+            memcpy(buf + 0x67bc68, w_pet3_pt, sizeof(w_pet3_pt));
+        }
+
+        const wchar_t w_pet4[] = L" Gold\nfrom the sale of items.";
+        const wchar_t w_pet4_pt[] = L" de ouro\npela venda de itens.";
+        if (memcmp(buf + 0x67bcc8, w_pet4, sizeof(w_pet4)) == 0 || memcmp(buf + 0x67bcc8, w_pet4_pt, sizeof(w_pet4_pt)) == 0) {
+            memset(buf + 0x67bcc8, 0, 60);
+            memcpy(buf + 0x67bcc8, w_pet4_pt, sizeof(w_pet4_pt));
+        }
+
+        const wchar_t w_pet5[] = L"Your pet meets you in town, and brings you\n";
+        const wchar_t w_pet5_pt[] = L"Seu mascote o achou e trouxe para você:\n";
+        if (memcmp(buf + 0x67bd08, w_pet5, sizeof(w_pet5)) == 0 || memcmp(buf + 0x67bd08, w_pet5_pt, sizeof(w_pet5_pt)) == 0) {
+            memset(buf + 0x67bd08, 0, 88);
+            memcpy(buf + 0x67bd08, w_pet5_pt, sizeof(w_pet5_pt));
+        }
+    }
+
     f = fopen(exe_path, "wb");
     if (!f) {
         free(buf);

@@ -501,6 +501,11 @@ def main() -> int:
         help="Do not fallback to original text for untranslated strings"
     )
     parser.add_argument(
+        "--skip-layouts",
+        action="store_true",
+        help="Skip compiling .layout files from Pak.zip"
+    )
+    parser.add_argument(
         "--quiet",
         action="store_true",
         help="Suppress verbose output"
@@ -540,17 +545,22 @@ def main() -> int:
         print(f"[Error] Failed to compile translation.dat: {e}", file=sys.stderr)
         return 1
 
-    try:
-        layouts_compiled = compile_layout_files(
-            catalog,
-            pak_path,
-            output_layout,
-            fallback_to_original=fallback,
-            verbose=verbose
-        )
-    except Exception as e:
-        print(f"[Error] Failed to compile layout files: {e}", file=sys.stderr)
-        return 1
+    layouts_compiled = 0
+    if args.skip_layouts or not os.path.exists(pak_path):
+        if verbose:
+            print("[Compiler] Skipping layout extraction from Pak.zip (using existing localized layouts).")
+    else:
+        try:
+            layouts_compiled = compile_layout_files(
+                catalog,
+                pak_path,
+                output_layout,
+                fallback_to_original=fallback,
+                verbose=verbose
+            )
+        except Exception as e:
+            print(f"[Error] Failed to compile layout files: {e}", file=sys.stderr)
+            return 1
 
     if verbose:
         print("-" * 50)

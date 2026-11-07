@@ -166,7 +166,7 @@ class TranslationVerifier:
             return False
 
         # Normalize line endings
-        lines = [line.strip() for line in content.splitlines()]
+        lines = [line.rstrip("\r\n") for line in content.splitlines()]
 
         # Validate tag balance and block format
         open_tag = "[TRANSLATION]"

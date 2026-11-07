@@ -108,7 +108,7 @@
 		<Property Name="Tooltip" Value="Apenas para masoquistas!" />
     </Window>
         <Window Type="GuiLook/Checkbox" Name="Hardcore" >
-            <Property Name="Text" Value="Hardcore" />
+            <Property Name="Text" Value="Modo Hardcore" />
             <Property Name="UnifiedPosition" Value="{{0,26},{0,230}}" />
 		<Property Name="Tooltip" Value="A morte é permanente!" />
             <Property Name="UnifiedSize" Value="{{0,50},{0,40}}" />
