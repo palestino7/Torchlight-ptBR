@@ -263,7 +263,7 @@ class TranslationVerifier:
                         f"Line {line_num}: Duplicate <STRING>ORIGINAL: in block started at line {current_block_line}"
                     )
                 else:
-                    current_orig = line[len("<STRING>ORIGINAL:"):].strip()
+                    current_orig = line[len("<STRING>ORIGINAL:"):]
                     if not current_orig:
                         self.warnings.append(
                             f"Line {line_num}: Empty ORIGINAL text in block at line {current_block_line}"
@@ -279,7 +279,7 @@ class TranslationVerifier:
                         f"Line {line_num}: Duplicate <STRING>TRANSLATION: in block started at line {current_block_line}"
                     )
                 else:
-                    current_trans = line[len("<STRING>TRANSLATION:"):].strip()
+                    current_trans = line[len("<STRING>TRANSLATION:"):]
 
             else:
                 self.errors.append(
@@ -335,13 +335,14 @@ class TranslationVerifier:
 
         for cat_name, entries in catalog.get("categories", {}).items():
             for entry in entries:
-                orig = entry.get("original", "").strip()
-                trans = entry.get("translation", "").strip()
+                orig = entry.get("original", "")
+                trans = entry.get("translation", "")
                 entry_id = entry.get("id", "unknown")
                 if not orig:
                     continue
 
                 orig_norm = orig.replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
+                orig_trimmed = orig.strip().replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
                 if orig in seen_catalog_keys:
                     prev_loc, prev_trans = seen_catalog_keys[orig]
                     if prev_trans != trans:
@@ -351,6 +352,8 @@ class TranslationVerifier:
                 else:
                     seen_catalog_keys[orig] = (f"category '{cat_name}' (id: {entry_id})", trans)
                     catalog_originals.add(orig_norm)
+                    if orig_trimmed:
+                        catalog_originals.add(orig_trimmed)
 
                 if trans:
                     cat_tag_errors = self.validate_formatting_and_tags(orig, trans)

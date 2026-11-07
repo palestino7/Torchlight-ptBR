@@ -4260,8 +4260,8 @@
       },
       {
         "id": "Quests_0480",
-        "original": "Have you taken care of my [DEFEAT1] problem yet? Come back when you've defeated [DEFEAT1COUNT].",
-        "translation": "Você já cuidou do meu problema com [DEFEAT1]? Volte quando tiver derrotado [DEFEAT1COUNT].",
+        "original": "Have you taken care of my [DEFEAT1] problem yet? Come back when you've defeated [DEFEAT1COUNT]. ",
+        "translation": "Você já cuidou do meu problema com [DEFEAT1]? Volte quando tiver derrotado [DEFEAT1COUNT]. ",
         "context": "media/Quests/Random/RANDOMQUEST02.DAT.adm"
       },
       {
@@ -4608,8 +4608,8 @@
       },
       {
         "id": "Quests_0538",
-        "original": "Syl has opened the portal for you to continue to look for the Ember Forge that should be able to cure you of the corruption that you received when attempting to save Brink.",
-        "translation": "Syl abriu o portal para você continuar procurando pela Forja de Âmbar, que deve ser capaz de curá-lo da corrupção adquirida ao tentar salvar Brink.",
+        "original": "Syl has opened the portal for you to continue to look for the Ember Forge that should be able to cure you of the corruption that you received when attempting to save Brink.  ",
+        "translation": "Syl abriu o portal para você continuar procurando pela Forja de Âmbar, que deve ser capaz de curá-lo da corrupção adquirida ao tentar salvar Brink.  ",
         "context": "media/Quests/StoryQuest/ruins/RUINSPT2.2.DAT.adm"
       },
       {
@@ -4692,8 +4692,8 @@
       },
       {
         "id": "Quests_0552",
-        "original": "You have slowed our plans, visitor, but Ordrak's time is endless.  All we require now is a willing sacrifice.  Once you are dealt with, I will retrieve Syl and complete the Dark Ember.\\n\\nKneel or perish!",
-        "translation": "Você atrasou nossos planos, visitante, mas o tempo de Ordrak é infinito. Tudo de que precisamos agora é de um sacrifício voluntário. Assim que eu lidar com você, resgatarei Syl e completarei o Âmbar Sombrio.\\n\\nAjoelhe-se ou pereça!",
+        "original": "You have slowed our plans, visitor, but Ordrak's time is endless.  All we require now is a willing sacrifice.  Once you are dealt with, I will retrieve Syl and complete the Dark Ember.\n\nKneel or perish! ",
+        "translation": "Você atrasou nossos planos, visitante, mas o tempo de Ordrak é infinito. Tudo de que precisamos agora é de um sacrifício voluntário. Assim que eu lidar com você, resgatarei Syl e completarei o Âmbar Sombrio.\\n\\nAjoelhe-se ou pereça! ",
         "context": "media/Quests/StoryQuest/Palace/PALACEPT1.DAT.adm"
       },
       {
@@ -5112,8 +5112,8 @@
       },
       {
         "id": "Quests_0622",
-        "original": "You have a real knack for this don't you?  Thank you for finding this Shimmering Ember.  It's beautiful, but marred by the same blight that effects the other pieces.\\n\\nThe results of my research so far are troubling.  The impurities I noticed in the Deathlace Ember are also present in the Ember from the mine, they're easier to see now that I've seen a more striking example.",
-        "translation": "Você tem um verdadeiro talento para isso, não é? Obrigado por encontrar este Âmbar Cintilante. É lindo, mas manchado pela mesma praga que afeta os outros fragmentos.\\n\\nOs resultados da minha pesquisa até agora são preocupantes. As impurezas que notei no Âmbar da Renda da Morte também estão presentes no Âmbar da mina; são mais fáceis de ver agora que encontrei um exemplo mais marcante.",
+        "original": "You have a real knack for this don't you?  Thank you for finding this Shimmering Ember.  It's beautiful, but marred by the same blight that effects the other pieces.\n\nThe results of my research so far are troubling.  The impurities I noticed in the Deathlace Ember are also present in the Ember from the mine, they're easier to see now that I've seen a more striking example.  ",
+        "translation": "Você tem um verdadeiro talento para isso, não é? Obrigado por encontrar este Âmbar Cintilante. É lindo, mas manchado pela mesma praga que afeta os outros fragmentos.\\n\\nOs resultados da minha pesquisa até agora são preocupantes. As impurezas que notei no Âmbar da Renda da Morte também estão presentes no Âmbar da mina; são mais fáceis de ver agora que encontrei um exemplo mais marcante.  ",
         "context": "media/Quests/Vasman/QUEST3.DAT.adm"
       },
       {
@@ -5316,8 +5316,8 @@
       },
       {
         "id": "Quests_0656",
-        "original": "- Remnant from Alric's Journal - \\n\\nWater pours from the ruins above and falls down into oblivion. These caverns are lost to time, primal. The Ember veins change as I descend- shifting colors, first hidden, then gleaming and glittering. It fascinates me now as it did when I was young.\\n\\nEven the blight seems more pure here. My experiment may have succeeded if I had used Ember from deeper in the mountain, closer to the source. There is still the corruption of course, but with endless life that becomes a small matter.\\n\\nPerhaps I will gain more here than I ever imagined.",
-        "translation": "- Trecho do Diário de Alric - \\n\\nA água jorra das ruínas acima e despenca no esquecimento. Estas cavernas estão perdidas no tempo, primordiais. Os veios de Âmbar mudam conforme desço — alternando cores, primeiro ocultos, depois cintilantes e reluzentes. Isso me fascina agora tanto quanto quando eu era jovem.\\n\\nAté a praga parece mais pura aqui. Meu experimento poderia ter tido êxito se eu tivesse usado o Âmbar de mais fundo na montanha, mais perto da fonte. Ainda há a corrupção, é claro, mas com a vida eterna isso se torna algo menor.\\n\\nTalvez eu consiga mais aqui do que jamais imaginei.",
+        "original": "- Remnant from Alric's Journal - \n\nWater pours from the ruins above and falls down into oblivion. These caverns are lost to time, primal. The Ember veins change as I descend- shifting colors, first hidden, then gleaming and glittering. It fascinates me now as it did when I was young.\n\nEven the blight seems more pure here. My experiment may have succeeded if I had used Ember from deeper in the mountain, closer to the source. There is still the corruption of course, but with endless life that becomes a small matter.\n\nPerhaps I will gain more here than I ever imagined. ",
+        "translation": "- Trecho do Diário de Alric - \\n\\nA água jorra das ruínas acima e despenca no esquecimento. Estas cavernas estão perdidas no tempo, primordiais. Os veios de Âmbar mudam conforme desço — alternando cores, primeiro ocultos, depois cintilantes e reluzentes. Isso me fascina agora tanto quanto quando eu era jovem.\\n\\nAté a praga parece mais pura aqui. Meu experimento poderia ter tido êxito se eu tivesse usado o Âmbar de mais fundo na montanha, mais perto da fonte. Ainda há a corrupção, é claro, mas com a vida eterna isso se torna algo menor.\\n\\nTalvez eu consiga mais aqui do que jamais imaginei. ",
         "context": "media/Cinematics/VIGNETTE4.DAT.adm"
       },
       {
@@ -5328,8 +5328,8 @@
       },
       {
         "id": "Quests_0658",
-        "original": "- Remnant from Alric's Journal - \\n\\nFor hours I could feel the heat building. The rock beneath my feet grew warm, and sulfur burned in my nostrils. As I squeezed through the crack in the rock I expected to see lava, but still I was unprepared.\\n\\nThe glow of bubbling rock blinded my cavern adjusted eyes, and when my vision cleared I saw what I at first took to be a fortress. I now know it to be a prison, set upon pillars of rock in a molten sea.\\n\\nWho could build such a thing? What could require such extreme incarceration? I am grateful that both prisoners and wardens have long since turned to dust.",
-        "translation": "- Trecho do Diário de Alric - \\n\\nPor horas pude sentir o calor aumentando. A rocha sob meus pés esquentava e o enxofre queimava minhas narinas. Ao me espremer pela fenda na rocha, esperava ver lava, mas ainda assim não estava preparado.\\n\\nO brilho da rocha borbulhante cegou meus olhos acostumados à caverna, e quando minha visão clareou, vi o que a princípio considerei uma fortaleza. Agora sei que é uma prisão, erguida sobre pilares de rocha em um mar derretido.\\n\\nQuem poderia construir tal coisa? O que exigiria um encarceramento tão extremo? Sou grato por prisioneiros e carcereiros há muito terem virado pó.",
+        "original": "- Remnant from Alric's Journal - \n\nFor hours I could feel the heat building. The rock beneath my feet grew warm, and sulfur burned in my nostrils. As I squeezed through the crack in the rock I expected to see lava, but still I was unprepared.\n\nThe glow of bubbling rock blinded my cavern adjusted eyes, and when my vision cleared I saw what I at first took to be a fortress. I now know it to be a prison, set upon pillars of rock in a molten sea.\n\nWho could build such a thing? What could require such extreme incarceration? I am grateful that both prisoners and wardens have long since turned to dust. ",
+        "translation": "- Trecho do Diário de Alric - \\n\\nPor horas pude sentir o calor aumentando. A rocha sob meus pés esquentava e o enxofre queimava minhas narinas. Ao me espremer pela fenda na rocha, esperava ver lava, mas ainda assim não estava preparado.\\n\\nO brilho da rocha borbulhante cegou meus olhos acostumados à caverna, e quando minha visão clareou, vi o que a princípio considerei uma fortaleza. Agora sei que é uma prisão, erguida sobre pilares de rocha em um mar derretido.\\n\\nQuem poderia construir tal coisa? O que exigiria um encarceramento tão extremo? Sou grato por prisioneiros e carcereiros há muito terem virado pó. ",
         "context": "media/Cinematics/VIGNETTE5.DAT.adm"
       },
       {
@@ -7815,7 +7815,7 @@
       {
         "id": "Items_0411",
         "original": "Manticore",
-        "translation": "Manticore",
+        "translation": "Mantícora",
         "context": "media/units/items/pistols/PISTOL_UNIQUE_15C.DAT.adm"
       },
       {
@@ -7827,7 +7827,7 @@
       {
         "id": "Items_0413",
         "original": "Metamorph",
-        "translation": "Metamorph",
+        "translation": "Metamorfo",
         "context": "media/units/items/shields/SHIELD_UNIQUE_14B.DAT.adm"
       },
       {
@@ -9021,7 +9021,7 @@
       {
         "id": "Items_0612",
         "original": "Shillelagh",
-        "translation": "Shillelagh",
+        "translation": "Clava Irlandesa",
         "context": "media/units/items/maces/MACE_MAGIC_6B.DAT.adm"
       },
       {
@@ -9903,7 +9903,7 @@
       {
         "id": "Items_0759",
         "original": "Brandistock",
-        "translation": "Brandistock",
+        "translation": "Brandistoque",
         "context": "media/units/items/polearms/POLEARM_MAGIC_6C.DAT.adm"
       },
       {
@@ -9999,7 +9999,7 @@
       {
         "id": "Items_0775",
         "original": "Crushgroove",
-        "translation": "Crushgroove",
+        "translation": "Esmaga-Sulco",
         "context": "media/units/items/maces/MACE_UNIQUE_15B.DAT.adm"
       },
       {
@@ -38396,8 +38396,8 @@
       },
       {
         "id": "Items_5508",
-        "original": "Tanwanteng's Bad Influence",
-        "translation": "Má Influência de Tanwanteng",
+        "original": "Tanwanteng's Bad Influence ",
+        "translation": "Má Influência de Tanwanteng ",
         "context": "media/units/items/rings/RING_UNIQUE_11A.DAT.adm"
       },
       {
@@ -39578,8 +39578,8 @@
       },
       {
         "id": "Items_5705",
-        "original": "Epic Tanwanteng's Bad Influence",
-        "translation": "Má Influência de Tanwanteng Épico",
+        "original": "Epic Tanwanteng's Bad Influence ",
+        "translation": "Má Influência de Tanwanteng Épico ",
         "context": "media/units/items/itemstier2/rings/EPICRING_UNIQUE_11A.DAT.adm"
       },
       {
@@ -41759,7 +41759,7 @@
       {
         "id": "Skills_0243",
         "original": "Polymorph",
-        "translation": "Polymorph",
+        "translation": "Polimorfia",
         "context": "media/skills/shared/polymorph/POLYMORPHMISSILE.DAT.adm"
       },
       {
@@ -45052,8 +45052,8 @@
       },
       {
         "id": "Skills_0792",
-        "original": "chance for proc",
-        "translation": "chance de ativação",
+        "original": " chance for proc",
+        "translation": " chance de ativação",
         "context": "media/skills/procs/FIREPROC.DAT.adm"
       },
       {
@@ -48838,8 +48838,8 @@
       },
       {
         "id": "Skills_1423",
-        "original": "Golem gets upgraded damage, critical hit, and relfects a small static charge on attackers",
-        "translation": "O Golem recebe dano aumentado, acerto crítico e reflete carga estática nos atacantes",
+        "original": "Golem gets upgraded damage, critical hit, and relfects a small static charge on attackers ",
+        "translation": "O Golem recebe dano aumentado, acerto crítico e reflete carga estática nos atacantes ",
         "context": "media/skills/alchemist/summongolem/SUMMONBEAMGOLEM.DAT.adm"
       },
       {
@@ -52355,7 +52355,7 @@
       {
         "id": "Monsters_0065",
         "original": "Roach",
-        "translation": "Roach",
+        "translation": "Barata",
         "context": "media/units/monsters/Creeps/ROACH_CREEP.DAT.adm"
       },
       {
@@ -52613,7 +52613,7 @@
       {
         "id": "Monsters_0108",
         "original": "Cuddles",
-        "translation": "Cuddles",
+        "translation": "Fofinho",
         "context": "media/units/monsters/Troll/CRYPTMINIBOSS.DAT.adm"
       },
       {
@@ -52871,7 +52871,7 @@
       {
         "id": "Monsters_0151",
         "original": "Mannimal",
-        "translation": "Mannimal",
+        "translation": "Homem-Fera",
         "context": "media/units/monsters/QuestUnits/Townsfolk/MALE2.DAT.adm"
       },
       {
@@ -52919,7 +52919,7 @@
       {
         "id": "Monsters_0159",
         "original": "PunchBag",
-        "translation": "PunchBag",
+        "translation": "Saco de Pancadas",
         "context": "media/units/monsters/punchbag/PUNCHBAG.DAT.adm"
       },
       {
@@ -53105,7 +53105,7 @@
       {
         "id": "Monsters_0190",
         "original": "FlameTrap",
-        "translation": "FlameTrap",
+        "translation": "Armadilha de Chamas",
         "context": "media/units/monsters/ShockTrap/FLAMETRAP.DAT.adm"
       },
       {
@@ -53141,7 +53141,7 @@
       {
         "id": "Monsters_0196",
         "original": "Goldenrod",
-        "translation": "Goldenrod",
+        "translation": "Vara-de-Ouro",
         "context": "media/units/monsters/NPC/RETIREMENTCHARACTER.DAT.adm"
       },
       {
@@ -53201,7 +53201,7 @@
       {
         "id": "Monsters_0206",
         "original": "ShockTrap",
-        "translation": "ShockTrap",
+        "translation": "Armadilha de Choque",
         "context": "media/units/monsters/ShockTrap/SHOCKTRAP.DAT.adm"
       },
       {
@@ -53399,7 +53399,7 @@
       {
         "id": "Monsters_0239",
         "original": "Flesheater",
-        "translation": "Flesheater",
+        "translation": "Devorador de Carne",
         "context": "media/units/monsters/Zombie/ZOMBIECHAMPION.DAT.adm"
       },
       {
@@ -53704,8 +53704,8 @@
       },
       {
         "id": "Monsters_0290",
-        "original": "Dark Zealot",
-        "translation": "Fanático das Trevas",
+        "original": "Dark Zealot ",
+        "translation": "Fanático das Trevas ",
         "context": "media/units/monsters/Zealot/ZEALOT.DAT.adm"
       },
       {
@@ -53819,7 +53819,7 @@
       {
         "id": "Monsters_0309",
         "original": "Goblinhound",
-        "translation": "Goblinhound",
+        "translation": "Sabujo Goblin",
         "context": "media/units/monsters/GoblinHound/GOBLINHOUND.DAT.adm"
       },
       {
@@ -53879,7 +53879,7 @@
       {
         "id": "Monsters_0319",
         "original": "Nightcaster",
-        "translation": "Nightcaster",
+        "translation": "Conjurador Noturno",
         "context": "media/units/monsters/Varkolyn_Mage/VARKOLYN_MAGECHAMPION.DAT.adm"
       },
       {
@@ -53981,7 +53981,7 @@
       {
         "id": "Monsters_0336",
         "original": "Vilebracken",
-        "translation": "Vilebracken",
+        "translation": "Sarça Vil",
         "context": "media/units/monsters/RootGolem/ROOTGOLEMBOSS.DAT.adm"
       },
       {
@@ -54317,7 +54317,7 @@
       {
         "id": "Monsters_0392",
         "original": "ShrapnelTrap",
-        "translation": "ShrapnelTrap",
+        "translation": "Armadilha de Estilhaços",
         "context": "media/units/monsters/ShockTrap/SHRAPNELTRAP.DAT.adm"
       },
       {
@@ -55091,7 +55091,7 @@
       {
         "id": "Monsters_0521",
         "original": "ArmoredPunchBag",
-        "translation": "ArmoredPunchBag",
+        "translation": "Saco de Pancadas Blindado",
         "context": "media/units/monsters/punchbag/PUNCHBAGARMOR.DAT.adm"
       },
       {
@@ -56800,8 +56800,8 @@
       },
       {
         "id": "Monsters_0806",
-        "original": "Extra Fast - Elemental attacks",
-        "translation": "Superveloz - Ataques elementais",
+        "original": "Extra Fast - Elemental attacks ",
+        "translation": "Superveloz - Ataques elementais ",
         "context": "media/units/monsters/SkeletonWarrior/ENSLAVED.DAT.adm"
       },
       {
@@ -69411,7 +69411,7 @@
       {
         "id": "Globals_0109",
         "original": "Lore",
-        "translation": "Lore",
+        "translation": "Erudição",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70037,7 +70037,7 @@
       {
         "id": "Globals_0212",
         "original": "Rogue",
-        "translation": "Rogue",
+        "translation": "Ladina",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70086,7 +70086,7 @@
       {
         "id": "Globals_0220",
         "original": "Titan",
-        "translation": "Titan",
+        "translation": "Titã",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -70267,7 +70267,7 @@
       {
         "id": "Globals_0250",
         "original": "Basket",
-        "translation": "Basket",
+        "translation": "Cesto",
         "context": "media/massfile.dat.ADM"
       },
       {
@@ -71158,7 +71158,7 @@
       {
         "id": "Globals_0396",
         "original": "Lectern",
-        "translation": "Lectern",
+        "translation": "Atril",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -71559,7 +71559,7 @@
       {
         "id": "Globals_0462",
         "original": "Ballista",
-        "translation": "Ballista",
+        "translation": "Balista",
         "context": "media/masterresourceunits.dat.ADM"
       },
       {
@@ -71821,8 +71821,8 @@
       },
       {
         "id": "Globals_0505",
-        "original": "Inflicts",
-        "translation": "Aplica",
+        "original": "Inflicts ",
+        "translation": "Aplica ",
         "context": "media/GLOBALS.DAT.adm",
         "status": "translated"
       },
@@ -74749,8 +74749,8 @@
       },
       {
         "id": "Globals_0986",
-        "original": "Learn [NAME]",
-        "translation": "Aprender [NAME]",
+        "original": "Learn [NAME] ",
+        "translation": "Aprender [NAME] ",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -80345,8 +80345,8 @@
       },
       {
         "id": "Globals_1902",
-        "original": "-[VALUE]% Mage Weapon Damage",
-        "translation": "-[VALUE]% de Dano com Armas de Mago",
+        "original": "-[VALUE]% Mage Weapon Damage ",
+        "translation": "-[VALUE]% de Dano com Armas de Mago ",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -80611,8 +80611,8 @@
       },
       {
         "id": "Globals_1946",
-        "original": "-[VALUE] to Charm Spell levels",
-        "translation": "-[VALUE] para Níveis de Feitiços de Encanto",
+        "original": "-[VALUE] to Charm Spell levels ",
+        "translation": "-[VALUE] para Níveis de Feitiços de Encanto ",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -81316,8 +81316,8 @@
       },
       {
         "id": "Globals_2063",
-        "original": "You cannot retire until you reach level",
-        "translation": "Você não pode se aposentar até alcançar o nível",
+        "original": "You cannot retire until you reach level ",
+        "translation": "Você não pode se aposentar até alcançar o nível ",
         "context": "media/GLOBALS.DAT.adm",
         "status": "translated"
       },
@@ -81576,8 +81576,8 @@
       },
       {
         "id": "Globals_2106",
-        "original": "[DMGTYPE] Damage Taken is Reduced by [VALUE]%",
-        "translation": "Dano [DMGTYPE] Recebido é Reduzido em [VALUE]%",
+        "original": "[DMGTYPE] Damage Taken is Reduced by [VALUE]% ",
+        "translation": "Dano [DMGTYPE] Recebido é Reduzido em [VALUE]% ",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -81704,8 +81704,8 @@
       },
       {
         "id": "Globals_2127",
-        "original": "[DMGTYPE] Damage Taken is Increased by [VALUE]%",
-        "translation": "Dano de [DMGTYPE] Recebido é Aumentado em [VALUE]%",
+        "original": "[DMGTYPE] Damage Taken is Increased by [VALUE]% ",
+        "translation": "Dano de [DMGTYPE] Recebido é Aumentado em [VALUE]% ",
         "context": "media/EFFECTSLIST.DAT.adm"
       },
       {
@@ -82781,8 +82781,8 @@
       },
       {
         "id": "Globals_2306",
-        "original": "You have |cFFFFBA00completed a quest|u. To receive your reward, travel back to the town and speak to the individual with a |cFFFFBA00?|u above their head. Use a |cFFFFBA00Town Portal Scroll|u to return directly to Torchlight.",
-        "translation": "Você |cFFFFBA00completou uma missão|u. Para receber sua recompensa, volte à cidade e fale com o habitante que tiver um |cFFFFBA00?|u sobre a cabeça. Use um |cFFFFBA00Pergaminho de Portal da Cidade|u para retornar diretamente a Torchlight.",
+        "original": "You have |cFFFFBA00completed a quest|u. To receive your reward, travel back to the town and speak to the individual with a |cFFFFBA00?|u above their head. Use a |cFFFFBA00Town Portal Scroll|u to return directly to Torchlight. ",
+        "translation": "Você |cFFFFBA00completou uma missão|u. Para receber sua recompensa, volte à cidade e fale com o habitante que tiver um |cFFFFBA00?|u sobre a cabeça. Use um |cFFFFBA00Pergaminho de Portal da Cidade|u para retornar diretamente a Torchlight. ",
         "context": "media/GLOBALS.DAT.adm"
       },
       {
@@ -82994,7 +82994,7 @@
       {
         "id": "Globals_2341",
         "original": "Enchant price:",
-        "translation": "Preço do encantamento:",
+        "translation": "Preço de encantar:",
         "context": "engine/deep_audit",
         "status": "translated"
       },

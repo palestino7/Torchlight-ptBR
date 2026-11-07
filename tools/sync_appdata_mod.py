@@ -29,14 +29,25 @@ def sync_mod():
 
     print(f"[Sync] Copied media assets to {dest_media}")
 
-    # 2. Copy translations/translation.dat
+    # 2. Copy translations/translation.dat to AppData mod AND Steam game folder
     shutil.copy2("translation_ptbr/translations/translation.dat", os.path.join(dest_trans, "translation.dat"))
     print(f"[Sync] Copied translation.dat to {dest_trans}")
+
+    game_dir = r"C:\Program Files (x86)\Steam\steamapps\common\Torchlight"
+    game_trans = os.path.join(game_dir, "translations")
+    if os.path.exists(game_dir):
+        os.makedirs(game_trans, exist_ok=True)
+        shutil.copy2("translation_ptbr/translations/translation.dat", os.path.join(game_trans, "translation.dat"))
+        print(f"[Sync] Copied translation.dat to {game_trans}")
 
     # 3. Remove obsolete caches so the game regenerates/reads cleanly from translation.dat and Pak.zip
     appdata_root = os.path.expandvars(r"%APPDATA%\runic games\torchlight")
     stale_caches = [
         os.path.join(dest_trans, "TRANSLATION.DAT.adm"),
+        os.path.join(dest_trans, "translation.dat.adm"),
+        os.path.join(appdata_root, "translations", "TRANSLATION.DAT.adm"),
+        os.path.join(game_trans, "TRANSLATION.DAT.adm"),
+        os.path.join(game_trans, "translation.dat.adm"),
         os.path.join(appdata_root, "masterresourceunits.dat"),
         os.path.join(appdata_root, "masterresourceunits.dat.ADM"),
         os.path.join(appdata_root, "massfile.dat"),
